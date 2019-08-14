@@ -18,19 +18,19 @@ There is an [overall BOM here](https://www.digikey.com/BOM/Create/CreateSharedBo
 
 * The **e-paper screen** and supporting circuitry. You'll need a 24 position FFC connector with contacts on top, the Waveshare 4.2 inch e-paper display, and all the components in the e-paper display block. Note that many of the capacitors in this block need to be rated for 25V.
 * The **GPIO expander**. It lets you access all the buttons over I2C. You could skip this, and just solder from a few of the pads to the few remaining GPIO pins, but it's like $1, treat yourself. In the future I'm going to use a shift register for this purpose.
-* The **feather headers**, obviously, to connect a Feather mainboard to the wing.
+* The **Feather headers**, obviously, to connect a Feather mainboard to the wing.
 * The through-hole **buttons** on the front, at least some of them. Oh and as a side note: these are thru-hole buttons because I wanted to keep all surface mount components on one side.
 
 ### Recommended Modules
 
 * The **MicroSD socket**. This is, like, highly recommended. Where else are you going to store your library? Note that you will need a fine tip on your soldering iron or a hot air reflow station to solder this one in.
 * The **JST-PH ports**, and parts in that block. These are so useful to make the book extensible. Imagine a gesture recognizer on the I2C port for someone with limited mobility, or an electret mic for voice control, or a strip of LED's as a reading light, or any number of things you haven't imagined yet!
+* The **Enable switch**. It's a switch, you use it to turn the Feather off, which saves battery.
 
 ### Optional Modules and bits
 
 * The **2MB Flash Chip**. I recommend using a [Feather M4 Express](https://www.adafruit.com/product/3857) with this wing. It's only $3 more than an M0, and it has its own Flash on a dedicated QSPI bus, making this chip totally unnecessary.
 * The **32KB SRAM chip**. This is more useful when using the Adafruit EPD library, but I'm already preferring [GxEPD2](https://github.com/ZinggJM/GxEPD2) which doesn't have any use for this chip, so I'm skipping it from here on out.
-* The **5V and enable circuit** (between the feather headers). It's a lot of parts just to get a slightly higher voltage to the JST ports. There if you need it, but I've been able to run short Neopixel strips from the 3.3V just fine, and since it comes from the regulator, it automatically cuts off when EN goes low.
 * The **headphone jack** and supporting circuitry. It might be useful; I can imagine playing wav file audiobooks from an SD card for example, but you can omit it unless you have a specific audio use case in mind.
 * The **surface mount buttons** (previous page, next page and reset). You can already access the previous and next page buttons on the front, so these are just nice-to-have. And because of the way the Feather connects, its reset button should always be exposed, so you really don't need another reset button unless you want it.
 
@@ -38,4 +38,4 @@ There is an [overall BOM here](https://www.digikey.com/BOM/Create/CreateSharedBo
 
 Ordering the Rev B boards and hoping to assemble one by the end of the month to verify the design. After that, the Phase Two goal is to design a SAMD51-based Feather mainboard with this same capabilities (e-paper screen, buttons, SD card, etc).
 
-I'll also have to start writing an open source firmware designed to hold a library on an SD card and let people read, but hey, one thing at a time.
+I'll also have to start writing an open source firmware that can hold a library on an SD card and let people read, but hey, one thing at a time.
