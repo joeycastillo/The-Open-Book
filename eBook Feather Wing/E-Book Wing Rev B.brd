@@ -2851,7 +2851,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="41.402" y="77.216" size="0.508" layer="26" font="vector" ratio="18" rot="MR270" align="center"/>
 <attribute name="VALUE" x="44.45" y="78.486" size="0.508" layer="28" font="vector" ratio="18" rot="MR270" align="center"/>
 </element>
-<element name="L1" library="microbuilder" package="INDUCTOR_4X4MM_NR401" value="68uH" x="38.1" y="77.216" smashed="yes" rot="MR90">
+<element name="L1" library="microbuilder" package="INDUCTOR_4X4MM_NR401" value="10uH" x="38.1" y="77.216" smashed="yes" rot="MR90">
 <attribute name="NAME" x="38.1" y="74.676" size="0.508" layer="26" font="vector" ratio="18" rot="MR0" align="center"/>
 <attribute name="VALUE" x="41.3" y="75.216" size="0.508" layer="28" font="vector" ratio="18" rot="MR90" align="center"/>
 </element>

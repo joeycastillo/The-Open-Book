@@ -8890,7 +8890,7 @@ With round pins</description>
 <part name="D4" library="microbuilder" deviceset="DIODE-SCHOTTKY" device="SOD-123" value="MBR0530"/>
 <part name="C9" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="4.7uF/25V"/>
 <part name="D3" library="microbuilder" deviceset="DIODE-SCHOTTKY" device="SOD-123" value="MBR0530"/>
-<part name="L1" library="microbuilder" deviceset="INDUCTOR" device="NR401" value="68uH"/>
+<part name="L1" library="microbuilder" deviceset="INDUCTOR" device="NR401" value="10uH"/>
 <part name="R5" library="microbuilder" deviceset="RESISTOR" device="0805_10MGAP" value="0.47ohm"/>
 <part name="U$10" library="microbuilder" deviceset="GND" device=""/>
 <part name="Q1" library="Parts" deviceset="IRLML2060TRPBF" device="" value="IRLML0100"/>
