@@ -52,7 +52,7 @@ The Feather ecosystem seemed like the ideal place to start building this. An eBo
 | [Right angle surface mount buttons](https://www.digikey.com/short/prr5pv) | - | $0.54 | 4 | $2.16 |
 | [Thru-hole buttons](https://www.digikey.com/short/prr5pq) | - | $0.37 | 7 | $2.59 |
 | [SPDT switch](https://www.digikey.com/short/prr5w1) | SW1 | $0.31 | 1 | $0.31 |
-| [Headphone Jack](https://www.digikey.com/short/prr5np) | J1 | $1.24 | 1 | $1.24 |
+| [Headphone Jack](https://www.digikey.com/short/prr5np) (Rev C swaps this for [a slightly cheaper — and far less chunky — surface mount jack](https://www.digikey.com/product-detail/en/cui-inc/MJ-3523-SMT-TR/CP-3523MJCT-ND/669691)) | J1 | $1.24 | 1 | $1.24 |
 | [4.2 inch e-ink panel](https://zh-tw.buyepaper.com/42inch-e-ink-panel-spi-interface-buy-e-paper-display-p0085-p0085.html) | - | $18.26 | 1 | $18.26 |
 | [MicroSD Socket](https://www.adafruit.com/product/1660) | MICROSD | $1.95 | 1 | $1.95 |
 | [2x20 SMT Headers](https://www.adafruit.com/product/2187) (to cut down) | - | $1.95 | 2 | $3.90 |
