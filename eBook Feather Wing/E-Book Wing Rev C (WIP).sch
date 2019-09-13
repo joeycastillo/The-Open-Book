@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2968,6 +2968,26 @@ package type P</description>
 <text x="-11.8618" y="-2.54" size="1.778" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-10.16" y="-0.889" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="A10767">
+<wire x1="-4.3" y1="2.15" x2="4.3" y2="2.15" width="0.127" layer="21"/>
+<wire x1="4.3" y1="2.15" x2="4.3" y2="-2.15" width="0.127" layer="21"/>
+<wire x1="4.3" y1="-2.15" x2="0" y2="-2.15" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.15" x2="-2" y2="-2.15" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2.15" x2="-4.3" y2="-2.15" width="0.127" layer="21"/>
+<wire x1="-4.3" y1="-2.15" x2="-4.3" y2="2.15" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2.15" x2="-2" y2="-5.15" width="0.127" layer="51"/>
+<wire x1="-2" y1="-5.15" x2="-1.5" y2="-5.15" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="-5.15" x2="0" y2="-5.15" width="0.127" layer="51"/>
+<wire x1="0" y1="-5.15" x2="0" y2="-2.15" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-5.15" x2="-1" y2="-4.65" width="0.127" layer="51"/>
+<wire x1="-1" y1="-4.65" x2="-0.5" y2="-5.15" width="0.127" layer="51"/>
+<pad name="MP1" x="-4" y="0" drill="1.1"/>
+<pad name="MP2" x="4" y="0" drill="1.1"/>
+<pad name="P$1" x="-2" y="0" drill="0.9"/>
+<pad name="P$2" x="0" y="0" drill="0.9"/>
+<pad name="P$3" x="2" y="0" drill="0.9"/>
+<text x="0" y="1.397" size="0.8128" layer="51" font="vector" ratio="18" align="center">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="SO18W" urn="urn:adsk.eagle:package:6240755/1" locally_modified="yes" type="box">
@@ -3131,6 +3151,21 @@ specific
 objects</text>
 <text x="217.17" y="20.32" size="2.54" layer="94">by joey castillo</text>
 <text x="236.22" y="5.08" size="2.54" layer="94">cc-by-sa 4.0</text>
+</symbol>
+<symbol name="TOGGLE">
+<description>&lt;h3&gt;Single Pole, Double Throw (SPDT) Switch&lt;/h3&gt;
+&lt;p&gt;Single-pole, double-throw (SPDT) switch.&lt;/p&gt;</description>
+<wire x1="0" y1="0" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="3.175" y2="-2.54" width="0.127" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="3.175" y2="2.54" width="0.1524" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="0" y="0" radius="0.3592" width="0.2032" layer="94"/>
+<text x="1.27" y="3.048" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="1.016" y="-3.302" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
+<pin name="P" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="S" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="O" x="5.08" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3432,6 +3467,23 @@ DIN A4, landscape with location and doc. field</description>
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPDT_SWITCH">
+<gates>
+<gate name="G$1" symbol="TOGGLE" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="A10767">
+<connects>
+<connect gate="G$1" pin="O" pad="P$1"/>
+<connect gate="G$1" pin="P" pad="P$2"/>
+<connect gate="G$1" pin="S" pad="P$3"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -8794,79 +8846,6 @@ With round pins</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="JS102011SAQN">
-<packages>
-<package name="SW_JS102011SAQN">
-<wire x1="-4.5" y1="1.8" x2="4.5" y2="1.8" width="0.127" layer="51"/>
-<wire x1="-4.5" y1="-1.8" x2="4.5" y2="-1.8" width="0.127" layer="21"/>
-<wire x1="-4.5" y1="1.8" x2="-4.5" y2="-1.8" width="0.127" layer="21"/>
-<wire x1="4.5" y1="1.8" x2="4.5" y2="-1.8" width="0.127" layer="21"/>
-<rectangle x1="-2.800890625" y1="1.80056875" x2="-2.2" y2="3.7" layer="51"/>
-<rectangle x1="-2.801109375" y1="1.800709375" x2="-2.2" y2="3.7" layer="51"/>
-<rectangle x1="-0.30005625" y1="1.800340625" x2="0.3" y2="3.7" layer="51"/>
-<rectangle x1="2.203690625" y1="1.80301875" x2="2.8" y2="3.7" layer="51"/>
-<wire x1="-2.3" y1="-1.8" x2="-2.3" y2="-4" width="0.127" layer="51"/>
-<wire x1="-2.3" y1="-4" x2="-0.8" y2="-4" width="0.127" layer="51"/>
-<wire x1="-0.8" y1="-4" x2="-0.8" y2="-1.8" width="0.127" layer="51"/>
-<wire x1="-4.5" y1="-1.5" x2="-3.2" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="-3.2" y1="-1.5" x2="-3.2" y2="-1.8" width="0.127" layer="51"/>
-<wire x1="-4.5" y1="1.4" x2="-3.2" y2="1.4" width="0.127" layer="51"/>
-<wire x1="3.2" y1="1.4" x2="4.5" y2="1.4" width="0.127" layer="51"/>
-<wire x1="3.2" y1="-1.5" x2="4.5" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="3.2" y1="-1.5" x2="3.2" y2="-1.8" width="0.127" layer="51"/>
-<wire x1="3.2" y1="1.7" x2="3.2" y2="1.4" width="0.127" layer="51"/>
-<wire x1="-3.2" y1="1.7" x2="-3.2" y2="1.4" width="0.127" layer="51"/>
-<text x="-4.80353125" y="-3.0022" size="1.27093125" layer="25" rot="R90">&gt;NAME</text>
-<text x="6.10533125" y="-3.30288125" size="1.271109375" layer="27" rot="R90">&gt;VALUE</text>
-<smd name="1" x="-2.5" y="2.75" dx="1.2" dy="2.5" layer="1"/>
-<smd name="2" x="0" y="2.75" dx="1.2" dy="2.5" layer="1"/>
-<smd name="3" x="2.5" y="2.75" dx="1.2" dy="2.5" layer="1"/>
-<hole x="-3.4" y="0" drill="1"/>
-<hole x="3.4" y="0" drill="1"/>
-</package>
-</packages>
-<symbols>
-<symbol name="JS102011SAQN">
-<circle x="-1.778" y="2.54" radius="0.567959375" width="0.254" layer="94"/>
-<circle x="-1.778" y="-2.54" radius="0.567959375" width="0.254" layer="94"/>
-<circle x="1.778" y="0" radius="0.567959375" width="0.254" layer="94"/>
-<wire x1="1.016" y1="0" x2="-2.286" y2="2.032" width="0.254" layer="94"/>
-<text x="-7.622909375" y="5.081940625" size="1.270490625" layer="95">&gt;NAME</text>
-<text x="-7.628559375" y="-5.085709375" size="1.27143125" layer="96">&gt;VALUE</text>
-<pin name="1" x="-7.62" y="2.54" visible="pad" length="middle" direction="pas"/>
-<pin name="2" x="7.62" y="0" visible="pad" length="middle" direction="pas" rot="R180"/>
-<pin name="3" x="-7.62" y="-2.54" visible="pad" length="middle" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="JS102011SAQN" prefix="S">
-<description>&lt;b&amp;gt;
-JS10 Series SPDT On-On 6 V 0.3 A Gull Wing SMT Slide Switch&amp;lt;/b&amp;gt;&lt;p&amp;gt;http://www.snapeda.com/parts/JS102011SAQN/C%26K%20Components/view-part/</description>
-<gates>
-<gate name="G$1" symbol="JS102011SAQN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SW_JS102011SAQN">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DESCRIPTION" value=" JS10 Series SPDT On-On 6 V 0.3 A Gull Wing SMT Slide Switch "/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="401-1999-1-ND"/>
-<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/c-k/JS102011SAQN/401-1999-1-ND/1640114?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol"/>
-<attribute name="MF" value="C&amp;K"/>
-<attribute name="MP" value="JS102011SAQN"/>
-<attribute name="PACKAGE" value="None"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9016,9 +8995,9 @@ JS10 Series SPDT On-On 6 V 0.3 A Gull Wing SMT Slide Switch&amp;lt;/b&amp;gt;&lt
 <part name="+3V17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="BTN_LOCK" library="My Stuff" deviceset="SPST_TACTILE_SWITCH" device="RA"/>
 <part name="J1" library="MJ-3523-SMT" deviceset="MJ-3523-SMT" device=""/>
-<part name="S1" library="JS102011SAQN" deviceset="JS102011SAQN" device=""/>
 <part name="FID5" library="microbuilder" deviceset="FIDUCIAL" device="_1MM"/>
 <part name="FID6" library="microbuilder" deviceset="FIDUCIAL" device="_1MM"/>
+<part name="SW1" library="My Stuff" deviceset="SPDT_SWITCH" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9526,12 +9505,12 @@ FILTERING</text>
 <attribute name="NAME" x="45.716609375" y="87.1246" size="1.778790625" layer="95"/>
 <attribute name="VALUE" x="45.708259375" y="73.648259375" size="1.780740625" layer="96"/>
 </instance>
-<instance part="S1" gate="G$1" x="236.22" y="35.56" smashed="yes" rot="R180">
-<attribute name="NAME" x="243.842909375" y="30.478059375" size="1.270490625" layer="95" rot="R180"/>
-<attribute name="VALUE" x="243.848559375" y="40.645709375" size="1.27143125" layer="96" rot="R180"/>
-</instance>
 <instance part="FID5" gate="G$1" x="208.28" y="63.5" smashed="yes"/>
 <instance part="FID6" gate="G$1" x="218.44" y="63.5" smashed="yes"/>
+<instance part="SW1" gate="G$1" x="233.68" y="35.56" smashed="yes">
+<attribute name="NAME" x="234.95" y="38.608" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="234.696" y="32.258" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9637,9 +9616,9 @@ FILTERING</text>
 </segment>
 <segment>
 <pinref part="U$12" gate="G$1" pin="GND"/>
-<wire x1="243.84" y1="33.02" x2="248.92" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="33.02" x2="248.92" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="33.02" x2="248.92" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="1"/>
+<pinref part="SW1" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <pinref part="BTN_RESET" gate="G$1" pin="P$2"/>
@@ -10017,8 +9996,8 @@ FILTERING</text>
 </segment>
 <segment>
 <label x="223.52" y="35.56" size="1.778" layer="95"/>
-<pinref part="S1" gate="G$1" pin="2"/>
-<wire x1="228.6" y1="35.56" x2="223.52" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="35.56" x2="223.52" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$1" pin="P"/>
 </segment>
 </net>
 <net name="AREF" class="0">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -37,7 +37,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -249,7 +249,8 @@ spare, omit this chip (and C4).</text>
 18 Core logic power pin
 19 Power Supply for 
    OTP Programming (NC)</text>
-<text x="59.182" y="5.588" size="1.27" layer="21" font="vector" ratio="18" align="top-left">by joey castillo</text>
+<text x="72.39" y="5.842" size="1.27" layer="21" font="vector" ratio="18" align="top-right">by
+joey castillo</text>
 <text x="76.454" y="16.256" size="1.778" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">E-BOOK
 FEATHER WING</text>
 <text x="76.454" y="10.922" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">by joey castillo</text>
@@ -347,7 +348,7 @@ right angle header on here, it might prove useful.</text>
 0.5mm pitch R/A with
 contacts on TOP.</text>
 <text x="68.072" y="1.27" size="0.8128" layer="22" font="vector" rot="MR0" align="top-center">CC-BY-SA 4.0</text>
-<text x="59.182" y="3.048" size="1.27" layer="29" font="vector" ratio="18" align="top-left">@josecastillo</text>
+<text x="72.39" y="2.032" size="1.27" layer="29" font="vector" ratio="18" align="top-right">@josecastillo</text>
 <wire x1="55.626" y1="-9.652" x2="34.29" y2="-9.652" width="0.0508" layer="22"/>
 <text x="22.098" y="36.068" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">The DAC on A0 drives mono 
 headphone jack J1. FB1 &amp; FB2 
@@ -361,7 +362,7 @@ capacitor; it lets the AC
 component of the output signal 
 pass to the headphone jack, 
 while blocking the DC component.</text>
-<text x="58.674" y="8.128" size="0.508" layer="22" font="vector" ratio="18" rot="MR0" align="center">ENABLE_SWITCH</text>
+<text x="58.674" y="3.302" size="0.508" layer="22" font="vector" ratio="18" rot="MR0" align="center">ENABLE_SWITCH</text>
 <text x="8.6614" y="110.744" size="0.508" layer="21" font="vector" ratio="18" rot="R180" align="center">GND</text>
 <text x="6.1214" y="110.744" size="0.508" layer="21" font="vector" ratio="18" rot="R180" align="center">RX</text>
 <text x="11.2014" y="110.744" size="0.508" layer="21" font="vector" ratio="18" rot="R180" align="center">TX</text>
@@ -927,6 +928,26 @@ by exp-lbrs.ulp</description>
 <rectangle x1="-4.6901" y1="3.8001" x2="-4.1999" y2="5.3199" layer="51"/>
 <rectangle x1="5.4699" y1="-5.3199" x2="5.9601" y2="-3.8001" layer="51"/>
 <circle x="-3.89" y="-1.8" radius="0.6427" width="0.2032" layer="21"/>
+</package>
+<package name="A10767">
+<wire x1="-4.3" y1="2.15" x2="4.3" y2="2.15" width="0.127" layer="21"/>
+<wire x1="4.3" y1="2.15" x2="4.3" y2="-2.15" width="0.127" layer="21"/>
+<wire x1="4.3" y1="-2.15" x2="0" y2="-2.15" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.15" x2="-2" y2="-2.15" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2.15" x2="-4.3" y2="-2.15" width="0.127" layer="21"/>
+<wire x1="-4.3" y1="-2.15" x2="-4.3" y2="2.15" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2.15" x2="-2" y2="-5.15" width="0.127" layer="51"/>
+<wire x1="-2" y1="-5.15" x2="-1.5" y2="-5.15" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="-5.15" x2="0" y2="-5.15" width="0.127" layer="51"/>
+<wire x1="0" y1="-5.15" x2="0" y2="-2.15" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-5.15" x2="-1" y2="-4.65" width="0.127" layer="51"/>
+<wire x1="-1" y1="-4.65" x2="-0.5" y2="-5.15" width="0.127" layer="51"/>
+<pad name="MP1" x="-4" y="0" drill="1.1"/>
+<pad name="MP2" x="4" y="0" drill="1.1"/>
+<pad name="P$1" x="-2" y="0" drill="0.9"/>
+<pad name="P$2" x="0" y="0" drill="0.9"/>
+<pad name="P$3" x="2" y="0" drill="0.9"/>
+<text x="0" y="1.397" size="0.8128" layer="51" font="vector" ratio="18" align="center">&gt;NAME</text>
 </package>
 </packages>
 <packages3d>
@@ -2572,38 +2593,6 @@ by exp-lbrs.ulp</description>
 </package>
 </packages>
 </library>
-<library name="JS102011SAQN">
-<packages>
-<package name="SW_JS102011SAQN">
-<wire x1="-4.5" y1="1.8" x2="4.5" y2="1.8" width="0.127" layer="51"/>
-<wire x1="-4.5" y1="-1.8" x2="4.5" y2="-1.8" width="0.127" layer="21"/>
-<wire x1="-4.5" y1="1.8" x2="-4.5" y2="-1.8" width="0.127" layer="21"/>
-<wire x1="4.5" y1="1.8" x2="4.5" y2="-1.8" width="0.127" layer="21"/>
-<rectangle x1="-2.800890625" y1="1.80056875" x2="-2.2" y2="3.7" layer="51"/>
-<rectangle x1="-2.801109375" y1="1.800709375" x2="-2.2" y2="3.7" layer="51"/>
-<rectangle x1="-0.30005625" y1="1.800340625" x2="0.3" y2="3.7" layer="51"/>
-<rectangle x1="2.203690625" y1="1.80301875" x2="2.8" y2="3.7" layer="51"/>
-<wire x1="-2.3" y1="-1.8" x2="-2.3" y2="-4" width="0.127" layer="51"/>
-<wire x1="-2.3" y1="-4" x2="-0.8" y2="-4" width="0.127" layer="51"/>
-<wire x1="-0.8" y1="-4" x2="-0.8" y2="-1.8" width="0.127" layer="51"/>
-<wire x1="-4.5" y1="-1.5" x2="-3.2" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="-3.2" y1="-1.5" x2="-3.2" y2="-1.8" width="0.127" layer="51"/>
-<wire x1="-4.5" y1="1.4" x2="-3.2" y2="1.4" width="0.127" layer="51"/>
-<wire x1="3.2" y1="1.4" x2="4.5" y2="1.4" width="0.127" layer="51"/>
-<wire x1="3.2" y1="-1.5" x2="4.5" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="3.2" y1="-1.5" x2="3.2" y2="-1.8" width="0.127" layer="51"/>
-<wire x1="3.2" y1="1.7" x2="3.2" y2="1.4" width="0.127" layer="51"/>
-<wire x1="-3.2" y1="1.7" x2="-3.2" y2="1.4" width="0.127" layer="51"/>
-<text x="-4.80353125" y="-3.0022" size="1.27093125" layer="25" rot="R90">&gt;NAME</text>
-<text x="6.10533125" y="-3.30288125" size="1.271109375" layer="27" rot="R90">&gt;VALUE</text>
-<smd name="1" x="-2.5" y="2.75" dx="1.2" dy="2.5" layer="1"/>
-<smd name="2" x="0" y="2.75" dx="1.2" dy="2.5" layer="1"/>
-<smd name="3" x="2.5" y="2.75" dx="1.2" dy="2.5" layer="1"/>
-<hole x="-3.4" y="0" drill="1"/>
-<hole x="3.4" y="0" drill="1"/>
-</package>
-</packages>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3106,21 +3095,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="PACKAGE" value="None" x="19.304" y="9.652" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="24.177040625" y="16.62635" size="1.270790625" layer="28" rot="MR270"/>
 </element>
-<element name="S1" library="JS102011SAQN" package="SW_JS102011SAQN" value="JS102011SAQN" x="58.674" y="3.556" smashed="yes" rot="MR0">
-<attribute name="DESCRIPTION" value=" JS10 Series SPDT On-On 6 V 0.3 A Gull Wing SMT Slide Switch " x="58.674" y="3.556" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="401-1999-1-ND" x="58.674" y="3.556" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/c-k/JS102011SAQN/401-1999-1-ND/1640114?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="58.674" y="3.556" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MF" value="C&amp;K" x="58.674" y="3.556" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MP" value="JS102011SAQN" x="58.674" y="3.556" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="63.47753125" y="0.5538" size="1.27093125" layer="26" rot="MR90"/>
-<attribute name="PACKAGE" value="None" x="58.674" y="3.556" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="52.56866875" y="0.25311875" size="1.271109375" layer="28" rot="MR90"/>
-</element>
 <element name="FID5" library="microbuilder" package="FIDUCIAL_1MM" value="FIDUCIAL_1MM" x="1.524" y="7.874" smashed="yes" rot="MR0">
 <attribute name="BOM" value="EXCLUDE" x="1.524" y="7.874" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="FID6" library="microbuilder" package="FIDUCIAL_1MM" value="FIDUCIAL_1MM" x="3.048" y="18.288" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="3.048" y="18.288" size="1.778" layer="27" display="off"/>
+</element>
+<element name="SW1" library="My Stuff" package="A10767" value="SPDT_SWITCH" x="58.674" y="4.826" smashed="yes" rot="MR0">
+<attribute name="NAME" x="58.674" y="7.747" size="0.8128" layer="52" font="vector" ratio="18" rot="MR0" align="center"/>
 </element>
 </elements>
 <signals>
@@ -3199,7 +3181,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="4.572" y="17.4752" extent="1-16" drill="0.254"/>
 <via x="18.542" y="11.43" extent="1-16" drill="0.254"/>
 <via x="61.722" y="106.68" extent="1-16" drill="0.254"/>
-<contactref element="S1" pad="1"/>
+<contactref element="SW1" pad="P$3"/>
 </signal>
 <signal name="SD_CS">
 <contactref element="MICROSD" pad="2"/>
@@ -3555,11 +3537,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="56.388" y="15.5702" extent="1-16" drill="0.254"/>
 <wire x1="56.388" y1="15.5702" x2="52.9082" y2="19.05" width="0.1524" layer="16"/>
 <wire x1="52.9082" y1="19.05" x2="52.451" y2="19.05" width="0.1524" layer="16"/>
-<contactref element="S1" pad="2"/>
-<wire x1="58.674" y1="6.306" x2="58.674" y2="11.43" width="0.1524" layer="16"/>
-<via x="58.674" y="11.43" extent="1-16" drill="0.254"/>
-<wire x1="58.674" y1="11.43" x2="58.674" y2="13.2842" width="0.1524" layer="1"/>
-<wire x1="58.674" y1="13.2842" x2="56.388" y2="15.5702" width="0.1524" layer="1"/>
+<wire x1="56.388" y1="15.5702" x2="58.674" y2="13.2842" width="0.1524" layer="1"/>
+<contactref element="SW1" pad="P$2"/>
+<wire x1="58.674" y1="13.2842" x2="58.674" y2="4.826" width="0.1524" layer="1"/>
 </signal>
 <signal name="AREF">
 <contactref element="MS1" pad="3"/>
