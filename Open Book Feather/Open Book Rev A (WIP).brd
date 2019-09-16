@@ -4672,7 +4672,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <param name="mlMaxStopFrame" value="2.5mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="10mil"/>
+<param name="mlViaStopLimit" value="12mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -5759,7 +5759,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="55.3419" y1="110.424" x2="54.7792875" y2="110.424" width="0.1524" layer="16"/>
 <wire x1="54.7792875" y1="110.424" x2="54.1846875" y2="109.8294" width="0.1524" layer="16"/>
 <wire x1="54.1846875" y1="109.8294" x2="52.324" y2="109.8294" width="0.1524" layer="16"/>
-<wire x1="50.734" y1="110.744" x2="50.226" y2="110.744" width="0.1524" layer="16"/>
 <via x="40.132" y="98.806" extent="1-16" drill="0.254"/>
 <wire x1="40.132" y1="98.806" x2="35.052" y2="93.726" width="0.1524" layer="16"/>
 <via x="35.052" y="93.726" extent="1-16" drill="0.254"/>
