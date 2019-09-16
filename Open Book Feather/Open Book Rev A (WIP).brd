@@ -189,7 +189,7 @@
 two ports provide access to pins A1 and A2. D5 &amp; D6 
 + R17 &amp; R18 provide protection and current limiting.</text>
 <text x="76.962" y="43.942" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">32KB SRAM CHIP</text>
-<text x="76.962" y="42.164" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">The optional 23K256 SRAM chip 
+<text x="76.962" y="42.164" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">Optional 23K256 SRAM chip U7
 provides a buffer for the display. 
 It uses the e-paper screen's SPI 
 interface on SERCOM4.
@@ -414,7 +414,7 @@ low &amp; disabling regulator U1.</text>
 <text x="17.78" y="106.68" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">E-PAPER DISPLAY</text>
 <wire x1="23.114" y1="75.4888" x2="23.114" y2="92.71" width="0.1524" layer="22" style="shortdash"/>
 <text x="49.53" y="23.114" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">BUTTON REGISTER</text>
-<text x="49.53" y="21.336" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">IC1 is a fairly generic 74165 8-bit 
+<text x="49.53" y="21.336" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">U5 is a fairly generic 74165 8-bit 
 shift register. It takes the state of the
 board's 8 buttons (Left/Down/Up/Right
 /Select/Prev/Next/Lock) and fits them 
@@ -439,12 +439,12 @@ source designs. OSO Logo and font
 by Joseph Devens @DoctorDevens.</text>
 <wire x1="6.35" y1="10.16" x2="3.302" y2="7.112" width="0.1524" layer="22" style="shortdash"/>
 <text x="49.784" y="0.4699" size="0.8128" layer="22" font="vector" rot="MR90" align="top-left">Note: LOCK is also 
-tied to «PA27» which
+tied to D51 which
 can serve as an
 ext.   interrupt</text>
 <text x="61.468" y="123.1138" size="1.4097" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">THE OPEN</text>
 <text x="49.53" y="35.306" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">2MB QSPI FLASH</text>
-<text x="49.53" y="33.528" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">IC2 is another GD25Q16C Flash
+<text x="49.53" y="33.528" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">U4 is another GD25Q16C Flash
 chip, this tied to the SAMD51's 
 dedicated QSPI bus (D35-D40); 
 it's the CIRCUITPY drive that 
@@ -453,7 +453,7 @@ R19 pulls IC2's CS high; the
 microcontroller can drive it
 low (active) via QSPI_CS (D36).</text>
 <text x="76.708" y="35.306" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">GNU UNIFONT FLASH</text>
-<text x="76.708" y="33.528" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">IC3 is a GD25Q16C Flash 
+<text x="76.708" y="33.528" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">U6 is a GD25Q16C Flash 
 memory chip. It's on the main 
 SPI bus (CS: D52) and stores 
 glyph bitmaps and Unicode 
@@ -5093,7 +5093,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="56.134" y="21.082" size="0.508" layer="28" font="vector" ratio="18" rot="MR90" align="center"/>
 </element>
 <element name="U5" library="microbuilder" package="SO16" package3d_urn="urn:adsk.eagle:package:2010/1" value="74AC165D" x="26.924" y="8.382" smashed="yes" rot="MR90">
-<attribute name="NAME" x="25.019" y="2.921" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
+<attribute name="NAME" x="27.051" y="13.843" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
 <attribute name="VALUE" x="26.162" y="4.572" size="0.508" layer="28" font="vector" ratio="18" rot="MR90" align="center"/>
 </element>
 <element name="J1" library="SJ-43514-SMT" package="CUI_SJ-43514-SMT" value="SJ-43514-SMT" x="56.896" y="9.144" smashed="yes" rot="MR90">
