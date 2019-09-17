@@ -13088,7 +13088,7 @@ by exp-lbrs.ulp</description>
 <part name="R15" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="100K"/>
 <part name="R14" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="100K"/>
 <part name="R2" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="100K"/>
-<part name="U4" library="microbuilder" deviceset="SPIFLASH_8PIN" device="" value="GD25Q64"/>
+<part name="U4" library="microbuilder" deviceset="SPIFLASH_8PIN" device="" value="GD25Q16C (or GD25Q32C)"/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="+3V28" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V29" library="supply1" deviceset="+3V3" device=""/>
@@ -13123,7 +13123,7 @@ by exp-lbrs.ulp</description>
 <part name="C11" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10µF"/>
 <part name="U$41" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$23" library="My Stuff" deviceset="OSO-TEXT-TEST" device=""/>
-<part name="U6" library="Adafruit Feather M0 Express" deviceset="MICROBUILDER_SPIFLASH_SOIC8" device=""/>
+<part name="U6" library="Adafruit Feather M0 Express" deviceset="MICROBUILDER_SPIFLASH_SOIC8" device="" value="GD25Q16C (or GD25Q32C)"/>
 <part name="+3V15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="U$40" library="microbuilder" deviceset="GND" device=""/>
@@ -14735,9 +14735,7 @@ SWITCH</text>
 <instance part="+3V16" gate="G$1" x="121.92" y="45.72" smashed="yes">
 <attribute name="VALUE" x="116.078" y="45.72" size="1.778" layer="96"/>
 </instance>
-<instance part="U$40" gate="G$1" x="121.92" y="17.78" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="123.444" y="15.24" size="1.27" layer="96" rot="MR0"/>
-</instance>
+<instance part="U$40" gate="G$1" x="121.92" y="22.86" smashed="yes" rot="MR0"/>
 <instance part="C28" gate="G$1" x="121.92" y="30.48" smashed="yes">
 <attribute name="NAME" x="119.63" y="31.73" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
 <attribute name="VALUE" x="124.22" y="31.73" size="1.27" layer="96" font="vector" rot="R90" align="center"/>
@@ -14988,7 +14986,6 @@ SWITCH</text>
 <pinref part="C28" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="25.4" x2="121.92" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="U$40" gate="G$1" pin="GND"/>
-<wire x1="121.92" y1="25.4" x2="121.92" y2="20.32" width="0.1524" layer="91"/>
 <junction x="121.92" y="25.4"/>
 </segment>
 <segment>
