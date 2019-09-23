@@ -37,7 +37,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -2321,15 +2321,6 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <description>Generated from &lt;b&gt;Adafruit 3.5in 480x320 FeatherWing.sch&lt;/b&gt;&lt;p&gt;
 by exp-lbrs.ulp</description>
 <packages>
-<package name="MICROBUILDER_TESTPOINT_PAD_1MM">
-<wire x1="-0.7" y1="0.7" x2="0.7" y2="0.7" width="0.127" layer="21"/>
-<wire x1="0.7" y1="0.7" x2="0.7" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="0.7" y1="-0.7" x2="-0.7" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="-0.7" y1="-0.7" x2="-0.7" y2="0.7" width="0.127" layer="21"/>
-<smd name="P$1" x="0" y="0" dx="1" dy="1" layer="1" cream="no"/>
-<text x="1.27" y="0" size="0.8128" layer="25" ratio="18" align="center-left">&gt;NAME</text>
-<text x="0" y="0" size="0.4064" layer="27" ratio="10" align="center">&gt;VALUE</text>
-</package>
 <package name="MICROBUILDER_PAD-1.5X2.0">
 <description>1.5 x 2.0mm SMT pad (no solder paste)</description>
 <wire x1="-0.95" y1="1.2" x2="0.95" y2="1.2" width="0.127" layer="21"/>
@@ -2886,9 +2877,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="3.048" y="16.383" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
 <attribute name="VALUE" x="3.81" y="16.764" size="0.508" layer="28" font="vector" ratio="18" rot="MR270" align="center"/>
 </element>
-<element name="FB1" library="microbuilder" package="0805" value="FERRITE" x="15.494" y="18.796" smashed="yes" rot="MR90">
-<attribute name="NAME" x="15.494" y="16.383" size="0.508" layer="26" font="vector" ratio="18" rot="MR0" align="center"/>
-<attribute name="VALUE" x="14.732" y="20.828" size="0.508" layer="28" font="vector" ratio="18" rot="MR90" align="center"/>
+<element name="FB1" library="microbuilder" package="0805" value="FERRITE" x="14.986" y="18.796" smashed="yes" rot="MR90">
+<attribute name="NAME" x="14.986" y="16.383" size="0.508" layer="26" font="vector" ratio="18" rot="MR0" align="center"/>
+<attribute name="VALUE" x="14.224" y="20.828" size="0.508" layer="28" font="vector" ratio="18" rot="MR90" align="center"/>
 </element>
 <element name="A2_PORT" library="microbuilder" package="JSTPH3" value="JST PH 3" x="4.318" y="70.104" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="2.302" y="73.3265" size="0.508" layer="28" font="vector" ratio="18" rot="MR270" align="center"/>
@@ -2966,10 +2957,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="35.052" y="41.826" size="0.508" layer="26" font="vector" ratio="18" rot="MR270" align="center"/>
 <attribute name="VALUE" x="33.974" y="40.81" size="0.4064" layer="28" ratio="10" rot="MR270"/>
 </element>
-<element name="XTRA" library="Adafruit 3.5in 480x320 FeatherWing" package="MICROBUILDER_PAD-1.5X2.0" value="" x="33.274" y="44.45" smashed="yes" rot="MR270">
-<attribute name="NAME" x="35.052" y="44.366" size="0.508" layer="26" font="vector" ratio="18" rot="MR270" align="center"/>
-<attribute name="VALUE" x="33.974" y="43.35" size="0.4064" layer="28" ratio="10" rot="MR270"/>
-</element>
 <element name="3V" library="Adafruit 3.5in 480x320 FeatherWing" package="MICROBUILDER_PAD-1.5X2.0" value="" x="48.006" y="8.89" smashed="yes" rot="MR270">
 <attribute name="NAME" x="49.784" y="8.8978" size="0.508" layer="26" font="vector" ratio="18" rot="MR90" align="center"/>
 <attribute name="VALUE" x="48.706" y="7.79" size="0.4064" layer="28" ratio="10" rot="MR270"/>
@@ -3042,10 +3029,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="35.814" y="24.257" size="0.508" layer="26" font="vector" ratio="18" rot="MR90" align="center"/>
 <attribute name="VALUE" x="32.004" y="25.781" size="0.4064" layer="28" ratio="10" rot="MR180"/>
 </element>
-<element name="FCS" library="Adafruit 3.5in 480x320 FeatherWing" package="MICROBUILDER_TESTPOINT_PAD_1MM" value="" x="55.88" y="56.58611875" smashed="yes" rot="MR180">
-<attribute name="NAME" x="55.88" y="55.31611875" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
-<attribute name="VALUE" x="56.98" y="57.28611875" size="0.4064" layer="28" ratio="10" rot="MR180"/>
-</element>
 <element name="BTN_RIGHT" library="My Stuff" package="MJTP1250" value="MJTP1250_SPST_SWITCH" x="45.212" y="9.144" smashed="yes" rot="R270"/>
 <element name="BTN_LEFT" library="My Stuff" package="MJTP1250" value="MJTP1250_SPST_SWITCH" x="32.512" y="6.604" smashed="yes" rot="R90"/>
 <element name="JP1" library="adafruit" package="1X03" value="" x="8.636" y="109.22" smashed="yes" rot="MR0">
@@ -3103,6 +3086,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="SW1" library="My Stuff" package="A10767" value="SPDT_SWITCH" x="58.674" y="4.826" smashed="yes" rot="MR0">
 <attribute name="NAME" x="58.674" y="7.747" size="0.8128" layer="52" font="vector" ratio="18" rot="MR0" align="center"/>
+</element>
+<element name="FCS" library="Adafruit 3.5in 480x320 FeatherWing" package="MICROBUILDER_SOLDERJUMPER_CLOSEDWIRE" value="" x="33.274" y="44.45" smashed="yes" rot="MR180">
+<attribute name="NAME" x="35.56" y="44.45" size="0.508" layer="26" font="vector" ratio="18" rot="MR90" align="center"/>
+<attribute name="VALUE" x="31.75" y="46.101" size="0.4064" layer="28" ratio="10" rot="MR180"/>
 </element>
 </elements>
 <signals>
@@ -3182,6 +3169,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="18.542" y="11.43" extent="1-16" drill="0.254"/>
 <via x="61.722" y="106.68" extent="1-16" drill="0.254"/>
 <contactref element="SW1" pad="P$3"/>
+<via x="28.194" y="49.784" extent="1-16" drill="0.254"/>
 </signal>
 <signal name="SD_CS">
 <contactref element="MICROSD" pad="2"/>
@@ -3571,13 +3559,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="NC_D4">
 <contactref element="MS1" pad="16'"/>
 <contactref element="MS1" pad="16"/>
-<contactref element="XTRA" pad="P$1"/>
 <wire x1="24.765" y1="44.45" x2="26.528625" y2="44.45" width="0.1524" layer="16"/>
 <wire x1="26.528625" y1="44.45" x2="26.615825" y2="44.5372" width="0.1524" layer="16"/>
 <wire x1="26.615825" y1="44.5372" x2="27.740175" y2="44.5372" width="0.1524" layer="16"/>
 <wire x1="27.740175" y1="44.5372" x2="27.827375" y2="44.45" width="0.1524" layer="16"/>
 <wire x1="27.827375" y1="44.45" x2="29.591" y2="44.45" width="0.1524" layer="16"/>
-<wire x1="29.591" y1="44.45" x2="33.274" y2="44.45" width="0.1524" layer="16"/>
+<contactref element="FCS" pad="1"/>
+<wire x1="29.591" y1="44.45" x2="32.512" y2="44.45" width="0.1524" layer="16"/>
 </signal>
 <signal name="+3V3">
 <contactref element="R4" pad="1"/>
@@ -3718,7 +3706,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="72.1658" y1="76.3808" x2="72.66638125" y2="76.3808" width="0.6096" layer="16"/>
 <wire x1="68.722" y1="76.342" x2="70.1802" y2="76.342" width="0.6096" layer="1"/>
 <wire x1="52.07" y1="59.69" x2="68.722" y2="76.342" width="0.6096" layer="1"/>
-<wire x1="15.494" y1="19.746" x2="16.256" y2="19.746" width="0.3048" layer="16"/>
+<wire x1="14.986" y1="19.746" x2="16.256" y2="19.746" width="0.3048" layer="16"/>
 <wire x1="16.256" y1="19.746" x2="16.764" y2="20.254" width="0.3048" layer="16"/>
 </signal>
 <signal name="GDR">
@@ -3867,8 +3855,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="AVCC">
 <contactref element="R6" pad="1"/>
 <contactref element="FB1" pad="1"/>
-<wire x1="15.494" y1="17.846" x2="15.052" y2="18.288" width="0.3048" layer="16"/>
-<wire x1="15.052" y1="18.288" x2="12.192" y2="18.288" width="0.3048" layer="16"/>
+<wire x1="14.986" y1="17.846" x2="14.544" y2="18.288" width="0.3048" layer="16"/>
+<wire x1="14.544" y1="18.288" x2="12.192" y2="18.288" width="0.3048" layer="16"/>
 <wire x1="12.192" y1="18.288" x2="12.192" y2="18.542" width="0.3048" layer="16"/>
 </signal>
 <signal name="VGH">
@@ -4033,10 +4021,21 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="FLASH_CS">
 <contactref element="IC3" pad="1"/>
-<contactref element="FCS" pad="P$1"/>
-<wire x1="55.88" y1="56.58611875" x2="55.626" y2="56.33211875" width="0.1524" layer="16"/>
-<wire x1="55.626" y1="56.33211875" x2="52.96311875" y2="56.33211875" width="0.1524" layer="16"/>
-<wire x1="52.96311875" y1="56.33211875" x2="52.705" y2="56.074" width="0.1524" layer="16"/>
+<contactref element="FCS" pad="2"/>
+<wire x1="34.036" y1="44.45" x2="33.69475" y2="44.79125" width="0.1524" layer="16"/>
+<wire x1="33.69475" y1="44.79125" x2="33.69475" y2="45.88675" width="0.1524" layer="16"/>
+<via x="33.69475" y="45.88675" extent="1-16" drill="0.254"/>
+<wire x1="33.69475" y1="45.88675" x2="33.69475" y2="49.95075" width="0.1524" layer="1"/>
+<wire x1="33.69475" y1="49.95075" x2="35.814" y2="52.07" width="0.1524" layer="1"/>
+<via x="35.814" y="52.07" extent="1-16" drill="0.254"/>
+<wire x1="35.814" y1="52.07" x2="51.562" y2="52.07" width="0.1524" layer="16"/>
+<wire x1="51.562" y1="52.07" x2="52.324" y2="52.832" width="0.1524" layer="16"/>
+<via x="52.324" y="52.832" extent="1-16" drill="0.254"/>
+<wire x1="52.324" y1="52.832" x2="53.34" y2="53.848" width="0.1524" layer="1"/>
+<wire x1="53.34" y1="53.848" x2="53.34" y2="54.61" width="0.1524" layer="1"/>
+<via x="53.34" y="54.61" extent="1-16" drill="0.254"/>
+<wire x1="53.34" y1="54.61" x2="52.705" y2="55.245" width="0.1524" layer="16"/>
+<wire x1="52.705" y1="55.245" x2="52.705" y2="56.074" width="0.1524" layer="16"/>
 </signal>
 <signal name="GPIO_INT">
 <contactref element="INT" pad="2"/>
@@ -4205,6 +4204,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="4,16,3e92e859160bc2a0"/>
 <approved hash="4,16,a01466d9988b5c22"/>
 <approved hash="4,16,970c31d1cf836bda"/>
+<approved hash="19,16,2677945c6c6bdc2e"/>
+<approved hash="19,16,bb5d891a732a4303"/>
 </errors>
 </board>
 </drawing>

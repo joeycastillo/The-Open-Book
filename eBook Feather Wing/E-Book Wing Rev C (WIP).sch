@@ -8939,7 +8939,6 @@ With round pins</description>
 <part name="MISO" library="Adafruit 3.5in 480x320 FeatherWing" deviceset="MICROBUILDER_TESTPOINT" device="1.5X2.0MM_NOCREAM"/>
 <part name="RX" library="Adafruit 3.5in 480x320 FeatherWing" deviceset="MICROBUILDER_TESTPOINT" device="1.5X2.0MM_NOCREAM"/>
 <part name="TX" library="Adafruit 3.5in 480x320 FeatherWing" deviceset="MICROBUILDER_TESTPOINT" device="1.5X2.0MM_NOCREAM"/>
-<part name="XTRA" library="Adafruit 3.5in 480x320 FeatherWing" deviceset="MICROBUILDER_TESTPOINT" device="1.5X2.0MM_NOCREAM"/>
 <part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -8972,7 +8971,6 @@ With round pins</description>
 <part name="BTN_PREV" library="My Stuff" deviceset="MJTP1250_SPST_SWITCH" device=""/>
 <part name="ERST" library="Adafruit 3.5in 480x320 FeatherWing" deviceset="MICROBUILDER_SOLDERJUMPER_CLOSED" device=""/>
 <part name="EBSY" library="Adafruit 3.5in 480x320 FeatherWing" deviceset="MICROBUILDER_SOLDERJUMPER_CLOSED" device=""/>
-<part name="FCS" library="Adafruit 3.5in 480x320 FeatherWing" deviceset="MICROBUILDER_TESTPOINT" device="PAD1MM"/>
 <part name="BTN_RIGHT" library="My Stuff" deviceset="MJTP1250_SPST_SWITCH" device=""/>
 <part name="BTN_LEFT" library="My Stuff" deviceset="MJTP1250_SPST_SWITCH" device=""/>
 <part name="FRAME2" library="My Stuff" deviceset="A4L-LOC" device=""/>
@@ -8998,6 +8996,7 @@ With round pins</description>
 <part name="FID5" library="microbuilder" deviceset="FIDUCIAL" device="_1MM"/>
 <part name="FID6" library="microbuilder" deviceset="FIDUCIAL" device="_1MM"/>
 <part name="SW1" library="My Stuff" deviceset="SPDT_SWITCH" device=""/>
+<part name="FCS" library="Adafruit 3.5in 480x320 FeatherWing" deviceset="MICROBUILDER_SOLDERJUMPER_CLOSED" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9334,10 +9333,6 @@ FILTERING</text>
 <attribute name="NAME" x="114.808" y="48.26" size="1.27" layer="95" align="center-left"/>
 <attribute name="VALUE" x="114.808" y="46.609" size="1.27" layer="95" align="center-left"/>
 </instance>
-<instance part="XTRA" gate="G$1" x="99.06" y="50.8" smashed="yes" rot="R270">
-<attribute name="NAME" x="104.648" y="50.8" size="1.27" layer="95" align="center-left"/>
-<attribute name="VALUE" x="104.648" y="49.149" size="1.27" layer="95" align="center-left"/>
-</instance>
 <instance part="+3V7" gate="G$1" x="76.2" y="157.48" smashed="yes">
 <attribute name="VALUE" x="76.2" y="157.48" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -9448,10 +9443,6 @@ FILTERING</text>
 <instance part="EBSY" gate="G$1" x="96.52" y="30.48" smashed="yes">
 <attribute name="VALUE" x="93.98" y="26.67" size="1.778" layer="96"/>
 </instance>
-<instance part="FCS" gate="G$1" x="139.7" y="116.84" smashed="yes" rot="R90">
-<attribute name="NAME" x="134.112" y="116.84" size="1.27" layer="95" rot="R180" align="center-left"/>
-<attribute name="VALUE" x="134.112" y="118.491" size="1.27" layer="95" rot="R180" align="center-left"/>
-</instance>
 <instance part="BTN_RIGHT" gate="G$1" x="236.22" y="147.32" smashed="yes">
 <attribute name="NAME" x="233.68" y="150.876" size="1.27" layer="95"/>
 </instance>
@@ -9510,6 +9501,9 @@ FILTERING</text>
 <instance part="SW1" gate="G$1" x="233.68" y="35.56" smashed="yes">
 <attribute name="NAME" x="234.95" y="38.608" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="234.696" y="32.258" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="FCS" gate="G$1" x="96.52" y="50.8" smashed="yes">
+<attribute name="VALUE" x="93.98" y="46.99" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -10024,9 +10018,9 @@ FILTERING</text>
 <net name="NC_D4" class="0">
 <segment>
 <pinref part="MS1" gate="G$1" pin="NC"/>
-<wire x1="88.9" y1="50.8" x2="99.06" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="50.8" x2="91.44" y2="50.8" width="0.1524" layer="91"/>
 <label x="91.44" y="50.8" size="1.778" layer="95"/>
-<pinref part="XTRA" gate="G$1" pin="P$1"/>
+<pinref part="FCS" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -10499,9 +10493,13 @@ FILTERING</text>
 <net name="FLASH_CS" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="SSEL"/>
-<wire x1="142.24" y1="116.84" x2="139.7" y2="116.84" width="0.1524" layer="91"/>
-<label x="137.16" y="116.84" size="1.778" layer="95"/>
-<pinref part="FCS" gate="G$1" pin="P$1"/>
+<wire x1="142.24" y1="116.84" x2="134.62" y2="116.84" width="0.1524" layer="91"/>
+<label x="134.62" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="FCS" gate="G$1" pin="2"/>
+<wire x1="101.6" y1="50.8" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
+<label x="101.6" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_INT" class="0">
