@@ -1,0 +1,31 @@
+# Excludes e-ink panel from buyepaper.com
+# Excludes microSD socket and SMT headers from Adafruit
+# Includes Adafruit M4 Feather from Digikey
+# 1 ,  , 4.2 inch e-ink panel
+# 1 ,  , MICROSD : MicroSD Socket
+# 2 ,  , 2x20 SMT Headers (to cut down)
+2 , 1276-1764-1-ND , C1 C2 : 10 µF Capacitor
+6 , 1276-1275-1-ND , C3 C4 C5 C10 C11 C12 : 1 µF Capacitor
+6 , 587-2985-1-ND , C7 C8 C13 C14 C15 C16 : 10 µF Capacitor - 25V rated
+1 , 1276-1244-1-ND , C9 : 4.7 µF Capacitor - 25V rated
+1 , 1276-1092-1-ND , C6 : 100 µF Capacitor
+1 , 541-1406-1-ND , L1 : 10µH Inductor
+2 , RNCP0805FTD1K00CT-ND , R1 R2 : 1KO Resistor
+4 , RNCP0805FTD10K0CT-ND , R3 R4 R6 R7 : 10KO Resistor
+2 , 311-100CRCT-ND , R8 R9 : 100O Resistor
+1 , 73L3R47JCT-ND , R5 : 0.47O Resistor
+2 , 445-1555-1-ND , FB1 FB2 : Ferrite Bead
+2 , MMSZ4685-TPMSCT-ND , D1 D2 : 3.6V Zener Diode
+3 , MBR0530CT-ND , D3 D4 D5 : 30V Schottky Diode
+1 , IRLML0100TRPBFCT-ND , Q1 : N-Channel MOSFET
+1 , MCP23008T-E/SOCT-ND , IC1 : MCP23008 GPIO Expander
+1 , 23K256T-I/SNCT-ND , IC2 : 32KB SRAM Chip
+1 , 1970-1010-1-ND , IC3 : 2MB NOR Flash Chip
+2 , 455-1750-1-ND , A1 A2 ports : 3-position JST-PH connector
+1 , 455-1751-1-ND , I2C port : 4-position JST-PH connector
+1 , 609-5202-1-ND , 24-position FFC connector
+4 , EG4388CT-ND , Right angle surface mount buttons
+7 , EG2510-ND , Thru-hole buttons
+1 , A107673-ND , SW1 : SPDT switch
+1 , CP-3502N-ND , J1 : Headphone Jack
+1 , 1528-2648-ND , Adafruit Feather M4 Express 
