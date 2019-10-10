@@ -1,8 +1,8 @@
 # Excludes e-ink panel from buyepaper.com
-# Excludes microSD socket and SMT headers from Adafruit
+# Excludes SMT headers from Adafruit
 # Includes Adafruit M4 Feather from Digikey
+# Includes MicroSD Socket from Digikey (instead of Adafruit)
 # 1 ,  , 4.2 inch e-ink panel
-# 1 ,  , MICROSD : MicroSD Socket
 # 2 ,  , 2x20 SMT Headers (to cut down)
 2 , 1276-1764-1-ND , C1 C2 : 10 µF Capacitor
 6 , 1276-1275-1-ND , C3 C4 C5 C10 C11 C12 : 1 µF Capacitor
@@ -29,3 +29,4 @@
 1 , A107673-ND , SW1 : SPDT switch
 1 , CP-3502N-ND , J1 : Headphone Jack
 1 , 1528-2648-ND , Adafruit Feather M4 Express 
+1 , WM3288CT-ND , MICROSD : MicroSD Socket
