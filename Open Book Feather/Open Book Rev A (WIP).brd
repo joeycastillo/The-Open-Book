@@ -9,7 +9,7 @@
 </settings>
 <grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -29,11 +29,11 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="13" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -47,9 +47,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -280,8 +280,8 @@ right angle header on here, it might prove useful.</text>
 <text x="3.556" y="76.2" size="0.8128" layer="22" font="vector" rot="MR90" align="top-left">FFC connector: 24 pos
 0.5mm pitch R/A with
 contacts on TOP.</text>
-<text x="25.4635" y="43.688" size="0.8128" layer="22" font="vector" rot="MR90" align="center-left">THE OPEN BOOK IS
-OPEN SOURCE HARDWARE
+<text x="25.9715" y="43.688" size="0.8128" layer="22" font="vector" ratio="18" rot="MR90" align="center-left">THE OPEN BOOK IS
+OPEN SOURCE HARDWARE! 
 CC-BY-SA 4.0</text>
 <text x="8.6614" y="110.998" size="0.508" layer="21" font="vector" ratio="18" rot="R180" align="center">GND</text>
 <text x="6.1214" y="110.998" size="0.508" layer="21" font="vector" ratio="18" rot="R180" align="center">RX</text>
@@ -495,9 +495,9 @@ board.</text>
 <wire x1="19.05" y1="26.924" x2="13.97" y2="26.924" width="0.1524" layer="22" style="shortdash"/>
 <text x="76.708" y="64.135" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">Lots to unpack here. For starters, the 
 Feather header: it's a mostly identical
-pinout to the SAMD51 boards you're familiar 
-with, PWM and analog pins right where you 
-expect them, minus the "extra" pin D4. SD and 
+pinout to the Adafruit SAMD51 boards you're 
+familiar with, PWM and analog pins where you 
+expect them (minus the "extra" pin D4). SD and 
 Unifont share the main SPI bus. Screen gets its 
 own SPI on SERCOM4 (D41-D43), and also uses:
 ECS(44) EDC(45) ERST(46) &amp; EBUSY(47).
@@ -538,6 +538,7 @@ F, Brent R</text>
 <wire x1="3.556" y1="7.874" x2="3.556" y2="4.064" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="3.556" y1="26.924" x2="-1.27" y2="26.924" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="18.034" y1="107.188" x2="18.034" y2="112.268" width="0.1524" layer="22" style="shortdash"/>
+<text x="23.6855" y="43.688" size="0.6096" layer="22" font="vector" rot="MR90" align="center-left">plz don't steal the bear tho.</text>
 </plain>
 <libraries>
 <library name="My Stuff">
@@ -8431,11 +8432,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="U$47" library="My Stuff" package="OSO_TEXT_435MIL" value="OSO_TEXT" x="38.862" y="78.8162" smashed="yes" rot="MR0"/>
 <element name="U$48" library="My Stuff" package="OSO_ONELINE_125MIL" value="OSO_TEXTOSO_TEXT_ONELINE_125MIL" x="45.212" y="15.24" smashed="yes"/>
 <element name="LED" library="adafruit" package="LED17X45_SIDEVIEW" value="RED OR GRN" x="61.214" y="110.744" smashed="yes" rot="MR180">
-<attribute name="NAME" x="58.547" y="112.2426" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
+<attribute name="NAME" x="61.214" y="112.014" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
 <attribute name="VALUE" x="64.4144" y="112.5474" size="1.27" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="CHG" library="adafruit" package="LED17X45_SIDEVIEW" value="AMBER" x="20.574" y="110.744" smashed="yes" rot="MR180">
-<attribute name="NAME" x="17.907" y="112.2426" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
+<attribute name="NAME" x="20.574" y="112.014" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
 <attribute name="VALUE" x="23.7744" y="112.5474" size="1.27" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="STATUS" library="adafruit" package="LED5MMRGB" value="WS2812B" x="3.556" y="13.208" smashed="yes" rot="R180">
