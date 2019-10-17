@@ -194,7 +194,7 @@ provides a buffer for the display.
 It uses the e-paper screen's SPI 
 interface on SERCOM4.
 Chip select SRCS is D53.</text>
-<text x="72.898" y="2.413" size="1.778" layer="29" font="vector" ratio="18" distance="20" align="center-right">THE OPEN BOOK</text>
+<text x="72.898" y="2.159" size="1.778" layer="29" font="vector" ratio="18" distance="20" align="center-right">THE OPEN BOOK</text>
 <text x="-7.62" y="110.998" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">E-PAPER DISPLAY</text>
 <text x="-7.62" y="109.22" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">&gt;1 NC
  2 N-Channel MOSFET Gate Drive Control 
@@ -244,7 +244,7 @@ are filtering caps for the power pins (in and out).</text>
 <text x="46.99" y="7.874" size="0.508" layer="21" font="vector" ratio="18" rot="R90" align="center">BTN_RIGHT</text>
 <text x="30.734" y="7.874" size="0.508" layer="21" font="vector" ratio="18" rot="R270" align="center">BTN_LEFT</text>
 <text x="18.161" y="3.9116" size="0.3556" layer="22" font="vector" ratio="18" rot="MR180" align="center">BTN_RESET</text>
-<text x="4.572" y="0.762" size="1.27" layer="21" font="vector">OSO-BOOK-A1-01</text>
+<text x="4.318" y="0.508" size="1.27" layer="21" font="vector" ratio="18">OSO-BOOK-A1-01</text>
 <text x="10.033" y="42.1894" size="0.508" layer="22" font="vector" ratio="18" rot="MR90" align="center">A1</text>
 <text x="10.033" y="44.1706" size="0.508" layer="22" font="vector" ratio="18" rot="MR90" align="center">3V</text>
 <text x="10.033" y="46.2026" size="0.508" layer="22" font="vector" ratio="18" rot="MR90" align="center">GND</text>
@@ -277,10 +277,9 @@ CC-BY-SA 4.0</text>
 <text x="11.2014" y="110.49" size="0.508" layer="22" font="vector" ratio="18" rot="MR0" align="center">TX</text>
 <text x="16.2814" y="110.236" size="0.508" layer="21" font="vector" ratio="18" rot="R180" align="center">3V</text>
 <text x="16.2814" y="110.49" size="0.508" layer="22" font="vector" ratio="18" rot="MR0" align="center">3V</text>
-<wire x1="18.288" y1="107.188" x2="18.034" y2="107.188" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="18.034" y1="107.188" x2="0" y2="107.188" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="58.674" y1="107.188" x2="58.674" y2="112.014" width="0.1524" layer="22" style="shortdash"/>
-<text x="67.8942" y="108.331" size="0.508" layer="22" font="vector" ratio="18" rot="MR180" align="center">BTN_LOCK</text>
+<text x="67.8942" y="108.839" size="0.3556" layer="22" font="vector" ratio="18" rot="MR180" align="center">BTN_LOCK</text>
 <wire x1="14.351" y1="110.109" x2="13.081" y2="110.109" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="13.081" y1="110.109" x2="12.7508" y2="109.7788" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="12.7508" y1="109.7788" x2="12.446" y2="109.474" width="0.1524" layer="22" style="shortdash"/>
@@ -299,8 +298,7 @@ CC-BY-SA 4.0</text>
 <text x="76.708" y="107.188" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">POWER SUPPLY</text>
 <text x="44.958" y="106.934" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">USB, BATTERY
 AND LOGO:</text>
-<wire x1="63.754" y1="107.696" x2="63.754" y2="112.014" width="0.1524" layer="22" style="shortdash"/>
-<wire x1="18.288" y1="93.218" x2="18.288" y2="107.188" width="0.1524" layer="22" style="shortdash"/>
+<wire x1="63.8048" y1="107.696" x2="63.8048" y2="112.014" width="0.1524" layer="22" style="shortdash"/>
 <text x="76.708" y="105.41" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">D1&amp;Q1 conspire to let 
 only the higher of VBAT &amp; VBUS 
 reach 3.3V regulator U1. C1 
@@ -351,7 +349,7 @@ VBAT, R4 limits current to CHG
            POWER 
            SUPPLY
            block.</text>
-<text x="31.496" y="10.414" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">RESET SWITCH</text>
+<text x="30.988" y="10.414" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">RESET SWITCH</text>
 <text x="33.274" y="8.5344" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">R6 pulls reset 
 high. BTN_RESET
 pulls it low. C13 
@@ -392,7 +390,7 @@ disabling 3V power
 <wire x1="18.288" y1="26.924" x2="6.35" y2="26.924" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="77.216" y1="23.622" x2="50.038" y2="23.622" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="50.038" y1="23.622" x2="50.038" y2="0" width="0.1524" layer="22" style="shortdash"/>
-<text x="17.78" y="106.68" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">E-PAPER DISPLAY</text>
+<text x="17.526" y="106.68" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">E-PAPER DISPLAY</text>
 <wire x1="23.114" y1="75.4888" x2="23.114" y2="93.218" width="0.1524" layer="22" style="shortdash"/>
 <text x="49.53" y="23.114" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">BUTTON REGISTER</text>
 <text x="49.53" y="21.082" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">U5 is a 74165 8-bit
@@ -497,7 +495,7 @@ Other peripherals:
 <wire x1="44.704" y1="44.45" x2="76.962" y2="44.45" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="44.704" y1="44.45" x2="44.704" y2="35.814" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="27.94" y1="58.166" x2="27.94" y2="38.354" width="0.1524" layer="22" style="shortdash"/>
-<wire x1="23.114" y1="93.218" x2="18.288" y2="93.218" width="0.1524" layer="22" style="shortdash"/>
+<wire x1="23.114" y1="93.218" x2="18.034" y2="93.218" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="73.7108" y1="81.788" x2="76.962" y2="81.788" width="0.1524" layer="22" style="shortdash"/>
 <text x="38.735" y="70.0024" size="3.175" layer="22" font="vector" ratio="18" rot="MR0" align="top-center">BOOK</text>
 <text x="74.0156" y="86.868" size="0.3556" layer="22" font="vector" ratio="18" rot="SMR270" align="center">BTN_NEXT</text>
@@ -508,12 +506,12 @@ Other peripherals:
 <text x="6.858" y="29.591" size="0.4064" layer="22" font="vector" ratio="18" rot="MR180" align="center">3V3</text>
 <text x="4.318" y="29.591" size="0.4064" layer="22" font="vector" ratio="18" rot="MR180" align="center">GND</text>
 <text x="1.778" y="29.591" size="0.4064" layer="22" font="vector" ratio="18" rot="MR180" align="center">SWDIO</text>
-<wire x1="63.754" y1="107.696" x2="76.962" y2="107.696" width="0.1524" layer="22" style="shortdash"/>
+<wire x1="63.8048" y1="107.696" x2="76.962" y2="107.696" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="27.94" y1="58.166" x2="36.322" y2="66.294" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="54.61" y1="66.294" x2="36.322" y2="66.294" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="62.738" y1="107.188" x2="63.246" y2="107.696" width="0.1524" layer="22" style="shortdash"/>
 <text x="4.7498" y="15.24" size="1.27" layer="22" font="vector" ratio="18" rot="MR270" align="top-right">STATUS LED</text>
-<wire x1="63.754" y1="107.696" x2="63.246" y2="107.696" width="0.1524" layer="22" style="shortdash"/>
+<wire x1="63.8048" y1="107.696" x2="63.246" y2="107.696" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="6.35" y1="10.668" x2="3.556" y2="7.874" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="3.556" y1="7.874" x2="3.556" y2="4.064" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="18.034" y1="107.188" x2="18.034" y2="112.268" width="0.1524" layer="22" style="shortdash"/>
@@ -557,6 +555,10 @@ isolated using FB1.</text>
  output from the
 chip's voltage
 regulator.</text>
+<text x="20.5994" y="109.474" size="0.508" layer="21" font="vector" ratio="18" rot="R180" align="center">CHG</text>
+<text x="61.2394" y="109.093" size="0.508" layer="21" font="vector" ratio="18" rot="R180" align="center">LED
+#13</text>
+<wire x1="18.034" y1="107.188" x2="18.034" y2="93.218" width="0.1524" layer="22" style="shortdash"/>
 </plain>
 <libraries>
 <library name="My Stuff">
@@ -4734,7 +4736,7 @@ Righ-Angle SMT</description>
 <wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.9304" shape="octagon"/>
+<pad name="1" x="0" y="0" drill="1.016"/>
 <text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
@@ -4765,8 +4767,8 @@ Righ-Angle SMT</description>
 <wire x1="1.651" y1="-0.762" x2="1.651" y2="-0.508" width="0.1524" layer="51"/>
 <wire x1="1.651" y1="-0.762" x2="1.4478" y2="-0.6096" width="0.1524" layer="51"/>
 <wire x1="1.4478" y1="-0.6096" x2="1.651" y2="-0.508" width="0.1524" layer="51"/>
-<pad name="A" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="K" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="A" x="-1.27" y="0" drill="1"/>
+<pad name="K" x="1.27" y="0" drill="1"/>
 <text x="-2.54" y="1.397" size="1.016" layer="25" ratio="14">&gt;NAME</text>
 <text x="-2.54" y="-3.683" size="1.016" layer="27" ratio="14">&gt;VALUE</text>
 <wire x1="1.75" y1="-0.9" x2="-1.75" y2="-0.9" width="0.127" layer="51" curve="-180"/>
@@ -6675,9 +6677,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="JP2" library="adafruit" package="1X01" value="" x="16.256" y="108.839" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="17.526" y="105.664" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="BTN_LOCK" library="My Stuff" package="TL3330AF130QG" value="SPST_TACTILE_SWITCHRA" x="64.008" y="109.3724" smashed="yes" rot="MR180">
-<attribute name="NAME" x="67.818" y="110.6424" size="0.8128" layer="52" font="vector" ratio="18" rot="MR180" align="center"/>
-</element>
+<element name="BTN_LOCK" library="My Stuff" package="TL3330AF130QG" value="SPST_TACTILE_SWITCHRA" x="64.008" y="109.3724" smashed="yes" rot="MR180"/>
 <element name="TP6" library="microbuilder" package="TESTPOINT_ROUND_2MM_NO" value="" x="9.398" y="28.194" smashed="yes" rot="MR180"/>
 <element name="TP7" library="microbuilder" package="TESTPOINT_ROUND_2MM_NO" value="" x="1.778" y="28.194" smashed="yes" rot="MR180"/>
 <element name="TP8" library="microbuilder" package="TESTPOINT_ROUND_2MM_NO" value="" x="11.938" y="28.194" smashed="yes" rot="MR180"/>
@@ -6892,13 +6892,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="U$45" library="My Stuff" package="OSO_BEAR_750MIL" value="OSO_BEAR" x="38.608" y="94.234" smashed="yes" rot="MR0"/>
 <element name="U$47" library="My Stuff" package="OSO_TEXT_435MIL" value="OSO_TEXT" x="38.862" y="78.8162" smashed="yes" rot="MR0"/>
 <element name="U$48" library="My Stuff" package="OSO_ONELINE_125MIL" value="OSO_TEXTOSO_TEXT_ONELINE_125MIL" x="45.212" y="15.24" smashed="yes"/>
-<element name="LED" library="adafruit" package="LED17X45_SIDEVIEW" value="RED OR GRN" x="61.214" y="110.744" smashed="yes" rot="MR180">
-<attribute name="NAME" x="61.214" y="112.014" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
-<attribute name="VALUE" x="64.4144" y="112.5474" size="1.27" layer="28" ratio="10" rot="MR180"/>
+<element name="LED" library="adafruit" package="LED17X45_SIDEVIEW" value="RED OR GRN" x="61.214" y="110.6678" smashed="yes" rot="MR180">
+<attribute name="NAME" x="61.214" y="111.9378" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
+<attribute name="VALUE" x="64.4144" y="112.4712" size="1.27" layer="28" ratio="10" rot="MR180"/>
 </element>
-<element name="CHG" library="adafruit" package="LED17X45_SIDEVIEW" value="AMBER" x="20.574" y="110.744" smashed="yes" rot="MR180">
-<attribute name="NAME" x="20.574" y="112.014" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
-<attribute name="VALUE" x="23.7744" y="112.5474" size="1.27" layer="28" ratio="10" rot="MR180"/>
+<element name="CHG" library="adafruit" package="LED17X45_SIDEVIEW" value="AMBER" x="20.574" y="110.6678" smashed="yes" rot="MR180">
+<attribute name="NAME" x="20.574" y="111.9378" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
+<attribute name="VALUE" x="23.7744" y="112.4712" size="1.27" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="STATUS" library="adafruit" package="LED5MMRGB" value="WS2812B" x="5.08" y="13.208" smashed="yes" rot="R180">
 <attribute name="NAME" x="5.08" y="9.652" size="0.508" layer="21" font="vector" ratio="18" align="center"/>
@@ -8830,8 +8830,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="34.29" y1="92.71" x2="32.258" y2="90.678" width="0.3048" layer="16"/>
 <contactref element="CHG" pad="A"/>
 <wire x1="25.83775" y1="110.678" x2="24.78115" y2="111.7346" width="0.3048" layer="16"/>
-<wire x1="20.2946" y1="111.7346" x2="19.304" y2="110.744" width="0.3048" layer="16"/>
-<wire x1="24.78115" y1="111.7346" x2="20.2946" y2="111.7346" width="0.3048" layer="16"/>
+<wire x1="20.3708" y1="111.7346" x2="19.304" y2="110.6678" width="0.3048" layer="16"/>
+<wire x1="24.78115" y1="111.7346" x2="20.3708" y2="111.7346" width="0.3048" layer="16"/>
 <contactref element="MS1" pad="26"/>
 <contactref element="MS1" pad="26'"/>
 <wire x1="32.258" y1="90.678" x2="29.591" y2="90.678" width="0.3048" layer="16"/>
@@ -8840,8 +8840,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="N$4">
 <contactref element="R4" pad="1"/>
 <contactref element="CHG" pad="K"/>
-<wire x1="19.624" y1="107.95" x2="19.624" y2="108.524" width="0.1524" layer="16"/>
-<wire x1="19.624" y1="108.524" x2="21.844" y2="110.744" width="0.1524" layer="16"/>
+<wire x1="19.624" y1="107.95" x2="19.624" y2="108.4478" width="0.1524" layer="16"/>
+<wire x1="19.624" y1="108.4478" x2="21.844" y2="110.6678" width="0.1524" layer="16"/>
 </signal>
 <signal name="N$5">
 <contactref element="R4" pad="2"/>
@@ -8858,8 +8858,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="N$7">
 <contactref element="R8" pad="2"/>
 <contactref element="LED" pad="A"/>
-<wire x1="61.91" y1="108.204" x2="61.91" y2="108.778" width="0.1524" layer="16"/>
-<wire x1="61.91" y1="108.778" x2="59.944" y2="110.744" width="0.1524" layer="16"/>
+<wire x1="61.91" y1="108.204" x2="61.91" y2="108.7018" width="0.1524" layer="16"/>
+<wire x1="61.91" y1="108.7018" x2="59.944" y2="110.6678" width="0.1524" layer="16"/>
 </signal>
 <signal name="AUDIO_LEFT">
 <contactref element="C31" pad="2"/>
@@ -8918,9 +8918,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="U5" pad="13"/>
 <contactref element="BTN_DOWN" pad="P$1"/>
 <wire x1="42.672" y1="2.54" x2="38.1" y2="2.54" width="0.1524" layer="16"/>
-<wire x1="38.1" y1="2.54" x2="30.48" y2="10.16" width="0.1524" layer="16"/>
-<via x="30.48" y="10.16" extent="1-16" drill="0.254"/>
-<wire x1="30.48" y1="10.16" x2="28.956" y2="11.684" width="0.1524" layer="1"/>
+<wire x1="38.1" y1="2.54" x2="30.607" y2="10.033" width="0.1524" layer="16"/>
+<via x="30.607" y="10.033" extent="1-16" drill="0.254"/>
+<wire x1="30.607" y1="10.033" x2="28.956" y2="11.684" width="0.1524" layer="1"/>
 <via x="28.956" y="11.684" extent="1-16" drill="0.254"/>
 <wire x1="28.956" y1="11.684" x2="27.051" y2="13.589" width="0.1524" layer="16"/>
 <wire x1="27.051" y1="13.589" x2="27.051" y2="16.2306" width="0.1524" layer="16"/>
@@ -8928,15 +8928,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="BUTTON3">
 <contactref element="U5" pad="14"/>
 <contactref element="BTN_RIGHT" pad="P$1"/>
-<via x="28.956" y="9.144" extent="1-16" drill="0.254"/>
+<via x="28.956" y="9.1694" extent="1-16" drill="0.254"/>
 <wire x1="45.212" y1="11.684" x2="34.20029375" y2="11.684" width="0.1524" layer="1"/>
-<wire x1="28.9814" y1="9.1694" x2="28.956" y2="9.144" width="0.1524" layer="1"/>
 <wire x1="34.20029375" y1="11.684" x2="31.68569375" y2="9.1694" width="0.1524" layer="1"/>
-<wire x1="31.68569375" y1="9.1694" x2="28.9814" y2="9.1694" width="0.1524" layer="1"/>
+<wire x1="31.68569375" y1="9.1694" x2="28.956" y2="9.1694" width="0.1524" layer="1"/>
 <wire x1="25.781" y1="16.2306" x2="25.781" y2="14.859" width="0.1524" layer="16"/>
 <wire x1="25.781" y1="14.859" x2="26.416" y2="14.224" width="0.1524" layer="16"/>
-<wire x1="26.416" y1="14.224" x2="26.416" y2="11.684" width="0.1524" layer="16"/>
-<wire x1="26.416" y1="11.684" x2="28.956" y2="9.144" width="0.1524" layer="16"/>
+<wire x1="26.416" y1="14.224" x2="26.416" y2="11.7094" width="0.1524" layer="16"/>
+<wire x1="26.416" y1="11.7094" x2="28.956" y2="9.1694" width="0.1524" layer="16"/>
 </signal>
 <signal name="BUTTON4">
 <contactref element="U5" pad="3"/>
