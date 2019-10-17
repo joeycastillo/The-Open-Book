@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.000123031496" altunitdist="mil" altunit="mil"/>
+<grid distance="0.01" unitdist="inch" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -38,7 +38,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -307,14 +307,14 @@ reach 3.3V regulator U1. C1
 filters regulator input; C2 &amp; C3 
 filter output. R1 pulls EN high 
 to keep the regulator on. 
-BATTERY: U3 is a LiPo charging 
+BATTERY: U2 is a LiPo charging 
 controller. Powered by VBUS, it 
 charges the battery at a rate 
 determined by R3. C4=filter for 
 VBAT, R4 limits current to CHG 
-     LED, R5&amp;R6 make a voltage 
-     divider for VBAT to create 
-     voltage monitor on pin A6.</text>
+     LED. R14 &amp; R15: a voltage 
+     divider for VBAT to make a 
+     battery gauge on pin A6.</text>
 <text x="32.004" y="95.758" size="0.508" layer="22" font="vector" ratio="18" rot="MR270" align="center">VBAT</text>
 <text x="45.72" y="105.918" size="0.508" layer="22" font="vector" ratio="18" rot="MR270" align="center">RESET</text>
 <text x="45.72" y="100.838" size="0.508" layer="22" font="vector" ratio="18" rot="MR270" align="center">AREF</text>
@@ -546,6 +546,17 @@ general blinkenlights.</text>
 <wire x1="23.114" y1="23.622" x2="21.59" y2="23.622" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="21.59" y1="23.622" x2="18.288" y2="26.924" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="6.35" y1="26.924" x2="-0.254" y2="26.924" width="0.1524" layer="22" style="shortdash"/>
+<text x="44.45" y="43.434" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">C5, C6, C7, C8: filtering 
+caps on each power pin.
+
+
+C11 &amp; C12 filter AVCC,
+isolated using FB1.</text>
+<text x="33.0454" y="54.102" size="0.8128" layer="22" font="vector" rot="MR90">C9&amp;C10: filter</text>
+<text x="32.6644" y="50.1396" size="0.8128" layer="22" font="vector" rot="MR90" align="top-left">caps on VDDCORE,
+ output from the
+chip's voltage
+regulator.</text>
 </plain>
 <libraries>
 <library name="My Stuff">
@@ -6619,9 +6630,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="59.055" y="76.962" size="0.508" layer="26" font="vector" ratio="18" rot="MR270" align="center"/>
 <attribute name="VALUE" x="59.436" y="78.994" size="0.508" layer="28" font="vector" ratio="18" rot="MR90" align="center"/>
 </element>
-<element name="C26" library="microbuilder" package="0805_10MGAP" value="1uF" x="23.622" y="12.954" smashed="yes" rot="MR180">
-<attribute name="NAME" x="23.622" y="11.811" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
-<attribute name="VALUE" x="25.654" y="13.716" size="0.508" layer="28" font="vector" ratio="18" rot="MR180" align="center"/>
+<element name="C26" library="microbuilder" package="0805_10MGAP" value="1uF" x="24.384" y="12.954" smashed="yes" rot="MR180">
+<attribute name="NAME" x="24.384" y="11.684" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
+<attribute name="VALUE" x="26.416" y="13.716" size="0.508" layer="28" font="vector" ratio="18" rot="MR180" align="center"/>
 </element>
 <element name="C14" library="microbuilder" package="0805-NO" value="1uF" x="26.162" y="24.892" smashed="yes" rot="MR180">
 <attribute name="NAME" x="26.162" y="26.035" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
@@ -7747,9 +7758,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="48.133" y1="103.124" x2="47.879" y2="103.378" width="0.3048" layer="16"/>
 <wire x1="52.451" y1="103.124" x2="48.133" y2="103.124" width="0.3048" layer="16"/>
 <wire x1="57.658" y1="103.82" x2="57.216" y2="103.378" width="0.3048" layer="16"/>
-<wire x1="23.241" y1="14.893" x2="22.572" y2="14.224" width="0.3048" layer="16"/>
-<wire x1="22.572" y1="12.954" x2="22.572" y2="14.224" width="0.3048" layer="16"/>
-<wire x1="23.241" y1="14.893" x2="23.241" y2="15.875" width="0.3048" layer="16"/>
+<wire x1="23.241" y1="15.875" x2="23.241" y2="13.047" width="0.3048" layer="16"/>
+<wire x1="23.334" y1="12.954" x2="23.241" y2="13.047" width="0.3048" layer="16"/>
 </signal>
 <signal name="GDR">
 <contactref element="U$2" pad="2"/>
@@ -8923,8 +8933,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="28.9814" y1="9.1694" x2="28.956" y2="9.144" width="0.1524" layer="1"/>
 <wire x1="34.20029375" y1="11.684" x2="31.68569375" y2="9.1694" width="0.1524" layer="1"/>
 <wire x1="31.68569375" y1="9.1694" x2="28.9814" y2="9.1694" width="0.1524" layer="1"/>
-<wire x1="28.956" y1="9.144" x2="25.781" y2="12.319" width="0.1524" layer="16"/>
-<wire x1="25.781" y1="12.319" x2="25.781" y2="16.2306" width="0.1524" layer="16"/>
+<wire x1="25.781" y1="16.2306" x2="25.781" y2="14.859" width="0.1524" layer="16"/>
+<wire x1="25.781" y1="14.859" x2="26.416" y2="14.224" width="0.1524" layer="16"/>
+<wire x1="26.416" y1="14.224" x2="26.416" y2="11.684" width="0.1524" layer="16"/>
+<wire x1="26.416" y1="11.684" x2="28.956" y2="9.144" width="0.1524" layer="16"/>
 </signal>
 <signal name="BUTTON4">
 <contactref element="U5" pad="3"/>
