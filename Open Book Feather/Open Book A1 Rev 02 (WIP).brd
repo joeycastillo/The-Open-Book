@@ -9,7 +9,7 @@
 </settings>
 <grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -194,7 +194,7 @@ provides a buffer for the display.
 It uses the e-paper screen's SPI 
 interface on SERCOM4.
 Chip select SRCS is D53.</text>
-<text x="72.898" y="2.286" size="2.032" layer="29" font="vector" ratio="18" distance="20" align="center-right">THE OPEN BOOK</text>
+<text x="72.898" y="2.286" size="2.032" layer="21" font="vector" ratio="18" distance="20" align="center-right">THE OPEN BOOK</text>
 <wire x1="23.114" y1="38.354" x2="23.114" y2="75.4888" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="23.114" y1="75.4888" x2="0" y2="75.4888" width="0.1524" layer="22" style="shortdash"/>
 <text x="9.144" y="6.096" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_PREV</text>
@@ -7105,7 +7105,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="R26" pad="8"/>
 <contactref element="R26" pad="7"/>
 <contactref element="R26" pad="6"/>
-<contactref element="R26" pad="5"/>
 <contactref element="R27" pad="8"/>
 <contactref element="R27" pad="7"/>
 <contactref element="R27" pad="6"/>
@@ -7764,7 +7763,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="50.0078" y1="40.8638" x2="49.9316" y2="40.8638" width="0.3048" layer="1"/>
 <wire x1="49.9316" y1="40.8638" x2="48.133" y2="39.0652" width="0.3048" layer="1"/>
 <via x="48.133" y="39.0652" extent="1-16" drill="0.3048"/>
-<wire x1="18.66205" y1="26.67" x2="18.66205" y2="15.98355" width="0.3048" layer="16"/>
+<wire x1="18.66205" y1="26.67" x2="18.66205" y2="20.6248" width="0.3048" layer="16"/>
+<wire x1="18.66205" y1="20.6248" x2="18.66205" y2="15.98355" width="0.3048" layer="16"/>
 <wire x1="20.828" y1="7.4" x2="20.828" y2="13.8176" width="0.3048" layer="16"/>
 <wire x1="53.975" y1="33.334" x2="53.975" y2="34.671" width="0.3048" layer="16"/>
 <wire x1="53.975" y1="34.671" x2="52.959" y2="35.687" width="0.3048" layer="16"/>
@@ -7847,6 +7847,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="4.956" y1="93.342" x2="2.2956" y2="96.0024" width="0.3048" layer="16"/>
 <wire x1="64.218" y1="7.874" x2="48.812" y2="7.874" width="0.3048" layer="1"/>
 <wire x1="48.812" y1="7.874" x2="45.212" y2="4.274" width="0.3048" layer="1"/>
+<contactref element="R26" pad="5"/>
+<wire x1="19.7358" y1="20.6248" x2="18.66205" y2="20.6248" width="0.3048" layer="16"/>
 </signal>
 <signal name="GDR">
 <contactref element="U$2" pad="2"/>
@@ -8069,9 +8071,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="45.8862" y1="90.678" x2="48.133" y2="90.678" width="0.1524" layer="16"/>
 <contactref element="MS1" pad="7"/>
 <contactref element="MS1" pad="7'"/>
-</signal>
-<signal name="SD_CD">
-<contactref element="MICROSD" pad="CD2"/>
 </signal>
 <signal name="+3V1">
 </signal>
@@ -9188,6 +9187,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="25.146" y1="19.558" x2="23.622" y2="19.558" width="0.1524" layer="1"/>
 <wire x1="23.622" y1="19.558" x2="23.114" y2="20.066" width="0.1524" layer="1"/>
 <wire x1="29.464" y1="20.828" x2="26.416" y2="20.828" width="0.1524" layer="1"/>
+<contactref element="MICROSD" pad="CD2"/>
+<wire x1="29.591" y1="22.3774" x2="62.035" y2="73.28" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="A7_MIC">
 <contactref element="U3" pad="5"/>
