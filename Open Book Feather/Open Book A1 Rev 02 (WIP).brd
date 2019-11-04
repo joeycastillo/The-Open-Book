@@ -9,7 +9,7 @@
 </settings>
 <grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -29,11 +29,11 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="13" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -47,9 +47,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -6318,7 +6318,6 @@ by exp-lbrs.ulp</description>
 </polygon>
 <wire x1="-0.2286" y1="-1.7272" x2="0.2286" y2="-1.7272" width="0.1524" layer="21"/>
 <wire x1="-0.2286" y1="1.7272" x2="0.2286" y2="1.7272" width="0.1524" layer="21"/>
-<text x="-2.0066" y="1.397" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <wire x1="-0.5588" y1="1.6002" x2="-0.8128" y2="1.3462" width="0.1524" layer="51"/>
 <wire x1="-0.8128" y1="0.9906" x2="-0.8128" y2="0.635" width="0.1524" layer="51"/>
 <wire x1="-0.8128" y1="0.1778" x2="-0.8128" y2="-0.1778" width="0.1524" layer="51"/>
@@ -9188,7 +9187,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="23.622" y1="19.558" x2="23.114" y2="20.066" width="0.1524" layer="1"/>
 <wire x1="29.464" y1="20.828" x2="26.416" y2="20.828" width="0.1524" layer="1"/>
 <contactref element="MICROSD" pad="CD2"/>
-<wire x1="29.591" y1="22.3774" x2="62.035" y2="73.28" width="0" layer="19" extent="16-16"/>
+<wire x1="62.035" y1="73.28" x2="62.035" y2="47.303" width="0.1524" layer="16"/>
+<wire x1="62.035" y1="47.303" x2="61.976" y2="47.244" width="0.1524" layer="16"/>
+<via x="61.976" y="47.244" extent="1-16" drill="0.254"/>
+<wire x1="61.976" y1="47.244" x2="61.976" y2="35.814" width="0.1524" layer="1"/>
+<wire x1="46.99" y1="20.828" x2="29.464" y2="20.828" width="0.1524" layer="1"/>
+<wire x1="61.976" y1="35.814" x2="46.99" y2="20.828" width="0.1524" layer="1"/>
 </signal>
 <signal name="A7_MIC">
 <contactref element="U3" pad="5"/>
