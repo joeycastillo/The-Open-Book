@@ -418,8 +418,7 @@ with font embedding exception.</text>
 <wire x1="50.038" y1="23.622" x2="50.038" y2="35.814" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="43.18" y1="112.014" x2="43.18" y2="107.442" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="43.18" y1="107.442" x2="48.006" y2="107.442" width="0.1524" layer="22" style="shortdash"/>
-<wire x1="48.006" y1="107.442" x2="49.276" y2="107.442" width="0.1524" layer="22" style="shortdash"/>
-<wire x1="49.276" y1="107.442" x2="54.61" y2="107.442" width="0.1524" layer="22" style="shortdash"/>
+<wire x1="48.006" y1="107.442" x2="54.61" y2="107.442" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="54.61" y1="107.442" x2="54.61" y2="81.788" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="54.61" y1="81.788" x2="76.962" y2="81.788" width="0.1524" layer="22" style="shortdash"/>
 <text x="60.706" y="66.802" size="1.27" layer="22" font="vector" ratio="18" rot="MR90" align="top-left">MICROSD</text>
@@ -508,7 +507,7 @@ near devices) are bypass caps;
 they filter current spikes &amp; dips.</text>
 <text x="39.497" y="2.4384" size="0.8128" layer="22" font="vector" distance="40" rot="MR0" align="top-left">card
 detect</text>
-<text x="68.4022" y="108.204" size="0.508" layer="22" font="vector" rot="MR180" align="center">LOCKBUTTON=D51=PA27</text>
+<text x="68.58" y="108.204" size="0.508" layer="22" font="vector" rot="MR180" align="center">LOCK_BUTTON=D51=PA27</text>
 <wire x1="14.859" y1="8.255" x2="31.242" y2="8.255" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="18.542" y1="11.938" x2="14.859" y2="11.938" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="14.859" y1="11.938" x2="14.859" y2="8.255" width="0.1524" layer="22" style="shortdash"/>
