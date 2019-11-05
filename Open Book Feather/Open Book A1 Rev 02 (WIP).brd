@@ -6618,7 +6618,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="5.842" y="102.616" size="0.508" layer="26" font="vector" ratio="18" rot="MR270" align="center"/>
 <attribute name="VALUE" x="3.302" y="102.616" size="0.508" layer="28" font="vector" ratio="18" rot="MR90" align="center"/>
 </element>
-<element name="L1" library="microbuilder" package="INDUCTOR_4X4MM_NR401" value="68uH" x="6.35" y="94.742" smashed="yes" rot="MR270">
+<element name="L1" library="microbuilder" package="INDUCTOR_4X4MM_NR401" value="10uH" x="6.35" y="94.742" smashed="yes" rot="MR270">
 <attribute name="NAME" x="6.382" y="97.114" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
 <attribute name="VALUE" x="5.366" y="94.844" size="0.508" layer="28" font="vector" ratio="18" rot="MR180" align="center"/>
 </element>
@@ -6776,7 +6776,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="21.6408" y="109.7566" size="0.508" layer="26" font="vector" ratio="18" rot="MR270" align="center"/>
 <attribute name="VALUE" x="18.088" y="111.887" size="0.508" layer="28" font="vector" ratio="18" rot="MR0" align="center"/>
 </element>
-<element name="R4" library="microbuilder" package="0805-NO" value="270" x="32.2834" y="108.5088" smashed="yes" rot="MR180">
+<element name="R4" library="microbuilder" package="0805-NO" value="1K" x="32.2834" y="108.5088" smashed="yes" rot="MR180">
 <attribute name="NAME" x="32.2834" y="107.315" size="0.508" layer="26" font="vector" ratio="18" rot="MR0" align="center"/>
 <attribute name="VALUE" x="32.2834" y="107.2388" size="0.508" layer="28" font="vector" ratio="18" rot="MR180" align="center"/>
 </element>
@@ -6808,7 +6808,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="26.162" y="35.433" size="0.508" layer="26" font="vector" ratio="18" rot="MR0" align="center"/>
 <attribute name="VALUE" x="26.162" y="37.846" size="0.508" layer="28" font="vector" ratio="18" rot="MR0" align="center"/>
 </element>
-<element name="R6" library="microbuilder" package="0805-NO" value="270" x="45.466" y="108.7882" smashed="yes" rot="MR180">
+<element name="R6" library="microbuilder" package="0805-NO" value="1K" x="45.466" y="108.7882" smashed="yes" rot="MR180">
 <attribute name="NAME" x="47.4472" y="108.458" size="0.508" layer="26" font="vector" ratio="18" rot="MR90" align="center"/>
 <attribute name="VALUE" x="47.0662" y="109.9312" size="0.508" layer="28" font="vector" ratio="18" rot="MR180" align="center"/>
 </element>

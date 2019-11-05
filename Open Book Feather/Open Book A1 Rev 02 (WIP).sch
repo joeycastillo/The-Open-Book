@@ -15897,7 +15897,7 @@ by exp-lbrs.ulp</description>
 <part name="D3" library="microbuilder" deviceset="DIODE-SCHOTTKY" device="SOD-123" value="MBR0530"/>
 <part name="C23" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="4.7uF/25V"/>
 <part name="D4" library="microbuilder" deviceset="DIODE-SCHOTTKY" device="SOD-123" value="MBR0530"/>
-<part name="L1" library="microbuilder" deviceset="INDUCTOR" device="NR401" value="68uH"/>
+<part name="L1" library="microbuilder" deviceset="INDUCTOR" device="NR401" value="10uH"/>
 <part name="R10" library="microbuilder" deviceset="RESISTOR" device="0805_10MGAP" value="0.47ohm"/>
 <part name="U$10" library="microbuilder" deviceset="GND" device=""/>
 <part name="Q2" library="Parts" deviceset="IRLML2060TRPBF" device="" value="IRLML0100"/>
@@ -15989,7 +15989,7 @@ by exp-lbrs.ulp</description>
 <part name="U$21" library="microbuilder" deviceset="GND" device=""/>
 <part name="R1" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="10K"/>
 <part name="U2" library="microbuilder" deviceset="MCP73831/2" device="" value="MCP73831T-2ACI/OT"/>
-<part name="R4" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="270"/>
+<part name="R4" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="1K"/>
 <part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10µF"/>
 <part name="U$33" library="microbuilder" deviceset="GND" device=""/>
 <part name="R3" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="10K\"/>
@@ -16006,7 +16006,7 @@ by exp-lbrs.ulp</description>
 <part name="+3V28" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V29" library="supply1" deviceset="+3V3" device=""/>
 <part name="R7" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="100K"/>
-<part name="R6" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="270"/>
+<part name="R6" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="1K"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="FB2" library="microbuilder" deviceset="FERRITE" device="0805" value="Ferrite"/>
 <part name="U$42" library="microbuilder" deviceset="GND" device=""/>
@@ -17559,7 +17559,7 @@ rather than a pulldown.</text>
 </instance>
 <instance part="R6" gate="G$1" x="185.42" y="162.56" smashed="yes" rot="R270">
 <attribute name="NAME" x="187.96" y="162.56" size="1.27" layer="95" font="vector" rot="R270" align="center"/>
-<attribute name="VALUE" x="185.42" y="162.56" size="1.016" layer="96" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="VALUE" x="182.88" y="162.56" size="1.016" layer="96" font="vector" ratio="15" rot="R270" align="center"/>
 </instance>
 <instance part="GND10" gate="1" x="185.42" y="142.24" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="187.96" y="139.7" size="1.778" layer="96" rot="MR0"/>
