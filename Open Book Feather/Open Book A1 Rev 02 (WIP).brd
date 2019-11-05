@@ -9343,7 +9343,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="C31" pad="1"/>
 <contactref element="R19" pad="2"/>
 <contactref element="R20" pad="1"/>
-<wire x1="65.344" y1="1.524" x2="65.852" y2="1.524" width="0.1524" layer="16"/>
 <wire x1="65.852" y1="1.524" x2="64.676" y2="2.7" width="0.1524" layer="16"/>
 <wire x1="64.676" y1="2.7" x2="64.008" y2="3.368" width="0.1524" layer="16"/>
 <wire x1="64.008" y1="3.368" x2="64.008" y2="3.622" width="0.1524" layer="16"/>
