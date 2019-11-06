@@ -29,11 +29,11 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="13" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -47,9 +47,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -371,10 +371,10 @@ board's buttons (L/D/U/R
 /Sel/Prev/Next) and fits 
 them in a single byte.</text>
 <wire x1="50.038" y1="23.622" x2="23.114" y2="23.622" width="0.1524" layer="22" style="shortdash"/>
-<wire x1="23.114" y1="38.354" x2="23.114" y2="23.622" width="0.1524" layer="22" style="shortdash"/>
-<text x="22.606" y="24.384" size="1.27" layer="22" font="vector" ratio="18" rot="MR90" align="top-left">DEBUG PORT</text>
-<text x="20.9804" y="25.908" size="0.8128" layer="22" font="vector" rot="MR90" align="top-left">An SWD connector
-  and test points
+<wire x1="23.114" y1="38.354" x2="23.114" y2="25.146" width="0.1524" layer="22" style="shortdash"/>
+<text x="22.606" y="25.654" size="1.27" layer="22" font="vector" ratio="18" rot="MR90" align="top-left">DEBUG PORT</text>
+<text x="20.9804" y="25.654" size="0.8128" layer="22" font="vector" rot="MR90" align="top-left">An SWD connector
+(and test points)
   allow access to 
   the serial wire 
   debug interface.
@@ -410,6 +410,7 @@ Unifont glyphs for every code
 point in the Basic Multliingual 
 Plane. Contents covered by GPL
 with font embedding exception.</text>
+<wire x1="23.114" y1="25.146" x2="23.114" y2="23.622" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="23.114" y1="38.354" x2="27.94" y2="38.354" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="27.94" y1="38.354" x2="30.48" y2="35.814" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="30.48" y1="35.814" x2="44.704" y2="35.814" width="0.1524" layer="22" style="shortdash"/>
@@ -460,7 +461,7 @@ but they're useful for firmware development.</text>
 <text x="23.6855" y="43.688" size="0.6096" layer="22" font="vector" rot="MR90" align="center-left">plz don't steal the bear tho.</text>
 <text x="32.512" y="64.6176" size="0.6096" layer="22" font="vector" rot="MR0" align="top-left">A Neopixel on D8
   (PA15).</text>
-<text x="18.161" y="26.035" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">COLOPHON</text>
+<text x="18.161" y="26.289" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">COLOPHON</text>
 <wire x1="31.242" y1="8.255" x2="31.242" y2="0" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="13.97" y1="8.255" x2="13.97" y2="0.254" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="12.319" y1="16.9926" x2="12.319" y2="16.8656" width="0.254" layer="22" style="shortdash"/>
@@ -488,11 +489,10 @@ an inline electret mic. </text>
 <wire x1="23.114" y1="59.182" x2="27.94" y2="59.182" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="35.052" y1="66.294" x2="23.114" y2="66.294" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="14.859" y1="8.255" x2="13.97" y2="8.255" width="0.1524" layer="22" style="shortdash"/>
-<wire x1="18.542" y1="26.416" x2="18.542" y2="16.256" width="0.1524" layer="22" style="shortdash"/>
+<wire x1="18.542" y1="26.67" x2="18.542" y2="25.146" width="0.1524" layer="22" style="shortdash"/>
+<wire x1="18.542" y1="25.146" x2="18.542" y2="16.256" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="18.542" y1="16.256" x2="18.542" y2="11.938" width="0.1524" layer="22" style="shortdash"/>
-<wire x1="18.542" y1="26.416" x2="-0.254" y2="26.416" width="0.1524" layer="22" style="shortdash"/>
-<wire x1="18.542" y1="26.416" x2="21.336" y2="23.622" width="0.1524" layer="22" style="shortdash"/>
-<wire x1="21.336" y1="23.622" x2="23.114" y2="23.622" width="0.1524" layer="22" style="shortdash"/>
+<wire x1="18.542" y1="26.67" x2="-0.254" y2="26.67" width="0.1524" layer="22" style="shortdash"/>
 <text x="76.708" y="4.318" size="0.8128" layer="22" font="vector" rot="MR90" align="top-left">Amplified mic
  signal on
 A10/PA07</text>
@@ -563,6 +563,7 @@ top, and secure it in the flex connector. Power up the device. If you see the
 screen refresh, you're done! Secure the screen to this area with double sided 
     tape; you don't need this documentation anymore.</text>
 <wire x1="34.29" y1="107.442" x2="34.29" y2="111.252" width="0.1524" layer="22" style="shortdash"/>
+<wire x1="23.114" y1="25.146" x2="18.542" y2="25.146" width="0.1524" layer="22" style="shortdash"/>
 </plain>
 <libraries>
 <library name="My Stuff">
@@ -6865,7 +6866,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="50.038" y="9.144" size="0.508" layer="28" font="vector" ratio="18" rot="MR90" align="center"/>
 </element>
 <element name="C29" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C1210" package3d_urn="urn:adsk.eagle:package:26139/1" value="100uF" x="60.452" y="19.05" smashed="yes" rot="MR180">
-<attribute name="NAME" x="60.911925" y="17.226390625" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
+<attribute name="NAME" x="60.403925" y="21.036390625" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
 <attribute name="VALUE" x="60.579" y="20.955" size="0.508" layer="28" font="vector" ratio="18" rot="MR0" align="center"/>
 </element>
 <element name="C30" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C1210" package3d_urn="urn:adsk.eagle:package:26139/1" value="100uF" x="51.816" y="18.542" smashed="yes" rot="MR270">
@@ -7010,12 +7011,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="R11" library="resistor array" package="EXBV8V" value="100K" x="20.574" y="21.844" smashed="yes" rot="MR0">
 <attribute name="MANUFACTURER_PART_NUMBER" value="EXBV8V103JV" x="20.574" y="21.844" size="1.778" layer="28" font="vector" rot="MR0" display="off"/>
-<attribute name="NAME" x="20.5486" y="23.749" size="0.508" layer="26" font="vector" ratio="18" rot="SMR0"/>
+<attribute name="NAME" x="20.5486" y="24.257" size="0.508" layer="26" font="vector" ratio="18" rot="SMR0" align="center"/>
 <attribute name="VENDOR" value="Panasonic" x="20.574" y="21.844" size="1.778" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
 <element name="R12" library="resistor array" package="EXBV8V" value="100K" x="20.574" y="17.526" smashed="yes" rot="MR0">
 <attribute name="MANUFACTURER_PART_NUMBER" value="EXBV8V103JV" x="20.574" y="17.526" size="1.778" layer="28" font="vector" rot="MR0" display="off"/>
-<attribute name="NAME" x="21.0566" y="15.113" size="0.508" layer="26" font="vector" ratio="18" rot="SMR0"/>
+<attribute name="NAME" x="20.5486" y="15.113" size="0.508" layer="26" font="vector" ratio="18" rot="SMR0" align="center"/>
 <attribute name="VENDOR" value="Panasonic" x="20.574" y="17.526" size="1.778" layer="28" font="vector" rot="MR0" display="off"/>
 </element>
 </elements>
