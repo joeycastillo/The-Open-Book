@@ -564,6 +564,8 @@ screen refresh, you're done! Secure the screen to this area with double sided
     tape; you don't need this documentation anymore.</text>
 <wire x1="34.29" y1="107.442" x2="34.29" y2="111.252" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="23.114" y1="25.146" x2="18.542" y2="25.146" width="0.1524" layer="22" style="shortdash"/>
+<text x="72.136" y="109.22" size="1.3335" layer="21" font="vector" ratio="18" align="center-right">oddlyspecific.org/book</text>
+<text x="72.136" y="110.998" size="1.3335" layer="21" font="vector" ratio="18" align="center-right">Project info:</text>
 </plain>
 <libraries>
 <library name="My Stuff">
@@ -7153,7 +7155,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="LED" pad="C"/>
 <contactref element="STATUS" pad="4"/>
 <via x="54.356" y="107.696" extent="1-16" drill="0.254"/>
-<via x="51.308" y="109.728" extent="1-16" drill="0.254"/>
+<via x="51.562" y="110.236" extent="1-16" drill="0.254"/>
 <via x="3.302" y="99.06" extent="1-16" drill="0.254"/>
 <via x="8.89" y="97.282" extent="1-16" drill="0.254"/>
 <via x="12.446" y="98.044" extent="1-16" drill="0.254"/>
