@@ -519,7 +519,7 @@ tweezers. All surface mount  parts are on one side (the back).
 
            The board is arranged in `blocks' surrounded by dotted lines. All 
            parts within a block are related to that block's function. Example:
-           in the `Button Register' block, U6 is the shift register, C25 is a 
+           in the `Button Register' block, U5 is the shift register, C25 is a 
            decoupling capacitor for the shift register, and R11 and R12 are 
            pull-up and pull-down resistors for the shift register inputs. If 
            you were to omit everything in this block, the device would still 
