@@ -510,7 +510,7 @@ detect</text>
 <wire x1="18.542" y1="11.938" x2="14.859" y2="11.938" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="14.859" y1="11.938" x2="14.859" y2="8.255" width="0.1524" layer="22" style="shortdash"/>
 <text x="0.762" y="106.68" size="1.778" layer="21" font="vector" ratio="18" align="top-left">BUILDING YOUR BOOK</text>
-<text x="0.762" y="104.013" size="1.143" layer="21" font="vector" distance="45" align="top-left">    NOTE: This project reqiures some surface mount soldering. You may be 
+<text x="0.762" y="104.013" size="1.143" layer="21" font="vector" distance="45" align="top-left">    NOTE: This project requires some surface mount soldering. You may be 
     able to make do with a soldering iron, flux and wick, but a reflow oven is 
 ideal. The only really fine-pitched parts are the SAMD51 and the flex cable
 connector; other than that, most chips are wide-pitch SOIC, and all resistors 
@@ -540,8 +540,8 @@ From here, populate:
 * The `Babel Flash Chip' block for universal language support with Babel.
 * The `32KB SRAM Chip' block to add a display buffer (can save some RAM).
 * The `Extra Ports' block to add STEMMA-compatible I²C and analog connectors.
-* The `Audio Combo Jack' block to add stereo audio output, and a button input 
-   on A7 from the inline mic button. If you do this, you can also populate:
+* The `Audio Combo Jack' block to add stereo audio output, and raw mic input 
+   from the inline mic on A7. If you do this, you can also populate:
 * The `+Mic Preamp' block for amplified microphone input on A10.
 
 There's also a `Lock Button' and a `Serial Port' at the top; the lock button is 
