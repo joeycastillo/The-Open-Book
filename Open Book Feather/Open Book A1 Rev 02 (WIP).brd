@@ -38,7 +38,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -357,12 +357,11 @@ A1/PA05: L audio out
 A7/PB04: Raw mic in
 </text>
 <text x="18.161" y="15.875" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">ENABLE SWITCH</text>
-<text x="18.161" y="14.224" size="0.8128" layer="22" font="vector" distance="40" rot="MR0" align="top-left">R1 up top pulls EN high. 
+<text x="18.161" y="14.2748" size="0.8128" layer="22" font="vector" distance="40" rot="MR0" align="top-left">R1 up top pulls EN high. 
 Switching SW1 pulls EN 
      low, disabling pwr 
      supply U1 along with 
-         most of   the    
-                   board.</text>
+     most of the board.</text>
 <wire x1="77.216" y1="23.622" x2="50.038" y2="23.622" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="50.038" y1="23.622" x2="50.038" y2="0" width="0.1524" layer="22" style="shortdash"/>
 <text x="17.526" y="106.68" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">E-PAPER DISPLAY</text>
@@ -383,14 +382,14 @@ them in a single byte.</text>
   the serial wire 
   debug interface.
   R5=SWCLK pullup</text>
-<text x="18.161" y="24.511" size="0.6858" layer="22" font="vector" rot="MR0" align="top-left">The Open Book by Joey Castillo
+<text x="18.288" y="24.511" size="0.6858" layer="22" font="vector" rot="MR0" align="top-left">The Open Book by Joey Castillo
 @josecastillo. Based in large 
 part on @Adafruit's awesome 
 open source designs! OSO logo 
 &amp; lazer bear by Joseph Devens, 
 @DoctorDevens. Thanks to Tom F, 
-Josh L, Brent R &amp; many others. 
-Made with . in Brooklyn &amp; Texas.</text>
+Josh L, Brent R, OSHPark &amp; many 
+others. Made with . in BK &amp; TX.</text>
 <text x="49.791003125" y="0.309296875" size="0.7112" layer="22" font="vector" distance="30" rot="SMR90" align="top-left">Pins: 
 BUTTON_LATCH: D48/PB31
 BUTTON_OUT:  D49/PB30
@@ -468,10 +467,10 @@ but they're useful for firmware development.</text>
 <text x="18.161" y="26.289" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">COLOPHON</text>
 <wire x1="31.369" y1="12.065" x2="31.369" y2="0" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="13.97" y1="8.255" x2="13.97" y2="0.254" width="0.1524" layer="22" style="shortdash"/>
-<wire x1="12.319" y1="16.9926" x2="12.319" y2="16.8656" width="0.254" layer="22" style="shortdash"/>
-<wire x1="12.319" y1="16.8656" x2="12.192" y2="16.7386" width="0.254" layer="22" style="shortdash"/>
-<wire x1="12.192" y1="16.7386" x2="12.065" y2="16.8656" width="0.254" layer="22" style="shortdash"/>
-<wire x1="12.065" y1="16.8656" x2="12.065" y2="16.9926" width="0.254" layer="22" style="shortdash"/>
+<wire x1="8.0264" y1="16.9926" x2="8.0264" y2="16.8656" width="0.254" layer="22" style="shortdash"/>
+<wire x1="8.0264" y1="16.8656" x2="7.8994" y2="16.7386" width="0.254" layer="22" style="shortdash"/>
+<wire x1="7.8994" y1="16.7386" x2="7.7724" y2="16.8656" width="0.254" layer="22" style="shortdash"/>
+<wire x1="7.7724" y1="16.8656" x2="7.7724" y2="16.9926" width="0.254" layer="22" style="shortdash"/>
 <text x="44.45" y="43.1038" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">C5, C6, C7, C8: filtering 
 caps on each power pin.</text>
 <text x="32.9184" y="54.5846" size="0.8128" layer="22" font="vector" rot="MR90">C9&amp;C10: filter</text>
