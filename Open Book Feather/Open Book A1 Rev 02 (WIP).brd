@@ -463,8 +463,8 @@ but they're useful for firmware development.</text>
 <text x="33.655" y="64.897" size="1.143" layer="22" font="vector" ratio="18" rot="MR180" align="top-right">STATUS LED</text>
 <wire x1="18.034" y1="107.188" x2="18.034" y2="112.268" width="0.1524" layer="22" style="shortdash"/>
 <text x="23.6855" y="43.688" size="0.6096" layer="22" font="vector" rot="MR90" align="center-left">plz don't steal the bear tho.</text>
-<text x="32.512" y="64.6176" size="0.6096" layer="22" font="vector" rot="MR0" align="top-left">A Neopixel on D8
-  (PA15).</text>
+<text x="32.5374" y="64.4906" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">NEOPIXEL=D8=
+  PA15</text>
 <text x="18.161" y="26.289" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">COLOPHON</text>
 <wire x1="31.369" y1="12.065" x2="31.369" y2="0" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="13.97" y1="8.255" x2="13.97" y2="0.254" width="0.1524" layer="22" style="shortdash"/>
