@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -176,10 +176,10 @@
 <wire x1="77.216" y1="109.982" x2="77.216" y2="2.286" width="0" layer="20"/>
 <dimension x1="0" y1="107.442" x2="78.74" y2="107.442" x3="39.37" y3="112.014" textsize="1.778" layer="47" unit="inch"/>
 <dimension x1="27.94" y1="4.318" x2="36.068" y2="4.318" x3="32.004" y3="8.636" textsize="1.778" layer="47" unit="inch"/>
-<text x="38.862" y="4.826" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_DOWN</text>
-<text x="38.862" y="10.16" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_SEL</text>
-<text x="38.862" y="15.494" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_UP</text>
-<text x="67.818" y="10.16" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_NEXT</text>
+<text x="38.862" y="3.81" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_DOWN</text>
+<text x="38.862" y="9.144" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_SEL</text>
+<text x="38.862" y="14.478" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_UP</text>
+<text x="67.818" y="9.144" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_NEXT</text>
 <wire x1="74.93" y1="0" x2="2.032" y2="0" width="0" layer="20"/>
 <wire x1="-0.254" y1="2.286" x2="-0.254" y2="109.982" width="0" layer="20"/>
 <wire x1="23.114" y1="38.354" x2="0.254" y2="38.354" width="0.1524" layer="22" style="shortdash"/>
@@ -202,20 +202,20 @@ Chip select SRCS is D53/PB14.</text>
 <wire x1="23.114" y1="59.182" x2="23.114" y2="66.294" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="23.114" y1="66.294" x2="23.114" y2="75.4888" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="23.114" y1="75.4888" x2="0" y2="75.4888" width="0.1524" layer="22" style="shortdash"/>
-<text x="9.144" y="10.16" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_PREV</text>
+<text x="9.144" y="9.144" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_PREV</text>
 <dimension x1="-0.254" y1="0" x2="38.608" y2="0" x3="19.177" y3="-4.572" textsize="1.778" layer="47" unit="inch"/>
 <dimension x1="77.216" y1="0" x2="38.608" y2="0" x3="57.912" y3="-4.572" textsize="1.778" layer="47" unit="inch"/>
 <text x="41.402" y="7.874" size="0.8128" layer="22" font="vector" rot="MR0" align="center-left">Bits:
-0: LEFT
-1: DOWN
-2: UP
-3: RIGHT
-4: SEL
-5: PREV
-6: NEXT
+0: Left
+1: Down
+2: Up
+3: Right
+4: Select
+5: Previous
+6: Next
 7: SD</text>
-<text x="47.498" y="7.874" size="0.508" layer="21" font="vector" ratio="18" rot="R90" align="center">BTN_RIGHT</text>
-<text x="30.226" y="7.874" size="0.508" layer="21" font="vector" ratio="18" rot="R270" align="center">BTN_LEFT</text>
+<text x="46.482" y="7.874" size="0.508" layer="21" font="vector" ratio="18" rot="SR270" align="center">BTN_RIGHT</text>
+<text x="31.242" y="7.874" size="0.508" layer="21" font="vector" ratio="18" rot="R270" align="center">BTN_LEFT</text>
 <text x="18.161" y="3.9116" size="0.3556" layer="22" font="vector" ratio="18" rot="MR180" align="center">BTN_RESET</text>
 <text x="4.318" y="0.508" size="1.27" layer="21" font="vector" ratio="18">OSO-BOOK-A1-02</text>
 <text x="9.779" y="42.1894" size="0.508" layer="22" font="vector" ratio="18" rot="MR90" align="center">A8</text>
@@ -507,7 +507,7 @@ keep inputs from floating. C25
 (&amp; many small capacitors you see 
 near devices) are bypass caps; 
 they filter current spikes &amp; dips.</text>
-<text x="39.497" y="2.4384" size="0.8128" layer="22" font="vector" distance="40" rot="MR0" align="top-left">card
+<text x="39.497" y="2.4384" size="0.8128" layer="22" font="vector" distance="45" rot="MR0" align="top-left">card
 detect</text>
 <text x="68.58" y="108.204" size="0.508" layer="22" font="vector" rot="MR180" align="center">LOCK_BUTTON=D51=PA27</text>
 <wire x1="18.542" y1="12.065" x2="14.859" y2="12.065" width="0.1524" layer="22" style="shortdash"/>
@@ -7180,7 +7180,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="MS1" pad="4'"/>
 <contactref element="MS1" pad="16"/>
 <contactref element="MS1" pad="16'"/>
-<via x="68.58" y="8.89" extent="1-16" drill="0.254"/>
+<via x="69.088" y="8.382" extent="1-16" drill="0.254"/>
 <via x="55.118" y="104.14" extent="1-16" drill="0.254"/>
 <via x="19.812" y="25.4" extent="1-16" drill="0.254"/>
 <via x="18.288" y="3.048" extent="1-16" drill="0.254"/>
