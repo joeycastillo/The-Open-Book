@@ -24,17 +24,17 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="13" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -48,9 +48,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -60,7 +60,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
@@ -176,10 +176,10 @@
 <wire x1="77.216" y1="109.982" x2="77.216" y2="2.286" width="0" layer="20"/>
 <dimension x1="0" y1="107.442" x2="78.74" y2="107.442" x3="39.37" y3="112.014" textsize="1.778" layer="47" unit="inch"/>
 <dimension x1="27.94" y1="4.318" x2="36.068" y2="4.318" x3="32.004" y3="8.636" textsize="1.778" layer="47" unit="inch"/>
-<text x="38.862" y="3.81" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_DOWN</text>
-<text x="38.862" y="9.144" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_SEL</text>
+<text x="38.862" y="1.27" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_DOWN</text>
+<text x="38.862" y="6.604" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_SEL</text>
 <text x="38.862" y="14.478" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_UP</text>
-<text x="67.818" y="9.144" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_NEXT</text>
+<text x="68.072" y="6.604" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_NEXT</text>
 <wire x1="74.93" y1="0" x2="2.032" y2="0" width="0" layer="20"/>
 <wire x1="-0.254" y1="2.286" x2="-0.254" y2="109.982" width="0" layer="20"/>
 <wire x1="23.114" y1="38.354" x2="0.254" y2="38.354" width="0.1524" layer="22" style="shortdash"/>
@@ -202,7 +202,7 @@ Chip select SRCS is D53/PB14.</text>
 <wire x1="23.114" y1="59.182" x2="23.114" y2="66.294" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="23.114" y1="66.294" x2="23.114" y2="75.4888" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="23.114" y1="75.4888" x2="0" y2="75.4888" width="0.1524" layer="22" style="shortdash"/>
-<text x="9.144" y="9.144" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_PREV</text>
+<text x="9.144" y="6.604" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_PREV</text>
 <dimension x1="-0.254" y1="0" x2="38.608" y2="0" x3="19.177" y3="-4.572" textsize="1.778" layer="47" unit="inch"/>
 <dimension x1="77.216" y1="0" x2="38.608" y2="0" x3="57.912" y3="-4.572" textsize="1.778" layer="47" unit="inch"/>
 <text x="41.402" y="7.874" size="0.8128" layer="22" font="vector" rot="MR0" align="center-left">Bits:
@@ -511,7 +511,7 @@ detect</text>
 <text x="68.58" y="108.204" size="0.508" layer="22" font="vector" rot="MR180" align="center">LOCK_BUTTON=D51=PA27</text>
 <wire x1="18.542" y1="12.065" x2="14.859" y2="12.065" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="14.859" y1="12.065" x2="14.859" y2="8.255" width="0.1524" layer="22" style="shortdash"/>
-<text x="0.762" y="106.68" size="1.778" layer="21" font="vector" ratio="18" align="top-left">BUILDING YOUR BOOK</text>
+<text x="4.826" y="106.68" size="1.778" layer="21" font="vector" ratio="18" align="top-left">BUILDING YOUR BOOK</text>
 <text x="0.762" y="104.013" size="1.143" layer="21" font="vector" distance="45" align="top-left">    NOTE: This project requires some surface mount soldering. You may be 
     able to make do with a soldering iron, flux and wick, but a reflow oven is 
 ideal. The only really fine-pitched parts are the SAMD51 and the flex cable
