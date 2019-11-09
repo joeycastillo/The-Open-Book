@@ -309,7 +309,8 @@ PB16</text>
 <text x="45.72" y="67.818" size="0.6096" layer="22" font="vector" ratio="18" rot="MR270" align="center">GND</text>
 <text x="32.004" y="93.218" size="0.6096" layer="22" font="vector" ratio="18" rot="MR270" align="center">EN</text>
 <text x="32.004" y="90.678" size="0.6096" layer="22" font="vector" ratio="18" rot="MR270" align="center">VBUS</text>
-<text x="32.385" y="88.138" size="0.6096" layer="22" font="vector" ratio="18" distance="25" rot="MR270" align="center">D13
+<text x="32.766" y="88.138" size="0.6096" layer="22" font="vector" ratio="18" distance="25" rot="MR270" align="center">LED
+D13
 PA23</text>
 <text x="32.385" y="85.598" size="0.6096" layer="22" font="vector" ratio="18" distance="25" rot="MR270" align="center">D12
 PA22</text>
