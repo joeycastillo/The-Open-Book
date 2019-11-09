@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.001" altunitdist="inch" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -386,6 +386,13 @@ while blocking the DC component.</text>
 <wire x1="2.032" y1="112.268" x2="-0.254" y2="109.982" width="0" layer="20" curve="90"/>
 <wire x1="-0.254" y1="2.286" x2="2.032" y2="0" width="0" layer="20" curve="90"/>
 <wire x1="74.93" y1="0" x2="77.216" y2="2.286" width="0" layer="20" curve="90"/>
+<text x="38.608" y="64.514" size="1.016" layer="21" font="vector" align="center">``Da anni frequento questa biblioteca
+e la esploro volume per volume, scaffale
+per scaffale, ma potrei dimostrarvi che
+non ho fatto altro che portare avanti
+la lettura d'un unico libro.''
+- Italo Calvino, `Se una notte d'inverno un viaggiatore'
+</text>
 </plain>
 <libraries>
 <library name="My Stuff">
@@ -5258,7 +5265,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="U$48" library="My Stuff" package="OSO_ONELINE_125MIL" value="OSO_TEXTOSO_TEXT_ONELINE_125MIL" x="45.339" y="14.732" smashed="yes"/>
 <element name="U$44" library="My Stuff" package="OSO_GRAPHIC" value="OSO_GRAPHIC" x="3.81" y="13.081" smashed="yes"/>
-<element name="U$45" library="My Stuff" package="OSO_BEAR_750MIL" value="OSO_BEAR" x="61.976" y="27.178" smashed="yes"/>
+<element name="U$45" library="My Stuff" package="OSO_BEAR_750MIL" value="OSO_BEAR" x="66.1162" y="27.305" smashed="yes"/>
 <element name="FCS" library="E-Book Wing Rev C (WIP)" package="SOLDERJUMPER_OPEN" value="SOLDERJUMPER_OPEN" x="33.274" y="44.45" smashed="yes" rot="MR180">
 <attribute name="NAME" x="35.56" y="44.45" size="0.508" layer="26" font="vector" ratio="18" rot="MR90" align="center"/>
 <attribute name="VALUE" x="31.75" y="46.101" size="0.4064" layer="28" ratio="10" rot="MR180"/>
@@ -6341,42 +6348,42 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="4,16,667522d96c83ab8b"/>
-<approved hash="4,16,3d7d52d91cb38083"/>
-<approved hash="4,16,e4f622d96c802909"/>
-<approved hash="4,16,b3fe42d90cb01e01"/>
-<approved hash="4,16,b98f14811a4cb701"/>
-<approved hash="4,16,a91304390acca601"/>
-<approved hash="4,16,414592f38af918b1"/>
-<approved hash="4,16,d73b8912cb7a5305"/>
-<approved hash="4,16,b0fc75f9688bef59"/>
-<approved hash="4,16,99edd1d961fbe49d"/>
-<approved hash="4,16,11ec93d8618a859d"/>
-<approved hash="4,16,fefcf1f9aa1b4ca6"/>
-<approved hash="4,16,153a8b13890bca05"/>
-<approved hash="4,16,81baac0ccc96fb4e"/>
-<approved hash="4,16,152a8b330529ca05"/>
-<approved hash="4,16,805aac104094fb52"/>
-<approved hash="4,16,11ec93d4e5888595"/>
-<approved hash="4,16,fef4f1cd2e154ca2"/>
-<approved hash="4,16,414593ef79c719ed"/>
-<approved hash="4,16,d66b885238e452c5"/>
-<approved hash="4,16,b0fc743d9aa9ef5d"/>
-<approved hash="4,16,992dd09d92dde49d"/>
-<approved hash="19,16,b6f95fad4c5adb62"/>
-<approved hash="19,16,c63006e8c15245d2"/>
-<approved hash="19,16,43be5ed54ccc2ee5"/>
-<approved hash="19,16,32e90620c17ab0ed"/>
-<approved hash="19,16,ddc1b90bc524f4c0"/>
-<approved hash="19,16,560e6b02c040a202"/>
-<approved hash="19,16,4ddb5d194d262308"/>
-<approved hash="19,16,3d8604f4c006bd98"/>
-<approved hash="19,16,e134b687cac2c82d"/>
-<approved hash="19,16,653d6b36c00c9157"/>
-<approved hash="19,16,f48bbfafc44cdd32"/>
-<approved hash="19,16,78746aeec1548ba0"/>
-<approved hash="19,16,f9c6c6dbc4d6d097"/>
-<approved hash="19,16,0ca36a32c170869d"/>
+<approved hash="19,16,5729f5220d72acc7"/>
+<approved hash="19,16,ddb7e6001c502459"/>
+<approved hash="19,16,fc89f5aa0d9a06db"/>
+<approved hash="19,16,0fa96eea94def7ff"/>
+<approved hash="19,16,292e12e9e93fd11e"/>
+<approved hash="19,16,af030d30f6c05571"/>
+<approved hash="19,16,24011db2e442dc73"/>
+<approved hash="19,16,a26e004df99b585e"/>
+<approved hash="19,16,c064c6773e2535b0"/>
+<approved hash="19,16,3cc25d55a703cb12"/>
+<approved hash="19,16,d5bbdb50230c2f49"/>
+<approved hash="19,16,263b407cba24decd"/>
+<approved hash="19,16,d81eae2557f7222e"/>
+<approved hash="19,16,2b5c3487cf51d368"/>
+<approved hash="4,16,158ab3514d03e858"/>
+<approved hash="4,16,3e92e859160bc2a0"/>
+<approved hash="4,16,970c31d1cf836bda"/>
+<approved hash="4,16,a01466d9988b5c22"/>
+<approved hash="4,16,4d684c8bc1c53588"/>
+<approved hash="4,16,953e5c73d1ecfdd3"/>
+<approved hash="4,16,841294574513934a"/>
+<approved hash="4,16,6b522126d36b87ae"/>
+<approved hash="4,16,238d56df8449d1fe"/>
+<approved hash="4,16,8592959745cf925a"/>
+<approved hash="4,16,220d57cf8495d03e"/>
+<approved hash="4,16,90c7478ba8028682"/>
+<approved hash="4,16,6b5221e2d3ab862e"/>
+<approved hash="4,16,a952a727916a87ae"/>
+<approved hash="4,16,d238000b6a3d86b9"/>
+<approved hash="4,16,841256a803ecd1b5"/>
+<approved hash="4,16,a58d94de844893fe"/>
+<approved hash="4,16,a95aa72b909a87ae"/>
+<approved hash="4,16,d230000b6bcd86b5"/>
+<approved hash="4,16,a58d94ce84549206"/>
+<approved hash="4,16,8412575003f0d1a5"/>
+<approved hash="4,16,90c7460ba8c28646"/>
 </errors>
 </board>
 </drawing>
