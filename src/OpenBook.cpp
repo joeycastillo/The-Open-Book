@@ -1,4 +1,5 @@
 #include "OpenBook.h"
+#include "OpenBook_IL0398.h"
 
 OpenBook::OpenBook() {
 }
@@ -26,10 +27,8 @@ OpenBook::OpenBook() {
         * IL0398 Datasheet: https://cdn.sparkfun.com/assets/f/a/9/3/7/4.2in_ePaper_Driver.pdf
 */
 bool OpenBook::configureScreen(int8_t srcs, int8_t ecs, int8_t edc, int8_t erst, int8_t ebsy, SPIClass *spi, int width, int height) {
-    Adafruit_IL0398 *display = new Adafruit_IL0398(width, height, edc, erst, ecs, srcs, ebsy, spi);
+    OpenBook_IL0398 *display = new OpenBook_IL0398(width, height, edc, erst, ecs, srcs, ebsy, spi);
     display->begin();
-    display->setBlackBuffer(1, true);
-    display->setColorBuffer(1, true);
     display->clearBuffer();
     this->display = display;
 
