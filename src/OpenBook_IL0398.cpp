@@ -94,7 +94,7 @@ void OpenBook_IL0398::busy_wait(void)
     do {
       EPD_command(IL0398_GETSTATUS);
       delay(10);
-    } while (digitalRead(_busy_pin)); //wait for busy low
+    } while (!digitalRead(_busy_pin)); //wait for busy high
     delay(200);
   } else {
     delay(BUSY_WAIT);

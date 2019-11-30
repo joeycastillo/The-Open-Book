@@ -29,7 +29,7 @@
 #define OPENBOOK_ECS (44)
 #define OPENBOOK_EDC (45)
 #define OPENBOOK_ERST (46)
-#define OPENBOOK_EBSY (-1) // same with busy pin (47)
+#define OPENBOOK_EBSY (47)
 #define OPENBOOK_SDCS (4)
 #define OPENBOOK_BCS (52)
 #define OPENBOOK_BATTERY_MONITOR (A6)
@@ -50,7 +50,7 @@
 #define OPENBOOK_ECS (9)
 #define OPENBOOK_EDC (10)
 #define OPENBOOK_ERST (A4)
-#define OPENBOOK_EBSY (-1) // should be A3, working through some weirdness with the busy state at the moment
+#define OPENBOOK_EBSY (A3)
 #define OPENBOOK_SDCS (5)
 #define OPENBOOK_BCS (4)
 #define OPENBOOK_BATTERY_MONITOR (-1)
