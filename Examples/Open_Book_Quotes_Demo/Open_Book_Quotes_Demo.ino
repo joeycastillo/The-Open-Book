@@ -18,9 +18,6 @@ void setup() {
   // the OpenBook class provides an interface for the peripherals of either the Open Book or eBook Wing.
   book = new OpenBook();
   
-  // The display is, for now, an Adafruit_EPD object, which is an Adafruit_GFX subclass.
-  // Refresh is a bit slow. Too slow for turning pages like an e-book. There's room to improve this; the hardware is capable of faster refresh.
-  // I want to eventually have our own Adafruit_GFX compatible driver for this display as part of this repository.
   book->configureScreen();
   // pause before initializing Babel; on the wing they share a bus and I've seen things get garbled if you don't give it a hot second.
   delay(500);
@@ -77,7 +74,6 @@ void loop() {
 
     // finally. clear the screen and show some text.
     display->clearBuffer();
-    display->fillScreen(EPD_WHITE);
     typesetter->bold = false;
     typesetter->italic = false;
     typesetter->setCursor(16, 16);
