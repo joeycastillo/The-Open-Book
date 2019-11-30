@@ -62,6 +62,9 @@ bool OpenBook::configureShiftButtons(int8_t latch, int8_t data, int8_t clock, in
     this->buttonInterrupt = lockButton;
     // todo: implement an interrupt handler when lock button is pressed
 
+    // sometimes the first read returns a garbage value, so get that out of the way now.
+    this->readButtonRegister();
+
     return true;
 }
 
