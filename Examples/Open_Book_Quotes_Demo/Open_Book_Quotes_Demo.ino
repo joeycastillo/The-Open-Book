@@ -14,6 +14,7 @@ OpenBook *book;
 
 void setup() {
   Serial.begin(115200);
+//  while(!Serial);
 
   // the OpenBook class provides an interface for the peripherals of either the Open Book or eBook Wing.
   book = new OpenBook();
@@ -31,16 +32,17 @@ void setup() {
   book->configureI2CButtons();
   #endif
   
-  book->getTypesetter()->textColor = EPD_BLACK;
+  book->getTypesetter()->setTextColor(EPD_BLACK);
   book->getTypesetter()->setLayoutArea(16, 16, 264, 368);
+  book->getTypesetter()->setWordWrap(true);
   book->getDisplay()->setRotation(0);
 }
 
 char *originals[] = {
-"Voici mon secret. Il est très \nsimple: on ne voit bien qu'avec \nle cœur. L'essentiel est \ninvisible pour les yeux.\n\n",
+"Voici mon secret. Il est très simple: on ne voit bien qu'avec le cœur. L'essentiel est invisible pour les yeux.\n\n",
 "Бери́сь дру́жно, не бу́дет гру́зно.\n\n",
-"La vida no es la que uno vivió, \nsino la que uno recuerda, y \ncómo la recuerda para contarla.\n\n",
-"ἄνδρα μοι ἔννεπε, μοῦσα, \nπολύτροπον, ὃς μάλα πολλὰ πλάγχθη, \nἐπεὶ Τροίης ἱερὸν πτολίεθρον \nἔπερσεν.\n\n",
+"La vida no es la que uno vivió, sino la que uno recuerda, y cómo la recuerda para contarla.\n\n",
+"ἄνδρα μοι ἔννεπε, μοῦσα, πολύτροπον, ὃς μάλα πολλὰ πλάγχθη, ἐπεὶ Τροίης ἱερὸν πτολίεθρον ἔπερσεν.\n\n",
 };
 
 void loop() {
@@ -60,30 +62,31 @@ void loop() {
     Adafruit_EPD *display = book->getDisplay();
     // the Babel typesetter has its own reference to the display, which it uses to display multilingual text.
     BabelTypesetter *typesetter = book->getTypesetter();
+    BabelDevice *babel = typesetter->getBabel();
 
     // determine the number of codepoints in the string (utf-8 can have one codepoint per 1-6 bytes)
-    size_t len = typesetter->glyphStorage->utf8_codepoint_length(originals[i]);
+    size_t len = babel->utf8_codepoint_length(originals[i]);
     // allocate an appropriately sized buffer (codepoints outside the basic multilingual plane can be larger than a uint16_t, but for now Babel only supports the BMP)
-    BABEL_CODEPOINT *buf = (uint16_t *)malloc(len);
+    BABEL_CODEPOINT *buf = (BABEL_CODEPOINT *)malloc(len);
     // parse UTF-8 to codepoints
-    typesetter->glyphStorage->utf8_parse(originals[i], buf);
+    babel->utf8_parse(originals[i], buf);
 
     // Localized case mapping demo. Converts buf in-place to uppercase or lowercase.
-    if (buttons & OPENBOOK_BUTTONMASK_UP) typesetter->glyphStorage->to_uppercase(buf, len);
-    if (buttons & OPENBOOK_BUTTONMASK_DOWN) typesetter->glyphStorage->to_lowercase(buf, len);
+    if (buttons & OPENBOOK_BUTTONMASK_UP) babel->to_uppercase(buf, len);
+    if (buttons & OPENBOOK_BUTTONMASK_DOWN) babel->to_lowercase(buf, len);
 
     // finally. clear the screen and show some text.
     display->clearBuffer();
-    typesetter->bold = false;
-    typesetter->italic = false;
-    typesetter->setCursor(16, 16);
+    typesetter->resetCursor();
+    typesetter->setBold(false);
+    typesetter->setItalic(false);
     typesetter->writeCodepoints(buf, len);
-    typesetter->italic = true;
+    typesetter->setItalic(true);
     typesetter->writeCodepoints(buf, len);
-    typesetter->italic = false;
-    typesetter->bold = true;
+    typesetter->setItalic(false);
+    typesetter->setBold(true);
     typesetter->writeCodepoints(buf, len);
-    typesetter->italic = true;
+    typesetter->setItalic(true);
     typesetter->writeCodepoints(buf, len);
 
     display->display();
