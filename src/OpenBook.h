@@ -75,8 +75,8 @@ public:
     OpenBook();
 #if OPENBOOK_KNOWN_HARDWARE
     bool configureScreen(int8_t srcs = OPENBOOK_SRCS, int8_t ecs = OPENBOOK_ECS, int8_t edc = OPENBOOK_EDC, int8_t erst = OPENBOOK_ERST, int8_t ebsy = OPENBOOK_EBSY, SPIClass *spi = OPENBOOK_DISPLAY_BUS, int width = 300, int height = 400);
-    bool configureShiftButtons(int8_t latch = OPENBOOK_BUTTON_LATCH, int8_t data = OPENBOOK_BUTTON_DATA, int8_t clock = OPENBOOK_BUTTON_CLOCK, int8_t lockButton = OPENBOOK_BUTTON_LOCK);
-    bool configureI2CButtons(int8_t interrupt = OPENBOOK_BUTTON_INTERRUPT);
+    bool configureShiftButtons(int8_t active = OPENBOOK_BUTTON_ACTIVE, int8_t latch = OPENBOOK_BUTTON_LATCH, int8_t data = OPENBOOK_BUTTON_DATA, int8_t clock = OPENBOOK_BUTTON_CLOCK, int8_t lockButton = OPENBOOK_BUTTON_LOCK);
+    bool configureI2CButtons(int8_t active = OPENBOOK_BUTTON_ACTIVE, int8_t interrupt = OPENBOOK_BUTTON_INTERRUPT);
     bool configureBabel(int8_t bcs = OPENBOOK_BCS);
     bool configureAudio(int8_t left = OPENBOOK_AUDIO_L, int8_t right = OPENBOOK_AUDIO_R, int8_t inlineMic = OPENBOOK_MIC_RAW, int8_t amplifiedMic = OPENBOOK_MIC_AMPLIFIED);
 #else
@@ -96,6 +96,6 @@ protected:
     Adafruit_EPD *display = NULL;
     BabelTypesetterGFX *typesetter = NULL;
     Adafruit_MCP23008 *ioExpander = NULL;
-    int8_t buttonLatch, buttonData, buttonClock, buttonInterrupt, leftOutput, rightOutput, micInput, amplifiedInput, outputChannels;
+    int8_t activeState, buttonLatch, buttonData, buttonClock, buttonInterrupt, leftOutput, rightOutput, micInput, amplifiedInput, outputChannels;
 };
 #endif // OSO_OpenBook_h

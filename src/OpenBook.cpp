@@ -46,7 +46,7 @@ bool OpenBook::configureScreen(int8_t srcs, int8_t ecs, int8_t edc, int8_t erst,
        SD Card Detect is on the shift register. This feels very inelegant and I
        may rework this in the final revision.
 */
-bool OpenBook::configureShiftButtons(int8_t latch, int8_t data, int8_t clock, int8_t lockButton) {
+bool OpenBook::configureShiftButtons(int8_t active, int8_t latch, int8_t data, int8_t clock, int8_t lockButton) {
     if (latch < 0 || data < 0 || clock < 0) return false;
 
     pinMode(latch, OUTPUT);
@@ -56,6 +56,7 @@ bool OpenBook::configureShiftButtons(int8_t latch, int8_t data, int8_t clock, in
     digitalWrite(clock, HIGH);
     pinMode(lockButton, INPUT_PULLUP);
 
+    this->activeState = active;
     this->buttonLatch = latch;
     this->buttonData = data;
     this->buttonClock = clock;
@@ -75,20 +76,19 @@ bool OpenBook::configureShiftButtons(int8_t latch, int8_t data, int8_t clock, in
  @note This is currently the button solution for the wing. All buttons are on
        the port expander, including the Lock button.
 */
-bool OpenBook::configureI2CButtons(int8_t interrupt) {
+bool OpenBook::configureI2CButtons(int8_t active, int8_t interrupt) {
     Adafruit_MCP23008 *ioExpander = new Adafruit_MCP23008();
     ioExpander->begin();
     for (int i = 0; i <= 7; i++) {
         ioExpander->pinMode(i, INPUT);
-        #if OPENBOOK_BUTTON_ACTIVE == LOW
-        ioExpander->pullUp(i, HIGH);
-        #endif
+        if (active == LOW) ioExpander->pullUp(i, HIGH);
     }
     this->ioExpander = ioExpander;
 
     if (interrupt >= 0) {
         pinMode(interrupt, INPUT);
     }
+    this->activeState = active;
     this->buttonInterrupt = interrupt;
     // todo: implement an interrupt handler for when buttons are pressed.
     // also add interrupt feature to https://github.com/adafruit/Adafruit-MCP23008-library
@@ -182,11 +182,8 @@ uint8_t OpenBook::readButtons() {
             buttonState |= 0x80; // set high bit if lock button is low (pressed)
         }
     }
-    #if OPENBOOK_BUTTON_ACTIVE == LOW
-    return ~buttonState; // low buttons are pressed, high buttons are being pulled up.
-    #else
-    return buttonState; // high buttons are pressed, low buttons are being pulled down.
-    #endif
+    if (this->activeState == LOW) return ~buttonState; // low buttons are pressed, high buttons are being pulled up.
+    else return buttonState; // high buttons are pressed, low buttons are being pulled down.
 }
 
 /**
