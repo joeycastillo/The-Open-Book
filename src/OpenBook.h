@@ -7,7 +7,7 @@
 
 #include "BabelTypesetterGFX.h"
 #include "Adafruit_MCP23008.h"
-#include "Adafruit_EPD.h"
+#include "OpenBook_IL0398.h"
 
 #define OPENBOOK_KNOWN_HARDWARE 1
 
@@ -88,12 +88,12 @@ public:
 #endif // OPENBOOK_KNOWN_HARDWARE
 
     uint8_t readButtons();
-    Adafruit_EPD *getDisplay();
+    OpenBook_IL0398 *getDisplay();
     BabelTypesetterGFX *getTypesetter();
 
 protected:
     uint8_t readButtonRegister();
-    Adafruit_EPD *display = NULL;
+    OpenBook_IL0398 *display = NULL;
     BabelTypesetterGFX *typesetter = NULL;
     Adafruit_MCP23008 *ioExpander = NULL;
     int8_t activeState, buttonLatch, buttonData, buttonClock, buttonInterrupt, leftOutput, rightOutput, micInput, amplifiedInput, outputChannels;

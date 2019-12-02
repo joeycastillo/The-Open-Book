@@ -22,9 +22,6 @@
 
 #include "Adafruit_EPD.h"
 
-#define EPD_RAM_BW 0x10
-#define EPD_RAM_RED 0x13
-
 #define IL0398_PANEL_SETTING 0x00
 #define IL0398_POWER_SETTING 0x01
 #define IL0398_POWER_OFF 0x02
@@ -85,14 +82,23 @@ class OpenBook_IL0398 : public Adafruit_EPD {
     void update();
     void powerDown();
 
+    void displayPartial(uint16_t x, uint16_t y, uint16_t w, uint16_t h);
 protected:
+    void init(bool partialMode = false);
     uint8_t writeRAMCommand(uint8_t index);
     void setRAMAddress(uint16_t x, uint16_t y);
     void busy_wait();
+    void setWindow(uint16_t x, uint16_t y, uint16_t w, uint16_t h);
 private:
-    static const unsigned char LUT_VCOM[];
+    static const unsigned char LUT_VCOM_FULL[];
     static const unsigned char LUT_W[];
     static const unsigned char LUT_B[];
+
+    static const unsigned char LUT_VCOM_PARTIAL[];
+    static const unsigned char LUT_WW[];
+    static const unsigned char LUT_WB[];
+    static const unsigned char LUT_BW[];
+    static const unsigned char LUT_BB[];
 };
 
 #endif // OSO_OpenBook_IL0398_h

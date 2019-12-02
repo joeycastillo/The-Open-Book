@@ -217,7 +217,7 @@ uint8_t OpenBook::readButtonRegister() {
 /**
  @returns a reference to the e-paper display, or NULL if not configured.
 */
-Adafruit_EPD * OpenBook::getDisplay() {
+OpenBook_IL0398 * OpenBook::getDisplay() {
     return this->display;
 }
 

@@ -17,6 +17,13 @@
 
 #define BUSY_WAIT 500
 
+#ifndef min
+#define min(a,b) (((a) < (b)) ? (a) : (b))
+#endif
+
+#ifndef _swap_int16_t
+#define _swap_int16_t(a, b) { int16_t t = a; a = b; b = t; }
+#endif
 /**************************************************************************/
 /*!
     @brief constructor if using external SRAM chip and software SPI
@@ -38,16 +45,16 @@ OpenBook_IL0398::OpenBook_IL0398(int width, int height,
   Adafruit_EPD(width, height, SID, SCLK, DC, RST, CS, SRCS, MISO, BUSY) {
 
   buffer1_size = ((uint32_t)width * (uint32_t)height) / 8;
-  buffer2_size = buffer1_size;
+  buffer2_size = 0;
 
   if (SRCS >= 0) {
     use_sram = true;
     buffer1_addr = 0;
-    buffer2_addr = buffer1_size;
+    buffer2_addr = 0;
     buffer1 = buffer2 = NULL;
   } else {
     buffer1 = (uint8_t *)malloc(buffer1_size);
-    buffer2 = (uint8_t *)malloc(buffer2_size);
+    buffer2 = NULL;
   }
 }
 
@@ -70,16 +77,16 @@ OpenBook_IL0398::OpenBook_IL0398(int width, int height,
   Adafruit_EPD(width, height, DC, RST, CS, SRCS, BUSY, spi) {
 
   buffer1_size = ((uint32_t)width * (uint32_t)height) / 8;
-  buffer2_size = buffer1_size;
+  buffer2_size = 0;
 
   if (SRCS >= 0) {
     use_sram = true;
     buffer1_addr = 0;
-    buffer2_addr = buffer1_size;
+    buffer2_addr = 0;
     buffer1 = buffer2 = NULL;
   } else {
     buffer1 = (uint8_t *)malloc(buffer1_size);
-    buffer2 = (uint8_t *)malloc(buffer2_size);
+    buffer2 = NULL;
   }
 }
 
@@ -111,8 +118,7 @@ void OpenBook_IL0398::busy_wait(void)
 void OpenBook_IL0398::begin(bool reset)
 {
   Adafruit_EPD::begin(reset);
-  setBlackBuffer(1, true);
-  setColorBuffer(1, true);
+  setBlackBuffer(0, true);
 
   setRotation(1);
   powerDown();
@@ -225,7 +231,7 @@ const unsigned char OpenBook_IL0398::LUT_B[] PROGMEM =
     10b: VDL+VCM_DC (VCOML)
     11b: Floating
 */
-const unsigned char OpenBook_IL0398::LUT_VCOM[] PROGMEM =
+const unsigned char OpenBook_IL0398::LUT_VCOM_FULL[] PROGMEM =
 {
     0x40, 0x17, 0x00, 0x00, 0x00, 0x02,
     0x00, 0x17, 0x17, 0x00, 0x00, 0x02,
@@ -251,11 +257,107 @@ const unsigned char OpenBook_IL0398::LUT_VCOM[] PROGMEM =
 
 /**************************************************************************/
 /*!
-    @brief start up the display
+    @brief Custom lookup tables for partial screen updates.
+    @warning I HAVE NO IDEA IF THIS IS SAFE TO USE!
+             Seriously, I made this up based on some things I've seen, and it works _okay_
+             (if with a lot of ghosting), but I have no idea if using it is going to brick
+             my screen eventually. One consequence of developing things out in the open,
+             you get to break things along with me :)
 */
 /**************************************************************************/
-void OpenBook_IL0398::powerUp()
+
+#define P1_1 5      // Phase 1 step 1: WW and BB pixels go to GND, BB and BW go to inverse of their intended levels.
+#define P1_2 30     // step 2: BB and BW remain inverted, but now WW and WB invert too.
+#define P1_3 30     // step 3: All pixels go to their final values (WW and BW -> low, BB and WB -> high)
+#define P1_4 0      // Unused. Take all pixels to GND and VCOM to floating. I was just testing it at one point, couldn't see a difference, still probably a bad idea.
+#define P1_repeat 1 // number of times to repeat P1
+
+// reminder:
+// for pixels
+//   00b: GND
+//   01b: VDH (black)
+//   10b: VDL (white)
+// and for VCOM
+//   00b: VCM_DC
+//   01b: VDH+VCM_DC (VCOMH)
+//   10b: VDL+VCM_DC (VCOML)
+//   11b: Floating
+
+const unsigned char OpenBook_IL0398::LUT_WW[] PROGMEM =
 {
+    0x18, P1_1, P1_2, P1_3, P1_4, P1_repeat,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+};
+
+const unsigned char OpenBook_IL0398::LUT_WB[] PROGMEM =
+{
+    0xA4, P1_1, P1_2, P1_3, P1_4, P1_repeat,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+};
+
+const unsigned char OpenBook_IL0398::LUT_BW[] PROGMEM =
+{
+    0x58, P1_1, P1_2, P1_3, P1_4, P1_repeat,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+};
+
+const unsigned char OpenBook_IL0398::LUT_BB[] PROGMEM =
+{
+    0x24, P1_1, P1_2, P1_3, P1_4, P1_repeat,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+};
+
+const unsigned char OpenBook_IL0398::LUT_VCOM_PARTIAL[] PROGMEM =
+{
+    0x03, P1_1, P1_2, P1_3, P1_4, P1_repeat,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00,
+    0x00,
+};
+
+/**************************************************************************/
+/*!
+    @brief start up the display. Same as init, but here for compatibility with
+           Adafruit_EPD; you can call OpenBook_IL0398::init with more options.
+*/
+/**************************************************************************/
+void OpenBook_IL0398::powerUp() {
+    this->init();
+}
+
+/**************************************************************************/
+/*!
+    @brief start up the display
+    @param partialMode true if you want to set partial update waveforms.
+    @warning You always need to do one full refresh before enabling partial mode.
+*/
+/**************************************************************************/
+void OpenBook_IL0398::init(bool partialMode) {
   uint8_t buf[4];
 
   hardwareReset();
@@ -289,14 +391,22 @@ void OpenBook_IL0398::powerUp()
   buf[0] = 0xD7; // 0x57 for black border. 0x97 for white border. 0xD7 for floating border.
   EPD_command(IL0398_VCOM, buf, 1);
   
+  if (partialMode) {
+    EPD_command(IL0398_LUT1, LUT_VCOM_PARTIAL, sizeof(LUT_VCOM_PARTIAL));
+    EPD_command(IL0398_LUTWW, LUT_WW, sizeof(LUT_WW));
+    EPD_command(IL0398_LUTBW, LUT_BW, sizeof(LUT_BW));
+    EPD_command(IL0398_LUTWB, LUT_WB, sizeof(LUT_WB));
+    EPD_command(IL0398_LUTBB, LUT_BB, sizeof(LUT_BB));
+  } else {
+    EPD_command(IL0398_LUT1, LUT_VCOM_FULL, sizeof(LUT_VCOM_FULL));
+    EPD_command(IL0398_LUTWW, LUT_W, sizeof(LUT_W));
+    EPD_command(IL0398_LUTBW, LUT_W, sizeof(LUT_W));
+    EPD_command(IL0398_LUTWB, LUT_B, sizeof(LUT_B));
+    EPD_command(IL0398_LUTBB, LUT_B, sizeof(LUT_B));
+  }
+
   EPD_command(IL0398_POWER_ON);
   busy_wait();
-
-  EPD_command(IL0398_LUT1, LUT_VCOM, sizeof(LUT_VCOM));
-  EPD_command(IL0398_LUTWW, LUT_W, sizeof(LUT_W));
-  EPD_command(IL0398_LUTBW, LUT_W, sizeof(LUT_W));
-  EPD_command(IL0398_LUTWB, LUT_B, sizeof(LUT_B));
-  EPD_command(IL0398_LUTBB, LUT_B, sizeof(LUT_B));
 
   delay(20);
 }
@@ -320,8 +430,88 @@ void OpenBook_IL0398::powerDown()
   delay(100);
 }
 
+/**************************************************************************/
+/*!
+    @brief Sets the window for partial refresh.
+    @note source: Waveshare's epd4in2.cpp
+*/
+/**************************************************************************/
+void OpenBook_IL0398::setWindow(uint16_t x, uint16_t y, uint16_t w, uint16_t h) {
+    uint16_t xe = (x + w - 1) | 0x0007; // byte boundary inclusive (last byte)
+    uint16_t ye = y + h - 1;
+    uint8_t buf[9];
+    buf[0] = x >> 8;
+    buf[1] = x & 0xf8; // x should be a multiple of 8, the last 3 bits will always be ignored
+    buf[2] = ((x & 0xf8) + w  - 1) >> 8;
+    buf[3] = ((x & 0xf8) + w  - 1) | 0x07;
+    buf[4] = y >> 8;
+    buf[5] = y & 0xff;
+    buf[6] = (y + h - 1) >> 8;
+    buf[7] = (y + h - 1) & 0xff;
+    buf[8] = 0x01; // Gates scan both inside and outside of the partial window. (default)
+    EPD_command(IL0398_PARTWINDOW, buf, 9);
+}
 
+/**************************************************************************/
+/*!
+    @brief Updates a part of the screen.
+    @param x the x origin of the area you want to update. May be rounded down to a multiple of 8.
+    @param y the y origin of the area you want to update. May be rounded down to a multiple of 8.
+    @param w the width of the area you want to update. May be rounded up to a multiple of 8.
+    @param h the height of the area you want to update. May be rounded up to a multiple of 8.
+    @note You can make whatever changes to the buffer you want before calling this, but
+          only the area in the update rect will be updated. If, say, you fill the buffer
+          with black, but then update only an 8x8 rect, the EPD will show whatever was on
+          the screen last (plus your 8x8 black rect), but buf will still be full of black,
+          and subsequently calling for a full display() will fill the screen with black.
+          Suggest only making changes to an area that you mark dirty, and then calling
+          this with the dirty rect so that the buffer and the screen stay consistent.
+*/
+/**************************************************************************/
+void OpenBook_IL0398::displayPartial(uint16_t x, uint16_t y, uint16_t w, uint16_t h) {
+    this->init(true);
 
+    switch (this->getRotation())
+    {
+        case 1:
+            _swap_int16_t(x, y);
+            _swap_int16_t(w, h);
+            y = WIDTH - y - h;
+            break;
+        case 2:
+            x = HEIGHT - x - w;
+            y = WIDTH - y - h;
+            break;
+        case 3:
+            _swap_int16_t(x, y);
+            _swap_int16_t(w, h);
+            x = HEIGHT - x - w;
+            break;
+    }
+    EPD_command(IL0398_PARTIALIN);
+    this->setWindow(x, y, w, h);
+    this->writeRAMCommand(0);
+    dcHigh();
+    for(uint16_t i=0; i<w * h / 8; i++) {
+        // for now just transferring alternating lines for testing.
+        SPItransfer(i % 2 ? 0xFF : 0x00);
+
+        // TODO: transfer actual partial buffer
+        if (use_sram) {
+            // transfer partial buffer from SRAM chip
+        } else {
+            // transfer partial buffer from buffer1
+        }
+    }
+    csHigh();
+    EPD_command(IL0398_PARTIALOUT);
+
+    this->update();
+
+    delay(20);
+
+    this->init(false);
+}
 
 /**************************************************************************/
 /*!
@@ -333,10 +523,10 @@ void OpenBook_IL0398::powerDown()
 /**************************************************************************/
 uint8_t OpenBook_IL0398::writeRAMCommand(uint8_t index) {
   if (index == 0) {
-    return EPD_command(EPD_RAM_BW, false);
+    return EPD_command(IL0398_DTM2, false);
   }
   if (index == 1) {
-    return EPD_command(EPD_RAM_RED, false);
+    return EPD_command(IL0398_DTM1, false);
   }
   return 0;
 }
