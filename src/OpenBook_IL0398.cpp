@@ -466,9 +466,16 @@ void OpenBook_IL0398::setWindow(uint16_t x, uint16_t y, uint16_t w, uint16_t h) 
           and subsequently calling for a full display() will fill the screen with black.
           Suggest only making changes to an area that you mark dirty, and then calling
           this with the dirty rect so that the buffer and the screen stay consistent.
+    @todo for some reason this is glitchy in rotation mode 3. that's upside down for the
+          open book so i'm not worrying about it at the moment. Also need to make this work
+          with SRAM buffer.
 */
 /**************************************************************************/
 void OpenBook_IL0398::displayPartial(uint16_t x, uint16_t y, uint16_t w, uint16_t h) {
+    if (use_sram) {
+        this->display(); // partial update not yet supported from SRAM.
+    }
+
     this->init(true);
 
     switch (this->getRotation())
@@ -490,17 +497,18 @@ void OpenBook_IL0398::displayPartial(uint16_t x, uint16_t y, uint16_t w, uint16_
     }
     EPD_command(IL0398_PARTIALIN);
     this->setWindow(x, y, w, h);
+
+    // determine the area of buffer to transfer
+    x /= 8; // we're dealing with bytes now, not pixels
+    w += w % 8; // round width up to the nearest multiple of 8...
+    w /= 8; // ...and put it in terms of bytes
+    uint16_t buffer_width = HEIGHT / 8;
+
     this->writeRAMCommand(0);
     dcHigh();
-    for(uint16_t i=0; i<w * h / 8; i++) {
-        // for now just transferring alternating lines for testing.
-        SPItransfer(i % 2 ? 0xFF : 0x00);
-
-        // TODO: transfer actual partial buffer
-        if (use_sram) {
-            // transfer partial buffer from SRAM chip
-        } else {
-            // transfer partial buffer from buffer1
+    for(uint16_t i = x + buffer_width * y; i < x + w + buffer_width * (y + h); i += buffer_width) {
+        for(uint16_t j = 0; j < w; j++) {
+            SPItransfer(buffer1[i + j]);
         }
     }
     csHigh();
