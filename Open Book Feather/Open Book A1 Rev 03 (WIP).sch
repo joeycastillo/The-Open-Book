@@ -15854,14 +15854,14 @@ by exp-lbrs.ulp</description>
 <part name="R13" library="microbuilder" deviceset="RESISTOR" device="_0805MP" value="10K"/>
 <part name="R14" library="microbuilder" deviceset="RESISTOR" device="_0805MP" value="10K"/>
 <part name="R9" library="resistor array" deviceset="EXB-V8V103JV" device="" value="100K"/>
-<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$46" library="microbuilder" deviceset="VBUS" device=""/>
-<part name="U$23" library="microbuilder" deviceset="VBAT" device=""/>
 <part name="FUL" library="adafruit" deviceset="LED" device="CHIP-LED0805" value="GREEN"/>
 <part name="R5" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="1K"/>
 <part name="U$34" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$49" library="microbuilder" deviceset="VBUS" device=""/>
+<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U$50" library="microbuilder" deviceset="VBUS" device=""/>
+<part name="U$51" library="microbuilder" deviceset="VBAT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15905,7 +15905,7 @@ by exp-lbrs.ulp</description>
 to things they don't plan on using)
 * Power MOSFET for bright white LED's?
 ✓ VUSB to a pin via voltage divider.</text>
-<text x="461.264" y="106.934" size="1.778" layer="94" rot="R180">BATTERY MONITOR</text>
+<text x="461.264" y="124.714" size="1.778" layer="94" rot="R180">BATTERY MONITOR</text>
 <text x="434.34" y="12.7" size="1.778" layer="88">Available (interrupt)</text>
 <text x="434.34" y="38.1" size="1.778" layer="88">Available (interrupt)</text>
 </plain>
@@ -16182,18 +16182,6 @@ to things they don't plan on using)
 <attribute name="VALUE" x="427.9138" y="108.7628" size="1.27" layer="96" ratio="10" rot="SR0"/>
 <attribute name="NAME" x="427.9646" y="118.6688" size="1.27" layer="95" ratio="10" rot="SR0"/>
 </instance>
-<instance part="GND9" gate="1" x="421.64" y="116.84" smashed="yes" rot="R270">
-<attribute name="VALUE" x="419.1" y="119.38" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="GND12" gate="1" x="421.64" y="106.68" smashed="yes" rot="R270">
-<attribute name="VALUE" x="419.1" y="109.22" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="U$46" gate="G$1" x="419.1" y="121.92" smashed="yes" rot="R90">
-<attribute name="VALUE" x="418.084" y="120.396" size="1.27" layer="96" rot="R90"/>
-</instance>
-<instance part="U$23" gate="G$1" x="419.1" y="111.76" smashed="yes" rot="R90">
-<attribute name="VALUE" x="418.084" y="110.236" size="1.27" layer="96" rot="R90"/>
-</instance>
 <instance part="FUL" gate="G$1" x="495.3" y="104.14" smashed="yes" rot="R270">
 <attribute name="NAME" x="495.808" y="105.664" size="1.778" layer="95"/>
 <attribute name="VALUE" x="490.728" y="100.965" size="1.778" layer="96"/>
@@ -16207,6 +16195,18 @@ to things they don't plan on using)
 </instance>
 <instance part="U$49" gate="G$1" x="487.68" y="121.92" smashed="yes">
 <attribute name="VALUE" x="486.156" y="122.936" size="1.27" layer="96"/>
+</instance>
+<instance part="GND9" gate="1" x="439.42" y="116.84" smashed="yes" rot="R90">
+<attribute name="VALUE" x="441.96" y="114.3" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND12" gate="1" x="439.42" y="106.68" smashed="yes" rot="R90">
+<attribute name="VALUE" x="441.96" y="104.14" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="U$50" gate="G$1" x="421.64" y="111.76" smashed="yes" rot="R90">
+<attribute name="VALUE" x="420.624" y="110.236" size="1.27" layer="96" rot="R90"/>
+</instance>
+<instance part="U$51" gate="G$1" x="421.64" y="121.92" smashed="yes" rot="R90">
+<attribute name="VALUE" x="420.624" y="120.396" size="1.27" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -16355,18 +16355,18 @@ to things they don't plan on using)
 <pinref part="U$18" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R9" gate="A" pin="2"/>
-<pinref part="GND9" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="R9" gate="A" pin="4"/>
-<pinref part="GND12" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="FUL" gate="G$1" pin="C"/>
 <wire x1="490.22" y1="104.14" x2="487.68" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="487.68" y1="104.14" x2="487.68" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="U$34" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R9" gate="A" pin="7"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R9" gate="A" pin="5"/>
+<pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="EINK_DC" class="0">
@@ -16634,9 +16634,8 @@ to things they don't plan on using)
 <junction x="551.18" y="116.84"/>
 </segment>
 <segment>
-<pinref part="U$23" gate="G$1" pin="VBAT"/>
-<wire x1="421.64" y1="111.76" x2="424.18" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="R9" gate="A" pin="3"/>
+<pinref part="R9" gate="A" pin="1"/>
+<pinref part="U$51" gate="G$1" pin="VBAT"/>
 </segment>
 </net>
 <net name="A5" class="0">
@@ -16926,13 +16925,15 @@ to things they don't plan on using)
 <pinref part="U3" gate="G$2" pin="PB01/I1/AIN13/SERCOM5.3"/>
 </segment>
 <segment>
-<wire x1="459.74" y1="109.22" x2="436.88" y2="109.22" width="0.1524" layer="91"/>
-<label x="439.42" y="109.22" size="1.778" layer="95"/>
-<pinref part="R9" gate="A" pin="6"/>
-<wire x1="436.88" y1="111.76" x2="436.88" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="R9" gate="A" pin="5"/>
-<wire x1="436.88" y1="109.22" x2="436.88" y2="106.68" width="0.1524" layer="91"/>
-<junction x="436.88" y="109.22"/>
+<wire x1="436.88" y1="119.38" x2="459.74" y2="119.38" width="0.1524" layer="91"/>
+<label x="439.42" y="119.38" size="1.778" layer="95"/>
+<pinref part="R9" gate="A" pin="8"/>
+<wire x1="436.88" y1="121.92" x2="436.88" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="R9" gate="A" pin="2"/>
+<wire x1="424.18" y1="116.84" x2="421.64" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="421.64" y1="116.84" x2="421.64" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="421.64" y1="119.38" x2="436.88" y2="119.38" width="0.1524" layer="91"/>
+<junction x="436.88" y="119.38"/>
 </segment>
 </net>
 <net name="SDCS" class="0">
@@ -17016,9 +17017,8 @@ to things they don't plan on using)
 <wire x1="530.86" y1="60.96" x2="558.8" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$46" gate="G$1" pin="VBUS"/>
-<wire x1="421.64" y1="121.92" x2="424.18" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="R9" gate="A" pin="1"/>
+<pinref part="R9" gate="A" pin="3"/>
+<pinref part="U$50" gate="G$1" pin="VBUS"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -17134,13 +17134,15 @@ to things they don't plan on using)
 <label x="327.66" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="436.88" y1="119.38" x2="459.74" y2="119.38" width="0.1524" layer="91"/>
-<label x="439.42" y="119.38" size="1.778" layer="95"/>
-<pinref part="R9" gate="A" pin="8"/>
-<wire x1="436.88" y1="121.92" x2="436.88" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="R9" gate="A" pin="7"/>
-<wire x1="436.88" y1="119.38" x2="436.88" y2="116.84" width="0.1524" layer="91"/>
-<junction x="436.88" y="119.38"/>
+<wire x1="459.74" y1="109.22" x2="436.88" y2="109.22" width="0.1524" layer="91"/>
+<label x="439.42" y="109.22" size="1.778" layer="95"/>
+<pinref part="R9" gate="A" pin="6"/>
+<wire x1="436.88" y1="111.76" x2="436.88" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="R9" gate="A" pin="4"/>
+<wire x1="424.18" y1="106.68" x2="421.64" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="421.64" y1="106.68" x2="421.64" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="421.64" y1="109.22" x2="436.88" y2="109.22" width="0.1524" layer="91"/>
+<junction x="436.88" y="109.22"/>
 </segment>
 </net>
 <net name="EINK_MISO_NC" class="0">
