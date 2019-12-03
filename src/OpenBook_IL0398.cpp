@@ -119,8 +119,6 @@ void OpenBook_IL0398::begin(bool reset)
 {
   Adafruit_EPD::begin(reset);
   setBlackBuffer(0, true);
-
-  setRotation(1);
   powerDown();
 }
 
