@@ -27,6 +27,4 @@ The correct mapping is:
 
 ## Open Book A1 Rev 03 (WIP)
 
-This is a work in progress, tho Rev 2 worked so well I might leave it there. FWIW my thinking on this is to nix the SRAM chip ($--) since the SAMD51 has plenty of RAM. It also swaps the shift register for an I2C port expander ($++), for four reasons: 1, it matches the Wing's hardware design; 2, internal pull-ups mean no need to place two fiddly little resistor arrays; 3, it gives us the ability to interrupt on any button, and 4, it frees up pins that we can use for a mic amp shutdown and VBUS monitor (to know when we're connected to external power).
-
-It also adds some creature comforts like a green "Battery Full" lamp, and an SWO pin on the SWD connector.
+This is a work in progress, tho Rev 2 worked so well I might leave it there.
