@@ -17351,6 +17351,11 @@ by exp-lbrs.ulp</description>
 <wire x1="416.56" y1="109.22" x2="416.56" y2="114.3" width="0.1524" layer="91"/>
 <junction x="416.56" y="109.22"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$2" pin="PB00/I0/AIN12/SERCOM5.2"/>
+<wire x1="350.52" y1="48.26" x2="325.12" y2="48.26" width="0.1524" layer="91"/>
+<label x="327.66" y="48.26" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="BUTTON_LATCH" class="0">
 <segment>
