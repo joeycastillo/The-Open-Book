@@ -9547,7 +9547,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="61.976" y1="4.826" x2="62.992" y2="4.826" width="0.1524" layer="16"/>
 <wire x1="14.478" y1="0.508" x2="57.658" y2="0.508" width="0.1524" layer="16"/>
 </signal>
-<signal name="PB13_SWO_MICSHDN">
+<signal name="PB31_SWO_MICSHDN">
 <contactref element="U3" pad="60"/>
 <contactref element="SJ1" pad="1"/>
 <wire x1="40.612" y1="55.738" x2="40.612" y2="54.0199" width="0.1524" layer="16"/>

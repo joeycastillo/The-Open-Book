@@ -17396,7 +17396,7 @@ by exp-lbrs.ulp</description>
 <label x="434.34" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PB13_SWO_MICSHDN" class="0">
+<net name="PB31_SWO_MICSHDN" class="0">
 <segment>
 <pinref part="U3" gate="G$2" pin="PB31/I15/SERCOM5.0"/>
 <wire x1="431.8" y1="12.7" x2="452.12" y2="12.7" width="0.1524" layer="91"/>
@@ -19058,7 +19058,7 @@ some fractional milliamps.</text>
 <label x="223.52" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PB13_SWO_MICSHDN" class="0">
+<net name="PB31_SWO_MICSHDN" class="0">
 <segment>
 <pinref part="SJ1" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="142.24" x2="251.46" y2="142.24" width="0.1524" layer="91"/>
