@@ -211,7 +211,7 @@ when the voltage exceeds their breakdown point.</text>
 <text x="46.482" y="7.874" size="0.508" layer="21" font="vector" ratio="18" rot="SR270" align="center">BTN_RIGHT</text>
 <text x="31.242" y="7.874" size="0.508" layer="21" font="vector" ratio="18" rot="R270" align="center">BTN_LEFT</text>
 <text x="18.161" y="3.9116" size="0.3556" layer="22" font="vector" ratio="18" rot="MR180" align="center">BTN_RESET</text>
-<text x="4.318" y="0.508" size="1.27" layer="21" font="vector" ratio="18">OSO-BOOK-A1-02</text>
+<text x="4.318" y="0.508" size="1.27" layer="21" font="vector" ratio="18">OSO-BOOK-A1-04</text>
 <text x="9.779" y="42.1894" size="0.508" layer="22" font="vector" ratio="18" rot="MR90" align="center">A8</text>
 <text x="9.779" y="44.1706" size="0.508" layer="22" font="vector" ratio="18" rot="MR90" align="center">3V</text>
 <text x="9.779" y="46.2026" size="0.508" layer="22" font="vector" ratio="18" rot="MR90" align="center">GND</text>
