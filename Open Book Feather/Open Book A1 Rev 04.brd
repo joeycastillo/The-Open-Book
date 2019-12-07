@@ -9375,7 +9375,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="70.358" y1="20.132" x2="72.258" y2="22.032" width="0.1524" layer="16"/>
 <wire x1="72.258" y1="22.032" x2="72.898" y2="22.032" width="0.1524" layer="16"/>
 </signal>
-<signal name="N$68">
+<signal name="N$67">
 <contactref element="C33" pad="2"/>
 <contactref element="R23" pad="2"/>
 <contactref element="R24" pad="1"/>
@@ -9514,7 +9514,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="66.51279375" y1="1.23479375" x2="66.51279375" y2="6.029975" width="0.1524" layer="16"/>
 <wire x1="66.51279375" y1="6.029975" x2="74.493" y2="14.01018125" width="0.1524" layer="16"/>
 </signal>
-<signal name="N$6">
+<signal name="N$68">
 <contactref element="U7" pad="3"/>
 <contactref element="R26" pad="1"/>
 <contactref element="C34" pad="2"/>

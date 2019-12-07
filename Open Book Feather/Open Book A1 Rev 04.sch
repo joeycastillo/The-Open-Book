@@ -18939,7 +18939,7 @@ some fractional milliamps.</text>
 <pinref part="R22" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$68" class="0">
+<net name="N$67" class="0">
 <segment>
 <pinref part="C33" gate="G$1" pin="2"/>
 <pinref part="R23" gate="G$1" pin="2"/>
@@ -19036,7 +19036,7 @@ some fractional milliamps.</text>
 <label x="190.5" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="N$68" class="0">
 <segment>
 <pinref part="U7" gate="A" pin="IN-"/>
 <wire x1="114.3" y1="93.98" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
