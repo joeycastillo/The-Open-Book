@@ -17354,12 +17354,13 @@ by exp-lbrs.ulp</description>
 </net>
 <net name="A6_BATMON" class="0">
 <segment>
-<label x="398.78" y="119.38" size="1.778" layer="95"/>
+<label x="398.78" y="121.92" size="1.778" layer="95"/>
 <pinref part="R6" gate="A" pin="2"/>
-<wire x1="416.56" y1="119.38" x2="401.32" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="R6" gate="A" pin="1"/>
-<wire x1="416.56" y1="119.38" x2="416.56" y2="124.46" width="0.1524" layer="91"/>
-<junction x="416.56" y="119.38"/>
+<wire x1="416.56" y1="119.38" x2="416.56" y2="121.92" width="0.1524" layer="91"/>
+<junction x="416.56" y="121.92"/>
+<wire x1="416.56" y1="121.92" x2="416.56" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="416.56" y1="121.92" x2="398.78" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="350.52" y1="45.72" x2="325.12" y2="45.72" width="0.1524" layer="91"/>
@@ -17369,12 +17370,13 @@ by exp-lbrs.ulp</description>
 </net>
 <net name="A11_BUSMON" class="0">
 <segment>
-<label x="398.78" y="109.22" size="1.778" layer="95"/>
+<label x="398.78" y="111.76" size="1.778" layer="95"/>
 <pinref part="R6" gate="A" pin="4"/>
-<wire x1="416.56" y1="109.22" x2="401.32" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R6" gate="A" pin="3"/>
-<wire x1="416.56" y1="109.22" x2="416.56" y2="114.3" width="0.1524" layer="91"/>
-<junction x="416.56" y="109.22"/>
+<wire x1="416.56" y1="109.22" x2="416.56" y2="111.76" width="0.1524" layer="91"/>
+<junction x="416.56" y="111.76"/>
+<wire x1="416.56" y1="111.76" x2="416.56" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="416.56" y1="111.76" x2="398.78" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$2" pin="PB00/I0/AIN12/SERCOM5.2"/>
