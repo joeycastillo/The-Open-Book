@@ -9,7 +9,7 @@
 </settings>
 <grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -24,17 +24,17 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="13" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -47,10 +47,10 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -59,8 +59,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
@@ -459,9 +459,9 @@ but they're useful for firmware development.</text>
 <wire x1="8.0264" y1="16.8656" x2="7.8994" y2="16.7386" width="0.254" layer="22" style="shortdash"/>
 <wire x1="7.8994" y1="16.7386" x2="7.7724" y2="16.8656" width="0.254" layer="22" style="shortdash"/>
 <wire x1="7.7724" y1="16.8656" x2="7.7724" y2="16.9926" width="0.254" layer="22" style="shortdash"/>
-<text x="44.45" y="43.1038" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">C5, C6, C7, C8: filtering 
-caps on each power pin.</text>
-<text x="32.9184" y="54.5846" size="0.8128" layer="22" font="vector" rot="MR90">C9&amp;C10: filter</text>
+<text x="44.958" y="43.3578" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">C5, C6, C9, C10: filtering 
+ caps on each power pin</text>
+<text x="32.9184" y="54.5846" size="0.8128" layer="22" font="vector" rot="MR90">C7&amp;C8: filter</text>
 <text x="32.4358" y="50.1396" size="0.8128" layer="22" font="vector" distance="30" rot="MR90" align="top-left">caps on VDDCORE,
 output from the
 chip's voltage
@@ -6826,11 +6826,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="32.258" y="39.878" size="0.508" layer="26" font="vector" ratio="18" rot="MR90" align="center"/>
 <attribute name="VALUE" x="30.226" y="38.608" size="0.508" layer="28" font="vector" ratio="18" rot="MR180" align="center"/>
 </element>
-<element name="C9" library="microbuilder" package="0805_10MGAP" value="10uF" x="36.068" y="62.484" smashed="yes" rot="MR0">
+<element name="C7" library="microbuilder" package="0805_10MGAP" value="10uF" x="36.068" y="62.484" smashed="yes" rot="MR0">
 <attribute name="NAME" x="36.068" y="63.627" size="0.508" layer="26" font="vector" ratio="18" rot="MR0" align="center"/>
 <attribute name="VALUE" x="33.782" y="62.484" size="0.508" layer="28" font="vector" ratio="18" rot="MR270" align="center"/>
 </element>
-<element name="C10" library="microbuilder" package="0805_10MGAP" value="1uF" x="36.068" y="60.198" smashed="yes" rot="MR0">
+<element name="C8" library="microbuilder" package="0805_10MGAP" value="1uF" x="36.068" y="60.198" smashed="yes" rot="MR0">
 <attribute name="NAME" x="36.068" y="61.341" size="0.508" layer="26" font="vector" ratio="18" rot="MR0" align="center"/>
 <attribute name="VALUE" x="33.782" y="60.198" size="0.508" layer="28" font="vector" ratio="18" rot="MR270" align="center"/>
 </element>
@@ -6874,7 +6874,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="41.402" y="61.341" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
 <attribute name="VALUE" x="43.688" y="60.198" size="0.508" layer="28" font="vector" ratio="18" rot="MR90" align="center"/>
 </element>
-<element name="C7" library="microbuilder" package="0805-NO" value="1uF" x="29.21" y="48.26" smashed="yes" rot="MR90">
+<element name="C9" library="microbuilder" package="0805-NO" value="1uF" x="29.21" y="48.26" smashed="yes" rot="MR90">
 <attribute name="NAME" x="29.21" y="46.101" size="0.508" layer="26" font="vector" ratio="18" rot="MR0" align="center"/>
 <attribute name="VALUE" x="27.94" y="48.26" size="0.508" layer="28" font="vector" ratio="18" rot="MR90" align="center"/>
 </element>
@@ -6993,7 +6993,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="TP1" library="microbuilder" package="TESTPOINT_ROUND_2MM_NO" value="" x="4.318" y="28.194" smashed="yes" rot="MR180"/>
 <element name="TP2" library="microbuilder" package="TESTPOINT_ROUND_2MM_NO" value="" x="6.858" y="28.194" smashed="yes" rot="MR180"/>
-<element name="C8" library="microbuilder" package="0805_10MGAP" value="1uF" x="38.862" y="39.878" smashed="yes" rot="MR0">
+<element name="C10" library="microbuilder" package="0805_10MGAP" value="1uF" x="38.862" y="39.878" smashed="yes" rot="MR0">
 <attribute name="NAME" x="40.894" y="39.878" size="0.508" layer="26" font="vector" ratio="18" rot="MR270" align="center"/>
 <attribute name="VALUE" x="39.37" y="40.894" size="0.508" layer="28" font="vector" ratio="18" rot="MR0"/>
 </element>
@@ -7155,8 +7155,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="JP1" pad="2"/>
 <contactref element="X2" pad="3"/>
 <contactref element="X2" pad="5"/>
-<contactref element="C9" pad="2"/>
-<contactref element="C10" pad="2"/>
+<contactref element="C7" pad="2"/>
+<contactref element="C8" pad="2"/>
 <contactref element="U3" pad="7"/>
 <contactref element="U3" pad="22"/>
 <contactref element="U3" pad="33"/>
@@ -7175,7 +7175,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="X1" pad="1"/>
 <contactref element="C5" pad="2"/>
 <contactref element="C6" pad="2"/>
-<contactref element="C7" pad="2"/>
+<contactref element="C9" pad="2"/>
 <contactref element="C4" pad="2"/>
 <contactref element="R3" pad="2"/>
 <contactref element="U2" pad="2"/>
@@ -7223,7 +7223,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="34.29" y="88.138" extent="1-16" drill="0.254"/>
 <via x="47.244" y="45.212" extent="1-16" drill="0.254"/>
 <via x="54.864" y="44.704" extent="1-16" drill="0.254"/>
-<contactref element="C8" pad="2"/>
+<contactref element="C10" pad="2"/>
 <via x="33.274" y="72.39" extent="1-16" drill="0.254"/>
 <via x="33.274" y="70.0786" extent="1-16" drill="0.254"/>
 <via x="35.2806" y="50.3936" extent="1-16" drill="0.254"/>
@@ -7779,7 +7779,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="U1" pad="5"/>
 <contactref element="C5" pad="1"/>
 <contactref element="C6" pad="1"/>
-<contactref element="C7" pad="1"/>
+<contactref element="C9" pad="1"/>
 <contactref element="R11" pad="1"/>
 <contactref element="U4" pad="8"/>
 <contactref element="C14" pad="1"/>
@@ -7909,7 +7909,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="33.162" y1="53.788" x2="34.12245" y2="53.788" width="0.3048" layer="16"/>
 <wire x1="35.179" y1="51.689" x2="36.195" y2="50.673" width="0.3048" layer="16"/>
 <wire x1="57.658" y1="105.73" x2="57.592" y2="105.664" width="0.3048" layer="16"/>
-<contactref element="C8" pad="1"/>
+<contactref element="C10" pad="1"/>
 <wire x1="40.612" y1="40.578" x2="39.912" y2="39.878" width="0.3048" layer="16"/>
 <wire x1="40.612" y1="44.338" x2="40.612" y2="40.578" width="0.3048" layer="16"/>
 <wire x1="35.179" y1="52.73145" x2="35.179" y2="51.689" width="0.3048" layer="16"/>
@@ -8629,8 +8629,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="33.70984375" y1="55.9054" x2="32.794571875" y2="54.990128125" width="0.1524" layer="1"/>
 </signal>
 <signal name="VDDCORE2" class="2">
-<contactref element="C9" pad="1"/>
-<contactref element="C10" pad="1"/>
+<contactref element="C7" pad="1"/>
+<contactref element="C8" pad="1"/>
 <contactref element="U3" pad="53"/>
 <wire x1="37.112" y1="55.738" x2="37.112" y2="60.192" width="0.3048" layer="16"/>
 <wire x1="37.112" y1="60.192" x2="37.118" y2="60.198" width="0.3048" layer="16"/>

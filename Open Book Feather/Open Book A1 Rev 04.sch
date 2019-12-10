@@ -15993,9 +15993,9 @@ by exp-lbrs.ulp</description>
 <part name="+3V24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="U$26" library="microbuilder" deviceset="GND" device=""/>
-<part name="C9" library="microbuilder" deviceset="CAP_CERAMIC" device="0805_10MGAP" value="10uF"/>
+<part name="C7" library="microbuilder" deviceset="CAP_CERAMIC" device="0805_10MGAP" value="10uF"/>
 <part name="U$31" library="microbuilder" deviceset="GND" device=""/>
-<part name="C10" library="microbuilder" deviceset="CAP_CERAMIC" device="0805_10MGAP" value="1uF"/>
+<part name="C8" library="microbuilder" deviceset="CAP_CERAMIC" device="0805_10MGAP" value="1uF"/>
 <part name="U$32" library="microbuilder" deviceset="AVCC" device=""/>
 <part name="U$37" library="microbuilder" deviceset="AVCC" device=""/>
 <part name="+3V19" library="supply1" deviceset="+3V3" device=""/>
@@ -16021,7 +16021,7 @@ by exp-lbrs.ulp</description>
 <part name="+3V20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="U$15" library="microbuilder" deviceset="GND" device=""/>
 <part name="C6" library="microbuilder" deviceset="CAP_CERAMIC" device="0805_10MGAP" value="1uF"/>
-<part name="C7" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="1uF"/>
+<part name="C9" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="1uF"/>
 <part name="U$17" library="microbuilder" deviceset="VBUS" device=""/>
 <part name="U$20" library="microbuilder" deviceset="VBAT" device=""/>
 <part name="D1" library="microbuilder" deviceset="DIODE-SCHOTTKY" device="SOD-123" value="MBR120"/>
@@ -16078,7 +16078,7 @@ by exp-lbrs.ulp</description>
 <part name="TP1" library="microbuilder" deviceset="TESTPOINT" device="ROUND2MMNO"/>
 <part name="TP2" library="microbuilder" deviceset="TESTPOINT" device="ROUND2MMNO"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="C8" library="microbuilder" deviceset="CAP_CERAMIC" device="0805_10MGAP" value="1uF"/>
+<part name="C10" library="microbuilder" deviceset="CAP_CERAMIC" device="0805_10MGAP" value="1uF"/>
 <part name="U$44" library="My Stuff" deviceset="OSO_GRAPHIC" device=""/>
 <part name="U$45" library="My Stuff" deviceset="OSO_BEAR" device=""/>
 <part name="U$47" library="My Stuff" deviceset="OSO_TEXT" device=""/>
@@ -16214,14 +16214,14 @@ by exp-lbrs.ulp</description>
 <instance part="U$26" gate="G$1" x="383.54" y="134.62" smashed="yes">
 <attribute name="VALUE" x="382.016" y="132.08" size="1.27" layer="96"/>
 </instance>
-<instance part="C9" gate="G$1" x="327.66" y="139.7" smashed="yes">
+<instance part="C7" gate="G$1" x="327.66" y="139.7" smashed="yes">
 <attribute name="NAME" x="325.37" y="140.95" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
 <attribute name="VALUE" x="329.96" y="140.95" size="1.27" layer="96" font="vector" rot="R90" align="center"/>
 </instance>
 <instance part="U$31" gate="G$1" x="322.58" y="134.62" smashed="yes">
 <attribute name="VALUE" x="321.056" y="132.08" size="1.27" layer="96"/>
 </instance>
-<instance part="C10" gate="G$1" x="317.5" y="139.7" smashed="yes">
+<instance part="C8" gate="G$1" x="317.5" y="139.7" smashed="yes">
 <attribute name="NAME" x="315.21" y="140.95" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
 <attribute name="VALUE" x="319.8" y="140.95" size="1.27" layer="96" font="vector" rot="R90" align="center"/>
 </instance>
@@ -16310,7 +16310,7 @@ by exp-lbrs.ulp</description>
 <attribute name="NAME" x="345.69" y="125.71" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
 <attribute name="VALUE" x="350.28" y="125.71" size="1.27" layer="96" font="vector" rot="R90" align="center"/>
 </instance>
-<instance part="C7" gate="G$1" x="340.36" y="124.46" smashed="yes">
+<instance part="C9" gate="G$1" x="340.36" y="124.46" smashed="yes">
 <attribute name="NAME" x="338.07" y="125.71" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
 <attribute name="VALUE" x="342.66" y="125.71" size="1.27" layer="96" font="vector" rot="R90" align="center"/>
 </instance>
@@ -16411,7 +16411,7 @@ by exp-lbrs.ulp</description>
 <instance part="GND7" gate="1" x="472.44" y="33.02" smashed="yes">
 <attribute name="VALUE" x="472.44" y="30.48" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="C8" gate="G$1" x="355.6" y="124.46" smashed="yes">
+<instance part="C10" gate="G$1" x="355.6" y="124.46" smashed="yes">
 <attribute name="NAME" x="353.31" y="125.71" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
 <attribute name="VALUE" x="357.9" y="125.71" size="1.27" layer="96" font="vector" rot="R90" align="center"/>
 </instance>
@@ -16514,9 +16514,9 @@ by exp-lbrs.ulp</description>
 <wire x1="327.66" y1="137.16" x2="322.58" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="317.5" y1="137.16" x2="322.58" y2="137.16" width="0.1524" layer="91"/>
 <junction x="322.58" y="137.16"/>
-<pinref part="C9" gate="G$1" pin="2"/>
+<pinref part="C7" gate="G$1" pin="2"/>
 <pinref part="U$31" gate="G$1" pin="GND"/>
-<pinref part="C10" gate="G$1" pin="2"/>
+<pinref part="C8" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="474.98" y1="154.94" x2="474.98" y2="152.4" width="0.1524" layer="91"/>
@@ -16562,8 +16562,8 @@ by exp-lbrs.ulp</description>
 <wire x1="340.36" y1="119.38" x2="332.74" y2="119.38" width="0.1524" layer="91"/>
 <junction x="340.36" y="119.38"/>
 <junction x="332.74" y="119.38"/>
-<pinref part="C7" gate="G$1" pin="2"/>
-<pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<pinref part="C10" gate="G$1" pin="2"/>
 <wire x1="355.6" y1="121.92" x2="355.6" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="119.38" x2="347.98" y2="119.38" width="0.1524" layer="91"/>
 <junction x="347.98" y="119.38"/>
@@ -16794,10 +16794,10 @@ by exp-lbrs.ulp</description>
 <junction x="340.36" y="132.08"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="347.98" y1="132.08" x2="347.98" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="347.98" y1="132.08" x2="355.6" y2="132.08" width="0.1524" layer="91"/>
 <junction x="347.98" y="132.08"/>
-<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="C10" gate="G$1" pin="1"/>
 <wire x1="355.6" y1="132.08" x2="355.6" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -17141,8 +17141,8 @@ by exp-lbrs.ulp</description>
 <wire x1="317.5" y1="147.32" x2="317.5" y2="144.78" width="0.1524" layer="91"/>
 <junction x="327.66" y="147.32"/>
 <wire x1="332.74" y1="152.4" x2="337.82" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="C8" gate="G$1" pin="1"/>
 <pinref part="U3" gate="G$3" pin="VDDCORE"/>
 </segment>
 </net>
