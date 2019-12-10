@@ -1,6 +1,6 @@
 # Notes on the Open Book PCB files
 
-The current working, tested revision is **Open Book A1 Rev 02**. If you want to try your hand at building this, that's the board to get fabbed.
+The current working, tested revision is **Open Book A1 Rev 03**. It's identical to Rev 02, with the exception of one change to the silkscreen, described below. If you want to try your hand at building this, **Open Book A1 Rev 03** is the board to get fabbed.
 
 ## Open Book A1 Rev 02 Errata
 
