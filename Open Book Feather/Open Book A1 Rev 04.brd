@@ -530,7 +530,6 @@ and `Button Register' blocks. This is probably the minimum viable book.
 From here, populate:
 * The `2MB QSPI Flash' &amp; `Status LED' blocks if you plan to use CircuitPython.
 * The `Babel Flash Chip' block for universal language support with Babel.
-* The `32KB SRAM Chip' block to add a display buffer (can save some RAM).
 * The `Extra Ports' block to add STEMMA-compatible I²C and analog connectors.
 * The `Audio Combo Jack' block to add stereo audio output, and raw mic input 
    from the inline mic on A7. If you do this, you can also populate:
@@ -542,12 +541,13 @@ some socket header onto the serial port for access to the UART pins.
 
 Populate your board. If you are using a reflow oven, reflow BEFORE attaching 
 the e-ink screen or soldering any thru-hole components. Once that's done, use 
-Atmel Studio + a J-Link (connected to either the debug port or the test pads) 
-to flash the UF2 bootloader onto the SAMD51. You should now be able to 
-         double-tap the reset button and see the red LED pulse. 
+a multimeter to ensure that there are no short circuits between 3V, VBUS, VBAT
+and GND. Inspect all parts for bridged pins. When all looks good, use Atmel 
+Studio + a J-Link (connected to either the debug port or the test pads) to 
+         flash the UF2 bootloader. You should now be able to double-tap the 
+         reset button and see the red LED pulse. 
 
-Unplug your device. Now you can solder on the thru-hole buttons and the 
-`Enable Switch', if you want it.
+Unplug your device. Now you can solder on the thru-hole components.
 
 Finally: using the Arduino IDE, upload the Open Book screen test sketch, and 
 then unplug your device. Thread the screen's flex cable through the hole up 
