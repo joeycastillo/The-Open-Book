@@ -183,7 +183,6 @@ void OpenBook_IL0398::update()
     Also note that while we technically have to send over five tables (W->W, W->B, B->W, 
     B->B, VCOM), for a full refresh there's no difference between a pixel changing color 
     and remaining the same, so I'm only including three and we send two of them twice. 
-    Partial refresh lookup tables are a TODO item and will require all five to be defined.
 */
 
 /*  For the per-pixel tables, voltage level select is as follows: 
@@ -256,18 +255,21 @@ const unsigned char OpenBook_IL0398::LUT_VCOM_FULL[] PROGMEM =
 /**************************************************************************/
 /*!
     @brief Custom lookup tables for partial screen updates.
-    @warning I HAVE NO IDEA IF THIS IS SAFE TO USE!
-             Seriously, I made this up based on some things I've seen, and it works _okay_
-             (if with a lot of ghosting), but I have no idea if using it is going to brick
-             my screen eventually. One consequence of developing things out in the open,
-             you get to break things along with me :)
+    @warning THIS IS A WORK IN PROGRESS! Has some issues with ghosting. Seems to cause
+             burn-in if used repeatedly on areas that aren't changing; you need to do a
+             full refresh every so often in between. If burn-in happens, a couple of full
+             updates using the factory-supplied LUT's seems to fix it right up. The safest
+             thing to do for now is to use these on a small area that you know is changing
+             completely, like a selection indication area. And even then, we probably need
+             to track the number of consecutive partial refreshes so we can force a full
+             refresh every so often.
 */
 /**************************************************************************/
 
-#define P1_1 5      // Phase 1 step 1: WW and BB pixels go to GND, BB and BW go to inverse of their intended levels.
-#define P1_2 25     // step 2: BB and BW remain inverted, but now WW and WB invert too.
-#define P1_3 25     // step 3: All pixels go to their final values (WW and BW -> low, BB and WB -> high)
-#define P1_4 0      // Unused. Take all pixels to GND and VCOM to floating. I was just testing it at one point, couldn't see a difference, still probably a bad idea.
+#define P1_1 14     // Phase 1 step 1: WW and BW -> low, BB and WB -> high.
+#define P1_2 2      // step 2: BB and WW remain at their values, BW and WB invert.
+#define P1_3 14     // step 3: All pixels go to their final values.
+#define P1_4 0      // Unused.
 #define P1_repeat 1 // number of times to repeat P1
 
 // reminder:
@@ -281,9 +283,9 @@ const unsigned char OpenBook_IL0398::LUT_VCOM_FULL[] PROGMEM =
 //   10b: VDL+VCM_DC (VCOML)
 //   11b: Floating
 
-const unsigned char OpenBook_IL0398::LUT_WW[] PROGMEM =
+const unsigned char OpenBook_IL0398::LUT_WW_PARTIAL[] PROGMEM =
 {
-    0x18, P1_1, P1_2, P1_3, P1_4, P1_repeat,
+    0xA8, P1_1, P1_2, P1_3, P1_4, P1_repeat,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -292,9 +294,9 @@ const unsigned char OpenBook_IL0398::LUT_WW[] PROGMEM =
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 };
 
-const unsigned char OpenBook_IL0398::LUT_WB[] PROGMEM =
+const unsigned char OpenBook_IL0398::LUT_WB_PARTIAL[] PROGMEM =
 {
-    0xA4, P1_1, P1_2, P1_3, P1_4, P1_repeat,
+    0x64, P1_1, P1_2, P1_3, P1_4, P1_repeat,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -303,9 +305,9 @@ const unsigned char OpenBook_IL0398::LUT_WB[] PROGMEM =
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 };
 
-const unsigned char OpenBook_IL0398::LUT_BW[] PROGMEM =
+const unsigned char OpenBook_IL0398::LUT_BW_PARTIAL[] PROGMEM =
 {
-    0x58, P1_1, P1_2, P1_3, P1_4, P1_repeat,
+    0x98, P1_1, P1_2, P1_3, P1_4, P1_repeat,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -314,9 +316,9 @@ const unsigned char OpenBook_IL0398::LUT_BW[] PROGMEM =
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 };
 
-const unsigned char OpenBook_IL0398::LUT_BB[] PROGMEM =
+const unsigned char OpenBook_IL0398::LUT_BB_PARTIAL[] PROGMEM =
 {
-    0x24, P1_1, P1_2, P1_3, P1_4, P1_repeat,
+    0x54, P1_1, P1_2, P1_3, P1_4, P1_repeat,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -327,7 +329,7 @@ const unsigned char OpenBook_IL0398::LUT_BB[] PROGMEM =
 
 const unsigned char OpenBook_IL0398::LUT_VCOM_PARTIAL[] PROGMEM =
 {
-    0x03, P1_1, P1_2, P1_3, P1_4, P1_repeat,
+    0x00, P1_1, P1_2, P1_3, P1_4, P1_repeat,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -391,10 +393,10 @@ void OpenBook_IL0398::init(bool partialMode) {
   
   if (partialMode) {
     EPD_command(IL0398_LUT1, LUT_VCOM_PARTIAL, sizeof(LUT_VCOM_PARTIAL));
-    EPD_command(IL0398_LUTWW, LUT_WW, sizeof(LUT_WW));
-    EPD_command(IL0398_LUTBW, LUT_BW, sizeof(LUT_BW));
-    EPD_command(IL0398_LUTWB, LUT_WB, sizeof(LUT_WB));
-    EPD_command(IL0398_LUTBB, LUT_BB, sizeof(LUT_BB));
+    EPD_command(IL0398_LUTWW, LUT_WW_PARTIAL, sizeof(LUT_WW_PARTIAL));
+    EPD_command(IL0398_LUTBW, LUT_BW_PARTIAL, sizeof(LUT_BW_PARTIAL));
+    EPD_command(IL0398_LUTWB, LUT_WB_PARTIAL, sizeof(LUT_WB_PARTIAL));
+    EPD_command(IL0398_LUTBB, LUT_BB_PARTIAL, sizeof(LUT_BB_PARTIAL));
   } else {
     EPD_command(IL0398_LUT1, LUT_VCOM_FULL, sizeof(LUT_VCOM_FULL));
     EPD_command(IL0398_LUTWW, LUT_W, sizeof(LUT_W));
@@ -509,10 +511,8 @@ void OpenBook_IL0398::displayPartial(uint16_t x, uint16_t y, uint16_t w, uint16_
             SPItransfer(buffer1[i + j]);
         }
     }
-    csHigh();
-    EPD_command(IL0398_PARTIALOUT);
-
     this->update();
+    EPD_command(IL0398_PARTIALOUT);
 
     delay(20);
 

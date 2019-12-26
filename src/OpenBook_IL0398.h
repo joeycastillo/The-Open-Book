@@ -95,10 +95,10 @@ private:
     static const unsigned char LUT_B[];
 
     static const unsigned char LUT_VCOM_PARTIAL[];
-    static const unsigned char LUT_WW[];
-    static const unsigned char LUT_WB[];
-    static const unsigned char LUT_BW[];
-    static const unsigned char LUT_BB[];
+    static const unsigned char LUT_WW_PARTIAL[];
+    static const unsigned char LUT_WB_PARTIAL[];
+    static const unsigned char LUT_BW_PARTIAL[];
+    static const unsigned char LUT_BB_PARTIAL[];
 };
 
 #endif // OSO_OpenBook_IL0398_h
