@@ -34,15 +34,28 @@
 #define OPENBOOK_BCS (52)
 #define OPENBOOK_BATTERY_MONITOR (A6)
 #define OPENBOOK_BUTTON_INTERRUPT (-1)
-#define OPENBOOK_BUTTON_CLOCK (48)
-#define OPENBOOK_BUTTON_DATA (49)
-#define OPENBOOK_BUTTON_LATCH (50)
 #define OPENBOOK_BUTTON_LOCK (51)
 #define OPENBOOK_BUTTON_ACTIVE (HIGH)
 #define OPENBOOK_AUDIO_L (A0)
 #define OPENBOOK_AUDIO_R (A1)
 #define OPENBOOK_MIC_RAW (A7)
 #define OPENBOOK_MIC_AMPLIFIED (A10)
+
+// Rev 4 made some changes and added some features
+#if defined(OPEN_BOOK_REV_1_2_3)
+    #define OPENBOOK_BUTTON_CLOCK (48)
+    #define OPENBOOK_BUTTON_DATA (49)
+    #define OPENBOOK_BUTTON_LATCH (50)
+    #define OPENBOOK_MIC_SHUTDOWN (-1)
+    #define OPENBOOK_USB_MONITOR (-1)
+#else
+    #define OPENBOOK_BUTTON_CLOCK (53)
+    #define OPENBOOK_BUTTON_DATA (49)
+    #define OPENBOOK_BUTTON_LATCH (43)
+    #define OPENBOOK_MIC_SHUTDOWN (48)
+    #define OPENBOOK_USB_MONITOR (50) // TODO: define this as A11 in board variant
+#endif
+
 
 #elif defined(ADAFRUIT_FEATHER_M4_EXPRESS) // e-book wing on Feather M4
 #define OPENBOOK_DISPLAY_BUS (&SPI)
