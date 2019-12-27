@@ -67,6 +67,14 @@
 #define IL0398_POWERSAVING 0xE3
 #define IL0398_FORCETEMP 0xE5
 
+typedef enum OpenBookDisplayMode {
+    OPEN_BOOK_DISPLAY_MODE_DEFAULT,
+    OPEN_BOOK_DISPLAY_MODE_QUICK,
+    OPEN_BOOK_DISPLAY_MODE_PARTIAL,
+    OPEN_BOOK_DISPLAY_MODE_GRAYSCALE
+}
+OpenBookDisplayMode;
+
 /**************************************************************************/
 /*!
     @brief  Class for interfacing with IL0398 EPD drivers
@@ -81,14 +89,17 @@ class OpenBook_IL0398 : public Adafruit_EPD {
     void powerUp();
     void update();
     void powerDown();
-
+    void setDisplayMode(OpenBookDisplayMode displayMode);
+	void drawPixel(int16_t x, int16_t y, uint16_t color);
     void displayPartial(uint16_t x, uint16_t y, uint16_t w, uint16_t h);
 protected:
-    void init(bool partialMode = false);
+    void init(OpenBookDisplayMode displayMode);
     uint8_t writeRAMCommand(uint8_t index);
     void setRAMAddress(uint16_t x, uint16_t y);
     void busy_wait();
     void setWindow(uint16_t x, uint16_t y, uint16_t w, uint16_t h);
+    
+    OpenBookDisplayMode lastMode = OPEN_BOOK_DISPLAY_MODE_DEFAULT;
 private:
     static const unsigned char LUT_VCOM_FULL[];
     static const unsigned char LUT_W[];
@@ -99,6 +110,12 @@ private:
     static const unsigned char LUT_WB_PARTIAL[];
     static const unsigned char LUT_BW_PARTIAL[];
     static const unsigned char LUT_BB_PARTIAL[];
+
+    static const unsigned char LUT_VCOM_GRAYSCALE[];
+    static const unsigned char LUT_WW_GRAYSCALE[];
+    static const unsigned char LUT_WB_GRAYSCALE[];
+    static const unsigned char LUT_BW_GRAYSCALE[];
+    static const unsigned char LUT_BB_GRAYSCALE[];
 };
 
 #endif // OSO_OpenBook_IL0398_h

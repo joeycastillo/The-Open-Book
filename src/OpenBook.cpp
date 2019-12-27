@@ -31,6 +31,7 @@ bool OpenBook::configureScreen(int8_t srcs, int8_t ecs, int8_t edc, int8_t erst,
     display->begin();
     display->clearBuffer();
     display->setRotation(1);
+    display->setColorBuffer(1, false);
     this->display = display;
 
     return true;

@@ -45,16 +45,16 @@ OpenBook_IL0398::OpenBook_IL0398(int width, int height,
   Adafruit_EPD(width, height, SID, SCLK, DC, RST, CS, SRCS, MISO, BUSY) {
 
   buffer1_size = ((uint32_t)width * (uint32_t)height) / 8;
-  buffer2_size = 0;
+  buffer2_size = buffer1_size;
 
   if (SRCS >= 0) {
     use_sram = true;
     buffer1_addr = 0;
-    buffer2_addr = 0;
+    buffer2_addr = buffer1_size;
     buffer1 = buffer2 = NULL;
   } else {
     buffer1 = (uint8_t *)malloc(buffer1_size);
-    buffer2 = NULL;
+    buffer2 = (uint8_t *)malloc(buffer2_size);
   }
 }
 
@@ -77,7 +77,7 @@ OpenBook_IL0398::OpenBook_IL0398(int width, int height,
   Adafruit_EPD(width, height, DC, RST, CS, SRCS, BUSY, spi) {
 
   buffer1_size = ((uint32_t)width * (uint32_t)height) / 8;
-  buffer2_size = 0;
+  buffer2_size = buffer1_size;
 
   if (SRCS >= 0) {
     use_sram = true;
@@ -86,7 +86,7 @@ OpenBook_IL0398::OpenBook_IL0398(int width, int height,
     buffer1 = buffer2 = NULL;
   } else {
     buffer1 = (uint8_t *)malloc(buffer1_size);
-    buffer2 = NULL;
+    buffer2 = (uint8_t *)malloc(buffer1_size);
   }
 }
 
@@ -342,23 +342,87 @@ const unsigned char OpenBook_IL0398::LUT_VCOM_PARTIAL[] PROGMEM =
 
 /**************************************************************************/
 /*!
+    @brief Lookup tables for 4-color grayscale. These come direct from the manufacturer.
+    @note displaying grayscale takes A LOT longer than plain black and white.
+*/
+/**************************************************************************/
+
+const unsigned char OpenBook_IL0398::LUT_VCOM_GRAYSCALE[] PROGMEM = 
+{
+    0x00, 0x0A, 0x00, 0x00, 0x00, 0x01,
+    0x60, 0x14, 0x14, 0x00, 0x00, 0x01,
+    0x00, 0x14, 0x00, 0x00, 0x00, 0x01,
+    0x00, 0x13, 0x0A, 0x01, 0x00, 0x01,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00,
+    0x00
+};
+
+const unsigned char OpenBook_IL0398::LUT_WW_GRAYSCALE[] PROGMEM = 
+{
+    0x40, 0x0A, 0x00, 0x00, 0x00, 0x01,
+    0x90, 0x14, 0x14, 0x00, 0x00, 0x01,
+    0x10, 0x14, 0x0A, 0x00, 0x00, 0x01,
+    0xA0, 0x13, 0x01, 0x00, 0x00, 0x01,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+};
+
+const unsigned char OpenBook_IL0398::LUT_WB_GRAYSCALE[] PROGMEM = 
+{
+    0x40, 0x0A, 0x00, 0x00, 0x00, 0x01,
+    0x90, 0x14, 0x14, 0x00, 0x00, 0x01,
+    0x00, 0x14, 0x0A, 0x00, 0x00, 0x01,
+    0x99, 0x0B, 0x04, 0x04, 0x01, 0x01,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+};
+
+const unsigned char OpenBook_IL0398::LUT_BW_GRAYSCALE[] PROGMEM = 
+{
+    0x40, 0x0A, 0x00, 0x00, 0x00, 0x01,
+    0x90, 0x14, 0x14, 0x00, 0x00, 0x01,
+    0x00, 0x14, 0x0A, 0x00, 0x00, 0x01,
+    0x99, 0x0C, 0x01, 0x03, 0x04, 0x01,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+};
+
+const unsigned char OpenBook_IL0398::LUT_BB_GRAYSCALE[] PROGMEM = 
+{
+    0x80, 0x0A, 0x00, 0x00, 0x00, 0x01,
+    0x90, 0x14, 0x14, 0x00, 0x00, 0x01,
+    0x20, 0x14, 0x0A, 0x00, 0x00, 0x01,
+    0x50, 0x13, 0x01, 0x00, 0x00, 0x01,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+};
+
+/**************************************************************************/
+/*!
     @brief start up the display. Same as init, but here for compatibility with
            Adafruit_EPD; you can call OpenBook_IL0398::init with more options.
 */
 /**************************************************************************/
 void OpenBook_IL0398::powerUp() {
-    this->init();
+    this->init(this->lastMode);
 }
 
 /**************************************************************************/
 /*!
     @brief start up the display
-    @param partialMode true if you want to set partial update waveforms.
+    @param displayMode an enum indicating which refresh waveform should be loaded in. Default is to use the factory-supplied waveform.
     @warning You always need to do one full refresh before enabling partial mode.
 */
 /**************************************************************************/
-void OpenBook_IL0398::init(bool partialMode) {
-  uint8_t buf[4];
+void OpenBook_IL0398::init(OpenBookDisplayMode displayMode) {
+  uint8_t buf[5];
 
   hardwareReset();
 
@@ -366,17 +430,30 @@ void OpenBook_IL0398::init(bool partialMode) {
   buf[1] = 0x00;    // VCOMH=VDH+VCOMDC and VCOML=VDL+VCOMDC; VGH and VGL are 16v and -16v respectively
   buf[2] = 0x2b;    // VDH= 11V
   buf[3] = 0x2b;    // VDL=-11V
-  EPD_command(IL0398_POWER_SETTING, buf, 4);
+  if (displayMode == OPEN_BOOK_DISPLAY_MODE_GRAYSCALE) {
+    buf[4] = 0x13;    // VDHR=6.2V
+  } else {
+    buf[4] = 0x03;    // VDHR=3V
+  }
+  EPD_command(IL0398_POWER_SETTING, buf, 5);
 
   buf[0] = 0x17;    // phase A: soft start 10ms, driving strength 3, off time 6.58us
   buf[1] = 0x17;    // phase B: soft start 10ms, driving strength 3, off time 6.58us
   buf[2] = 0x17;    // phase C: driving strength 3, off time 6.58us
   EPD_command(IL0398_BOOSTER_SOFT_START, buf, 3);
 
-  buf[0] = 0x3F; // (1<<4) sets display to monochrome; (1<<5) enables custom LUTs
+  if(displayMode == OPEN_BOOK_DISPLAY_MODE_DEFAULT) {
+      buf[0] = 0x1F; // (1<<4) sets display to monochrome
+  } else {
+      buf[0] = 0x3F; // (1<<4) sets display to monochrome and (1<<5) enables custom LUTs
+  }
   EPD_command(IL0398_PANEL_SETTING, buf, 1);
   
-  buf[0] = 0x3A; // 100 Hz
+  if (displayMode == OPEN_BOOK_DISPLAY_MODE_GRAYSCALE) {
+    buf[0] = 0x3C; // 50 Hz
+  } else {
+    buf[0] = 0x3A; // 100 Hz
+  }
   EPD_command(IL0398_PLL, buf, 1);
 
   buf[0] = (HEIGHT >> 8) & 0xFF;
@@ -391,19 +468,38 @@ void OpenBook_IL0398::init(bool partialMode) {
   buf[0] = 0xD7; // 0x57 for black border. 0x97 for white border. 0xD7 for floating border.
   EPD_command(IL0398_VCOM, buf, 1);
   
-  if (partialMode) {
-    EPD_command(IL0398_LUT1, LUT_VCOM_PARTIAL, sizeof(LUT_VCOM_PARTIAL));
-    EPD_command(IL0398_LUTWW, LUT_WW_PARTIAL, sizeof(LUT_WW_PARTIAL));
-    EPD_command(IL0398_LUTBW, LUT_BW_PARTIAL, sizeof(LUT_BW_PARTIAL));
-    EPD_command(IL0398_LUTWB, LUT_WB_PARTIAL, sizeof(LUT_WB_PARTIAL));
-    EPD_command(IL0398_LUTBB, LUT_BB_PARTIAL, sizeof(LUT_BB_PARTIAL));
-  } else {
-    EPD_command(IL0398_LUT1, LUT_VCOM_FULL, sizeof(LUT_VCOM_FULL));
-    EPD_command(IL0398_LUTWW, LUT_W, sizeof(LUT_W));
-    EPD_command(IL0398_LUTBW, LUT_W, sizeof(LUT_W));
-    EPD_command(IL0398_LUTWB, LUT_B, sizeof(LUT_B));
-    EPD_command(IL0398_LUTBB, LUT_B, sizeof(LUT_B));
+  switch (displayMode) {
+    case OPEN_BOOK_DISPLAY_MODE_QUICK:
+        EPD_command(IL0398_LUT1, LUT_VCOM_FULL, sizeof(LUT_VCOM_FULL));
+        EPD_command(IL0398_LUTWW, LUT_W, sizeof(LUT_W));
+        EPD_command(IL0398_LUTBW, LUT_W, sizeof(LUT_W));
+        EPD_command(IL0398_LUTWB, LUT_B, sizeof(LUT_B));
+        EPD_command(IL0398_LUTBB, LUT_B, sizeof(LUT_B));
+        break;
+    case OPEN_BOOK_DISPLAY_MODE_PARTIAL:
+        EPD_command(IL0398_LUT1, LUT_VCOM_PARTIAL, sizeof(LUT_VCOM_PARTIAL));
+        EPD_command(IL0398_LUTWW, LUT_WW_PARTIAL, sizeof(LUT_WW_PARTIAL));
+        EPD_command(IL0398_LUTBW, LUT_BW_PARTIAL, sizeof(LUT_BW_PARTIAL));
+        EPD_command(IL0398_LUTWB, LUT_WB_PARTIAL, sizeof(LUT_WB_PARTIAL));
+        EPD_command(IL0398_LUTBB, LUT_BB_PARTIAL, sizeof(LUT_BB_PARTIAL));
+        break;
+    case OPEN_BOOK_DISPLAY_MODE_GRAYSCALE:
+        EPD_command(IL0398_LUT1, LUT_VCOM_GRAYSCALE, sizeof(LUT_VCOM_GRAYSCALE));
+        EPD_command(IL0398_LUTWW, LUT_WW_PARTIAL, sizeof(LUT_WW_GRAYSCALE));
+        EPD_command(IL0398_LUTBW, LUT_WW_GRAYSCALE, sizeof(LUT_BW_GRAYSCALE));
+        EPD_command(IL0398_LUTWB, LUT_WB_GRAYSCALE, sizeof(LUT_WB_GRAYSCALE));
+        EPD_command(IL0398_LUTBB, LUT_BB_GRAYSCALE, sizeof(LUT_BB_GRAYSCALE));
+        break;
+    case OPEN_BOOK_DISPLAY_MODE_DEFAULT:
+        break;
+    default:
+        // This is an error condition; custom LUTs are enabled but we have none to send! Screen will not function in this case.
+        break;
   }
+
+    if (displayMode != OPEN_BOOK_DISPLAY_MODE_PARTIAL) {
+        this->lastMode = displayMode;
+    }
 
   EPD_command(IL0398_POWER_ON);
   busy_wait();
@@ -454,6 +550,88 @@ void OpenBook_IL0398::setWindow(uint16_t x, uint16_t y, uint16_t w, uint16_t h) 
 
 /**************************************************************************/
 /*!
+    @brief Sets the display waveforms for a particular display mode
+    @param displayMode the desired mode from, except for OPEN_BOOK_DISPLAY_MODE_PARTIAL.
+    @note If you call this with OPEN_BOOK_DISPLAY_MODE_PARTIAL, nothing will happen; that 
+          state is for internal use only.
+*/
+/**************************************************************************/
+void OpenBook_IL0398::setDisplayMode(OpenBookDisplayMode displayMode) {
+    if (displayMode != OPEN_BOOK_DISPLAY_MODE_PARTIAL) {
+        this->init(displayMode);
+    }
+}
+
+/**************************************************************************/
+/*!
+    @brief draw a single pixel on the screen
+	@param x the x axis position
+	@param y the y axis position
+	@param color the color of the pixel
+*/
+/**************************************************************************/
+void OpenBook_IL0398::drawPixel(int16_t x, int16_t y, uint16_t color) {
+  if ((x < 0) || (x >= width()) || (y < 0) || (y >= height()))
+  return;
+      
+  uint8_t *pByte1;
+  uint8_t *pByte2;
+
+  // check rotation, move pixel around if necessary
+  switch (getRotation()) {
+    case 1:
+    EPD_swap(x, y);
+    x = WIDTH - x - 1;
+    break;
+    case 2:
+    x = WIDTH - x - 1;
+    y = HEIGHT - y - 1;
+    break;
+    case 3:
+    EPD_swap(x, y);
+    y = HEIGHT - y - 1;
+    break;
+  }
+      
+  uint16_t addr = ( (uint32_t)(WIDTH - 1 - x) * (uint32_t)HEIGHT + y)/8;
+
+  if (use_sram) {
+    uint8_t byte1 = sram.read8(blackbuffer_addr + addr);
+    uint8_t byte2 = sram.read8(colorbuffer_addr + addr);
+    pByte1 = &byte1;
+    pByte2 = &byte2;
+  } else {
+    pByte1 = black_buffer + addr;
+    pByte2 = color_buffer + addr;
+  }
+  
+  switch (color) {
+    case EPD_BLACK:   
+      *pByte1 &= ~(1 << (7 - (y%8)));
+      *pByte2 &= ~(1 << (7 - (y%8)));
+      break;
+    case EPD_DARK:
+        *pByte1 &= ~(1 << (7 - (y%8)));
+        *pByte2 |= (1 << (7 - (y%8)));
+        break;
+    case EPD_LIGHT:
+        *pByte1 |= (1 << (7 - (y%8)));
+        *pByte2 &= ~(1 << (7 - (y%8)));
+        break;
+    case EPD_WHITE:
+        *pByte1 |= (1 << (7 - (y%8)));
+        *pByte2 |= (1 << (7 - (y%8)));
+        break;
+  }
+  
+  if (use_sram) {
+    sram.write8(addr, *pByte1);
+    sram.write8(addr + buffer1_size, *pByte2);
+  }
+}
+
+/**************************************************************************/
+/*!
     @brief Updates a part of the screen.
     @param x the x origin of the area you want to update. May be rounded down to a multiple of 8.
     @param y the y origin of the area you want to update. May be rounded down to a multiple of 8.
@@ -476,7 +654,7 @@ void OpenBook_IL0398::displayPartial(uint16_t x, uint16_t y, uint16_t w, uint16_
         this->display(); // partial update not yet supported from SRAM.
     }
 
-    this->init(true);
+    this->init(OPEN_BOOK_DISPLAY_MODE_PARTIAL);
 
     switch (this->getRotation())
     {
@@ -516,7 +694,7 @@ void OpenBook_IL0398::displayPartial(uint16_t x, uint16_t y, uint16_t w, uint16_
 
     delay(20);
 
-    this->init(false);
+    this->init(this->lastMode);
 }
 
 /**************************************************************************/
