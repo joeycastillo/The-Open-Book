@@ -1,6 +1,6 @@
 # The Open Book Project
 
-A quick note: for updates on the Open Book and other Oddly Specific Objects, [sign up for the mailing list here](http://eepurl.com/gKOpQ9). I hate spam as much as the next guy (honestly probably a lot more) so I promise I'll only reach out when I have something to share that you'll want to hear about. Okay, on with the readme!
+A quick note: after many requests, I've set up [a Patreon page where folks can support the work](https://www.patreon.com/joeycastillo). I also plan to use it to post occasional notes and thoughts that don't fit into tweets. For less frequent updates about the Open Book and other Oddly Specific Objects, [sign up for the mailing list here](http://eepurl.com/gKOpQ9). I hate spam as much as the next guy (honestly probably a lot more) so I promise I'll only reach out when I have something to share that you'll want to hear about. Okay, on with the readme!
 
 As a society, we need an open source device for reading. Books are among the most important documents of our culture, yet the most popular and widespread devices we have for reading — the Kobo, the Nook, the Kindle and even the iPad — are closed devices, operating as small moving parts in a set of giant closed platforms whose owners' interests are not always aligned with readers'.
 
