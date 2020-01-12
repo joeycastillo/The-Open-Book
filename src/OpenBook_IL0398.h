@@ -90,7 +90,8 @@ class OpenBook_IL0398 : public Adafruit_EPD {
     void update();
     void powerDown();
     void setDisplayMode(OpenBookDisplayMode displayMode);
-	void drawPixel(int16_t x, int16_t y, uint16_t color);
+    void drawPixel(int16_t x, int16_t y, uint16_t color);
+    void display();
     void displayPartial(uint16_t x, uint16_t y, uint16_t w, uint16_t h);
 protected:
     void init(OpenBookDisplayMode displayMode);
@@ -99,7 +100,7 @@ protected:
     void busy_wait();
     void setWindow(uint16_t x, uint16_t y, uint16_t w, uint16_t h);
     
-    OpenBookDisplayMode lastMode = OPEN_BOOK_DISPLAY_MODE_DEFAULT;
+    OpenBookDisplayMode currentDisplayMode = OPEN_BOOK_DISPLAY_MODE_DEFAULT;
 private:
     static const unsigned char LUT_VCOM_FULL[];
     static const unsigned char LUT_W[];

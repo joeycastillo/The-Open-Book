@@ -285,7 +285,7 @@ const unsigned char OpenBook_IL0398::LUT_VCOM_FULL[] PROGMEM =
 
 const unsigned char OpenBook_IL0398::LUT_WW_PARTIAL[] PROGMEM =
 {
-    0xA8, P1_1, P1_2, P1_3, P1_4, P1_repeat,
+    0x68, P1_1, P1_2, P1_3, P1_4, P1_repeat,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -318,7 +318,7 @@ const unsigned char OpenBook_IL0398::LUT_BW_PARTIAL[] PROGMEM =
 
 const unsigned char OpenBook_IL0398::LUT_BB_PARTIAL[] PROGMEM =
 {
-    0x54, P1_1, P1_2, P1_3, P1_4, P1_repeat,
+    0x94, P1_1, P1_2, P1_3, P1_4, P1_repeat,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -411,7 +411,7 @@ const unsigned char OpenBook_IL0398::LUT_BB_GRAYSCALE[] PROGMEM =
 */
 /**************************************************************************/
 void OpenBook_IL0398::powerUp() {
-    this->init(this->lastMode);
+    this->init(this->currentDisplayMode);
 }
 
 /**************************************************************************/
@@ -497,9 +497,7 @@ void OpenBook_IL0398::init(OpenBookDisplayMode displayMode) {
         break;
   }
 
-    if (displayMode != OPEN_BOOK_DISPLAY_MODE_PARTIAL) {
-        this->lastMode = displayMode;
-    }
+  this->currentDisplayMode = displayMode;
 
   EPD_command(IL0398_POWER_ON);
   busy_wait();
@@ -554,6 +552,7 @@ void OpenBook_IL0398::setWindow(uint16_t x, uint16_t y, uint16_t w, uint16_t h) 
     @param displayMode the desired mode from, except for OPEN_BOOK_DISPLAY_MODE_PARTIAL.
     @note If you call this with OPEN_BOOK_DISPLAY_MODE_PARTIAL, nothing will happen; that 
           state is for internal use only.
+
 */
 /**************************************************************************/
 void OpenBook_IL0398::setDisplayMode(OpenBookDisplayMode displayMode) {
@@ -632,6 +631,23 @@ void OpenBook_IL0398::drawPixel(int16_t x, int16_t y, uint16_t color) {
 
 /**************************************************************************/
 /*!
+    @brief Updates the full screen.
+    @note This respects any current display mode, except for OPEN_BOOK_DISPLAY_MODE_PARTIAL.
+          If you were in partial refresh mode, this method always forces the display back
+          to the default waveform. You could get around this by calling setDisplayMode with
+          another waveform after your partial refresh, but for long term stability of the
+          display, it's probably a good idea to use the manufacturer waveform once.
+*/
+/**************************************************************************/
+void OpenBook_IL0398::display() {
+    if (this->currentDisplayMode == OPEN_BOOK_DISPLAY_MODE_PARTIAL) {
+        this->init(OPEN_BOOK_DISPLAY_MODE_DEFAULT);
+    }
+    Adafruit_EPD::display();
+}
+
+/**************************************************************************/
+/*!
     @brief Updates a part of the screen.
     @param x the x origin of the area you want to update. May be rounded down to a multiple of 8.
     @param y the y origin of the area you want to update. May be rounded down to a multiple of 8.
@@ -654,7 +670,7 @@ void OpenBook_IL0398::displayPartial(uint16_t x, uint16_t y, uint16_t w, uint16_
         this->display(); // partial update not yet supported from SRAM.
     }
 
-    this->init(OPEN_BOOK_DISPLAY_MODE_PARTIAL);
+    if (this->currentDisplayMode != OPEN_BOOK_DISPLAY_MODE_PARTIAL) this->init(OPEN_BOOK_DISPLAY_MODE_PARTIAL);
 
     switch (this->getRotation())
     {
@@ -693,8 +709,6 @@ void OpenBook_IL0398::displayPartial(uint16_t x, uint16_t y, uint16_t w, uint16_
     EPD_command(IL0398_PARTIALOUT);
 
     delay(20);
-
-    this->init(this->lastMode);
 }
 
 /**************************************************************************/
