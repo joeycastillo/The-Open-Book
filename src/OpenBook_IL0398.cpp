@@ -485,8 +485,8 @@ void OpenBook_IL0398::init(OpenBookDisplayMode displayMode) {
         break;
     case OPEN_BOOK_DISPLAY_MODE_GRAYSCALE:
         EPD_command(IL0398_LUT1, LUT_VCOM_GRAYSCALE, sizeof(LUT_VCOM_GRAYSCALE));
-        EPD_command(IL0398_LUTWW, LUT_WW_PARTIAL, sizeof(LUT_WW_GRAYSCALE));
-        EPD_command(IL0398_LUTBW, LUT_WW_GRAYSCALE, sizeof(LUT_BW_GRAYSCALE));
+        EPD_command(IL0398_LUTWW, LUT_WW_GRAYSCALE, sizeof(LUT_WW_GRAYSCALE));
+        EPD_command(IL0398_LUTBW, LUT_BW_GRAYSCALE, sizeof(LUT_BW_GRAYSCALE));
         EPD_command(IL0398_LUTWB, LUT_WB_GRAYSCALE, sizeof(LUT_WB_GRAYSCALE));
         EPD_command(IL0398_LUTBB, LUT_BB_GRAYSCALE, sizeof(LUT_BB_GRAYSCALE));
         break;
