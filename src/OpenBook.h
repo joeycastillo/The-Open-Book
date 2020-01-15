@@ -9,6 +9,10 @@
 #include "Adafruit_MCP23008.h"
 #include "OpenBook_IL0398.h"
 
+#include "SdFat.h"
+#include "Adafruit_SPIFlash.h"
+#include "Adafruit_TinyUSB.h"
+
 #define OPENBOOK_KNOWN_HARDWARE 1
 
 #define OPENBOOK_NOT_PRESENT (-1)
@@ -21,6 +25,7 @@
 #define OPENBOOK_BUTTONMASK_PREVIOUS (32)
 #define OPENBOOK_BUTTONMASK_NEXT (64)
 #define OPENBOOK_BUTTONMASK_LOCK (128)
+#define OPENBOOK_BUTTONMASK_SDCD (128)
 
 
 #if defined(ODDLY_SPECIFIC_OPEN_BOOK)
@@ -56,6 +61,8 @@
     #define OPENBOOK_USB_MONITOR (50) // TODO: define this as A11 in board variant
 #endif
 
+#define OPENBOOK_EXPOSE_SD_CARD_AS_DRIVE (true)
+#define OPENBOOK_HAS_QSPI_FLASH 1
 
 #elif defined(ADAFRUIT_FEATHER_M4_EXPRESS) // e-book wing on Feather M4
 #define OPENBOOK_DISPLAY_BUS (&SPI)
@@ -78,10 +85,18 @@
 #define OPENBOOK_MIC_RAW (-1)
 #define OPENBOOK_MIC_AMPLIFIED (-1)
 
+#define OPENBOOK_EXPOSE_SD_CARD_AS_DRIVE (true)
+#define OPENBOOK_HAS_QSPI_FLASH 1
+
 #else // TODO: pin mappings for other Feather boards.
 #define OPENBOOK_KNOWN_HARDWARE 0
 #endif
 
+typedef enum OpenBookSDCardState {
+    OPEN_BOOK_SD_CARD_READY,
+    OPEN_BOOK_SD_CARD_NOT_PRESENT,
+    OPEN_BOOK_SD_CARD_UNKNOWN,
+} OpenBookSDCardState;
 
 class OpenBook {
 public:
@@ -92,23 +107,32 @@ public:
     bool configureI2CButtons(int8_t active = OPENBOOK_BUTTON_ACTIVE, int8_t interrupt = OPENBOOK_BUTTON_INTERRUPT);
     bool configureBabel(int8_t bcs = OPENBOOK_BCS);
     bool configureAudio(int8_t left = OPENBOOK_AUDIO_L, int8_t right = OPENBOOK_AUDIO_R, int8_t inlineMic = OPENBOOK_MIC_RAW, int8_t amplifiedMic = OPENBOOK_MIC_AMPLIFIED);
+    OpenBookSDCardState configureSD(bool showAsDrive = OPENBOOK_EXPOSE_SD_CARD_AS_DRIVE, int8_t sdcs = OPENBOOK_SDCS);
+    bool configureFlash();
 #else
     bool configureScreen(int8_t srcs, int8_t ecs, int8_t edc, int8_t erst, int8_t ebsy, SPIClass *spi, int width, int height);
     bool configureShiftButtons(int8_t active, int8_t latch, int8_t data, int8_t clock, int8_t lockButton);
     bool configureI2CButtons(int8_t active, int8_t interrupt);
     bool configureBabel(int8_t bcs);
     bool configureAudio(int8_t left, int8_t right, int8_t inlineMic, int8_t amplifiedMic);
+    OpenBookSDCardState configureSD(bool showAsDrive, int8_t sdcs);
+    bool configureFlash();
 #endif // OPENBOOK_KNOWN_HARDWARE
 
     uint8_t readButtons();
     OpenBook_IL0398 *getDisplay();
     BabelTypesetterGFX *getTypesetter();
 
+    static int32_t sdcard_read_cb (uint32_t lba, void* buffer, uint32_t bufsize);
+    static int32_t sdcard_write_cb (uint32_t lba, uint8_t* buffer, uint32_t bufsize);
+    static void sdcard_flush_cb (void);
 protected:
     uint8_t readButtonRegister();
     OpenBook_IL0398 *display = NULL;
     BabelTypesetterGFX *typesetter = NULL;
     Adafruit_MCP23008 *ioExpander = NULL;
+
     int8_t activeState, buttonLatch, buttonData, buttonClock, buttonInterrupt, leftOutput, rightOutput, micInput, amplifiedInput, outputChannels;
 };
+
 #endif // OSO_OpenBook_h
