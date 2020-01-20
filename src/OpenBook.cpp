@@ -1,22 +1,7 @@
 #include "OpenBook.h"
 #include "OpenBook_IL0398.h"
 
-// stashing these here until i have a better sense of what to do with them
-SdFat sdFilesystem;
-Adafruit_USBD_MSC usb_msc;
-#if OPENBOOK_HAS_QSPI_FLASH
-Adafruit_FlashTransport_QSPI flashTransport(PIN_QSPI_SCK, PIN_QSPI_CS, PIN_QSPI_IO0, PIN_QSPI_IO1, PIN_QSPI_IO2, PIN_QSPI_IO3);
-Adafruit_SPIFlash flash(&flashTransport);
-FatFileSystem flashFilesystem;
-#endif
-
 OpenBook::OpenBook() {
-#if OPENBOOK_KNOWN_HARDWARE && OPENBOOK_EXPOSE_SD_CARD_AS_DRIVE
-    // make sure we enumerate as a mass storage device ASAP
-    usb_msc.setMaxLun(1);
-    usb_msc.setID(0, "Open Book", "SD Card", "1.0");
-    usb_msc.begin();
-#endif
 }
 
 /**
@@ -178,51 +163,6 @@ bool OpenBook::configureAudio(int8_t left, int8_t right, int8_t inlineMic, int8_
 }
 
 /**
- @brief Sets up the SD card on the main SPI bus, optionally exposing it as a mass
-        storage device via tinyUSB. Should be called after configureButtons since the
-        SD card detect line is on the shift register; if you don't, you may get a result
-        of OPEN_BOOK_SD_CARD_UNKNOWN instead of OPEN_BOOK_SD_CARD_NOT_PRESENT.
- @param showAsDrive true if SD card should appear as a drive when the user plugs in the book.
- @param sdcs chip select for the SD card.
- @returns an OpenBookSDCardState enum indicating the result of the operation:
-          * OPEN_BOOK_SD_CARD_READY: the operation succeeded
-          * OPEN_BOOK_SD_CARD_NOT_PRESENT: no card is present (card detect is low)
-          * OPEN_BOOK_SD_CARD_UNKNOWN: the operation failed, and we don't know if a card is present
-*/
-OpenBookSDCardState OpenBook::configureSD(bool showAsDrive, int8_t sdcs) {
-    if (this->buttonData != -1) {
-        // on devices with a shift register, SD_CD is available.
-        if (this->readButtonRegister() & OPENBOOK_BUTTONMASK_SDCD == 0) {
-            return OPEN_BOOK_SD_CARD_NOT_PRESENT;
-        }
-    }
-    if ( sdFilesystem.begin(sdcs, SD_SCK_MHZ(50)) ) {
-        if (showAsDrive) {
-            uint32_t block_count = sdFilesystem.card()->cardSize();
-            usb_msc.setCapacity(0, block_count, 512);
-            usb_msc.setReadWriteCallback(0, sdcard_read_cb, sdcard_write_cb, sdcard_flush_cb);
-            usb_msc.setUnitReady(0, true);
-        }
-
-        return OPEN_BOOK_SD_CARD_READY;
-    } else {
-        return OPEN_BOOK_SD_CARD_UNKNOWN;
-    }
-}
-
-/**
- @brief Sets up the QSPI Flash chip
- @returns true if the Flash chip was successfully set up.
-*/
-bool OpenBook::configureFlash() {
-#if OPENBOOK_HAS_QSPI_FLASH
-    return flashFilesystem.begin(&flash);
-#else
-    return false;
-#endif
-}
-
-/**
  @brief Reads button state and returns it as a byte.
  @returns a bitmask with 1 for every button that is pressed, and 0 for every
           button that is not.
@@ -288,32 +228,4 @@ OpenBook_IL0398 * OpenBook::getDisplay() {
 */
 BabelTypesetterGFX * OpenBook::getTypesetter() {
     return this->typesetter;
-}
-
-// callbacks from TinyUSB mass storage example, MIT license, Copyright (c) 2019 Ha Thach for Adafruit Industries)
-//--------------------------------------------------------------------+
-// SD Card Callbacks
-//--------------------------------------------------------------------+
-
-int32_t OpenBook::sdcard_read_cb (uint32_t lba, void* buffer, uint32_t bufsize)
-{
-    return sdFilesystem.card()->readBlocks(lba, (uint8_t*) buffer, bufsize/512) ? bufsize : -1;
-}
-
-// Callback invoked when received WRITE10 command.
-// Process data in buffer to disk's storage and
-// return number of written bytes (must be multiple of block size)
-int32_t OpenBook::sdcard_write_cb (uint32_t lba, uint8_t* buffer, uint32_t bufsize)
-{
-    return sdFilesystem.card()->writeBlocks(lba, buffer, bufsize/512) ? bufsize : -1;
-}
-
-// Callback invoked when WRITE10 command is completed (status received and accepted by host).
-// used to flush any pending cache.
-void OpenBook::sdcard_flush_cb (void)
-{
-    sdFilesystem.card()->syncBlocks();
-
-    // clear file system's cache to force refresh
-    sdFilesystem.cacheClear();
 }
