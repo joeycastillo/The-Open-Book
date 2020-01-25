@@ -637,28 +637,6 @@ Righ-Angle SMT</description>
 </polygon>
 <rectangle x1="-1.6" y1="2" x2="1.6" y2="2.4" layer="51"/>
 </package>
-<package name="INDUCTOR_1007">
-<description>Inductor - 1007 (2518 Metric)
-&lt;p&gt;L: 2.5mm x W: 1.8mm x H: 1.8mm&lt;/p&gt;</description>
-<wire x1="-1.25" y1="-0.9" x2="-0.75" y2="-0.9" width="0.2032" layer="51"/>
-<wire x1="-0.75" y1="-0.9" x2="0.75" y2="-0.9" width="0.2032" layer="51"/>
-<wire x1="0.75" y1="-0.9" x2="1.25" y2="-0.9" width="0.2032" layer="51"/>
-<wire x1="-1.25" y1="0.9" x2="-0.75" y2="0.9" width="0.2032" layer="51"/>
-<wire x1="-0.75" y1="0.9" x2="0.75" y2="0.9" width="0.2032" layer="51"/>
-<wire x1="0.75" y1="0.9" x2="1.25" y2="0.9" width="0.2032" layer="51"/>
-<wire x1="-1.25" y1="-0.9" x2="-1.25" y2="0.9" width="0.2032" layer="51"/>
-<wire x1="1.25" y1="-0.9" x2="1.25" y2="0.9" width="0.2032" layer="51"/>
-<wire x1="-0.75" y1="-0.9" x2="-0.75" y2="0.9" width="0.2032" layer="51"/>
-<wire x1="0.75" y1="-0.9" x2="0.75" y2="0.9" width="0.2032" layer="51"/>
-<wire x1="-1.8415" y1="1.27" x2="1.8415" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="1.8415" y1="1.27" x2="1.8415" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.8415" y1="-1.27" x2="-1.8415" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-1.8415" y1="-1.27" x2="-1.8415" y2="1.27" width="0.2032" layer="21"/>
-<smd name="P$1" x="-1.127" y="0" dx="1.016" dy="2.2" layer="1"/>
-<smd name="P$2" x="1.127" y="0" dx="1.016" dy="2.2" layer="1"/>
-<text x="-1.524" y="1.524" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1.651" y="-1.905" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 <package name="0603">
 <description>0603 (1608 Metric)</description>
 <wire x1="-1.473" y1="0.729" x2="1.473" y2="0.729" width="0.0508" layer="39"/>
@@ -698,217 +676,6 @@ Righ-Angle SMT</description>
 <rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
 <rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
 <rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
-</package>
-<package name="INDUCTOR_6X6MM_TDK_VLC6045">
-<description>&lt;b&gt;Source: &lt;/b&gt;http://www.tdk.co.jp/tefe02/e531_vlc6045.pdf</description>
-<wire x1="-3" y1="3" x2="3" y2="3" width="0.2032" layer="51"/>
-<wire x1="3" y1="3" x2="3" y2="-3" width="0.2032" layer="51"/>
-<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.2032" layer="51"/>
-<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.2032" layer="51"/>
-<wire x1="-4.5" y1="3.5" x2="4.5" y2="3.5" width="0.2032" layer="21"/>
-<wire x1="4.5" y1="3.5" x2="4.5" y2="-3.5" width="0.2032" layer="21"/>
-<wire x1="4.5" y1="-3.5" x2="-4.5" y2="-3.5" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="-3.5" x2="-4.5" y2="3.5" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="3.25" width="0.2032" layer="51"/>
-<smd name="P$1" x="-2.35" y="0" dx="3.25" dy="6" layer="1"/>
-<smd name="P$2" x="2.35" y="0" dx="3.25" dy="6" layer="1"/>
-<text x="-4" y="4" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-4" y="-4.5" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="INDUCTOR_6X6MM_TDK_SLF6045">
-<description>&lt;b&gt;Source: &lt;/b&gt; http://www.tdk.co.jp/tefe02/e531_slf6045.pdf</description>
-<wire x1="-3" y1="3" x2="3" y2="3" width="0.127" layer="51"/>
-<wire x1="3" y1="3" x2="3" y2="-3" width="0.2032" layer="51"/>
-<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.127" layer="51"/>
-<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.2032" layer="51"/>
-<wire x1="-3" y1="2" x2="-3" y2="3" width="0.2032" layer="21"/>
-<wire x1="-3" y1="3" x2="3" y2="3" width="0.2032" layer="21"/>
-<wire x1="3" y1="3" x2="3" y2="2" width="0.2032" layer="21"/>
-<wire x1="-3" y1="-2" x2="-3" y2="-3" width="0.2032" layer="21"/>
-<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.2032" layer="21"/>
-<wire x1="3" y1="-3" x2="3" y2="-2" width="0.2032" layer="21"/>
-<smd name="P$1" x="-2.75" y="0" dx="1.5" dy="2.2" layer="1"/>
-<smd name="P$2" x="2.75" y="0" dx="1.5" dy="2.2" layer="1"/>
-<text x="-3" y="3.5" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-3" y="-3.619" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="INDUCTOR_5X5MM_TDK_VLC5045">
-<description>&lt;b&gt;Source: http://www.tdk.co.jp/tefe02/e531_vlc5045.pdf&lt;/b&gt;</description>
-<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
-<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
-<wire x1="-2.85" y1="2.75" x2="2.85" y2="2.75" width="0.2032" layer="21"/>
-<wire x1="2.85" y1="2.75" x2="2.85" y2="-2.75" width="0.2032" layer="21"/>
-<wire x1="2.85" y1="-2.75" x2="-2.85" y2="-2.75" width="0.2032" layer="21"/>
-<wire x1="-2.85" y1="-2.75" x2="-2.85" y2="2.75" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="2.5" width="0.2032" layer="51"/>
-<smd name="P$1" x="-1.6" y="0" dx="2" dy="5" layer="1"/>
-<smd name="P$2" x="1.6" y="0" dx="2" dy="5" layer="1"/>
-<text x="-3.746" y="3.246" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-3.746" y="-3.746" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="INDUCTOR_5X5MM_TDK_VLC5045_NOTHERMALS">
-<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
-<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
-<wire x1="-3.738" y1="3" x2="3.738" y2="3" width="0.2032" layer="21"/>
-<wire x1="3.738" y1="3" x2="3.738" y2="-3" width="0.2032" layer="21"/>
-<wire x1="3.738" y1="-3" x2="-3.738" y2="-3" width="0.2032" layer="21"/>
-<wire x1="-3.738" y1="-3" x2="-3.738" y2="3" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="2.5" width="0.2032" layer="51"/>
-<smd name="P$1" x="-2.096" y="0" dx="2.54" dy="5" layer="1" thermals="no"/>
-<smd name="P$2" x="2.096" y="0" dx="2.54" dy="5" layer="1" thermals="no"/>
-<text x="-3.746" y="3.246" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-3.746" y="-3.746" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="INDUCTOR_5X5MM_NR5040_NOTHERMALS">
-<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
-<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
-<wire x1="-2.938" y1="2.6" x2="2.938" y2="2.6" width="0.2032" layer="21"/>
-<wire x1="2.938" y1="2.6" x2="2.938" y2="-2.6" width="0.2032" layer="21"/>
-<wire x1="2.938" y1="-2.6" x2="-2.938" y2="-2.6" width="0.2032" layer="21"/>
-<wire x1="-2.938" y1="-2.6" x2="-2.938" y2="2.6" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="2.5" width="0.2032" layer="51"/>
-<smd name="P$1" x="-1.8" y="0" dx="1.8" dy="4" layer="1" thermals="no"/>
-<smd name="P$2" x="1.8" y="0" dx="1.8" dy="4" layer="1" thermals="no"/>
-<text x="-2.946" y="2.846" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-2.946" y="-3.238" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="INDUCTOR_6X6MM_SUMIDA_CDRH5D28">
-<description>&lt;p&gt;Source: http://www.sumida.com/products/pdf/CDRH5D28,5D28R,5D28RHP.pdf&lt;/p&gt;</description>
-<text x="-3" y="3.35" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-3" y="-3.819" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-<circle x="0.01" y="0.01" radius="2.787128125" width="0.127" layer="51"/>
-<wire x1="-2.85" y1="1.3" x2="-1.35" y2="2.8" width="0.127" layer="51"/>
-<wire x1="-1.35" y1="2.8" x2="2.35" y2="2.8" width="0.127" layer="51"/>
-<wire x1="2.35" y1="2.8" x2="2.85" y2="2.3" width="0.127" layer="51" curve="-90"/>
-<wire x1="2.85" y1="2.3" x2="2.85" y2="-1.3" width="0.127" layer="51"/>
-<wire x1="2.85" y1="-1.3" x2="1.35" y2="-2.8" width="0.127" layer="51"/>
-<wire x1="1.35" y1="-2.8" x2="-2.45" y2="-2.8" width="0.127" layer="51"/>
-<wire x1="-2.45" y1="-2.8" x2="-2.85" y2="-2.4" width="0.127" layer="51" curve="-90"/>
-<wire x1="-2.85" y1="-2.4" x2="-2.85" y2="1.3" width="0.127" layer="51"/>
-<polygon width="0.127" layer="51">
-<vertex x="-2.45" y="1.7"/>
-<vertex x="-2.65" y="1.9" curve="-180"/>
-<vertex x="-1.95" y="2.6"/>
-<vertex x="-1.75" y="2.4"/>
-</polygon>
-<polygon width="0.127" layer="51">
-<vertex x="2.45" y="-1.75"/>
-<vertex x="2.65" y="-1.95" curve="-180"/>
-<vertex x="1.95" y="-2.65"/>
-<vertex x="1.75" y="-2.45"/>
-</polygon>
-<smd name="P$1" x="-2.075" y="0" dx="3" dy="6.5" layer="1"/>
-<smd name="P$2" x="2.075" y="0" dx="3" dy="6.5" layer="1"/>
-<wire x1="-0.4" y1="2.9" x2="0.4" y2="2.9" width="0.127" layer="21"/>
-<wire x1="-0.4" y1="-2.9" x2="0.4" y2="-2.9" width="0.127" layer="21"/>
-</package>
-<package name="INDUCTOR_TAIYOYUDEN_NR3015">
-<smd name="P$1" x="-1.1" y="0" dx="0.8" dy="2.7" layer="1"/>
-<smd name="P$2" x="1.1" y="0" dx="0.8" dy="2.7" layer="1"/>
-<wire x1="-0.97" y1="-1.29" x2="-1.36" y2="-1.29" width="0.127" layer="51"/>
-<wire x1="-1.36" y1="-1.29" x2="-1.45" y2="-1.2" width="0.127" layer="51"/>
-<wire x1="-1.45" y1="-1.2" x2="-1.45" y2="1.2" width="0.127" layer="51"/>
-<wire x1="-1.45" y1="1.2" x2="-1.35" y2="1.3" width="0.127" layer="51"/>
-<wire x1="-1.35" y1="1.3" x2="-1.25" y2="1.3" width="0.127" layer="51"/>
-<wire x1="-1.25" y1="1.3" x2="-0.95" y2="1.3" width="0.127" layer="51"/>
-<wire x1="-0.95" y1="1.3" x2="-0.75" y2="1.5" width="0.127" layer="51"/>
-<wire x1="-0.75" y1="1.5" x2="0.8" y2="1.5" width="0.127" layer="51"/>
-<wire x1="0.8" y1="1.5" x2="1" y2="1.3" width="0.127" layer="51"/>
-<wire x1="1" y1="1.3" x2="1.25" y2="1.3" width="0.127" layer="51"/>
-<wire x1="1.25" y1="1.3" x2="1.35" y2="1.3" width="0.127" layer="51"/>
-<wire x1="1.35" y1="1.3" x2="1.45" y2="1.2" width="0.127" layer="51"/>
-<wire x1="1.45" y1="1.2" x2="1.45" y2="-1.2" width="0.127" layer="51"/>
-<wire x1="1.45" y1="-1.2" x2="1.35" y2="-1.3" width="0.127" layer="51"/>
-<wire x1="1.35" y1="-1.3" x2="1.25" y2="-1.3" width="0.127" layer="51"/>
-<wire x1="1.25" y1="-1.3" x2="1" y2="-1.3" width="0.127" layer="51"/>
-<wire x1="1" y1="-1.3" x2="0.8" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="0.8" y1="-1.5" x2="-0.75" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="-0.75" y1="-1.5" x2="-0.95" y2="-1.3" width="0.127" layer="51"/>
-<wire x1="-1.25" y1="1.3" x2="-1.25" y2="-1.25" width="0.127" layer="51"/>
-<wire x1="1.25" y1="-1.3" x2="1.25" y2="1.3" width="0.127" layer="51"/>
-<wire x1="-0.95" y1="1.45" x2="-0.8" y2="1.6" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="1.6" x2="0.85" y2="1.6" width="0.127" layer="21"/>
-<wire x1="0.85" y1="1.6" x2="1" y2="1.45" width="0.127" layer="21"/>
-<wire x1="-0.95" y1="-1.45" x2="-0.8" y2="-1.6" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="-1.6" x2="0.85" y2="-1.6" width="0.127" layer="21"/>
-<wire x1="0.85" y1="-1.6" x2="1" y2="-1.45" width="0.127" layer="21"/>
-<text x="-1.524" y="1.774" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1.501" y="-2.155" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="INDUCTOR_COILCRAFT_MA5532-AE">
-<smd name="1" x="-4.65" y="0" dx="1.3" dy="3.2" layer="1"/>
-<smd name="2" x="4.65" y="0" dx="1.3" dy="3.2" layer="1"/>
-<wire x1="-5.85" y1="1.75" x2="5.85" y2="1.75" width="0.127" layer="51"/>
-<wire x1="5.85" y1="1.75" x2="5.85" y2="-1.75" width="0.127" layer="51"/>
-<wire x1="5.85" y1="-1.75" x2="-5.85" y2="-1.75" width="0.127" layer="51"/>
-<wire x1="-5.85" y1="-1.75" x2="-5.85" y2="1.75" width="0.127" layer="51"/>
-<wire x1="-5.95" y1="1.85" x2="5.95" y2="1.85" width="0.127" layer="21"/>
-<wire x1="5.95" y1="1.85" x2="5.95" y2="-1.85" width="0.127" layer="21"/>
-<wire x1="5.95" y1="-1.85" x2="-5.95" y2="-1.85" width="0.127" layer="21"/>
-<wire x1="-5.95" y1="-1.85" x2="-5.95" y2="1.85" width="0.127" layer="21"/>
-<text x="-5.874" y="2.074" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-5.851" y="-2.405" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="INDUCTOR_4X4MM_NR401">
-<smd name="P$1" x="-1.4" y="0" dx="1.2" dy="3.7" layer="1"/>
-<smd name="P$2" x="1.4" y="0" dx="1.2" dy="3.7" layer="1"/>
-<wire x1="-2" y1="2" x2="2" y2="2" width="0.127" layer="21"/>
-<wire x1="2" y1="2" x2="2" y2="-2" width="0.127" layer="21"/>
-<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
-<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="21"/>
-<text x="-2" y="2.2" size="0.8128" layer="25" ratio="12">&gt;NAME</text>
-<text x="-2" y="3.2" size="0.8128" layer="27" ratio="12">&gt;VALUE</text>
-</package>
-<package name="INDUCTOR_8X8MM">
-<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
-<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
-<wire x1="-4" y1="4" x2="4" y2="4" width="0.2032" layer="21"/>
-<wire x1="4" y1="4" x2="4" y2="-4" width="0.2032" layer="21"/>
-<wire x1="4" y1="-4" x2="-4" y2="-4" width="0.2032" layer="21"/>
-<wire x1="-4" y1="-4" x2="-4" y2="4" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="2.5" width="0.2032" layer="51"/>
-<smd name="P$1" x="-2.8" y="0" dx="2" dy="7.5" layer="1"/>
-<smd name="P$2" x="2.8" y="0" dx="2" dy="7.5" layer="1"/>
-<text x="-1.746" y="4.246" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-0.746" y="-4.746" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="INDUCTOR_3.6X3MM_VISHAY_IHLP">
-<smd name="1" x="-1.4" y="0" dx="1.5" dy="1.2" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.5" dy="1.2" layer="1"/>
-<wire x1="-1.825" y1="1.5" x2="1.825" y2="1.5" width="0.127" layer="51"/>
-<wire x1="1.825" y1="1.5" x2="1.825" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="1.825" y1="-1.5" x2="-1.825" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="-1.825" y1="-1.5" x2="-1.825" y2="1.5" width="0.127" layer="51"/>
-<wire x1="-1.9" y1="0.8" x2="-1.9" y2="1.6" width="0.127" layer="21"/>
-<wire x1="-1.9" y1="1.6" x2="1.9" y2="1.6" width="0.127" layer="21"/>
-<wire x1="1.9" y1="1.6" x2="1.9" y2="0.8" width="0.127" layer="21"/>
-<wire x1="-1.9" y1="-0.8" x2="-1.9" y2="-1.6" width="0.127" layer="21"/>
-<wire x1="-1.9" y1="-1.6" x2="1.9" y2="-1.6" width="0.127" layer="21"/>
-<wire x1="1.9" y1="-1.6" x2="1.9" y2="-0.8" width="0.127" layer="21"/>
-<text x="-1.83" y="1.81" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1.83" y="-2.16" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="INDUCTOR_TAIYOYUDEN_NRH2412T">
-<smd name="1" x="-0.725" y="0" dx="1" dy="2" layer="1"/>
-<smd name="2" x="0.725" y="0" dx="1" dy="2" layer="1"/>
-<wire x1="-1.4" y1="1.2" x2="1.4" y2="1.2" width="0.127" layer="51"/>
-<wire x1="1.4" y1="1.2" x2="1.4" y2="-1.2" width="0.127" layer="51"/>
-<wire x1="1.4" y1="-1.2" x2="-1.4" y2="-1.2" width="0.127" layer="51"/>
-<wire x1="-1.4" y1="-1.2" x2="-1.4" y2="1.2" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="1.3" x2="1.5" y2="1.3" width="0.127" layer="21"/>
-<wire x1="1.5" y1="1.3" x2="1.5" y2="-1.3" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-1.3" x2="-1.5" y2="-1.3" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-1.3" x2="-1.5" y2="1.3" width="0.127" layer="21"/>
-<text x="-1.224" y="1.478" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1.224" y="-1.84" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="SOIC8_150MIL">
 <description>&lt;b&gt;Small Outline IC - 150mil Wide&lt;/b&gt;</description>
@@ -1196,18 +963,6 @@ round, layers 1 + 16 + 21 + 39 + 49</description>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <wire x1="1.27" y1="-1.27" x2="1.778" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="1.27" y1="1.27" x2="0.762" y2="1.27" width="0.254" layer="94"/>
-</symbol>
-<symbol name="INDUCTOR">
-<text x="0" y="2.54" size="1.27" layer="95" align="center">&gt;NAME</text>
-<text x="0" y="-1.54" size="1.27" layer="96" align="center">&gt;VALUE</text>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<wire x1="-2.54" y1="0.3175" x2="-1.27" y2="0.3175" width="0.254" layer="94" curve="-180"/>
-<wire x1="-1.27" y1="0.3175" x2="0" y2="0.3175" width="0.254" layer="94" curve="-180"/>
-<wire x1="0" y1="0.3175" x2="1.27" y2="0.3175" width="0.254" layer="94" curve="-180"/>
-<wire x1="1.27" y1="0.3175" x2="2.54" y2="0.3175" width="0.254" layer="94" curve="-180"/>
-<wire x1="-2.54" y1="0.3175" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0.3175" x2="2.54" y2="0" width="0.254" layer="94"/>
 </symbol>
 <symbol name="FERRITE">
 <text x="-1.27" y="1.905" size="1.27" layer="95">&gt;NAME</text>
@@ -1753,272 +1508,6 @@ round, layers 1 + 16 + 21 + 39 + 49</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A1 A2"/>
 <connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="INDUCTOR" prefix="L" uservalue="yes">
-<description>&lt;b&gt;Inductors&lt;/b&gt;
-&lt;p&gt;0603:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;10nH Ceramic Inductor - microwire antenna/RF (Digikey: 712-1434-2-ND)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;0805:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;560nH Ceramic Inductor - RF (Digikey: 553-1047-1-ND)&lt;/li&gt;
-&lt;li&gt;270nH Ceramic Inductor - Q = 40@250MHz, +-5%, 1 Ohm DC Resistance (Digikey: 535-10506-2-ND)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;1007 (2518 Metric) SMT:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;10µH 10% 250mOhm 820mA 1007 Inductor (Digikey: 587-2189-1-ND)&lt;/li&gt;
-&lt;li&gt;22µH 10% 500mOhm 580mA 1007 Inductor (Digikey: 587-2190-1-ND)&lt;/li&gt;
-&lt;li&gt;47µH 10% 950mOhm 420mA 1007 Inductor (Digikey: 587-2191-1-ND)&lt;/li&gt;
-&lt;li&gt;47µH 5% 100mOhm 1A 1008 Inductor (Digikey: 732-1816-1-ND)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;5.0x5.0mm (Taiyo Yuden NR5040 Series)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;6.8µH 20% 2.3A 64mOhm Inductor (Digikey: 587-2374-2-ND)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;5.0x5.0mm (TDK VLC5045 Series)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;4.7µH 20% 3.3A 34mOhm Inductor (Digikey: 445-6526-1-ND)&lt;/li&gt;
-&lt;li&gt;6.8µH 20% 2.7A 46mOhm Inductor (Digikey: 445-6527-1-ND)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;6.0x6.0mm (TDK VLC6045 Series)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;4.7µH 20% 3.8A 27mOhm Inductor (Digikey: 445-6538-2-ND)&lt;/li&gt;
-&lt;li&gt;6.8µH 20% 3A 41mOhm Inductor (Digikey: 445-6540-1-ND)&lt;/li&gt;
-&lt;li&gt;6.2µH 30% 2.2A 45mOhm Inductor (Digikey: SRR5028-6R2YCT-ND) - Not TDK VLC6045 but footprint should match&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;6.0x6.0mm (TDK SLF6045 Series)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;6.8uH 30% 2A 33mOhm Inductor (Digikey: 445-4572-1-ND, Mouser: 810-SLF645T6R8N2R0PF)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;6.0x6.0mm (Sumida CDRH5D28 Series)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;6.2uH 30% 1.8A 45mOhm Inductor (Digikey: 308-1542-1-ND)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Taiyo Yuden NR3015T2R2M - 2.2uH 20% 1.5A (Digikey: 587-1648-2-ND, Mouser: 963-NR3015T2R2M) - Used with TI TPS62172&lt;/p&gt;
-&lt;p&gt;CoilCraft RFID Transponder Coil - MA5532-AE (For use with AS3935 Lightning Sensor)&lt;/p&gt;
-
-&lt;p&gt;Taiyo Yuden NRH2412T2R2MNGH - 2.2uH 20% 1AA (Digikey: 587-3443-1-ND) - Used with TI LM3671&lt;/p&gt;
-
-&lt;p&gt;
-Vishay IHLP
-&lt;ul&gt;
-&lt;li&gt;1.0uH Molded Inductor - 24mOhm DCR, 5A, +/-20%, -55°C-125°C (Digikey: 541-1319-1-ND)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="INDUCTOR_1007">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0603" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0805" package="0805">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TDK_VLC6045" package="INDUCTOR_6X6MM_TDK_VLC6045">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TDK_SLF6045" package="INDUCTOR_6X6MM_TDK_SLF6045">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TDK_VLC5045" package="INDUCTOR_5X5MM_TDK_VLC5045">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TDK_VLC5045_NOTHERM" package="INDUCTOR_5X5MM_TDK_VLC5045_NOTHERMALS">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="NR5040" package="INDUCTOR_5X5MM_NR5040_NOTHERMALS">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_0402" package="_0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_0402MP" package="_0402MP">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_0603" package="_0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_0603MP" package="_0603MP">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_0805" package="_0805">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_0805MP" package="_0805MP">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="CDRH5D28" package="INDUCTOR_6X6MM_SUMIDA_CDRH5D28">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="NR3015" package="INDUCTOR_TAIYOYUDEN_NR3015">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="MA5532" package="INDUCTOR_COILCRAFT_MA5532-AE">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="NR401" package="INDUCTOR_4X4MM_NR401">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-8X8" package="INDUCTOR_8X8MM">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="VISHAY_IHLP" package="INDUCTOR_3.6X3MM_VISHAY_IHLP">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="NRH2412T" package="INDUCTOR_TAIYOYUDEN_NRH2412T">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0603_NO" package="0603-NO">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0805-NO" package="0805-NO">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8047,6 +7536,407 @@ by exp-lbrs.ulp</description>
 <text x="-1.651" y="1.143" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.524" y="-1.651" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="MICROBUILDER_INDUCTOR_1007">
+<description>Inductor - 1007 (2518 Metric)
+&lt;p&gt;L: 2.5mm x W: 1.8mm x H: 1.8mm&lt;/p&gt;</description>
+<wire x1="-1.25" y1="-0.9" x2="-0.75" y2="-0.9" width="0.2032" layer="51"/>
+<wire x1="-0.75" y1="-0.9" x2="0.75" y2="-0.9" width="0.2032" layer="51"/>
+<wire x1="0.75" y1="-0.9" x2="1.25" y2="-0.9" width="0.2032" layer="51"/>
+<wire x1="-1.25" y1="0.9" x2="-0.75" y2="0.9" width="0.2032" layer="51"/>
+<wire x1="-0.75" y1="0.9" x2="0.75" y2="0.9" width="0.2032" layer="51"/>
+<wire x1="0.75" y1="0.9" x2="1.25" y2="0.9" width="0.2032" layer="51"/>
+<wire x1="-1.25" y1="-0.9" x2="-1.25" y2="0.9" width="0.2032" layer="51"/>
+<wire x1="1.25" y1="-0.9" x2="1.25" y2="0.9" width="0.2032" layer="51"/>
+<wire x1="-0.75" y1="-0.9" x2="-0.75" y2="0.9" width="0.2032" layer="51"/>
+<wire x1="0.75" y1="-0.9" x2="0.75" y2="0.9" width="0.2032" layer="51"/>
+<wire x1="-1.8415" y1="1.27" x2="1.8415" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.8415" y1="1.27" x2="1.8415" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.8415" y1="-1.27" x2="-1.8415" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-1.8415" y1="-1.27" x2="-1.8415" y2="1.27" width="0.2032" layer="21"/>
+<smd name="P$1" x="-1.127" y="0" dx="1.016" dy="2.2" layer="1"/>
+<smd name="P$2" x="1.127" y="0" dx="1.016" dy="2.2" layer="1"/>
+<text x="-1.524" y="1.524" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.651" y="-1.905" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER_INDUCTOR_8X8MM">
+<circle x="0" y="0" radius="2.5" width="0.2032" layer="51"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-4" y1="4" x2="4" y2="4" width="0.2032" layer="21"/>
+<wire x1="4" y1="4" x2="4" y2="-4" width="0.2032" layer="21"/>
+<wire x1="4" y1="-4" x2="-4" y2="-4" width="0.2032" layer="21"/>
+<wire x1="-4" y1="-4" x2="-4" y2="4" width="0.2032" layer="21"/>
+<smd name="P$1" x="-2.8" y="0" dx="2" dy="7.5" layer="1"/>
+<smd name="P$2" x="2.8" y="0" dx="2" dy="7.5" layer="1"/>
+<text x="-1.746" y="4.246" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-0.746" y="-4.746" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER_0603">
+<description>0603 (1608 Metric)</description>
+<wire x1="-1.473" y1="0.729" x2="1.473" y2="0.729" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.729" x2="1.473" y2="-0.729" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.729" x2="-1.473" y2="-0.729" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.729" x2="-1.473" y2="0.729" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<wire x1="-1.65" y1="0.75" x2="1.65" y2="0.75" width="0.2032" layer="21"/>
+<wire x1="1.65" y1="0.75" x2="1.65" y2="-0.75" width="0.2032" layer="21"/>
+<wire x1="1.65" y1="-0.75" x2="-1.65" y2="-0.75" width="0.2032" layer="21"/>
+<wire x1="-1.65" y1="-0.75" x2="-1.65" y2="0.75" width="0.2032" layer="21"/>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="1.778" y="-0.127" size="0.8128" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="1.778" y="-0.762" size="0.4064" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER_0603-NO$1">
+<wire x1="-1.473" y1="0.729" x2="1.473" y2="0.729" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.729" x2="1.473" y2="-0.729" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.729" x2="-1.473" y2="-0.729" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.729" x2="-1.473" y2="0.729" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<wire x1="0" y1="0.4" x2="0" y2="-0.4" width="0.3048" layer="21"/>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<smd name="1" x="-0.85" y="0" dx="1.075" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.075" dy="1" layer="1"/>
+<text x="1.778" y="-0.127" size="0.8128" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="1.778" y="-0.762" size="0.4064" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER_0805">
+<description>0805 (2012 Metric)</description>
+<wire x1="-1.873" y1="0.883" x2="1.873" y2="0.883" width="0.0508" layer="39"/>
+<wire x1="1.873" y1="-0.883" x2="-1.873" y2="-0.883" width="0.0508" layer="39"/>
+<wire x1="-1.873" y1="-0.883" x2="-1.873" y2="0.883" width="0.0508" layer="39"/>
+<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
+<wire x1="1.873" y1="0.883" x2="1.873" y2="-0.883" width="0.0508" layer="39"/>
+<wire x1="1.85" y1="1" x2="1.85" y2="-1" width="0.2032" layer="21"/>
+<wire x1="1.85" y1="-1" x2="-1.85" y2="-1" width="0.2032" layer="21"/>
+<wire x1="-1.85" y1="-1" x2="-1.85" y2="1" width="0.2032" layer="21"/>
+<wire x1="-1.85" y1="1" x2="1.85" y2="1" width="0.2032" layer="21"/>
+<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
+<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
+<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="2.032" y="-0.127" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="2.032" y="-0.762" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER_0805-NO">
+<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
+<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.3048" layer="21"/>
+<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
+<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
+<smd name="1" x="-0.95" y="0" dx="1.24" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.24" dy="1.5" layer="1"/>
+<text x="2.032" y="-0.127" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="2.032" y="-0.762" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER_INDUCTOR_6X6MM_SUMIDA_CDRH5D28">
+<description>&lt;p&gt;Source: http://www.sumida.com/products/pdf/CDRH5D28,5D28R,5D28RHP.pdf&lt;/p&gt;</description>
+<circle x="0.01" y="0.01" radius="2.787128125" width="0.127" layer="51"/>
+<wire x1="-2.85" y1="1.3" x2="-1.35" y2="2.8" width="0.127" layer="51"/>
+<wire x1="-1.35" y1="2.8" x2="2.35" y2="2.8" width="0.127" layer="51"/>
+<wire x1="2.35" y1="2.8" x2="2.85" y2="2.3" width="0.127" layer="51" curve="-90"/>
+<wire x1="2.85" y1="2.3" x2="2.85" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="2.85" y1="-1.3" x2="1.35" y2="-2.8" width="0.127" layer="51"/>
+<wire x1="1.35" y1="-2.8" x2="-2.45" y2="-2.8" width="0.127" layer="51"/>
+<wire x1="-2.45" y1="-2.8" x2="-2.85" y2="-2.4" width="0.127" layer="51" curve="-90"/>
+<wire x1="-2.85" y1="-2.4" x2="-2.85" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-0.4" y1="2.9" x2="0.4" y2="2.9" width="0.127" layer="21"/>
+<wire x1="-0.4" y1="-2.9" x2="0.4" y2="-2.9" width="0.127" layer="21"/>
+<smd name="P$1" x="-2.075" y="0" dx="3" dy="6.5" layer="1"/>
+<smd name="P$2" x="2.075" y="0" dx="3" dy="6.5" layer="1"/>
+<text x="-3" y="3.35" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3" y="-3.819" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<polygon width="0.127" layer="51">
+<vertex x="-2.45" y="1.7"/>
+<vertex x="-2.65" y="1.9" curve="-180"/>
+<vertex x="-1.95" y="2.6"/>
+<vertex x="-1.75" y="2.4"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="2.45" y="-1.75"/>
+<vertex x="2.65" y="-1.95" curve="-180"/>
+<vertex x="1.95" y="-2.65"/>
+<vertex x="1.75" y="-2.45"/>
+</polygon>
+</package>
+<package name="MICROBUILDER_INDUCTOR_COILCRAFT_MA5532-AE">
+<wire x1="-5.85" y1="1.75" x2="5.85" y2="1.75" width="0.127" layer="51"/>
+<wire x1="5.85" y1="1.75" x2="5.85" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="5.85" y1="-1.75" x2="-5.85" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="-5.85" y1="-1.75" x2="-5.85" y2="1.75" width="0.127" layer="51"/>
+<wire x1="-5.95" y1="1.85" x2="5.95" y2="1.85" width="0.127" layer="21"/>
+<wire x1="5.95" y1="1.85" x2="5.95" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="5.95" y1="-1.85" x2="-5.95" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="-5.95" y1="-1.85" x2="-5.95" y2="1.85" width="0.127" layer="21"/>
+<smd name="1" x="-4.65" y="0" dx="1.3" dy="3.2" layer="1"/>
+<smd name="2" x="4.65" y="0" dx="1.3" dy="3.2" layer="1"/>
+<text x="-5.874" y="2.074" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-5.851" y="-2.405" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER_INDUCTOR_4X4MM_NR401">
+<wire x1="-2" y1="2" x2="2" y2="2" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="-2" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="21"/>
+<smd name="P$1" x="-1.4" y="0" dx="1.2" dy="3.7" layer="1"/>
+<smd name="P$2" x="1.4" y="0" dx="1.2" dy="3.7" layer="1"/>
+<text x="-2" y="2.2" size="0.8128" layer="25" ratio="12">&gt;NAME</text>
+<text x="-2" y="3.2" size="0.8128" layer="27" ratio="12">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER_INDUCTOR_TAIYOYUDEN_NR3015">
+<wire x1="-0.97" y1="-1.29" x2="-1.36" y2="-1.29" width="0.127" layer="51"/>
+<wire x1="-1.36" y1="-1.29" x2="-1.45" y2="-1.2" width="0.127" layer="51"/>
+<wire x1="-1.45" y1="-1.2" x2="-1.45" y2="1.2" width="0.127" layer="51"/>
+<wire x1="-1.45" y1="1.2" x2="-1.35" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-1.35" y1="1.3" x2="-1.25" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="1.3" x2="-0.95" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-0.95" y1="1.3" x2="-0.75" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-0.75" y1="1.5" x2="0.8" y2="1.5" width="0.127" layer="51"/>
+<wire x1="0.8" y1="1.5" x2="1" y2="1.3" width="0.127" layer="51"/>
+<wire x1="1" y1="1.3" x2="1.25" y2="1.3" width="0.127" layer="51"/>
+<wire x1="1.25" y1="1.3" x2="1.35" y2="1.3" width="0.127" layer="51"/>
+<wire x1="1.35" y1="1.3" x2="1.45" y2="1.2" width="0.127" layer="51"/>
+<wire x1="1.45" y1="1.2" x2="1.45" y2="-1.2" width="0.127" layer="51"/>
+<wire x1="1.45" y1="-1.2" x2="1.35" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="1.35" y1="-1.3" x2="1.25" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-1.3" x2="1" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="1" y1="-1.3" x2="0.8" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-1.5" x2="-0.75" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-0.75" y1="-1.5" x2="-0.95" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="1.3" x2="-1.25" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-1.3" x2="1.25" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-0.95" y1="1.45" x2="-0.8" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="1.6" x2="0.85" y2="1.6" width="0.127" layer="21"/>
+<wire x1="0.85" y1="1.6" x2="1" y2="1.45" width="0.127" layer="21"/>
+<wire x1="-0.95" y1="-1.45" x2="-0.8" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-1.6" x2="0.85" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="0.85" y1="-1.6" x2="1" y2="-1.45" width="0.127" layer="21"/>
+<smd name="P$1" x="-1.1" y="0" dx="0.8" dy="2.7" layer="1"/>
+<smd name="P$2" x="1.1" y="0" dx="0.8" dy="2.7" layer="1"/>
+<text x="-1.524" y="1.774" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.501" y="-2.155" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER_INDUCTOR_5X5MM_NR5040_NOTHERMALS">
+<circle x="0" y="0" radius="2.5" width="0.2032" layer="51"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-2.938" y1="2.6" x2="2.938" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="2.938" y1="2.6" x2="2.938" y2="-2.6" width="0.2032" layer="21"/>
+<wire x1="2.938" y1="-2.6" x2="-2.938" y2="-2.6" width="0.2032" layer="21"/>
+<wire x1="-2.938" y1="-2.6" x2="-2.938" y2="2.6" width="0.2032" layer="21"/>
+<smd name="P$1" x="-1.8" y="0" dx="3" dy="4" layer="1" thermals="no"/>
+<smd name="P$2" x="1.8" y="0" dx="1.8" dy="4" layer="1" thermals="no"/>
+<text x="-2.946" y="2.846" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.946" y="-3.238" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-0.8" y1="2.1" x2="-0.8" y2="-2.1" width="0.127" layer="16"/>
+<wire x1="-0.8" y1="-2.1" x2="0.8" y2="-2.1" width="0.127" layer="16"/>
+<wire x1="0.8" y1="-2.1" x2="0.8" y2="2.1" width="0.127" layer="16"/>
+<wire x1="0.8" y1="2.1" x2="-0.8" y2="2.1" width="0.127" layer="16"/>
+</package>
+<package name="MICROBUILDER_INDUCTOR_TAIYOYUDEN_NRH2412T">
+<wire x1="-1.4" y1="1.2" x2="1.4" y2="1.2" width="0.127" layer="51"/>
+<wire x1="1.4" y1="1.2" x2="1.4" y2="-1.2" width="0.127" layer="51"/>
+<wire x1="1.4" y1="-1.2" x2="-1.4" y2="-1.2" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="-1.2" x2="-1.4" y2="1.2" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="1.3" x2="1.5" y2="1.3" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.3" x2="1.5" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.3" x2="-1.5" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.3" x2="-1.5" y2="1.3" width="0.127" layer="21"/>
+<smd name="1" x="-0.725" y="0" dx="1" dy="2" layer="1"/>
+<smd name="2" x="0.725" y="0" dx="1" dy="2" layer="1"/>
+<text x="-1.224" y="1.478" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.224" y="-1.84" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER_INDUCTOR_6X6MM_TDK_SLF6045">
+<description>&lt;b&gt;Source: &lt;/b&gt; http://www.tdk.co.jp/tefe02/e531_slf6045.pdf</description>
+<wire x1="-3" y1="3" x2="3" y2="3" width="0.127" layer="51"/>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.2032" layer="51"/>
+<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.127" layer="51"/>
+<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.2032" layer="51"/>
+<wire x1="-3" y1="2" x2="-3" y2="3" width="0.2032" layer="21"/>
+<wire x1="-3" y1="3" x2="3" y2="3" width="0.2032" layer="21"/>
+<wire x1="3" y1="3" x2="3" y2="2" width="0.2032" layer="21"/>
+<wire x1="-3" y1="-2" x2="-3" y2="-3" width="0.2032" layer="21"/>
+<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.2032" layer="21"/>
+<wire x1="3" y1="-3" x2="3" y2="-2" width="0.2032" layer="21"/>
+<smd name="P$1" x="-2.75" y="0" dx="1.5" dy="2.2" layer="1"/>
+<smd name="P$2" x="2.75" y="0" dx="1.5" dy="2.2" layer="1"/>
+<text x="-3" y="3.5" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3" y="-3.619" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER_INDUCTOR_5X5MM_TDK_VLC5045">
+<description>&lt;b&gt;Source: http://www.tdk.co.jp/tefe02/e531_vlc5045.pdf&lt;/b&gt;</description>
+<circle x="0" y="0" radius="2.5" width="0.2032" layer="51"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-2.85" y1="2.75" x2="2.85" y2="2.75" width="0.2032" layer="21"/>
+<wire x1="2.85" y1="2.75" x2="2.85" y2="-2.75" width="0.2032" layer="21"/>
+<wire x1="2.85" y1="-2.75" x2="-2.85" y2="-2.75" width="0.2032" layer="21"/>
+<wire x1="-2.85" y1="-2.75" x2="-2.85" y2="2.75" width="0.2032" layer="21"/>
+<smd name="P$1" x="-1.6" y="0" dx="2" dy="5" layer="1"/>
+<smd name="P$2" x="1.6" y="0" dx="2" dy="5" layer="1"/>
+<text x="-3.746" y="3.246" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.746" y="-3.746" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER_INDUCTOR_5X5MM_TDK_VLC5045_NOTHERMALS">
+<circle x="0" y="0" radius="2.5" width="0.2032" layer="51"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-3.738" y1="3" x2="3.738" y2="3" width="0.2032" layer="21"/>
+<wire x1="3.738" y1="3" x2="3.738" y2="-3" width="0.2032" layer="21"/>
+<wire x1="3.738" y1="-3" x2="-3.738" y2="-3" width="0.2032" layer="21"/>
+<wire x1="-3.738" y1="-3" x2="-3.738" y2="3" width="0.2032" layer="21"/>
+<smd name="P$1" x="-2.096" y="0" dx="2.54" dy="5" layer="1" thermals="no"/>
+<smd name="P$2" x="2.096" y="0" dx="2.54" dy="5" layer="1" thermals="no"/>
+<text x="-3.746" y="3.246" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.746" y="-3.746" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER_INDUCTOR_6X6MM_TDK_VLC6045">
+<description>&lt;b&gt;Source: &lt;/b&gt;http://www.tdk.co.jp/tefe02/e531_vlc6045.pdf</description>
+<circle x="0" y="0" radius="3.25" width="0.2032" layer="51"/>
+<wire x1="-3" y1="3" x2="3" y2="3" width="0.2032" layer="51"/>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.2032" layer="51"/>
+<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.2032" layer="51"/>
+<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.2032" layer="51"/>
+<wire x1="-4.5" y1="3.5" x2="4.5" y2="3.5" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="3.5" x2="4.5" y2="-3.5" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="-3.5" x2="-4.5" y2="-3.5" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="-3.5" x2="-4.5" y2="3.5" width="0.2032" layer="21"/>
+<smd name="P$1" x="-2.35" y="0" dx="3.25" dy="6" layer="1"/>
+<smd name="P$2" x="2.35" y="0" dx="3.25" dy="6" layer="1"/>
+<text x="-4" y="4" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-4" y="-4.5" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER_INDUCTOR_3.6X3MM_VISHAY_IHLP">
+<wire x1="-1.825" y1="1.5" x2="1.825" y2="1.5" width="0.127" layer="51"/>
+<wire x1="1.825" y1="1.5" x2="1.825" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1.825" y1="-1.5" x2="-1.825" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-1.825" y1="-1.5" x2="-1.825" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-1.9" y1="0.8" x2="-1.9" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-1.9" y1="1.6" x2="1.9" y2="1.6" width="0.127" layer="21"/>
+<wire x1="1.9" y1="1.6" x2="1.9" y2="0.8" width="0.127" layer="21"/>
+<wire x1="-1.9" y1="-0.8" x2="-1.9" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-1.9" y1="-1.6" x2="1.9" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="1.9" y1="-1.6" x2="1.9" y2="-0.8" width="0.127" layer="21"/>
+<smd name="1" x="-1.4" y="0" dx="1.5" dy="1.2" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="1.5" dy="1.2" layer="1"/>
+<text x="-1.83" y="1.81" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.83" y="-2.16" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER__0402">
+<description>&lt;b&gt; 0402&lt;/b&gt;</description>
+<wire x1="-0.245" y1="0.174" x2="0.245" y2="0.174" width="0.1016" layer="51"/>
+<wire x1="0.245" y1="-0.174" x2="-0.245" y2="-0.174" width="0.1016" layer="51"/>
+<wire x1="-1.0573" y1="0.5557" x2="1.0573" y2="0.5557" width="0.2032" layer="21"/>
+<wire x1="1.0573" y1="0.5557" x2="1.0573" y2="-0.5556" width="0.2032" layer="21"/>
+<wire x1="1.0573" y1="-0.5556" x2="-1.0573" y2="-0.5557" width="0.2032" layer="21"/>
+<wire x1="-1.0573" y1="-0.5557" x2="-1.0573" y2="0.5557" width="0.2032" layer="21"/>
+<rectangle x1="-0.0794" y1="-0.2381" x2="0.0794" y2="0.2381" layer="35"/>
+<rectangle x1="0.25" y1="-0.25" x2="0.5" y2="0.25" layer="51"/>
+<rectangle x1="-0.5" y1="-0.25" x2="-0.25" y2="0.25" layer="51"/>
+<smd name="1" x="-0.508" y="0" dx="0.6" dy="0.6" layer="1"/>
+<smd name="2" x="0.508" y="0" dx="0.6" dy="0.6" layer="1"/>
+<text x="-0.9525" y="0.7939" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-0.9525" y="-1.3336" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER__0402MP">
+<description>&lt;b&gt;0402 MicroPitch&lt;p&gt;</description>
+<wire x1="-0.245" y1="0.174" x2="0.245" y2="0.174" width="0.1016" layer="51"/>
+<wire x1="0.245" y1="-0.174" x2="-0.245" y2="-0.174" width="0.1016" layer="51"/>
+<wire x1="0" y1="0.127" x2="0" y2="-0.127" width="0.2032" layer="21"/>
+<rectangle x1="-0.1" y1="-0.2" x2="0.1" y2="0.2" layer="35"/>
+<rectangle x1="-0.5" y1="-0.25" x2="-0.254" y2="0.25" layer="51"/>
+<rectangle x1="0.2588" y1="-0.25" x2="0.5" y2="0.25" layer="51"/>
+<smd name="1" x="-0.508" y="0" dx="0.5" dy="0.5" layer="1"/>
+<smd name="2" x="0.508" y="0" dx="0.5" dy="0.5" layer="1"/>
+<text x="-0.635" y="0.4763" size="0.6096" layer="25" ratio="18">&gt;NAME</text>
+<text x="-0.635" y="-0.7938" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER__0603">
+<description>&lt;b&gt;0603&lt;/b&gt;</description>
+<wire x1="-0.432" y1="-0.306" x2="0.432" y2="-0.306" width="0.1016" layer="51"/>
+<wire x1="0.432" y1="0.306" x2="-0.432" y2="0.306" width="0.1016" layer="51"/>
+<wire x1="-1.4605" y1="0.635" x2="1.4605" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.4605" y1="0.635" x2="1.4605" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="1.4605" y1="-0.635" x2="-1.4605" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.4605" y1="-0.635" x2="-1.4605" y2="0.635" width="0.2032" layer="21"/>
+<rectangle x1="0.4318" y1="-0.4" x2="0.8382" y2="0.4" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4" x2="-0.4318" y2="0.4" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<smd name="1" x="-0.762" y="0" dx="0.9" dy="0.8" layer="1"/>
+<smd name="2" x="0.762" y="0" dx="0.9" dy="0.8" layer="1"/>
+<text x="-1.27" y="0.9525" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.27" y="-1.4923" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER__0603MP">
+<description>&lt;b&gt;0603 MicroPitch&lt;/b&gt;</description>
+<wire x1="-0.432" y1="-0.306" x2="0.432" y2="-0.306" width="0.1016" layer="51"/>
+<wire x1="0.432" y1="0.306" x2="-0.432" y2="0.306" width="0.1016" layer="51"/>
+<wire x1="0" y1="0.254" x2="0" y2="-0.254" width="0.2032" layer="21"/>
+<rectangle x1="0.4318" y1="-0.4" x2="0.8" y2="0.4" layer="51"/>
+<rectangle x1="-0.8" y1="-0.4" x2="-0.4318" y2="0.4" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.25" x2="0.1999" y2="0.25" layer="35"/>
+<smd name="1" x="-0.762" y="0" dx="0.8" dy="0.8" layer="1"/>
+<smd name="2" x="0.762" y="0" dx="0.8" dy="0.8" layer="1"/>
+<text x="-0.9525" y="0.635" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-0.9525" y="-0.9525" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER__0805">
+<description>&lt;b&gt;0805&lt;/b&gt;</description>
+<wire x1="-0.41" y1="0.585" x2="0.41" y2="0.585" width="0.1016" layer="51"/>
+<wire x1="-0.41" y1="-0.585" x2="0.41" y2="-0.585" width="0.1016" layer="51"/>
+<wire x1="-1.905" y1="0.889" x2="1.905" y2="0.889" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="0.889" x2="1.905" y2="-0.889" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-0.889" x2="-1.905" y2="-0.889" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="-0.889" x2="-1.905" y2="0.889" width="0.2032" layer="21"/>
+<rectangle x1="0.4064" y1="-0.65" x2="1.0564" y2="0.65" layer="51"/>
+<rectangle x1="-1.0668" y1="-0.65" x2="-0.4168" y2="0.65" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+<smd name="1" x="-1.016" y="0" dx="1.2" dy="1.3" layer="1"/>
+<smd name="2" x="1.016" y="0" dx="1.2" dy="1.3" layer="1"/>
+<text x="-1.5875" y="1.27" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.5874" y="-1.651" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER__0805MP">
+<description>&lt;b&gt;0805 MicroPitch&lt;/b&gt;</description>
+<wire x1="-0.51" y1="0.535" x2="0.51" y2="0.535" width="0.1016" layer="51"/>
+<wire x1="-0.51" y1="-0.535" x2="0.51" y2="-0.535" width="0.1016" layer="51"/>
+<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.2032" layer="21"/>
+<rectangle x1="0.4064" y1="-0.65" x2="1" y2="0.65" layer="51"/>
+<rectangle x1="-1" y1="-0.65" x2="-0.4168" y2="0.65" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+<smd name="1" x="-1.016" y="0" dx="1.2" dy="1.3" layer="1"/>
+<smd name="2" x="1.016" y="0" dx="1.2" dy="1.3" layer="1"/>
+<text x="-1.5875" y="0.9525" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.5875" y="-1.27" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="MICROBUILDER_INDUCTOR_4X4MM_NR401_BIGPADS">
+<wire x1="-2" y1="2" x2="2" y2="2" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="-2" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="21"/>
+<smd name="P$1" x="-1.8" y="0" dx="2" dy="3.7" layer="1"/>
+<smd name="P$2" x="1.8" y="0" dx="2" dy="3.7" layer="1"/>
+<text x="-2" y="2.2" size="0.8128" layer="25" ratio="12">&gt;NAME</text>
+<text x="-2" y="3.2" size="0.8128" layer="27" ratio="12">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MICROBUILDER_TESTPOINT">
@@ -8065,6 +7955,18 @@ by exp-lbrs.ulp</description>
 <pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MICROBUILDER_INDUCTOR">
+<wire x1="-2.54" y1="0.3175" x2="-1.27" y2="0.3175" width="0.254" layer="94" curve="-180"/>
+<wire x1="-1.27" y1="0.3175" x2="0" y2="0.3175" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0.3175" x2="1.27" y2="0.3175" width="0.254" layer="94" curve="-180"/>
+<wire x1="1.27" y1="0.3175" x2="2.54" y2="0.3175" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="0.3175" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.3175" x2="2.54" y2="0" width="0.254" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<text x="0" y="2.54" size="1.27" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-1.54" size="1.27" layer="96" align="center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -8188,6 +8090,281 @@ by exp-lbrs.ulp</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MICROBUILDER_INDUCTOR" prefix="L" uservalue="yes">
+<description>&lt;b&gt;Inductors&lt;/b&gt;
+&lt;p&gt;0603:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;10nH Ceramic Inductor - microwire antenna/RF (Digikey: 712-1434-2-ND)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;0805:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;560nH Ceramic Inductor - RF (Digikey: 553-1047-1-ND)&lt;/li&gt;
+&lt;li&gt;270nH Ceramic Inductor - Q = 40@250MHz, +-5%, 1 Ohm DC Resistance (Digikey: 535-10506-2-ND)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1007 (2518 Metric) SMT:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;10µH 10% 250mOhm 820mA 1007 Inductor (Digikey: 587-2189-1-ND)&lt;/li&gt;
+&lt;li&gt;22µH 10% 500mOhm 580mA 1007 Inductor (Digikey: 587-2190-1-ND)&lt;/li&gt;
+&lt;li&gt;47µH 10% 950mOhm 420mA 1007 Inductor (Digikey: 587-2191-1-ND)&lt;/li&gt;
+&lt;li&gt;47µH 5% 100mOhm 1A 1008 Inductor (Digikey: 732-1816-1-ND)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;5.0x5.0mm (Taiyo Yuden NR5040 Series)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;6.8µH 20% 2.3A 64mOhm Inductor (Digikey: 587-2374-2-ND)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;5.0x5.0mm (TDK VLC5045 Series)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;4.7µH 20% 3.3A 34mOhm Inductor (Digikey: 445-6526-1-ND)&lt;/li&gt;
+&lt;li&gt;6.8µH 20% 2.7A 46mOhm Inductor (Digikey: 445-6527-1-ND)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;6.0x6.0mm (TDK VLC6045 Series)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;4.7µH 20% 3.8A 27mOhm Inductor (Digikey: 445-6538-2-ND)&lt;/li&gt;
+&lt;li&gt;6.8µH 20% 3A 41mOhm Inductor (Digikey: 445-6540-1-ND)&lt;/li&gt;
+&lt;li&gt;6.2µH 30% 2.2A 45mOhm Inductor (Digikey: SRR5028-6R2YCT-ND) - Not TDK VLC6045 but footprint should match&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;6.0x6.0mm (TDK SLF6045 Series)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;6.8uH 30% 2A 33mOhm Inductor (Digikey: 445-4572-1-ND, Mouser: 810-SLF645T6R8N2R0PF)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;6.0x6.0mm (Sumida CDRH5D28 Series)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;6.2uH 30% 1.8A 45mOhm Inductor (Digikey: 308-1542-1-ND)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Taiyo Yuden NR3015T2R2M - 2.2uH 20% 1.5A (Digikey: 587-1648-2-ND, Mouser: 963-NR3015T2R2M) - Used with TI TPS62172&lt;/p&gt;
+&lt;p&gt;CoilCraft RFID Transponder Coil - MA5532-AE (For use with AS3935 Lightning Sensor)&lt;/p&gt;
+
+&lt;p&gt;Taiyo Yuden NRH2412T2R2MNGH - 2.2uH 20% 1AA (Digikey: 587-3443-1-ND) - Used with TI LM3671&lt;/p&gt;
+
+&lt;p&gt;
+Vishay IHLP
+&lt;ul&gt;
+&lt;li&gt;1.0uH Molded Inductor - 24mOhm DCR, 5A, +/-20%, -55°C-125°C (Digikey: 541-1319-1-ND)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MICROBUILDER_INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MICROBUILDER_INDUCTOR_1007">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-8X8" package="MICROBUILDER_INDUCTOR_8X8MM">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0603" package="MICROBUILDER_0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0603_NO" package="MICROBUILDER_0603-NO$1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0805" package="MICROBUILDER_0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0805-NO" package="MICROBUILDER_0805-NO">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CDRH5D28" package="MICROBUILDER_INDUCTOR_6X6MM_SUMIDA_CDRH5D28">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MA5532" package="MICROBUILDER_INDUCTOR_COILCRAFT_MA5532-AE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NR401" package="MICROBUILDER_INDUCTOR_4X4MM_NR401">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NR3015" package="MICROBUILDER_INDUCTOR_TAIYOYUDEN_NR3015">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NR5040" package="MICROBUILDER_INDUCTOR_5X5MM_NR5040_NOTHERMALS">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NRH2412T" package="MICROBUILDER_INDUCTOR_TAIYOYUDEN_NRH2412T">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TDK_SLF6045" package="MICROBUILDER_INDUCTOR_6X6MM_TDK_SLF6045">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TDK_VLC5045" package="MICROBUILDER_INDUCTOR_5X5MM_TDK_VLC5045">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TDK_VLC5045_NOTHERM" package="MICROBUILDER_INDUCTOR_5X5MM_TDK_VLC5045_NOTHERMALS">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TDK_VLC6045" package="MICROBUILDER_INDUCTOR_6X6MM_TDK_VLC6045">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="VISHAY_IHLP" package="MICROBUILDER_INDUCTOR_3.6X3MM_VISHAY_IHLP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0402" package="MICROBUILDER__0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0402MP" package="MICROBUILDER__0402MP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0603" package="MICROBUILDER__0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0603MP" package="MICROBUILDER__0603MP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0805" package="MICROBUILDER__0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0805MP" package="MICROBUILDER__0805MP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NR401_BIGPADS" package="MICROBUILDER_INDUCTOR_4X4MM_NR401_BIGPADS">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9114,7 +9291,6 @@ by exp-lbrs.ulp</description>
 <part name="D4" library="microbuilder" deviceset="DIODE-SCHOTTKY" device="SOD-123" value="MBR0530"/>
 <part name="C9" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="4.7uF/25V"/>
 <part name="D3" library="microbuilder" deviceset="DIODE-SCHOTTKY" device="SOD-123" value="MBR0530"/>
-<part name="L1" library="microbuilder" deviceset="INDUCTOR" device="NR401" value="10uH"/>
 <part name="R5" library="microbuilder" deviceset="RESISTOR" device="0805_10MGAP" value="0.47ohm"/>
 <part name="U$10" library="microbuilder" deviceset="GND" device=""/>
 <part name="Q1" library="Parts" deviceset="IRLML2060TRPBF" device="" value="IRLML0100"/>
@@ -9220,6 +9396,7 @@ by exp-lbrs.ulp</description>
 <part name="BTN_NEXT" library="adafruit" deviceset="SWITCH_PUSHBUTTON" device="EVQ-PE"/>
 <part name="BTN_RESET" library="adafruit" deviceset="SWITCH_PUSHBUTTON" device="C&amp;K_KSS"/>
 <part name="BTN_LOCK" library="adafruit" deviceset="SWITCH_PUSHBUTTON" device="C&amp;K_KSS"/>
+<part name="L1" library="Adafruit 3.5in 480x320 FeatherWing" deviceset="MICROBUILDER_INDUCTOR" device="NR401_BIGPADS" value="10uH"/>
 </parts>
 <sheets>
 <sheet>
@@ -9385,10 +9562,6 @@ FILTERING</text>
 <instance part="D3" gate="G$1" x="101.6" y="144.78" smashed="yes" rot="MR270">
 <attribute name="NAME" x="99.06" y="144.78" size="1.27" layer="95" rot="MR270" align="center"/>
 <attribute name="VALUE" x="104.1" y="144.78" size="1.27" layer="96" rot="MR270" align="center"/>
-</instance>
-<instance part="L1" gate="G$1" x="83.82" y="149.86" smashed="yes" rot="MR0">
-<attribute name="NAME" x="83.82" y="152.4" size="1.27" layer="95" rot="MR0" align="center"/>
-<attribute name="VALUE" x="83.82" y="148.32" size="1.27" layer="96" rot="MR0" align="center"/>
 </instance>
 <instance part="R5" gate="G$1" x="91.44" y="121.92" smashed="yes" rot="MR270">
 <attribute name="NAME" x="88.9" y="121.92" size="1.27" layer="95" font="vector" rot="MR270" align="center"/>
@@ -9733,6 +9906,10 @@ FILTERING</text>
 <instance part="BTN_LOCK" gate="G$1" x="236.22" y="101.6" smashed="yes">
 <attribute name="NAME" x="233.68" y="105.156" size="1.27" layer="95"/>
 <attribute name="VALUE" x="233.68" y="99.314" size="1.27" layer="96"/>
+</instance>
+<instance part="L1" gate="G$1" x="83.82" y="149.86" smashed="yes">
+<attribute name="NAME" x="83.82" y="152.4" size="1.27" layer="95" align="center"/>
+<attribute name="VALUE" x="83.82" y="148.32" size="1.27" layer="96" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -10281,10 +10458,10 @@ FILTERING</text>
 <junction x="116.84" y="15.24"/>
 </segment>
 <segment>
-<pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="154.94" x2="76.2" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="149.86" x2="78.74" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="+3V7" gate="G$1" pin="+3V3"/>
+<pinref part="L1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="VDDIO"/>
@@ -10589,7 +10766,6 @@ FILTERING</text>
 <pinref part="D3" gate="G$1" pin="A"/>
 <wire x1="91.44" y1="149.86" x2="101.6" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="149.86" x2="101.6" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="91.44" y1="149.86" x2="88.9" y2="149.86" width="0.1524" layer="91"/>
 <junction x="91.44" y="149.86"/>
 <pinref part="Q1" gate="G$1" pin="D"/>
@@ -10598,6 +10774,7 @@ FILTERING</text>
 <junction x="101.6" y="149.86"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="149.86" x2="114.3" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="L1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="EINK_RESET" class="0">
