@@ -4473,16 +4473,6 @@ Righ-Angle SMT</description>
 <vertex x="0.2" y="-0.2"/>
 </polygon>
 </package>
-<package name="INDUCTOR_4X4MM_NR401">
-<smd name="P$1" x="-1.4" y="0" dx="1.2" dy="3.7" layer="1"/>
-<smd name="P$2" x="1.4" y="0" dx="1.2" dy="3.7" layer="1"/>
-<wire x1="-2" y1="2" x2="2" y2="2" width="0.127" layer="21"/>
-<wire x1="2" y1="2" x2="2" y2="-2" width="0.127" layer="21"/>
-<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
-<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="21"/>
-<text x="-2" y="2.2" size="0.8128" layer="25" ratio="12">&gt;NAME</text>
-<text x="-2" y="3.2" size="0.8128" layer="27" ratio="12">&gt;VALUE</text>
-</package>
 <package name="0805_10MGAP">
 <wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
 <wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
@@ -6538,6 +6528,22 @@ by exp-lbrs.ulp</description>
 </package>
 </packages>
 </library>
+<library name="Adafruit 3.5in 480x320 FeatherWing">
+<description>Generated from &lt;b&gt;Adafruit 3.5in 480x320 FeatherWing.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="MICROBUILDER_INDUCTOR_4X4MM_NR401_BIGPADS">
+<wire x1="-2" y1="2" x2="2" y2="2" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="-2" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="21"/>
+<smd name="P$1" x="-1.8" y="0" dx="2" dy="3.7" layer="1"/>
+<smd name="P$2" x="1.8" y="0" dx="2" dy="3.7" layer="1"/>
+<text x="-2" y="2.2" size="0.8128" layer="25" ratio="12">&gt;NAME</text>
+<text x="-2" y="3.2" size="0.8128" layer="27" ratio="12">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6778,13 +6784,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="5.842" y="102.616" size="0.508" layer="26" font="vector" ratio="18" rot="MR270" align="center"/>
 <attribute name="VALUE" x="3.302" y="102.616" size="0.508" layer="28" font="vector" ratio="18" rot="MR90" align="center"/>
 </element>
-<element name="L1" library="microbuilder" package="INDUCTOR_4X4MM_NR401" value="10uH" x="6.35" y="94.742" smashed="yes" rot="MR270">
-<attribute name="NAME" x="6.382" y="97.114" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
-<attribute name="VALUE" x="5.366" y="94.844" size="0.508" layer="28" font="vector" ratio="18" rot="MR180" align="center"/>
-</element>
-<element name="R12" library="microbuilder" package="0805_10MGAP" value="0.47ohm" x="6.35" y="98.552" smashed="yes" rot="MR0">
-<attribute name="NAME" x="6.35" y="99.695" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
-<attribute name="VALUE" x="9.652" y="98.806" size="0.508" layer="28" font="vector" ratio="18" rot="MR0" align="center"/>
+<element name="R12" library="microbuilder" package="0805_10MGAP" value="0.47ohm" x="6.35" y="98.933" smashed="yes" rot="MR0">
+<attribute name="NAME" x="6.35" y="100.076" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
+<attribute name="VALUE" x="9.652" y="99.187" size="0.508" layer="28" font="vector" ratio="18" rot="MR0" align="center"/>
 </element>
 <element name="Q2" library="Parts" package="SOT23-3" value="IRLML0100" x="11.176" y="96.012" smashed="yes" rot="MR90">
 <attribute name="NAME" x="10.033" y="96.0628" size="0.508" layer="26" font="vector" ratio="18" rot="MR90" align="center"/>
@@ -7182,6 +7184,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="C29" library="microbuilder" package="0805-NO" value="1uF" x="24.257" y="1.651" smashed="yes" rot="MR0">
 <attribute name="NAME" x="24.257" y="2.794" size="0.508" layer="26" font="vector" ratio="18" rot="MR0" align="center"/>
 <attribute name="VALUE" x="22.225" y="0.889" size="0.4064" layer="28" ratio="10" rot="MR0"/>
+</element>
+<element name="L1" library="Adafruit 3.5in 480x320 FeatherWing" package="MICROBUILDER_INDUCTOR_4X4MM_NR401_BIGPADS" value="10uH" x="6.35" y="94.9452" smashed="yes" rot="MR90">
+<attribute name="NAME" x="8.55" y="92.9452" size="0.8128" layer="26" ratio="12" rot="MR90"/>
+<attribute name="VALUE" x="9.55" y="92.9452" size="0.8128" layer="28" ratio="12" rot="MR90"/>
 </element>
 </elements>
 <signals>
@@ -7834,7 +7840,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="27.432" y1="92.953" x2="25.5833" y2="91.1043" width="0.1524" layer="1"/>
 </signal>
 <signal name="+3V3" class="1">
-<contactref element="L1" pad="P$2"/>
 <contactref element="U$2" pad="15"/>
 <contactref element="C17" pad="2"/>
 <contactref element="U$2" pad="16"/>
@@ -7942,8 +7947,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="14.224" y1="93.472" x2="14.224" y2="82.804" width="0.3048" layer="1"/>
 <wire x1="8.89" y1="94.234" x2="13.462" y2="94.234" width="0.3048" layer="1"/>
 <via x="8.89" y="94.234" extent="1-16" drill="0.3048"/>
-<wire x1="8.89" y1="94.234" x2="7.998" y2="93.342" width="0.3048" layer="16"/>
-<wire x1="7.998" y1="93.342" x2="6.35" y2="93.342" width="0.3048" layer="16"/>
 <via x="42.0624" y="53.2384" extent="1-16" drill="0.3048"/>
 <wire x1="53.721" y1="64.643" x2="42.3164" y2="53.2384" width="0.3048" layer="1"/>
 <wire x1="42.3164" y1="53.2384" x2="42.0624" y2="53.2384" width="0.3048" layer="1"/>
@@ -8009,9 +8012,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="74.676" y1="82.804" x2="74.676" y2="78.882" width="0.3048" layer="1"/>
 <wire x1="74.676" y1="78.882" x2="71.374" y2="75.58" width="0.3048" layer="1"/>
 <via x="71.374" y="75.58" extent="1-16" drill="0.3048"/>
-<wire x1="6.35" y1="93.342" x2="4.956" y2="93.342" width="0.3048" layer="16"/>
-<wire x1="2.2956" y1="96.0024" x2="2.2956" y2="97.34" width="0.3048" layer="16"/>
-<wire x1="4.956" y1="93.342" x2="2.2956" y2="96.0024" width="0.3048" layer="16"/>
+<wire x1="2.2956" y1="97.34" x2="2.2956" y2="96.0024" width="0.3048" layer="16"/>
 <contactref element="R13" pad="5"/>
 <wire x1="19.7358" y1="21.1328" x2="18.40805" y2="21.1328" width="0.3048" layer="16"/>
 <wire x1="57.658" y1="77.978" x2="57.658" y2="101.6" width="0.3048" layer="1"/>
@@ -8077,6 +8078,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="31.294" y1="2.54" x2="28.7661" y2="5.0679" width="0.3048" layer="16"/>
 <wire x1="28.771" y1="1.143" x2="28.4662" y2="0.8382" width="0.3048" layer="16"/>
 <wire x1="28.4662" y1="0.8382" x2="26.0198" y2="0.8382" width="0.3048" layer="16"/>
+<contactref element="L1" pad="P$1"/>
+<wire x1="2.2956" y1="96.0024" x2="5.1528" y2="93.1452" width="0.3048" layer="16"/>
+<wire x1="5.1528" y1="93.1452" x2="6.35" y2="93.1452" width="0.3048" layer="16"/>
+<wire x1="6.35" y1="93.1452" x2="7.8012" y2="93.1452" width="0.3048" layer="16"/>
+<wire x1="7.8012" y1="93.1452" x2="8.89" y2="94.234" width="0.3048" layer="16"/>
 </signal>
 <signal name="GDR">
 <contactref element="U$2" pad="2"/>
@@ -8100,8 +8106,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="11.5207" y1="91.89568125" x2="11.03788125" y2="92.3785" width="0.1524" layer="1"/>
 <wire x1="11.03788125" y1="92.3785" x2="10.414" y2="92.3785" width="0.1524" layer="1"/>
 <wire x1="17.6532" y1="88.9634" x2="14.2401" y2="88.9634" width="0.1524" layer="16"/>
-<wire x1="10.176" y1="96.962" x2="8.586" y2="98.552" width="0.1524" layer="16"/>
-<wire x1="8.586" y1="98.552" x2="7.4" y2="98.552" width="0.1524" layer="16"/>
+<wire x1="10.176" y1="96.962" x2="8.205" y2="98.933" width="0.1524" layer="16"/>
+<wire x1="8.205" y1="98.933" x2="7.4" y2="98.933" width="0.1524" layer="16"/>
 <wire x1="10.414" y1="92.3785" x2="9.652" y2="93.1405" width="0.1524" layer="1"/>
 <wire x1="9.652" y1="93.1405" x2="9.652" y2="93.218" width="0.1524" layer="1"/>
 <via x="9.652" y="93.218" extent="1-16" drill="0.254"/>
@@ -8249,21 +8255,21 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="N$3">
 <contactref element="D4" pad="A"/>
-<contactref element="L1" pad="P$1"/>
 <contactref element="Q2" pad="3"/>
 <contactref element="C24" pad="1"/>
 <wire x1="7.62" y1="101.666" x2="6.72" y2="100.766" width="0.1524" layer="16"/>
 <wire x1="6.72" y1="100.766" x2="4.572" y2="100.766" width="0.1524" layer="16"/>
-<wire x1="4.572" y1="100.766" x2="4.4714" y2="100.6654" width="0.1524" layer="16"/>
-<wire x1="4.4714" y1="100.6654" x2="4.4714" y2="97.5126" width="0.1524" layer="16"/>
-<wire x1="5.842" y1="96.142" x2="4.4714" y2="97.5126" width="0.1524" layer="16"/>
-<wire x1="5.842" y1="96.142" x2="6.35" y2="96.142" width="0.1524" layer="16"/>
-<wire x1="6.35" y1="96.012" x2="6.35" y2="96.142" width="0.1524" layer="16"/>
 <wire x1="12.276" y1="96.012" x2="10.922" y2="96.012" width="0.1524" layer="16"/>
 <via x="10.922" y="96.012" extent="1-16" drill="0.254"/>
 <wire x1="10.922" y1="96.012" x2="8.89" y2="96.012" width="0.1524" layer="1"/>
 <via x="8.89" y="96.012" extent="1-16" drill="0.254"/>
-<wire x1="8.89" y1="96.012" x2="6.35" y2="96.012" width="0.1524" layer="16"/>
+<contactref element="L1" pad="P$2"/>
+<wire x1="4.572" y1="100.766" x2="4.318" y2="100.512" width="0.1524" layer="16"/>
+<wire x1="4.318" y1="100.512" x2="4.318" y2="97.409" width="0.1524" layer="16"/>
+<wire x1="4.318" y1="97.409" x2="4.9818" y2="96.7452" width="0.1524" layer="16"/>
+<wire x1="4.9818" y1="96.7452" x2="6.35" y2="96.7452" width="0.1524" layer="16"/>
+<wire x1="6.35" y1="96.7452" x2="7.0832" y2="96.012" width="0.1524" layer="16"/>
+<wire x1="7.0832" y1="96.012" x2="8.89" y2="96.012" width="0.1524" layer="16"/>
 </signal>
 <signal name="A9_">
 <contactref element="PORT_A9" pad="3"/>
