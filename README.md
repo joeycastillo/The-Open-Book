@@ -85,7 +85,7 @@ Finally, for the Flash chips, the GD25Q16C and GD25Q32C are 100% pin-compatible,
 
 OK, here's the rundown:
 
-### Open Book Feather
+### Open Book Feather A1 Rev 04
 
 |Parts|Qty|Device|Value|Cost @ 1 assembly|Cost @ 3 assemblies|Cost @ 10 assemblies|Cost @ 100 assemblies|URL|
 |-----|---|------|-----|-----|-----|-----|------|-----|
@@ -171,4 +171,27 @@ OK, here's the rundown:
 
 ## Next Steps
 
-Boards for the Book rev 2 and Wing rev 4 are on their way. Need to assemble and test those. Software-wise, next steps are finishing up the Babel typesetter and then getting started on the minimum viable book reader UI.
+I've designed the Open Book A1 Rev 05 to address some small issues:
+
+- There was a slight hum in the headphones when plugged in to USB. Addressed this by adding a resistor and a capacitor between the USB cable shield and the ground plane.
+- The thru-hole button footprints weren't quite perfect, and prevented the buttons from mounting consistently flush with the board. A new button footprint should address that issue.
+- I moved to new gull-wing buttons for reset and lock, which should improve their durability. Left the footprints for the old side-mount previous and next buttons as-is, but renamed them from BTN to DNP since their functions are covered by the thru-hole previous and next buttons. You can populate them if you want, but I'm planning to design enclosures as if they're not there.
+- Moved the status Neopixel to the bottom, by the reset button, since it's especially useful for communicating bootloader status which often involves the reset function. It's also a right-angle LED now.
+- Extended the inductor's solder pad out on either side, in the hopes of making hand-soldering easier (before, you could only solder that part with an oven or hot air).
+- Finally, I fixed a minor typo in the silkscreen; UART is SERCOM5, not SERCOM0.
+
+It's unclear whether I'll test this version of the board; the changes are so minor that I think it should "just work", and for the Take Flight with Feather run, there'll probably be a comopletely different revision that takes DFM concerns into account. I just wanted to make sure I updated the schematics in case folks wanted to build along at home.
+
+The differences from the BOM above:
+
+- The Neopixel is [this part](https://www.digikey.com/product-detail/en/inolux/IN-PI42TASPRPGPB/1830-1206-1-ND/9681286) instead of the one listed.
+- You only need two instead of four right angle buttons, and it's [this part](https://www.digikey.com/product-detail/en/KSS321GLFS/401-1100-1-ND/417671/?itemSeq=315746150).
+- You'll need one extra 1MΩ resistor (R27) and a 4.5nF capacitor (C36), both 0805-sized, for the shield connection.
+
+## Schematics
+
+![image](/images/oso-book-a1-05-schematic-page1.png)
+
+![image](/images/oso-book-a1-05-schematic-page2.png)
+
+![image](/images/oso-book-a1-05-schematic-page3.png)
