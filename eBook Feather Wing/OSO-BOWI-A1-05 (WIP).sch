@@ -9385,7 +9385,7 @@ by exp-lbrs.ulp</description>
 <part name="FID5" library="microbuilder" deviceset="FIDUCIAL" device="_1MM"/>
 <part name="FID6" library="microbuilder" deviceset="FIDUCIAL" device="_1MM"/>
 <part name="SW1" library="My Stuff" deviceset="SPDT_SWITCH" device=""/>
-<part name="FCS" library="E-Book Wing Rev C (WIP)" deviceset="SOLDERJUMPER_OPEN" device=""/>
+<part name="BCS" library="E-Book Wing Rev C (WIP)" deviceset="SOLDERJUMPER_OPEN" device=""/>
 <part name="J1" library="SJ-43514-SMT" deviceset="SJ-43514-SMT" device=""/>
 <part name="BTN_LEFT" library="adafruit" deviceset="SWITCH_PUSHBUTTON" device="EVQ-PE"/>
 <part name="BTN_DOWN" library="adafruit" deviceset="SWITCH_PUSHBUTTON" device="EVQ-PE"/>
@@ -9866,7 +9866,7 @@ FILTERING</text>
 <attribute name="NAME" x="234.95" y="38.608" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="234.696" y="32.258" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="FCS" gate="G$1" x="96.52" y="50.8" smashed="yes"/>
+<instance part="BCS" gate="G$1" x="96.52" y="50.8" smashed="yes"/>
 <instance part="J1" gate="G$1" x="53.34" y="83.82" smashed="yes">
 <attribute name="NAME" x="45.702309375" y="92.22145" size="1.78213125" layer="95"/>
 <attribute name="VALUE" x="45.6935" y="73.6247" size="1.78418125" layer="96"/>
@@ -10426,7 +10426,7 @@ FILTERING</text>
 <pinref part="MS1" gate="G$1" pin="NC"/>
 <wire x1="88.9" y1="50.8" x2="91.44" y2="50.8" width="0.1524" layer="91"/>
 <label x="91.44" y="50.8" size="1.778" layer="95"/>
-<pinref part="FCS" gate="G$1" pin="1"/>
+<pinref part="BCS" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -10910,7 +10910,7 @@ FILTERING</text>
 <segment>
 <wire x1="101.6" y1="50.8" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
 <label x="101.6" y="50.8" size="1.778" layer="95"/>
-<pinref part="FCS" gate="G$1" pin="2"/>
+<pinref part="BCS" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GPIO_INT" class="0">

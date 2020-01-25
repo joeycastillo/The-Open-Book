@@ -274,14 +274,14 @@ FEATHER WING</text>
 <wire x1="22.606" y1="75.4888" x2="0" y2="75.4888" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="46.736" y1="53.086" x2="46.736" y2="67.056" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="46.736" y1="67.056" x2="22.606" y2="67.056" width="0.1524" layer="22" style="shortdash"/>
-<text x="76.454" y="66.294" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">2MB FLASH CHIP</text>
+<text x="76.454" y="66.294" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">BABEL FLASH CHIP</text>
 <text x="76.454" y="64.262" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">If you're using a non-Express 
 board that lacks onboard Flash, 
 an optional GD25Q16CTIGR Flash 
 chip can hold the entire GNU 
 Unifont in its 2MB of memory. It 
 uses the SPI interface, but 
-you'll need to wire the FCS 
+you'll need to wire the BCS 
 pad to a spare GPIO. If you 
 skip this chip, omit filtering capacitor C5.</text>
 <text x="9.144" y="6.604" size="0.508" layer="21" font="vector" ratio="18" align="center">BTN_PREV</text>
@@ -5291,12 +5291,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="BOM" value="EXCLUDE" x="3.048" y="18.288" size="1.778" layer="27" display="off"/>
 </element>
 <element name="SW1" library="My Stuff" package="A10767" value="SPDT_SWITCH" x="58.674" y="4.826" smashed="yes" rot="MR0">
-<attribute name="NAME" x="58.674" y="7.747" size="0.8128" layer="52" font="vector" ratio="18" rot="MR0" align="center"/>
+<attribute name="NAME" x="58.674" y="6.223" size="0.8128" layer="52" font="vector" ratio="18" rot="MR0" align="center"/>
 </element>
 <element name="U$48" library="My Stuff" package="OSO_ONELINE_125MIL" value="OSO_TEXTOSO_TEXT_ONELINE_125MIL" x="45.339" y="14.732" smashed="yes"/>
 <element name="U$44" library="My Stuff" package="OSO_GRAPHIC" value="OSO_GRAPHIC" x="3.81" y="13.081" smashed="yes"/>
 <element name="U$45" library="My Stuff" package="OSO_BEAR_750MIL" value="OSO_BEAR" x="66.1162" y="27.305" smashed="yes"/>
-<element name="FCS" library="E-Book Wing Rev C (WIP)" package="SOLDERJUMPER_OPEN" value="SOLDERJUMPER_OPEN" x="33.274" y="44.45" smashed="yes" rot="MR180">
+<element name="BCS" library="E-Book Wing Rev C (WIP)" package="SOLDERJUMPER_OPEN" value="SOLDERJUMPER_OPEN" x="33.274" y="44.45" smashed="yes" rot="MR180">
 <attribute name="NAME" x="35.56" y="44.45" size="0.508" layer="26" font="vector" ratio="18" rot="MR90" align="center"/>
 <attribute name="VALUE" x="31.75" y="46.101" size="0.4064" layer="28" ratio="10" rot="MR180"/>
 </element>
@@ -5826,7 +5826,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="26.615825" y1="44.5372" x2="27.740175" y2="44.5372" width="0.1524" layer="16"/>
 <wire x1="27.740175" y1="44.5372" x2="27.827375" y2="44.45" width="0.1524" layer="16"/>
 <wire x1="27.827375" y1="44.45" x2="29.591" y2="44.45" width="0.1524" layer="16"/>
-<contactref element="FCS" pad="1"/>
+<contactref element="BCS" pad="1"/>
 <wire x1="32.512" y1="44.45" x2="29.591" y2="44.45" width="0.1524" layer="16"/>
 </signal>
 <signal name="+3V3">
@@ -6299,7 +6299,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="53.34" y="54.61" extent="1-16" drill="0.254"/>
 <wire x1="53.34" y1="54.61" x2="52.705" y2="55.245" width="0.1524" layer="16"/>
 <wire x1="52.705" y1="55.245" x2="52.705" y2="56.074" width="0.1524" layer="16"/>
-<contactref element="FCS" pad="2"/>
+<contactref element="BCS" pad="2"/>
 <wire x1="34.036" y1="44.45" x2="33.69475" y2="44.79125" width="0.1524" layer="16"/>
 </signal>
 <signal name="GPIO_INT">
@@ -6317,16 +6317,16 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="72.6812" y1="25.5778" x2="72.672" y2="25.587" width="0.1524" layer="16"/>
 <wire x1="76.708" y1="82.042" x2="76.708" y2="28.194" width="0.1524" layer="16"/>
 <wire x1="76.708" y1="28.194" x2="74.0918" y2="25.5778" width="0.1524" layer="16"/>
-<wire x1="75.7428" y1="23.9268" x2="75.7428" y2="12.1988" width="0.1524" layer="16"/>
-<wire x1="75.7428" y1="23.9268" x2="74.0918" y2="25.5778" width="0.1524" layer="16"/>
+<wire x1="74.9808" y1="24.6888" x2="74.9808" y2="13.2148" width="0.1524" layer="16"/>
+<wire x1="74.9808" y1="24.6888" x2="74.0918" y2="25.5778" width="0.1524" layer="16"/>
 <wire x1="74.6664" y1="88.9558" x2="72.898" y2="87.1874" width="0.1524" layer="16"/>
 <wire x1="72.898" y1="87.1874" x2="72.898" y2="84.328" width="0.1524" layer="16"/>
 <wire x1="72.898" y1="84.328" x2="73.914" y2="83.312" width="0.1524" layer="16"/>
 <wire x1="75.438" y1="83.312" x2="76.708" y2="82.042" width="0.1524" layer="16"/>
 <wire x1="73.914" y1="83.312" x2="75.438" y2="83.312" width="0.1524" layer="16"/>
 <contactref element="BTN_NEXT" pad="P$1"/>
-<wire x1="75.7428" y1="12.1988" x2="71.418" y2="7.874" width="0.1524" layer="16"/>
-<wire x1="71.418" y1="7.874" x2="71.068" y2="7.874" width="0.1524" layer="16"/>
+<wire x1="71.068" y1="7.874" x2="71.068" y2="9.302" width="0.1524" layer="16"/>
+<wire x1="74.9808" y1="13.2148" x2="71.068" y2="9.302" width="0.1524" layer="16"/>
 </signal>
 <signal name="BTN_PREV">
 <contactref element="DNP_PREV_ALT" pad="P$1"/>
@@ -6336,18 +6336,20 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="0.381" y="89.408" extent="1-16" drill="0.254"/>
 <wire x1="0.381" y1="89.408" x2="0.381" y2="11.049" width="0.1524" layer="1"/>
 <wire x1="3.556" y1="7.874" x2="0.381" y2="11.049" width="0.1524" layer="1"/>
-<wire x1="12.4968" y1="0.4572" x2="5.894" y2="7.06" width="0.1524" layer="16"/>
+<wire x1="12.4968" y1="0.4572" x2="11.736" y2="1.218" width="0.1524" layer="16"/>
 <wire x1="12.4968" y1="0.4572" x2="61.4172" y2="0.4572" width="0.1524" layer="16"/>
 <wire x1="71.5789125" y1="24.9568" x2="71.3434" y2="25.1923125" width="0.1524" layer="16"/>
 <wire x1="71.3434" y1="26.416" x2="71.3434" y2="25.1923125" width="0.1524" layer="16"/>
-<wire x1="74.5086" y1="24.1736875" x2="73.7254875" y2="24.9568" width="0.1524" layer="16"/>
-<wire x1="73.7254875" y1="24.9568" x2="71.5789125" y2="24.9568" width="0.1524" layer="16"/>
-<wire x1="74.5086" y1="13.5486" x2="74.5086" y2="24.1736875" width="0.1524" layer="16"/>
+<wire x1="74.5086" y1="24.4276875" x2="73.9794875" y2="24.9568" width="0.1524" layer="16"/>
+<wire x1="73.9794875" y1="24.9568" x2="71.5789125" y2="24.9568" width="0.1524" layer="16"/>
+<wire x1="74.5086" y1="13.5486" x2="74.5086" y2="24.4276875" width="0.1524" layer="16"/>
 <wire x1="61.4172" y1="0.4572" x2="74.5086" y2="13.5486" width="0.1524" layer="16"/>
 <wire x1="72.672" y1="26.857" x2="71.7844" y2="26.857" width="0.1524" layer="16"/>
 <wire x1="71.7844" y1="26.857" x2="71.3434" y2="26.416" width="0.1524" layer="16"/>
 <contactref element="BTN_PREV" pad="P$1"/>
-<wire x1="5.894" y1="7.874" x2="5.894" y2="7.06" width="0.1524" layer="16"/>
+<wire x1="5.894" y1="7.874" x2="7.672" y2="7.874" width="0.1524" layer="16"/>
+<wire x1="11.736" y1="3.81" x2="7.672" y2="7.874" width="0.1524" layer="16"/>
+<wire x1="11.736" y1="3.81" x2="11.736" y2="1.218" width="0.1524" layer="16"/>
 <wire x1="5.894" y1="7.874" x2="3.556" y2="7.874" width="0.1524" layer="1"/>
 </signal>
 <signal name="BTN_SEL">
