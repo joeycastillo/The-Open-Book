@@ -9297,7 +9297,7 @@ by exp-lbrs.ulp</description>
 <part name="U$14" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$16" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$12" library="microbuilder" deviceset="GND" device=""/>
-<part name="BTN_PREV_ALT" library="My Stuff" deviceset="SPST_TACTILE_SWITCH" device="RA"/>
+<part name="DNP_PREV_ALT" library="My Stuff" deviceset="SPST_TACTILE_SWITCH" device="RA"/>
 <part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="R4" library="microbuilder" deviceset="RESISTOR" device="_0805MP" value="10K"/>
 <part name="R3" library="microbuilder" deviceset="RESISTOR" device="_0805MP" value="10K"/>
@@ -9361,7 +9361,7 @@ by exp-lbrs.ulp</description>
 <part name="U$6" library="microbuilder" deviceset="GND" device=""/>
 <part name="INT" library="Adafruit 3.5in 480x320 FeatherWing" deviceset="MICROBUILDER_SOLDERJUMPER_CLOSED" device=""/>
 <part name="C5" library="microbuilder" deviceset="CAP_CERAMIC" device="0805_10MGAP" value="1uF"/>
-<part name="BTN_NEXT_ALT" library="My Stuff" deviceset="SPST_TACTILE_SWITCH" device="RA"/>
+<part name="DNP_NEXT_ALT" library="My Stuff" deviceset="SPST_TACTILE_SWITCH" device="RA"/>
 <part name="ERST" library="Adafruit 3.5in 480x320 FeatherWing" deviceset="MICROBUILDER_SOLDERJUMPER_CLOSED" device=""/>
 <part name="EBSY" library="Adafruit 3.5in 480x320 FeatherWing" deviceset="MICROBUILDER_SOLDERJUMPER_CLOSED" device=""/>
 <part name="FRAME2" library="My Stuff" deviceset="A4L-LOC" device=""/>
@@ -9582,7 +9582,7 @@ FILTERING</text>
 <instance part="U$12" gate="G$1" x="248.92" y="27.94" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="252.984" y="27.94" size="1.27" layer="96" rot="MR0"/>
 </instance>
-<instance part="BTN_PREV_ALT" gate="G$1" x="236.22" y="132.08" smashed="yes">
+<instance part="DNP_PREV_ALT" gate="G$1" x="236.22" y="132.08" smashed="yes">
 <attribute name="NAME" x="233.68" y="135.636" size="1.27" layer="95"/>
 </instance>
 <instance part="+3V6" gate="G$1" x="17.78" y="63.5" smashed="yes">
@@ -9811,7 +9811,7 @@ FILTERING</text>
 <attribute name="NAME" x="172.97" y="118.09" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
 <attribute name="VALUE" x="177.56" y="118.09" size="1.27" layer="96" font="vector" rot="R90" align="center"/>
 </instance>
-<instance part="BTN_NEXT_ALT" gate="G$1" x="236.22" y="109.22" smashed="yes">
+<instance part="DNP_NEXT_ALT" gate="G$1" x="236.22" y="109.22" smashed="yes">
 <attribute name="NAME" x="233.68" y="112.776" size="1.27" layer="95"/>
 </instance>
 <instance part="ERST" gate="G$1" x="96.52" y="33.02" smashed="yes">
@@ -10057,7 +10057,7 @@ FILTERING</text>
 <wire x1="241.3" y1="139.7" x2="243.84" y2="139.7" width="0.1524" layer="91"/>
 <junction x="243.84" y="139.7"/>
 <wire x1="243.84" y1="132.08" x2="243.84" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="BTN_PREV_ALT" gate="G$1" pin="P$2"/>
+<pinref part="DNP_PREV_ALT" gate="G$1" pin="P$2"/>
 <wire x1="241.3" y1="132.08" x2="243.84" y2="132.08" width="0.1524" layer="91"/>
 <junction x="243.84" y="132.08"/>
 <wire x1="243.84" y1="124.46" x2="243.84" y2="132.08" width="0.1524" layer="91"/>
@@ -10067,7 +10067,7 @@ FILTERING</text>
 <wire x1="241.3" y1="116.84" x2="243.84" y2="116.84" width="0.1524" layer="91"/>
 <junction x="243.84" y="116.84"/>
 <wire x1="243.84" y1="109.22" x2="243.84" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="BTN_NEXT_ALT" gate="G$1" pin="P$2"/>
+<pinref part="DNP_NEXT_ALT" gate="G$1" pin="P$2"/>
 <wire x1="241.3" y1="109.22" x2="243.84" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="101.6" x2="243.84" y2="101.6" width="0.1524" layer="91"/>
 <junction x="243.84" y="109.22"/>
@@ -10932,7 +10932,7 @@ FILTERING</text>
 <wire x1="226.06" y1="132.08" x2="226.06" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="114.3" x2="231.14" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="114.3" x2="231.14" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="BTN_NEXT_ALT" gate="G$1" pin="P$1"/>
+<pinref part="DNP_NEXT_ALT" gate="G$1" pin="P$1"/>
 <wire x1="231.14" y1="109.22" x2="231.14" y2="114.3" width="0.1524" layer="91"/>
 <junction x="231.14" y="114.3"/>
 <label x="215.9" y="132.08" size="1.778" layer="95"/>
@@ -10941,7 +10941,7 @@ FILTERING</text>
 </net>
 <net name="BTN_PREV" class="0">
 <segment>
-<pinref part="BTN_PREV_ALT" gate="G$1" pin="P$1"/>
+<pinref part="DNP_PREV_ALT" gate="G$1" pin="P$1"/>
 <pinref part="IC1" gate="G$1" pin="GP5"/>
 <wire x1="231.14" y1="124.46" x2="231.14" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="129.54" x2="231.14" y2="132.08" width="0.1524" layer="91"/>
