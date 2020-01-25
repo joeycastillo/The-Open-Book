@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6795,7 +6795,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="SW1" library="My Stuff" package="A10767" value="SPDT_SWITCH" x="8.636" y="4.572" smashed="yes" rot="MR0">
 <attribute name="NAME" x="8.636" y="7.493" size="0.8128" layer="52" font="vector" ratio="18" rot="MR0" align="center"/>
 </element>
-<element name="BTN_PREV_ALT" library="My Stuff" package="TL3330AF130QG" value="SPST_TACTILE_SWITCHRA" x="2.6416" y="91.44" smashed="yes" rot="MR90"/>
+<element name="DNP_PREV_ALT" library="My Stuff" package="TL3330AF130QG" value="SPST_TACTILE_SWITCHRA" x="2.6416" y="91.44" smashed="yes" rot="MR90"/>
 <element name="PORT_A9" library="microbuilder" package="JSTPH3" value="JST PH 3" x="4.318" y="70.104" smashed="yes" rot="MR270">
 <attribute name="NAME" x="10.668" y="70.1515" size="0.8128" layer="26" font="vector" ratio="18" rot="MR270" align="center"/>
 <attribute name="VALUE" x="2.048" y="70.0245" size="0.508" layer="28" font="vector" ratio="18" rot="MR270" align="center"/>
@@ -6820,7 +6820,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="26.162" y="26.3652" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
 <attribute name="VALUE" x="27.94" y="26.4922" size="0.508" layer="28" font="vector" ratio="18" rot="MR180" align="center"/>
 </element>
-<element name="BTN_NEXT_ALT" library="My Stuff" package="TL3330AF130QG" value="SPST_TACTILE_SWITCHRA" x="74.3204" y="90.8558" smashed="yes" rot="MR270"/>
+<element name="DNP_NEXT_ALT" library="My Stuff" package="TL3330AF130QG" value="SPST_TACTILE_SWITCHRA" x="74.3204" y="90.8558" smashed="yes" rot="MR270"/>
 <element name="JP1" library="adafruit" package="1X03" value="" x="8.636" y="108.839" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="12.446" y="105.664" size="1.27" layer="28" rot="MR0"/>
 </element>
@@ -8004,8 +8004,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="23.334" y1="13.462" x2="23.241" y2="13.555" width="0.3048" layer="16"/>
 <wire x1="23.241" y1="16.2306" x2="20.828" y2="13.8176" width="0.3048" layer="16"/>
 <wire x1="20.828" y1="13.8176" x2="18.40805" y2="16.23755" width="0.3048" layer="16"/>
-<contactref element="BTN_PREV_ALT" pad="P$2"/>
-<contactref element="BTN_NEXT_ALT" pad="P$2"/>
+<contactref element="DNP_PREV_ALT" pad="P$2"/>
+<contactref element="DNP_NEXT_ALT" pad="P$2"/>
 <wire x1="74.6664" y1="84.9558" x2="74.676" y2="84.9462" width="0.3048" layer="16"/>
 <wire x1="74.676" y1="84.9462" x2="74.676" y2="82.804" width="0.3048" layer="16"/>
 <via x="74.676" y="82.804" extent="1-16" drill="0.3048"/>
@@ -9261,7 +9261,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="22.3774" y1="22.92966875" x2="22.3774" y2="23.61434375" width="0.1524" layer="16"/>
 <wire x1="22.3774" y1="23.61434375" x2="22.68985625" y2="23.9268" width="0.1524" layer="16"/>
 <wire x1="22.20613125" y1="22.7584" x2="22.3774" y2="22.92966875" width="0.1524" layer="16"/>
-<contactref element="BTN_PREV_ALT" pad="P$1"/>
+<contactref element="DNP_PREV_ALT" pad="P$1"/>
 <wire x1="2.2956" y1="93.34" x2="2.2956" y2="76.9716" width="0.1524" layer="16"/>
 <wire x1="2.2956" y1="76.9716" x2="1.524" y2="76.2" width="0.1524" layer="16"/>
 <via x="1.524" y="76.2" extent="1-16" drill="0.254"/>
@@ -9280,7 +9280,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="BUTTON6">
 <contactref element="U5" pad="5"/>
-<contactref element="BTN_NEXT_ALT" pad="P$1"/>
+<contactref element="DNP_NEXT_ALT" pad="P$1"/>
 <wire x1="74.6664" y1="88.9558" x2="74.6664" y2="86.6180875" width="0.1524" layer="16"/>
 <wire x1="74.6664" y1="86.6180875" x2="73.5488" y2="85.5004875" width="0.1524" layer="16"/>
 <wire x1="73.5488" y1="84.328" x2="73.5488" y2="85.5004875" width="0.1524" layer="16"/>
