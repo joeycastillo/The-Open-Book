@@ -16427,15 +16427,15 @@ by exp-lbrs.ulp</description>
 <attribute name="NAME" x="426.72" y="148.336" size="1.27" layer="95"/>
 <attribute name="VALUE" x="426.72" y="134.62" size="1.27" layer="95"/>
 </instance>
-<instance part="X1" gate="G$1" x="604.52" y="111.76" smashed="yes" rot="R180">
-<attribute name="NAME" x="610.87" y="106.045" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="610.87" y="116.84" size="1.778" layer="96" rot="R180"/>
+<instance part="X1" gate="G$1" x="469.9" y="119.38" smashed="yes" rot="R180">
+<attribute name="NAME" x="476.25" y="113.665" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="476.25" y="124.46" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U$13" gate="G$1" x="607.06" y="124.46" smashed="yes">
-<attribute name="VALUE" x="605.536" y="125.476" size="1.27" layer="96"/>
+<instance part="U$13" gate="G$1" x="472.44" y="132.08" smashed="yes">
+<attribute name="VALUE" x="470.916" y="133.096" size="1.27" layer="96"/>
 </instance>
-<instance part="U$22" gate="G$1" x="607.06" y="99.06" smashed="yes">
-<attribute name="VALUE" x="605.536" y="96.52" size="1.27" layer="96"/>
+<instance part="U$22" gate="G$1" x="472.44" y="106.68" smashed="yes">
+<attribute name="VALUE" x="470.916" y="104.14" size="1.27" layer="96"/>
 </instance>
 <instance part="C5" gate="G$1" x="332.74" y="124.46" smashed="yes">
 <attribute name="NAME" x="330.45" y="125.71" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
@@ -16691,7 +16691,7 @@ by exp-lbrs.ulp</description>
 <segment>
 <pinref part="X1" gate="G$1" pin="1"/>
 <pinref part="U$22" gate="G$1" pin="GND"/>
-<wire x1="607.06" y1="101.6" x2="607.06" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="472.44" y1="109.22" x2="472.44" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -17028,7 +17028,7 @@ by exp-lbrs.ulp</description>
 <segment>
 <pinref part="X1" gate="G$1" pin="2"/>
 <pinref part="U$13" gate="G$1" pin="VBAT"/>
-<wire x1="607.06" y1="121.92" x2="607.06" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="472.44" y1="129.54" x2="472.44" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$20" gate="G$1" pin="VBAT"/>
