@@ -38,7 +38,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -323,7 +323,6 @@ are filtering caps for the power pins (in and out).</text>
 <text x="71.374" y="27.178" size="0.508" layer="22" font="vector" rot="MR0" align="top-left">BTN_PREV</text>
 <text x="71.374" y="25.908" size="0.508" layer="22" font="vector" rot="MR0" align="top-left">BTN_NEXT</text>
 <text x="71.374" y="24.638" size="0.508" layer="22" font="vector" rot="MR0" align="top-left">BTN_LOCK</text>
-<text x="27.7622" y="3.937" size="0.508" layer="22" font="vector" ratio="18" rot="MR180" align="center">RESET</text>
 <text x="4.318" y="0.508" size="1.27" layer="21" font="vector" ratio="18">OSO-BOWI-A1-05</text>
 <text x="10.033" y="42.1894" size="0.508" layer="22" font="vector" ratio="18" rot="MR90" align="center">A1</text>
 <text x="10.033" y="44.1706" size="0.508" layer="22" font="vector" ratio="18" rot="MR90" align="center">3V</text>
@@ -384,7 +383,6 @@ while blocking the DC component.</text>
 <wire x1="58.674" y1="106.68" x2="61.722" y2="106.68" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="61.722" y1="106.68" x2="76.962" y2="106.68" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="61.722" y1="106.68" x2="61.722" y2="112.014" width="0.1524" layer="22" style="shortdash"/>
-<text x="67.8942" y="108.077" size="0.508" layer="22" font="vector" ratio="18" rot="MR180" align="center">BTN_LOCK</text>
 <wire x1="14.351" y1="110.49" x2="13.081" y2="110.49" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="13.081" y1="110.49" x2="12.7508" y2="110.1598" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="12.7508" y1="110.1598" x2="12.446" y2="109.855" width="0.1524" layer="22" style="shortdash"/>
@@ -5342,11 +5340,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="70.834" y="10.325" size="0.4064" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="BTN_RESET" library="adafruit" package="BTN_CK_KSS" value="" x="26.924" y="2.794" smashed="yes" rot="MR0">
-<attribute name="NAME" x="28.81" y="4.888" size="0.8128" layer="26" ratio="18" rot="MR0"/>
+<attribute name="NAME" x="26.8478" y="2.794" size="0.508" layer="26" font="vector" ratio="18" rot="MR0" align="center"/>
 <attribute name="VALUE" x="28.81" y="3.938" size="0.4064" layer="28" ratio="10" rot="MR0"/>
 </element>
 <element name="BTN_LOCK" library="adafruit" package="BTN_CK_KSS" value="" x="67.8942" y="110.0582" smashed="yes" rot="MR180">
-<attribute name="NAME" x="66.0082" y="107.9642" size="0.8128" layer="26" ratio="18" rot="MR180"/>
+<attribute name="NAME" x="67.8942" y="107.442" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
 <attribute name="VALUE" x="66.0082" y="108.9142" size="0.4064" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="L1" library="Adafruit 3.5in 480x320 FeatherWing" package="MICROBUILDER_INDUCTOR_4X4MM_NR401_BIGPADS" value="10uH" x="38.1" y="77.216" smashed="yes" rot="MR270">
