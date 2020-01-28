@@ -400,7 +400,7 @@ love in Brooklyn, New York, at the workshop of @the_prepared.</text>
 <text x="28.3464" y="52.578" size="0.4064" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">A 350mAh battery fits atop 
 lazer bear: adafru.it/4237</text>
 <text x="0.635" y="31.2166" size="0.508" layer="21" font="vector" ratio="18" rot="SR270" align="center">OFF</text>
-<text x="0.635" y="35.0266" size="0.508" layer="21" font="vector" ratio="18" rot="SR270" align="center">ON</text>
+<text x="0.635" y="33.5026" size="0.508" layer="21" font="vector" ratio="18" rot="SR270" align="center">ON</text>
 <text x="0.635" y="8.8646" size="0.508" layer="21" font="vector" ratio="18" rot="SR270" align="center">RESET</text>
 <wire x1="28.448" y1="16.51" x2="28.448" y2="11.938" width="0.1524" layer="22" style="shortdash"/>
 <wire x1="28.448" y1="11.938" x2="28.448" y2="5.842" width="0.1524" layer="22" style="shortdash"/>
@@ -429,21 +429,6 @@ by exp-lbrs.ulp</description>
 <pad name="P$2" x="0" y="0" drill="0.9"/>
 <pad name="P$3" x="2" y="0" drill="0.9"/>
 <text x="0" y="1.397" size="0.8128" layer="51" font="vector" ratio="18" align="center">&gt;NAME</text>
-</package>
-<package name="MJTP1117">
-<pad name="P$1" x="-2.58" y="0.04" drill="0.635" rot="R180"/>
-<pad name="P$2" x="2.58" y="0.04" drill="0.635" rot="R180"/>
-<wire x1="3.5" y1="3.54" x2="-3.5" y2="3.54" width="0.127" layer="21"/>
-<wire x1="3.5" y1="3.54" x2="3.5" y2="-2.46" width="0.127" layer="21"/>
-<wire x1="3.5" y1="-2.46" x2="2" y2="-2.46" width="0.127" layer="21"/>
-<wire x1="2" y1="-2.46" x2="-2" y2="-2.46" width="0.127" layer="21"/>
-<wire x1="-2" y1="-2.46" x2="-3.5" y2="-2.46" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="-2.46" x2="-3.5" y2="3.54" width="0.127" layer="21"/>
-<wire x1="2" y1="-2.46" x2="2" y2="-3.96" width="0.127" layer="21"/>
-<wire x1="2" y1="-3.96" x2="-2" y2="-3.96" width="0.127" layer="21"/>
-<wire x1="-2" y1="-2.46" x2="-2" y2="-3.96" width="0.127" layer="21"/>
-<pad name="P$5" x="-3.81" y="2.54" drill="1.1" diameter="1.9304"/>
-<pad name="P$6" x="3.81" y="2.54" drill="1.1" diameter="1.9304"/>
 </package>
 <package name="EINK_DISPLAY_2_7_IN">
 <wire x1="-0.08" y1="-0.029" x2="69.22" y2="-0.029" width="0.127" layer="51"/>
@@ -10200,6 +10185,34 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 </polygon>
 <rectangle x1="-0.635" y1="-0.4445" x2="0.635" y2="0.4445" layer="41"/>
 </package>
+<package name="BTN_CK_KSS">
+<wire x1="-2.75" y1="1.75" x2="2.75" y2="1.75" width="0.127" layer="51"/>
+<wire x1="2.75" y1="1.75" x2="2.75" y2="1.505" width="0.127" layer="51"/>
+<wire x1="2.75" y1="1.505" x2="2.75" y2="-1.505" width="0.127" layer="51"/>
+<wire x1="2.75" y1="-1.505" x2="2.75" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="2.75" y1="-1.75" x2="1.25" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-1.75" x2="-1.25" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="-1.75" x2="-2.75" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="-2.75" y1="-1.75" x2="-2.75" y2="-1.505" width="0.127" layer="51"/>
+<wire x1="-2.75" y1="-1.505" x2="-2.75" y2="1.505" width="0.127" layer="51"/>
+<wire x1="-2.75" y1="1.505" x2="-2.75" y2="1.75" width="0.127" layer="51"/>
+<wire x1="3.5" y1="1.505" x2="3.5" y2="-1.505" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="-1.505" x2="-3.5" y2="1.505" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="-2.65" x2="1.25" y2="-2.65" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-2.65" x2="1.25" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="-2.65" x2="-1.25" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="1.505" x2="-2.75" y2="1.505" width="0.127" layer="51"/>
+<wire x1="2.75" y1="1.505" x2="3.5" y2="1.505" width="0.127" layer="51"/>
+<wire x1="-2.75" y1="-1.505" x2="-3.5" y2="-1.505" width="0.127" layer="51"/>
+<wire x1="3.5" y1="-1.505" x2="2.75" y2="-1.505" width="0.127" layer="51"/>
+<smd name="P$1" x="-2.95" y="0" dx="1.7" dy="3.7" layer="1"/>
+<smd name="P$2" x="2.95" y="0" dx="1.7" dy="3.7" layer="1"/>
+<wire x1="-1.9" y1="1.9" x2="1.9" y2="1.9" width="0.127" layer="21"/>
+<wire x1="-1.9" y1="-1.9" x2="-1.4" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="1.4" y1="-1.9" x2="1.9" y2="-1.9" width="0.127" layer="21"/>
+<text x="-1.886" y="2.094" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.886" y="1.144" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 <library name="oshw">
@@ -12441,7 +12454,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="9.0805" y="84.074" size="0.508" layer="28" font="vector" ratio="18" rot="MR270" align="center"/>
 </element>
 <element name="SW2" library="My Stuff" package="A10767" value="SPDT_SWITCH" x="3.556" y="32.258" smashed="yes" rot="MR90"/>
-<element name="SW1" library="My Stuff" package="MJTP1117" value="SPST_TACTILE_SWITCHRA-THRU" x="2.54" y="8.89" smashed="yes" rot="MR90"/>
 <element name="JP1" library="adafruit" package="1X03" value="" x="3.429" y="80.01" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="0.254" y="76.2" size="1.27" layer="28" rot="MR90"/>
 </element>
@@ -12761,6 +12773,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="0.635" y="50.292" size="0.508" layer="26" font="vector" ratio="18" rot="MR90" align="center"/>
 <attribute name="VALUE" x="1.016" y="52.324" size="0.4064" layer="28" ratio="10" rot="MR90"/>
 </element>
+<element name="BTN_RESET" library="adafruit" package="BTN_CK_KSS" value="" x="2.2352" y="8.8646" smashed="yes" rot="MR90">
+<attribute name="NAME" x="4.826" y="8.89" size="0.508" layer="26" font="vector" ratio="18" rot="MR90" align="center"/>
+<attribute name="VALUE" x="3.3792" y="6.9786" size="0.4064" layer="28" ratio="10" rot="MR90"/>
+</element>
 </elements>
 <signals>
 <signal name="GND" class="2">
@@ -12810,7 +12826,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="C12" pad="2"/>
 <contactref element="TP2" pad="P$1"/>
 <contactref element="LED" pad="C"/>
-<contactref element="SW1" pad="P$1"/>
 <contactref element="C11" pad="1"/>
 <contactref element="FUL" pad="C"/>
 <contactref element="U$58" pad="8"/>
@@ -12912,7 +12927,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="8.4328" y="21.6916" extent="1-16" drill="0.254"/>
 <via x="5.8928" y="20.1676" extent="1-16" drill="0.254"/>
 <via x="3.3528" y="20.1676" extent="1-16" drill="0.254"/>
-<via x="4.3688" y="10.0076" extent="1-16" drill="0.254"/>
+<via x="4.8514" y="8.382" extent="1-16" drill="0.254"/>
 <via x="12.954" y="27.432" extent="1-16" drill="0.254"/>
 <via x="20.4978" y="56.4134" extent="1-16" drill="0.254"/>
 <via x="2.032" y="59.944" extent="1-16" drill="0.254"/>
@@ -12923,6 +12938,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="6.858" y="76.2" extent="1-16" drill="0.254"/>
 <via x="6.604" y="82.296" extent="1-16" drill="0.254"/>
 <via x="44.5008" y="58.42" extent="1-16" drill="0.254"/>
+<contactref element="BTN_RESET" pad="P$1"/>
+<via x="2.8194" y="8.89" extent="1-16" drill="0.254"/>
 </signal>
 <signal name="D9_EINK_CS">
 <contactref element="U$58" pad="12"/>
@@ -13602,12 +13619,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="24.5618" y1="20.574" x2="23.114" y2="20.574" width="0.3048" layer="16"/>
 <wire x1="23.114" y1="20.574" x2="22.352" y2="21.336" width="0.3048" layer="16"/>
 <wire x1="22.352" y1="21.336" x2="21.778" y2="21.336" width="0.3048" layer="16"/>
-</signal>
-<signal name="N$1">
-<contactref element="SW1" pad="P$2"/>
-<contactref element="R7" pad="1"/>
-<wire x1="2.58" y1="11.47" x2="1.27" y2="12.78" width="0.1524" layer="16"/>
-<wire x1="1.27" y1="12.78" x2="1.27" y2="13.682" width="0.1524" layer="16"/>
 </signal>
 <signal name="N$9">
 <contactref element="R9" pad="1"/>
@@ -14451,6 +14462,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="23.8966125" y1="47.244" x2="24.01330625" y2="47.12730625" width="0.1524" layer="1"/>
 <via x="24.01330625" y="47.12730625" extent="1-16" drill="0.254"/>
 <wire x1="24.01330625" y1="47.12730625" x2="24.01330625" y2="46.8758625" width="0.1524" layer="16"/>
+</signal>
+<signal name="N$1">
+<contactref element="R7" pad="1"/>
+<contactref element="BTN_RESET" pad="P$2"/>
+<wire x1="1.27" y1="13.682" x2="1.27" y2="13.428" width="0.1524" layer="16"/>
+<wire x1="2.2352" y1="12.4628" x2="1.27" y2="13.428" width="0.1524" layer="16"/>
+<wire x1="2.2352" y1="12.4628" x2="2.2352" y2="11.8146" width="0.1524" layer="16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
