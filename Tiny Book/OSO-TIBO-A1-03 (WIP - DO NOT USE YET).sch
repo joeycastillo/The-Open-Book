@@ -14878,13 +14878,11 @@ Source: AVX .. aphvc.pdf</description>
 <part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME2" library="My Stuff" deviceset="A4L-LOC" device=""/>
 <part name="JP1" library="adafruit" deviceset="PINHD-1X3" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GOLD_ORB_SM1" library="oshw" deviceset="OSHWLOGO" device="LOGO5MM"/>
-<part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="U$1" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5" value="MOUNTINGHOLE2.5"/>
 <part name="U$4" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5" value="MOUNTINGHOLE2.5"/>
@@ -15022,6 +15020,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R5" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="10K"/>
 <part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="BTN_RESET" library="adafruit" deviceset="SWITCH_PUSHBUTTON" device="C&amp;K_KSS"/>
+<part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15277,21 +15277,15 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND1" gate="1" x="101.6" y="109.22" smashed="yes" rot="R270">
 <attribute name="VALUE" x="99.06" y="111.76" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND5" gate="1" x="58.42" y="106.68" smashed="yes">
-<attribute name="VALUE" x="55.88" y="104.14" size="1.778" layer="96"/>
-</instance>
 <instance part="+3V3" gate="G$1" x="119.38" y="109.22" smashed="yes" rot="R270">
 <attribute name="VALUE" x="119.38" y="111.76" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="+3V4" gate="G$1" x="58.42" y="129.54" smashed="yes">
-<attribute name="VALUE" x="55.88" y="129.54" size="1.778" layer="96"/>
 </instance>
 <instance part="+3V13" gate="G$1" x="96.52" y="132.08" smashed="yes">
 <attribute name="VALUE" x="93.98" y="132.08" size="1.778" layer="96"/>
 </instance>
-<instance part="I2C_PORT" gate="G$2" x="86.36" y="121.92" smashed="yes">
-<attribute name="NAME" x="81.276940625" y="130.0633" size="1.27153125" layer="95"/>
-<attribute name="VALUE" x="81.276459375" y="109.9643" size="1.27176875" layer="96"/>
+<instance part="I2C_PORT" gate="G$2" x="58.42" y="119.38" smashed="yes" rot="R180">
+<attribute name="NAME" x="63.503059375" y="111.2367" size="1.27153125" layer="95" rot="R180"/>
+<attribute name="VALUE" x="63.503540625" y="131.3357" size="1.27176875" layer="96" rot="R180"/>
 </instance>
 <instance part="U4" gate="G$1" x="142.24" y="154.94" smashed="yes">
 <attribute name="NAME" x="129.54" y="167.64" size="1.778" layer="95"/>
@@ -15410,6 +15404,12 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="NAME" x="9.144" y="12.7" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="14.986" y="12.7" size="1.27" layer="96" rot="R90"/>
 </instance>
+<instance part="+3V9" gate="G$1" x="86.36" y="116.84" smashed="yes" rot="R270">
+<attribute name="VALUE" x="86.36" y="119.38" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND9" gate="1" x="68.58" y="109.22" smashed="yes">
+<attribute name="VALUE" x="66.04" y="106.68" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -15476,17 +15476,6 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="185.42" y1="99.06" x2="182.88" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="99.06" x2="182.88" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="U$57" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<label x="63.5" y="119.38" size="1.778" layer="95"/>
-<wire x1="78.74" y1="119.38" x2="58.42" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="119.38" x2="58.42" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="I2C_PORT" gate="G$2" pin="4"/>
-<pinref part="I2C_PORT" gate="G$2" pin="SHIELD"/>
-<wire x1="58.42" y1="114.3" x2="58.42" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="114.3" x2="58.42" y2="114.3" width="0.1524" layer="91"/>
-<junction x="58.42" y="114.3"/>
 </segment>
 <segment>
 <pinref part="ACCESSORY_PORT" gate="G$1" pin="1"/>
@@ -15587,6 +15576,12 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="U$24" gate="G$1" pin="GND"/>
 <pinref part="BTN_RESET" gate="G$1" pin="P$1"/>
 </segment>
+<segment>
+<pinref part="I2C_PORT" gate="G$2" pin="1"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="66.04" y1="114.3" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="114.3" x2="68.58" y2="111.76" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="EN" class="0">
 <segment>
@@ -15629,12 +15624,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="C23" gate="G$1" pin="1"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 <wire x1="116.84" y1="109.22" x2="114.3" y2="109.22" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="78.74" y1="121.92" x2="58.42" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="121.92" x2="58.42" y2="127" width="0.1524" layer="91"/>
-<pinref part="+3V4" gate="G$1" pin="+3V3"/>
-<pinref part="I2C_PORT" gate="G$2" pin="3"/>
 </segment>
 <segment>
 <pinref part="ACCESSORY_PORT" gate="G$1" pin="2"/>
@@ -15686,6 +15675,11 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="I2C_PORT" gate="G$2" pin="2"/>
+<pinref part="+3V9" gate="G$1" pin="+3V3"/>
+<wire x1="83.82" y1="116.84" x2="66.04" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D10_EINK_DC" class="0">
@@ -16190,9 +16184,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="12.7" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="78.74" y1="124.46" x2="60.96" y2="124.46" width="0.1524" layer="91"/>
-<label x="60.96" y="124.46" size="1.778" layer="95"/>
-<pinref part="I2C_PORT" gate="G$2" pin="2"/>
+<label x="66.04" y="119.38" size="1.778" layer="95"/>
+<wire x1="81.28" y1="119.38" x2="66.04" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="I2C_PORT" gate="G$2" pin="3"/>
 </segment>
 </net>
 <net name="D26_SERCOM4_SCL" class="0">
@@ -16202,9 +16196,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="12.7" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="78.74" y1="127" x2="60.96" y2="127" width="0.1524" layer="91"/>
-<label x="60.96" y="127" size="1.778" layer="95"/>
-<pinref part="I2C_PORT" gate="G$2" pin="1"/>
+<label x="66.04" y="121.92" size="1.778" layer="95"/>
+<wire x1="81.28" y1="121.92" x2="66.04" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="I2C_PORT" gate="G$2" pin="4"/>
 </segment>
 </net>
 <net name="D28_SERCOM5_MOSI" class="0">

@@ -9,7 +9,7 @@
 </settings>
 <grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -29,11 +29,11 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="13" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -47,9 +47,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -12830,7 +12830,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="FUL" pad="C"/>
 <contactref element="U$58" pad="8"/>
 <contactref element="U$58" pad="17"/>
-<contactref element="I2C_PORT" pad="4"/>
 <contactref element="MICROSD" pad="6"/>
 <contactref element="MICROSD" pad="MT1"/>
 <contactref element="MICROSD" pad="MT2"/>
@@ -12852,8 +12851,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="45.5422" y="10.16"/>
 <vertex x="48.5902" y="13.208"/>
 </polygon>
-<contactref element="I2C_PORT" pad="S1"/>
-<contactref element="I2C_PORT" pad="S2"/>
 <contactref element="R27" pad="2"/>
 <contactref element="C30" pad="2"/>
 <contactref element="J2" pad="5"/>
@@ -12940,6 +12937,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="44.5008" y="58.42" extent="1-16" drill="0.254"/>
 <contactref element="BTN_RESET" pad="P$1"/>
 <via x="5.8928" y="13.5636" extent="1-16" drill="0.254"/>
+<contactref element="I2C_PORT" pad="1"/>
 </signal>
 <signal name="D9_EINK_CS">
 <contactref element="U$58" pad="12"/>
@@ -13040,7 +13038,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="TP3" pad="P$1"/>
 <contactref element="U$58" pad="15"/>
 <contactref element="U$58" pad="16"/>
-<contactref element="I2C_PORT" pad="3"/>
 <contactref element="MICROSD" pad="4"/>
 <contactref element="C29" pad="1"/>
 <contactref element="R6" pad="2"/>
@@ -13082,9 +13079,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="52.578" y1="53.594" x2="53.274" y2="52.898" width="0.3048" layer="16"/>
 <wire x1="53.274" y1="52.898" x2="53.274" y2="52.324" width="0.3048" layer="16"/>
 <via x="51.308" y="77.978" extent="1-16" drill="0.3048"/>
-<wire x1="51.308" y1="77.978" x2="51.173" y2="78.113" width="0.3048" layer="16"/>
-<wire x1="51.173" y1="78.113" x2="49.7332" y2="78.113" width="0.3048" layer="16"/>
-<wire x1="49.7332" y1="78.113" x2="39.439" y2="78.113" width="0.3048" layer="16"/>
 <wire x1="39.439" y1="78.113" x2="38.288" y2="76.962" width="0.3048" layer="16"/>
 <wire x1="32.512" y1="81.12" x2="32.35215" y2="80.96015" width="0.3048" layer="16"/>
 <wire x1="32.35215" y1="80.96015" x2="32.35215" y2="78.0168" width="0.3048" layer="16"/>
@@ -13196,6 +13190,15 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="3.302" y="60.198" extent="1-16" drill="0.3048"/>
 <wire x1="5.2102" y1="60.2622" x2="3.3662" y2="60.2622" width="0.3048" layer="16"/>
 <wire x1="3.3662" y1="60.2622" x2="3.302" y2="60.198" width="0.3048" layer="16"/>
+<contactref element="I2C_PORT" pad="2"/>
+<wire x1="49.7332" y1="79.113" x2="50.23925" y2="79.113" width="0.3048" layer="16"/>
+<wire x1="51.308" y1="78.04425" x2="50.23925" y2="79.113" width="0.3048" layer="16"/>
+<wire x1="51.308" y1="78.04425" x2="51.308" y2="77.978" width="0.3048" layer="16"/>
+<wire x1="51.308" y1="77.978" x2="51.308" y2="77.18175" width="0.3048" layer="16"/>
+<wire x1="51.308" y1="77.18175" x2="50.58025" y2="76.454" width="0.3048" layer="16"/>
+<wire x1="45.30018125" y1="78.113" x2="39.439" y2="78.113" width="0.3048" layer="16"/>
+<wire x1="46.95918125" y1="76.454" x2="45.30018125" y2="78.113" width="0.3048" layer="16"/>
+<wire x1="50.58025" y1="76.454" x2="46.95918125" y2="76.454" width="0.3048" layer="16"/>
 </signal>
 <signal name="GDR">
 <contactref element="Q2" pad="1"/>
@@ -14371,13 +14374,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="D25_SERCOM4_SDA">
 <contactref element="U3" pad="7"/>
-<contactref element="I2C_PORT" pad="2"/>
 <via x="15.9004" y="58.928" extent="1-16" drill="0.254"/>
-<wire x1="40.513" y1="79.7052" x2="46.7868" y2="79.7052" width="0.1524" layer="1"/>
-<wire x1="46.7868" y1="79.7052" x2="47.244" y2="79.248" width="0.1524" layer="1"/>
-<via x="47.244" y="79.248" extent="1-16" drill="0.254"/>
-<wire x1="47.244" y1="79.248" x2="47.379" y2="79.113" width="0.1524" layer="16"/>
-<wire x1="47.379" y1="79.113" x2="49.7332" y2="79.113" width="0.1524" layer="16"/>
 <wire x1="40.513" y1="79.7052" x2="19.939" y2="59.1312" width="0.1524" layer="1"/>
 <wire x1="14.986" y1="56.5658" x2="14.986" y2="57.0738" width="0.1524" layer="16"/>
 <wire x1="13.97" y1="58.0898" x2="14.986" y2="57.0738" width="0.1524" layer="16"/>
@@ -14386,21 +14383,27 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="13.97" y1="58.674" x2="13.97" y2="58.0898" width="0.1524" layer="16"/>
 <wire x1="16.1036" y1="59.1312" x2="15.9004" y2="58.928" width="0.1524" layer="1"/>
 <wire x1="19.939" y1="59.1312" x2="16.1036" y2="59.1312" width="0.1524" layer="1"/>
+<contactref element="I2C_PORT" pad="3"/>
+<wire x1="49.7332" y1="78.113" x2="48.0455" y2="78.113" width="0.1524" layer="16"/>
+<wire x1="48.0455" y1="78.113" x2="47.33125" y2="78.82725" width="0.1524" layer="16"/>
+<via x="47.33125" y="78.82725" extent="1-16" drill="0.254"/>
+<wire x1="47.33125" y1="78.82725" x2="46.4533" y2="79.7052" width="0.1524" layer="1"/>
+<wire x1="46.4533" y1="79.7052" x2="40.513" y2="79.7052" width="0.1524" layer="1"/>
 </signal>
 <signal name="D26_SERCOM4_SCL">
 <contactref element="U3" pad="8"/>
-<contactref element="I2C_PORT" pad="1"/>
-<wire x1="49.7332" y1="80.113" x2="49.6302" y2="80.01" width="0.1524" layer="16"/>
-<wire x1="49.6302" y1="80.01" x2="47.244" y2="80.01" width="0.1524" layer="16"/>
-<via x="47.244" y="80.01" extent="1-16" drill="0.254"/>
-<wire x1="40.386" y1="80.01" x2="47.244" y2="80.01" width="0.1524" layer="1"/>
+<wire x1="40.64" y1="80.264" x2="45.212" y2="80.264" width="0.1524" layer="1"/>
 <via x="14.46365" y="58.40895" extent="1-16" drill="0.254"/>
 <wire x1="15.494" y1="57.3786" x2="14.46365" y2="58.40895" width="0.1524" layer="16"/>
 <wire x1="15.494" y1="57.3786" x2="15.494" y2="56.5658" width="0.1524" layer="16"/>
 <wire x1="15.7226" y1="59.436" x2="14.69555" y2="58.40895" width="0.1524" layer="1"/>
 <wire x1="14.46365" y1="58.40895" x2="14.69555" y2="58.40895" width="0.1524" layer="1"/>
 <wire x1="15.7226" y1="59.436" x2="19.812" y2="59.436" width="0.1524" layer="1"/>
-<wire x1="19.812" y1="59.436" x2="40.386" y2="80.01" width="0.1524" layer="1"/>
+<wire x1="19.812" y1="59.436" x2="40.64" y2="80.264" width="0.1524" layer="1"/>
+<contactref element="I2C_PORT" pad="4"/>
+<wire x1="49.7332" y1="77.113" x2="48.363" y2="77.113" width="0.1524" layer="16"/>
+<wire x1="48.363" y1="77.113" x2="45.212" y2="80.264" width="0.1524" layer="16"/>
+<via x="45.212" y="80.264" extent="1-16" drill="0.254"/>
 </signal>
 <signal name="D28_SERCOM5_MOSI">
 <contactref element="U3" pad="38"/>
