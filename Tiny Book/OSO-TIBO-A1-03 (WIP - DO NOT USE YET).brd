@@ -197,21 +197,21 @@
 <dimension x1="0.254" y1="9.398" x2="0.254" y2="48.006" x3="-4.318" y3="28.702" textsize="1.778" layer="47" unit="inch"/>
 <text x="23.368" y="74.422" size="1.27" layer="22" font="vector" ratio="18" rot="SMR45">OSO-TIBO-A1-03</text>
 <text x="-7.112" y="56.896" size="0.8128" layer="22" font="vector" rot="MR90" align="top-left"></text>
-<text x="2.032" y="79.9846" size="0.508" layer="22" font="vector" ratio="18" rot="MR90" align="center">GND</text>
-<text x="2.032" y="82.5246" size="0.508" layer="22" font="vector" ratio="18" rot="MR90" align="center">RX</text>
-<text x="2.032" y="77.4446" size="0.508" layer="22" font="vector" ratio="18" rot="MR90" align="center">TX</text>
-<text x="2.032" y="72.3646" size="0.508" layer="22" font="vector" ratio="18" rot="MR90" align="center">3V</text>
-<wire x1="5.207" y1="74.295" x2="5.207" y2="75.565" width="0.1524" layer="22" style="shortdash"/>
-<wire x1="5.207" y1="75.565" x2="4.8768" y2="75.8952" width="0.1524" layer="22" style="shortdash"/>
-<wire x1="4.8768" y1="75.8952" x2="4.572" y2="76.2" width="0.1524" layer="22" style="shortdash"/>
-<wire x1="4.572" y1="76.2" x2="3.302" y2="76.2" width="0.1524" layer="22" style="shortdash"/>
-<wire x1="3.302" y1="76.2" x2="2.667" y2="75.565" width="0.1524" layer="22" style="shortdash"/>
-<wire x1="2.667" y1="75.565" x2="2.667" y2="74.295" width="0.1524" layer="22" style="shortdash"/>
-<wire x1="4.572" y1="73.66" x2="3.302" y2="73.66" width="0.1524" layer="22" style="shortdash"/>
-<wire x1="3.302" y1="73.66" x2="2.9718" y2="73.9902" width="0.1524" layer="22" style="shortdash"/>
-<wire x1="2.9718" y1="73.9902" x2="2.667" y2="74.295" width="0.1524" layer="22" style="shortdash"/>
-<wire x1="4.572" y1="73.66" x2="5.207" y2="74.295" width="0.1524" layer="22" style="shortdash"/>
-<wire x1="2.9718" y1="73.9902" x2="4.8768" y2="75.8952" width="0.1524" layer="22"/>
+<text x="1.651" y="79.9846" size="0.508" layer="22" font="vector" ratio="18" rot="MR90" align="center">GND</text>
+<text x="1.651" y="82.5246" size="0.508" layer="22" font="vector" ratio="18" rot="MR90" align="center">RX</text>
+<text x="1.651" y="77.4446" size="0.508" layer="22" font="vector" ratio="18" rot="MR90" align="center">TX</text>
+<text x="1.524" y="72.3646" size="0.508" layer="22" font="vector" ratio="18" rot="MR90" align="center">3V</text>
+<wire x1="4.699" y1="74.295" x2="4.699" y2="75.565" width="0.1524" layer="22" style="shortdash"/>
+<wire x1="4.699" y1="75.565" x2="4.3688" y2="75.8952" width="0.1524" layer="22" style="shortdash"/>
+<wire x1="4.3688" y1="75.8952" x2="4.064" y2="76.2" width="0.1524" layer="22" style="shortdash"/>
+<wire x1="4.064" y1="76.2" x2="2.794" y2="76.2" width="0.1524" layer="22" style="shortdash"/>
+<wire x1="2.794" y1="76.2" x2="2.159" y2="75.565" width="0.1524" layer="22" style="shortdash"/>
+<wire x1="2.159" y1="75.565" x2="2.159" y2="74.295" width="0.1524" layer="22" style="shortdash"/>
+<wire x1="4.064" y1="73.66" x2="2.794" y2="73.66" width="0.1524" layer="22" style="shortdash"/>
+<wire x1="2.794" y1="73.66" x2="2.4638" y2="73.9902" width="0.1524" layer="22" style="shortdash"/>
+<wire x1="2.4638" y1="73.9902" x2="2.159" y2="74.295" width="0.1524" layer="22" style="shortdash"/>
+<wire x1="4.064" y1="73.66" x2="4.699" y2="74.295" width="0.1524" layer="22" style="shortdash"/>
+<wire x1="2.4638" y1="73.9902" x2="4.3688" y2="75.8952" width="0.1524" layer="22"/>
 <wire x1="54.864" y1="2.54" x2="52.578" y2="0.254" width="0" layer="20" curve="-90"/>
 <wire x1="0" y1="2.54" x2="2.286" y2="0.254" width="0" layer="20" curve="90"/>
 <text x="49.276" y="33.655" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">BATTERY</text>
@@ -361,7 +361,7 @@ R17</text>
 MIC</text>
 <text x="54.356" y="63.881" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">Amplified mic in on A2/
 PA04. Shutdown: D4/PA14.</text>
-<text x="1.2954" y="68.326" size="0.8128" layer="22" font="vector" rot="MR90" align="top-left">TX/RX=D1/D0=PA00/PA01</text>
+<text x="1.1684" y="68.326" size="0.8128" layer="22" font="vector" rot="MR90" align="top-left">RX/TX=D1/D0=PA00/PA01</text>
 <text x="36.322" y="65.278" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">On the main SPI bus. Pins: ECS=D9/PA23
 EDC=D10/PA22
 ERST=D11/PA21
@@ -370,10 +370,10 @@ EBSY=D12/PA12</text>
 <wire x1="41.656" y1="51.308" x2="36.83" y2="51.308" width="0.1524" layer="22" style="shortdash"/>
 <text x="41.402" y="51.054" size="0.4064" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">ACKNOWLEDGMENTS:</text>
 <wire x1="46.736" y1="48.26" x2="41.656" y2="48.26" width="0.1524" layer="22" style="shortdash"/>
-<text x="2.54" y="79.9846" size="0.508" layer="21" font="vector" ratio="18" rot="SR270" align="center">GND</text>
-<text x="2.54" y="82.5246" size="0.508" layer="21" font="vector" ratio="18" rot="SR270" align="center">RX</text>
-<text x="2.54" y="77.4446" size="0.508" layer="21" font="vector" ratio="18" rot="SR270" align="center">TX</text>
-<text x="2.54" y="72.3646" size="0.508" layer="21" font="vector" ratio="18" rot="SR270" align="center">3V</text>
+<text x="2.032" y="79.9846" size="0.508" layer="21" font="vector" ratio="18" rot="SR270" align="center">GND</text>
+<text x="2.032" y="82.5246" size="0.508" layer="21" font="vector" ratio="18" rot="SR270" align="center">RX</text>
+<text x="2.032" y="77.4446" size="0.508" layer="21" font="vector" ratio="18" rot="SR270" align="center">TX</text>
+<text x="2.032" y="72.3646" size="0.508" layer="21" font="vector" ratio="18" rot="SR270" align="center">3V</text>
 <text x="4.826" y="48.768" size="0.8128" layer="22" font="vector" distance="40" rot="MR90" align="top-left">These caps &amp; 
 ferrites filter 
      power to chip.
@@ -12392,9 +12392,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="37.338" y="78.105" size="0.508" layer="26" font="vector" ratio="18" rot="MR0" align="center"/>
 <attribute name="VALUE" x="35.306" y="76.2" size="0.508" layer="28" font="vector" ratio="18" rot="MR0" align="center"/>
 </element>
-<element name="ACCESSORY_PORT" library="microbuilder" package="JSTPH3" value="JST PH 3" x="31.496" y="83.82" smashed="yes" rot="MR0">
-<attribute name="NAME" x="31.496" y="78.232" size="0.508" layer="26" font="vector" ratio="18" rot="MR0" align="center"/>
-<attribute name="VALUE" x="34.7185" y="85.836" size="0.508" layer="28" font="vector" ratio="18" rot="MR0" align="center"/>
+<element name="ACCESSORY_PORT" library="microbuilder" package="JSTPH3" value="JST PH 3" x="32.512" y="83.82" smashed="yes" rot="MR0">
+<attribute name="NAME" x="32.512" y="78.232" size="0.508" layer="26" font="vector" ratio="18" rot="MR0" align="center"/>
+<attribute name="VALUE" x="35.7345" y="85.836" size="0.508" layer="28" font="vector" ratio="18" rot="MR0" align="center"/>
 </element>
 <element name="R18" library="microbuilder" package="_0805MP" value="1K" x="27.178" y="76.962" smashed="yes" rot="MR180">
 <attribute name="NAME" x="27.1145" y="78.0415" size="0.508" layer="26" font="vector" ratio="18" rot="MR180" align="center"/>
@@ -12442,8 +12442,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 <element name="SW2" library="My Stuff" package="A10767" value="SPDT_SWITCH" x="3.556" y="32.258" smashed="yes" rot="MR90"/>
 <element name="SW1" library="My Stuff" package="MJTP1117" value="SPST_TACTILE_SWITCHRA-THRU" x="2.54" y="8.89" smashed="yes" rot="MR90"/>
-<element name="JP1" library="adafruit" package="1X03" value="" x="3.937" y="80.01" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="0.762" y="76.2" size="1.27" layer="28" rot="MR90"/>
+<element name="JP1" library="adafruit" package="1X03" value="" x="3.429" y="80.01" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="0.254" y="76.2" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="GOLD_ORB_SM1" library="oshw" package="OSHW_5MM" value="OSHWLOGOLOGO5MM" x="25.4" y="13.97" smashed="yes" rot="MR0"/>
 <element name="U$1" library="microbuilder" package="MOUNTINGHOLE_2.5_PLATED" value="MOUNTINGHOLE2.5" x="2.286" y="86.106" smashed="yes" rot="MR90">
@@ -12467,8 +12467,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="U$7" library="microbuilder" package="MOUNTINGHOLE_2.5_PLATED" value="MOUNTINGHOLE2.5" x="52.578" y="2.54" smashed="yes" rot="MR90">
 <attribute name="BOM" value="EXCLUDE" x="52.578" y="2.54" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="JP2" library="adafruit" package="1X01" value="" x="3.937" y="72.39" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="0.762" y="71.12" size="1.27" layer="28" rot="MR90"/>
+<element name="JP2" library="adafruit" package="1X01" value="" x="3.429" y="72.39" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="0.254" y="71.12" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="TP4" library="microbuilder" package="TESTPOINT_ROUND_2MM_NO" value="" x="45.72" y="49.53" smashed="yes" rot="MR0"/>
 <element name="TP1" library="microbuilder" package="TESTPOINT_ROUND_2MM_NO" value="" x="53.34" y="49.53" smashed="yes" rot="MR0"/>
@@ -13069,8 +13069,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="51.173" y1="78.113" x2="49.7332" y2="78.113" width="0.3048" layer="16"/>
 <wire x1="49.7332" y1="78.113" x2="39.439" y2="78.113" width="0.3048" layer="16"/>
 <wire x1="39.439" y1="78.113" x2="38.288" y2="76.962" width="0.3048" layer="16"/>
-<wire x1="31.496" y1="81.12" x2="31.496" y2="78.87295" width="0.3048" layer="16"/>
-<wire x1="32.35215" y1="78.0168" x2="31.496" y2="78.87295" width="0.3048" layer="16"/>
+<wire x1="32.512" y1="81.12" x2="32.35215" y2="80.96015" width="0.3048" layer="16"/>
+<wire x1="32.35215" y1="80.96015" x2="32.35215" y2="78.0168" width="0.3048" layer="16"/>
 <wire x1="38.18905" y1="76.962" x2="38.288" y2="76.962" width="0.3048" layer="16"/>
 <wire x1="37.13425" y1="78.0168" x2="38.18905" y2="76.962" width="0.3048" layer="16"/>
 <wire x1="37.13425" y1="78.0168" x2="32.35215" y2="78.0168" width="0.3048" layer="16"/>
@@ -13100,7 +13100,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="10.16" y1="37.846" x2="10.16" y2="37.88" width="0.3048" layer="16"/>
 <wire x1="10.16" y1="37.88" x2="8.924" y2="39.116" width="0.3048" layer="16"/>
 <contactref element="D8_NEOPIXEL" pad="2"/>
-<wire x1="3.937" y1="72.39" x2="17.272" y2="72.39" width="0.3048" layer="1"/>
+<wire x1="3.429" y1="72.39" x2="17.272" y2="72.39" width="0.3048" layer="1"/>
 <via x="24.638" y="72.39" extent="1-16" drill="0.3048"/>
 <wire x1="20.066" y1="72.39" x2="24.638" y2="72.39" width="0.3048" layer="1"/>
 <wire x1="24.638" y1="72.39" x2="32.35215" y2="72.39" width="0.3048" layer="16"/>
@@ -13268,8 +13268,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="_ACCESSORY">
 <contactref element="ACCESSORY_PORT" pad="3"/>
 <contactref element="R18" pad="1"/>
-<wire x1="29.496" y1="81.12" x2="29.496" y2="80.358" width="0.1524" layer="16"/>
-<wire x1="29.496" y1="80.358" x2="26.416" y2="77.278" width="0.1524" layer="16"/>
+<wire x1="30.512" y1="81.12" x2="30.258" y2="81.12" width="0.1524" layer="16"/>
+<wire x1="30.258" y1="81.12" x2="26.416" y2="77.278" width="0.1524" layer="16"/>
 <wire x1="26.416" y1="77.278" x2="26.416" y2="77.216" width="0.1524" layer="16"/>
 <wire x1="26.416" y1="77.216" x2="26.162" y2="76.962" width="0.1524" layer="16"/>
 </signal>
@@ -13739,26 +13739,26 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="D1_SERCOM1_TX">
 <contactref element="JP1" pad="1"/>
 <contactref element="U3" pad="1"/>
-<wire x1="1.524" y1="58.166" x2="1.524" y2="75.057" width="0.1524" layer="16"/>
-<wire x1="1.524" y1="75.057" x2="3.937" y2="77.47" width="0.1524" layer="16"/>
+<wire x1="0.762" y1="58.928" x2="0.762" y2="74.803" width="0.1524" layer="16"/>
+<wire x1="0.762" y1="74.803" x2="3.429" y2="77.47" width="0.1524" layer="16"/>
 <wire x1="11.938" y1="56.5658" x2="11.938" y2="56.8198" width="0.1524" layer="16"/>
 <wire x1="11.938" y1="56.8198" x2="11.7094" y2="57.0484" width="0.1524" layer="16"/>
 <wire x1="11.7094" y1="57.0484" x2="2.6416" y2="57.0484" width="0.1524" layer="16"/>
-<wire x1="2.6416" y1="57.0484" x2="1.524" y2="58.166" width="0.1524" layer="16"/>
+<wire x1="2.6416" y1="57.0484" x2="0.762" y2="58.928" width="0.1524" layer="16"/>
 </signal>
 <signal name="D0_SERCOM1_RX">
 <contactref element="JP1" pad="3"/>
 <contactref element="U3" pad="2"/>
 <wire x1="12.446" y1="56.5658" x2="12.446" y2="57.15" width="0.1524" layer="16"/>
 <wire x1="12.446" y1="57.15" x2="12.2428" y2="57.3532" width="0.1524" layer="16"/>
-<wire x1="3.0226" y1="57.6834" x2="2.54" y2="58.166" width="0.1524" layer="16"/>
-<wire x1="2.54" y1="58.166" x2="2.54" y2="73.914" width="0.1524" layer="16"/>
-<wire x1="5.334" y1="81.153" x2="3.937" y2="82.55" width="0.1524" layer="16"/>
-<wire x1="2.54" y1="73.914" x2="5.334" y2="76.708" width="0.1524" layer="16"/>
-<wire x1="5.334" y1="76.708" x2="5.334" y2="81.153" width="0.1524" layer="16"/>
+<wire x1="3.0226" y1="57.6834" x2="1.524" y2="59.182" width="0.1524" layer="16"/>
+<wire x1="1.524" y1="59.182" x2="1.524" y2="73.406" width="0.1524" layer="16"/>
+<wire x1="5.334" y1="77.216" x2="1.524" y2="73.406" width="0.1524" layer="16"/>
 <wire x1="8.43354375" y1="57.6834" x2="3.0226" y2="57.6834" width="0.1524" layer="16"/>
 <wire x1="12.2428" y1="57.3532" x2="8.76374375" y2="57.3532" width="0.1524" layer="16"/>
 <wire x1="8.76374375" y1="57.3532" x2="8.43354375" y2="57.6834" width="0.1524" layer="16"/>
+<wire x1="5.334" y1="77.216" x2="5.334" y2="80.645" width="0.1524" layer="16"/>
+<wire x1="5.334" y1="80.645" x2="3.429" y2="82.55" width="0.1524" layer="16"/>
 </signal>
 <signal name="A5_VBUSMON">
 <contactref element="R4" pad="3"/>
@@ -14464,8 +14464,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="4,16,acc7e054f12bfb5d"/>
 <approved hash="4,16,91a876cbe4d26705"/>
 <approved hash="4,16,7400770be56282bd"/>
-<approved hash="4,16,dee3c50157c0cc20"/>
-<approved hash="4,16,c6c8cd2a5ffb341b"/>
 <approved hash="19,16,2a1428090c690e74"/>
 <approved hash="19,16,de12dc0ffc6ffe72"/>
 <approved hash="19,16,e214e01780778274"/>
@@ -14494,6 +14492,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="6,1,fcb3c5c331f9a3f4"/>
 <approved hash="7,40,d72a54b48d117bf0"/>
 <approved hash="7,40,33dffbfc78e35344"/>
+<approved hash="4,16,c8e6cf0441c53625"/>
+<approved hash="4,16,b0d3b73149f03e10"/>
 </errors>
 </board>
 </drawing>
