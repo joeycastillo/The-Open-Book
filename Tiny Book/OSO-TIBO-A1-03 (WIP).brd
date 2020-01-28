@@ -13111,9 +13111,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="10.16" y1="37.846" x2="10.16" y2="37.88" width="0.3048" layer="16"/>
 <wire x1="10.16" y1="37.88" x2="8.924" y2="39.116" width="0.3048" layer="16"/>
 <contactref element="D8_NEOPIXEL" pad="2"/>
-<wire x1="3.429" y1="72.39" x2="17.272" y2="72.39" width="0.3048" layer="1"/>
 <via x="24.638" y="72.39" extent="1-16" drill="0.3048"/>
-<wire x1="20.066" y1="72.39" x2="24.638" y2="72.39" width="0.3048" layer="1"/>
 <wire x1="24.638" y1="72.39" x2="32.35215" y2="72.39" width="0.3048" layer="16"/>
 <wire x1="6.916" y1="86.499" x2="6.916" y2="85.54" width="0.3048" layer="16"/>
 <wire x1="7.366" y1="85.09" x2="15.494" y2="85.09" width="0.3048" layer="16"/>
@@ -13153,9 +13151,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="12.446" y1="37.338" x2="12.446" y2="37.912" width="0.3048" layer="16"/>
 <wire x1="13.65" y1="39.116" x2="12.446" y2="37.912" width="0.3048" layer="16"/>
 <via x="12.446" y="37.338" extent="1-16" drill="0.3048"/>
-<via x="20.066" y="72.39" extent="1-16" drill="0.3048"/>
-<wire x1="20.066" y1="72.39" x2="17.272" y2="72.39" width="0.3048" layer="16"/>
-<via x="17.272" y="72.39" extent="1-16" drill="0.3048"/>
 <via x="21.5392" y="59.944" extent="1-16" drill="0.3048"/>
 <wire x1="21.402" y1="55.372" x2="19.878" y2="53.848" width="0.3048" layer="16"/>
 <wire x1="19.878" y1="53.848" x2="18.2118" y2="53.848" width="0.3048" layer="16"/>
@@ -13199,6 +13194,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="45.30018125" y1="78.113" x2="39.439" y2="78.113" width="0.3048" layer="16"/>
 <wire x1="46.95918125" y1="76.454" x2="45.30018125" y2="78.113" width="0.3048" layer="16"/>
 <wire x1="50.58025" y1="76.454" x2="46.95918125" y2="76.454" width="0.3048" layer="16"/>
+<wire x1="3.429" y1="72.39" x2="24.638" y2="72.39" width="0.3048" layer="1"/>
 </signal>
 <signal name="GDR">
 <contactref element="Q2" pad="1"/>
