@@ -1,6 +1,12 @@
 # The Tiny Book
 
-UNTESTED! Currently (1/20/2020) on order from OSH Park. The theory: make a less expensive, smaller version of the Open Book with as much of its functionality as possible. To that end: 
+WIP! Currently (1/28/2020) most of the features are tested and working [in CircuitPython](https://github.com/joeycastillo/circuitpython/tree/tinybook): screen, cap touch, audio out, SD card, blinky light and ONE of the accessory ports are all good. 
+
+The I2C connector in A1-02 is wired backwards; I'll have to fix this in A1-03. A1-03 also changes some parts and swaps two signals for some extra functionality (puts the accessory port on PA05 so that you can use it for analog output).
+
+## Original README
+
+The theory: make a less expensive, smaller version of the Open Book with as much of its functionality as possible. To that end: 
 
 - Things that are basically the same:
     - Battery charging
