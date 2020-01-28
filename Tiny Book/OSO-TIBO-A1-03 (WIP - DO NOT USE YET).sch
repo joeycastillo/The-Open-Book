@@ -14939,7 +14939,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="FID2" library="microbuilder" deviceset="FIDUCIAL" device="_1MM"/>
 <part name="U$24" library="microbuilder" deviceset="GND" device=""/>
-<part name="U4" library="Adafruit Feather M0 Express" deviceset="MICROBUILDER_SPIFLASH_SOIC8" device="" value="GD25Q16C (or GD25Q32C)"/>
+<part name="U4" library="Adafruit Feather M0 Express" deviceset="MICROBUILDER_SPIFLASH_SOIC8" device="" value="GD25Q32C"/>
 <part name="+3V15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="U$40" library="microbuilder" deviceset="GND" device=""/>

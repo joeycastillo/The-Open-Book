@@ -279,7 +279,7 @@ STAT output. Full-color
         Neopixel on D8/
         PA30 (it's way 
         up top).</text>
-<text x="16.002" y="47.752" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">2MB FLASH CHIP</text>
+<text x="16.002" y="47.752" size="1.27" layer="22" font="vector" ratio="18" rot="MR0" align="top-left">4MB FLASH CHIP</text>
 <wire x1="0.254" y1="48.26" x2="16.51" y2="48.26" width="0.1524" layer="22" style="shortdash"/>
 <text x="15.875" y="45.974" size="0.8128" layer="22" font="vector" rot="MR0" align="top-left">On a dedicated 
 QSPI bus. Use 
@@ -12567,7 +12567,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="FID2" library="microbuilder" package="FIDUCIAL_1MM" value="FIDUCIAL_1MM" x="19.05" y="86.106" smashed="yes" rot="MR270">
 <attribute name="BOM" value="EXCLUDE" x="19.05" y="86.106" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="U4" library="Adafruit Feather M0 Express" package="MICROBUILDER_SOIC8_150MIL" value="GD25Q16C (or GD25Q32C)" x="3.048" y="42.164" smashed="yes" rot="MR0">
+<element name="U4" library="Adafruit Feather M0 Express" package="MICROBUILDER_SOIC8_150MIL" value="GD25Q32C" x="3.048" y="42.164" smashed="yes" rot="MR0">
 <attribute name="NAME" x="5.9182" y="42.799" size="0.508" layer="26" font="vector" ratio="18" rot="MR270" align="center"/>
 <attribute name="VALUE" x="4.953" y="41.783" size="0.508" layer="28" font="vector" ratio="18" rot="MR0" align="center"/>
 </element>
