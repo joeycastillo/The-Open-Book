@@ -2518,6 +2518,85 @@ package type P</description>
 <wire x1="-1.5" y1="0.75" x2="-1.5" y2="-0.75" width="0.127" layer="21"/>
 <wire x1="1.5" y1="0.75" x2="1.5" y2="-0.75" width="0.127" layer="21"/>
 </package>
+<package name="MICROBUILDER_FEATHERWING_SMT2_NOLINES">
+<wire x1="5.08" y1="-4.064" x2="5.08" y2="0" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="4.064" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="4.064" x2="45.72" y2="4.064" width="0.2032" layer="21"/>
+<wire x1="45.72" y1="-4.064" x2="7.62" y2="-4.064" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="-4.064" x2="5.08" y2="-4.064" width="0.2032" layer="21"/>
+<wire x1="45.72" y1="4.064" x2="45.72" y2="-4.064" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-4.064" width="0.2032" layer="21"/>
+<wire x1="15.24" y1="18.796" x2="15.24" y2="22.86" width="0.2032" layer="21"/>
+<wire x1="15.24" y1="22.86" x2="15.24" y2="26.924" width="0.2032" layer="21"/>
+<wire x1="15.24" y1="26.924" x2="45.72" y2="26.924" width="0.2032" layer="21"/>
+<wire x1="45.72" y1="18.796" x2="17.78" y2="18.796" width="0.2032" layer="21"/>
+<wire x1="17.78" y1="18.796" x2="15.24" y2="18.796" width="0.2032" layer="21"/>
+<wire x1="15.24" y1="22.86" x2="17.78" y2="22.86" width="0.2032" layer="21"/>
+<wire x1="17.78" y1="22.86" x2="17.78" y2="18.796" width="0.2032" layer="21"/>
+<wire x1="45.72" y1="22.86" x2="45.72" y2="26.924" width="0.2032" layer="21"/>
+<wire x1="45.72" y1="19.05" x2="45.72" y2="22.86" width="0.2032" layer="21"/>
+<smd name="1" x="6.35" y="2.413" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<smd name="1'" x="6.35" y="-2.413" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<smd name="2" x="8.89" y="2.413" dx="2.54" dy="1.524" layer="1" rot="R270"/>
+<smd name="2'" x="8.89" y="-2.413" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<smd name="3" x="11.43" y="2.159" dx="3.048" dy="1.524" layer="1" rot="R270"/>
+<smd name="3'" x="11.43" y="-2.159" dx="3.048" dy="1.524" layer="1" rot="R90"/>
+<smd name="4" x="13.97" y="2.159" dx="3.048" dy="1.524" layer="1" rot="R270"/>
+<smd name="4'" x="13.97" y="-2.159" dx="3.048" dy="1.524" layer="1" rot="R90"/>
+<smd name="5" x="16.51" y="2.159" dx="3.048" dy="1.524" layer="1" rot="R270"/>
+<smd name="5'" x="16.51" y="-2.159" dx="3.048" dy="1.524" layer="1" rot="R90"/>
+<smd name="6" x="19.05" y="2.159" dx="3.048" dy="1.524" layer="1" rot="R270"/>
+<smd name="6'" x="19.05" y="-2.159" dx="3.048" dy="1.524" layer="1" rot="R90"/>
+<smd name="7" x="21.59" y="2.159" dx="3.048" dy="1.524" layer="1" rot="R270"/>
+<smd name="7'" x="21.59" y="-2.159" dx="3.048" dy="1.524" layer="1" rot="R90"/>
+<smd name="8" x="24.13" y="2.159" dx="3.048" dy="1.524" layer="1" rot="R270"/>
+<smd name="8'" x="24.13" y="-2.159" dx="3.048" dy="1.524" layer="1" rot="R90"/>
+<smd name="9" x="26.67" y="2.159" dx="3.048" dy="1.524" layer="1" rot="R270"/>
+<smd name="9'" x="26.67" y="-2.159" dx="3.048" dy="1.524" layer="1" rot="R90"/>
+<smd name="10" x="29.21" y="2.159" dx="3.048" dy="1.524" layer="1" rot="R270"/>
+<smd name="10'" x="29.21" y="-2.159" dx="3.048" dy="1.524" layer="1" rot="R90"/>
+<smd name="11" x="31.75" y="2.159" dx="3.048" dy="1.524" layer="1" rot="R270"/>
+<smd name="11'" x="31.75" y="-2.159" dx="3.048" dy="1.524" layer="1" rot="R90"/>
+<smd name="12" x="34.29" y="2.159" dx="3.048" dy="1.524" layer="1" rot="R270"/>
+<smd name="12'" x="34.29" y="-2.159" dx="3.048" dy="1.524" layer="1" rot="R90"/>
+<smd name="13" x="36.83" y="2.159" dx="3.048" dy="1.524" layer="1" rot="R270"/>
+<smd name="13'" x="36.83" y="-2.159" dx="3.048" dy="1.524" layer="1" rot="R90"/>
+<smd name="14" x="39.37" y="2.159" dx="3.048" dy="1.524" layer="1" rot="R270"/>
+<smd name="14'" x="39.37" y="-2.159" dx="3.048" dy="1.524" layer="1" rot="R90"/>
+<smd name="15" x="41.91" y="2.413" dx="2.54" dy="1.524" layer="1" rot="R270"/>
+<smd name="15'" x="41.91" y="-2.413" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<smd name="16" x="44.45" y="2.413" dx="2.54" dy="1.524" layer="1" rot="R270"/>
+<smd name="16'" x="44.45" y="-2.413" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<smd name="17" x="44.45" y="20.447" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<smd name="17'" x="44.45" y="25.273" dx="2.54" dy="1.524" layer="1" rot="R270"/>
+<smd name="18" x="41.91" y="20.447" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<smd name="18'" x="41.91" y="25.273" dx="2.54" dy="1.524" layer="1" rot="R270"/>
+<smd name="19" x="39.37" y="20.701" dx="3.048" dy="1.524" layer="1" rot="R90"/>
+<smd name="19'" x="39.37" y="25.019" dx="3.048" dy="1.524" layer="1" rot="R270"/>
+<smd name="20" x="36.83" y="20.701" dx="3.048" dy="1.524" layer="1" rot="R90"/>
+<smd name="20'" x="36.83" y="25.019" dx="3.048" dy="1.524" layer="1" rot="R270"/>
+<smd name="21" x="34.29" y="20.701" dx="3.048" dy="1.524" layer="1" rot="R90"/>
+<smd name="21'" x="34.29" y="25.019" dx="3.048" dy="1.524" layer="1" rot="R270"/>
+<smd name="22" x="31.75" y="20.701" dx="3.048" dy="1.524" layer="1" rot="R90"/>
+<smd name="22'" x="31.75" y="25.019" dx="3.048" dy="1.524" layer="1" rot="R270"/>
+<smd name="23" x="29.21" y="20.701" dx="3.048" dy="1.524" layer="1" rot="R90"/>
+<smd name="23'" x="29.21" y="25.019" dx="3.048" dy="1.524" layer="1" rot="R270"/>
+<smd name="24" x="26.67" y="20.701" dx="3.048" dy="1.524" layer="1" rot="R90"/>
+<smd name="24'" x="26.67" y="25.019" dx="3.048" dy="1.524" layer="1" rot="R270"/>
+<smd name="25" x="24.13" y="20.701" dx="3.048" dy="1.524" layer="1" rot="R90"/>
+<smd name="25'" x="24.13" y="25.019" dx="3.048" dy="1.524" layer="1" rot="R270"/>
+<smd name="26" x="21.59" y="20.701" dx="3.048" dy="1.524" layer="1" rot="R90"/>
+<smd name="26'" x="21.59" y="25.019" dx="3.048" dy="1.524" layer="1" rot="R270"/>
+<smd name="27" x="19.05" y="20.447" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<smd name="27'" x="19.05" y="25.273" dx="2.54" dy="1.524" layer="1" rot="R270"/>
+<smd name="28" x="16.51" y="20.447" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<smd name="28'" x="16.51" y="25.273" dx="2.54" dy="1.524" layer="1" rot="R90"/>
+<hole x="17.78" y="22.86" drill="1.8"/>
+<hole x="43.18" y="22.86" drill="1.8"/>
+<hole x="7.62" y="0" drill="1.8"/>
+<hole x="43.18" y="0" drill="1.8"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SO18W" urn="urn:adsk.eagle:package:6240755/1" locally_modified="yes" type="box">
@@ -2848,6 +2927,41 @@ objects</text>
 </technologies>
 </device>
 <device name="_SMTDUAL" package="MICROBUILDER_FEATHERWING_SMT2">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="1 1'"/>
+<connect gate="G$1" pin="3V" pad="2 2'"/>
+<connect gate="G$1" pin="AREF" pad="3 3'"/>
+<connect gate="G$1" pin="EN" pad="27 27'"/>
+<connect gate="G$1" pin="GND" pad="4 4'"/>
+<connect gate="G$1" pin="GPIO10" pad="22 22'"/>
+<connect gate="G$1" pin="GPIO11" pad="23 23'"/>
+<connect gate="G$1" pin="GPIO12" pad="24 24'"/>
+<connect gate="G$1" pin="GPIO13" pad="25 25'"/>
+<connect gate="G$1" pin="GPIO5" pad="19 19'"/>
+<connect gate="G$1" pin="GPIO6" pad="20 20'"/>
+<connect gate="G$1" pin="GPIO9" pad="21 21'"/>
+<connect gate="G$1" pin="GPIOA0" pad="5 5'"/>
+<connect gate="G$1" pin="GPIOA1" pad="6 6'"/>
+<connect gate="G$1" pin="GPIOA2" pad="7 7'"/>
+<connect gate="G$1" pin="GPIOA3" pad="8 8'"/>
+<connect gate="G$1" pin="GPIOA4" pad="9 9'"/>
+<connect gate="G$1" pin="GPIOA5" pad="10 10'"/>
+<connect gate="G$1" pin="GPIOMISO" pad="13 13'"/>
+<connect gate="G$1" pin="GPIOMOSI" pad="12 12'"/>
+<connect gate="G$1" pin="GPIORX" pad="14 14'"/>
+<connect gate="G$1" pin="GPIOSCK" pad="11 11'"/>
+<connect gate="G$1" pin="GPIOSCL" pad="18 18'"/>
+<connect gate="G$1" pin="GPIOSDA" pad="17 17'"/>
+<connect gate="G$1" pin="GPIOTX" pad="15 15'"/>
+<connect gate="G$1" pin="NC" pad="16 16'"/>
+<connect gate="G$1" pin="USB" pad="26 26'"/>
+<connect gate="G$1" pin="VBAT" pad="28 28'"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SMTDUAL_NOLINES" package="MICROBUILDER_FEATHERWING_SMT2_NOLINES">
 <connects>
 <connect gate="G$1" pin="!RESET" pad="1 1'"/>
 <connect gate="G$1" pin="3V" pad="2 2'"/>
@@ -9259,7 +9373,7 @@ by exp-lbrs.ulp</description>
 </classes>
 <parts>
 <part name="U$2" library="My Stuff" deviceset="WAVESHARE_4_2_INCH_EINK_DISPLAY" device=""/>
-<part name="MS1" library="My Stuff" deviceset="MICROBUILDER_FEATHERWING" device="_SMTDUAL"/>
+<part name="MS1" library="My Stuff" deviceset="MICROBUILDER_FEATHERWING" device="_SMTDUAL_NOLINES" value="MICROBUILDER_FEATHERWING_SMTDUAL_NOLINES"/>
 <part name="MICROSD" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="MICROSD" device="" package3d_urn="urn:adsk.eagle:package:6240723/1"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
