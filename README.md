@@ -33,7 +33,7 @@ As of January 2020, this is where we are on the roadmap:
 
 ## Hardware: The Open Book Feather
 
-The Open Book is a Feather-compatible SAMD51-based board inspired greatly by the [Adafruit PyBadge](https://www.adafruit.com/product/4200). In addition to standard Feather features (3.3v logic, built in LiPo charging), it supports a variety of peripherals aimed at creating an accessible, universal text reading device.
+The Open Book is a Feather-compatible SAMD51-based board inspired greatly by the [Adafruit PyBadge](https://www.adafruit.com/product/4200). In addition to standard Feather features (3.3v logic, built in LiPo charging), it supports a variety of peripherals aimed at creating an accessible, universal text reading device. The PCB can be ordered directly from OSH Park at [this link](https://oshpark.com/shared_projects/9h6jn9B1)
 
 ![image](/images/book-rev4.jpg)
 
