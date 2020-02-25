@@ -136,7 +136,7 @@ OK, here's the rundown:
 ||||**Total cost**|**$62.12**|**$173.94**|**$530.16**|**$4001.13**||
 ||||**Total per assembly**|**$62.12**|**$57.98**|**$53.02**|**$40.01**||
 
-### E-Book FeatherWing
+### E-Book FeatherWing A1 Rev 05
 
 |Parts|Qty|Device|Value|Cost @ 1 assembly|Cost @ 3 assemblies|Cost @ 10 assemblies|Cost @ 100 assemblies|URL|
 |-----|---|------|-----|-----|-----|-----|------|-----|
@@ -162,12 +162,14 @@ OK, here's the rundown:
 |MICROSD|1|MicroSD socket|MICROSD|$1.95|$5.85|$17.60|$156.00|https://www.adafruit.com/product/1660|
 |MS1|1|Feather Connector 24pos|-|$2.87|$8.61|$27.53|$229.42|https://www.digikey.com/product-detail/en/amphenol-icc-fci/89898-312LF/609-3046-ND/1536315|
 |MS1|1|Feather Connector 32pos|-|$4.77|$14.31|$45.83|$381.92|https://www.digikey.com/product-detail/en/amphenol-icc-fci/89898-316LF/609-3050-ND/1534980|
-|BTN_LOCK, BTN_NEXT_ALT, BTN_PREV_ALT, BTN_RESET|4|Surface-mount right-angle SPST switch|TL3330AF130QG|$1.08|$6.20|$20.29|$153.12|https://www.digikey.com/product-detail/en/TL3330AF130QG/EG4388CT-ND/1426858/|
+|BTN_LOCK, BTN_RESET|2|Surface-mount right-angle SPST switch|KSS231GLFS|$1.36|$4.08|$13.10|$106.68|https://www.digikey.com/product-detail/en/TL3330AF130QG/EG4388CT-ND/1426858/|
 |BTN_PREV, BTN_NEXT, BTN_UP, BTN_DOWN, BTN_LEFT, BTN_RIGHT, BTN_SEL|7|Thru-hole SPST Switch|MJTP1250|$3.56|$7.48|$23.11|$177.80|https://www.digikey.com/product-detail/en/TL1107AF130WQ/EG2510-ND/378976/|
 |SW1|1|A10767 SPDT Switch|-|$0.31|$0.93|$3.00|$24.99|https://www.digikey.com/product-detail/en/te-connectivity-alcoswitch-switches/1825232-1/A107673-ND/4021554|
-|U$2|1|eInk Display with 24-pin connector|-|$18.26|$54.78|$182.60|$1373.00|https://zh-tw.buyepaper.com/42inch-e-ink-panel-spi-interface-buy-e-paper-display-p0085.html|
-||||**Total cost**|**$44.60**|**$131.70**|**$417.03**|**$3207.75**||
-||||**Total per assembly**|**$44.60**|**$43.90**|**$41.70**|**$32.08**||
+|U$2|1|eInk Display with 24-pin connector|-|$18.26|$54.78|$182.60|$1373.00|https://zh-tw.buyepaper.com/42inch-e-ink-panel-spi-interface-buy-e-paper-display-p0085.html (if out of stock, Waveshare has [the same module](https://www.waveshare.com/product/4.2inch-e-paper.htm) but it's a litlte more expensive|
+||||**Total cost**|**$44.88**|**$129.58**|**$409.84**|**$3161.31**||
+||||**Total per assembly**|**$44.60**|**$43.19**|**$40.98**|**$31.61**||
+
+There are two optional right-angle SPST switches: BTN_NEXT_ALT and BTN_PREV_ALT. I recommend skipping these, but if you want them, the part number is [TL3330AF130QG](https://www.digikey.com/product-detail/en/TL3330AF130QG/EG4388CT-ND/1426858/).
 
 ## Next Steps
 
