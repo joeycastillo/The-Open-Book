@@ -135,6 +135,8 @@ OK, here's the rundown:
 |U$2|1|eInk Display with 24-pin connector|-|$18.26|$54.78|$182.60|$1373.00|https://zh-tw.buyepaper.com/42inch-e-ink-panel-spi-interface-buy-e-paper-display-p0085.html|
 ||||**Total cost**|**$62.12**|**$173.94**|**$530.16**|**$4001.13**||
 ||||**Total per assembly**|**$62.12**|**$57.98**|**$53.02**|**$40.01**||
+|-----|---|------|-----|-----|-----|-----|------|-----|
+|Parts|Qty|Device|Value|Cost @ 1 assembly|Cost @ 3 assemblies|Cost @ 10 assemblies|Cost @ 100 assemblies|URL|
 
 ### E-Book FeatherWing A1 Rev 05
 
@@ -168,6 +170,8 @@ OK, here's the rundown:
 |U$2|1|eInk Display with 24-pin connector|-|$18.26|$54.78|$182.60|$1373.00|https://zh-tw.buyepaper.com/42inch-e-ink-panel-spi-interface-buy-e-paper-display-p0085.html (if out of stock, Waveshare has [the same module](https://www.waveshare.com/product/4.2inch-e-paper.htm) but it's a litlte more expensive|
 ||||**Total cost**|**$44.88**|**$129.58**|**$409.84**|**$3161.31**||
 ||||**Total per assembly**|**$44.88**|**$43.19**|**$40.98**|**$31.61**||
+|-----|---|------|-----|-----|-----|-----|------|-----|
+|Parts|Qty|Device|Value|Cost @ 1 assembly|Cost @ 3 assemblies|Cost @ 10 assemblies|Cost @ 100 assemblies|URL|
 
 There are two optional right-angle SPST switches: BTN_NEXT_ALT and BTN_PREV_ALT. I recommend skipping these, but if you want them, the part number is [TL3330AF130QG](https://www.digikey.com/product-detail/en/TL3330AF130QG/EG4388CT-ND/1426858/).
 
