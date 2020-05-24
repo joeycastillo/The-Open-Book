@@ -59,7 +59,7 @@
 
 #elif defined(ADAFRUIT_FEATHER_M4_EXPRESS) // e-book wing on Feather M4
 #define OPENBOOK_DISPLAY_BUS (&SPI)
-#define OPENBOOK_SRCS (6)
+#define OPENBOOK_SRCS (-1)
 #define OPENBOOK_ECS (9)
 #define OPENBOOK_EDC (10)
 #define OPENBOOK_ERST (A4)
