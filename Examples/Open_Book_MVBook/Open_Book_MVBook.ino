@@ -43,7 +43,12 @@ void setup() {
     
     book->configureScreen();
     book->configureBabel();
+    #if defined(ODDLY_SPECIFIC_OPEN_BOOK)
+    // the buttons on the Open Book board are on a shift register
     book->configureShiftButtons();
+    #else // on the wing, they're on an I2C port expander.
+    book->configureI2CButtons();
+    #endif
 
     book->getDisplay()->setRotation(0);
 
