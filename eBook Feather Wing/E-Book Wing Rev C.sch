@@ -8846,6 +8846,66 @@ With round pins</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="E-Book Wing Rev C (WIP)">
+<description>Generated from &lt;b&gt;E-Book Wing Rev C (WIP).sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="SOLDERJUMPER_OPEN">
+<wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="1.397" y1="1.016" x2="1.651" y2="0.762" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1.651" y1="0.762" x2="-1.397" y2="1.016" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1.651" y1="-0.762" x2="-1.397" y2="-1.016" width="0.2032" layer="21" curve="90"/>
+<wire x1="1.397" y1="-1.016" x2="1.651" y2="-0.762" width="0.2032" layer="21" curve="90"/>
+<wire x1="1.651" y1="-0.762" x2="1.651" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="-1.651" y1="-0.762" x2="-1.651" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="-1.397" y1="1.016" x2="1.397" y2="1.016" width="0.2032" layer="21"/>
+<wire x1="1.016" y1="0" x2="1.524" y2="0" width="0.2032" layer="51"/>
+<wire x1="-1.016" y1="0" x2="-1.524" y2="0" width="0.2032" layer="51"/>
+<wire x1="-0.254" y1="-0.127" x2="-0.254" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="0.254" y1="0.127" x2="0.254" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="1" x="-0.762" y="0" dx="1.1684" dy="1.6002" layer="1" cream="no"/>
+<smd name="2" x="0.762" y="0" dx="1.1684" dy="1.6002" layer="1" cream="no"/>
+<text x="-1.651" y="1.27" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.524" y="-1.651" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<polygon width="0.254" layer="29">
+<vertex x="-1.27" y="0.762"/>
+<vertex x="1.27" y="0.762"/>
+<vertex x="1.27" y="-0.762"/>
+<vertex x="-1.27" y="-0.762"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="SOLDERJUMPER_OPEN">
+<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SOLDERJUMPER_OPEN">
+<gates>
+<gate name="G$1" symbol="SOLDERJUMPER_OPEN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOLDERJUMPER_OPEN">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8996,7 +9056,7 @@ With round pins</description>
 <part name="FID5" library="microbuilder" deviceset="FIDUCIAL" device="_1MM"/>
 <part name="FID6" library="microbuilder" deviceset="FIDUCIAL" device="_1MM"/>
 <part name="SW1" library="My Stuff" deviceset="SPDT_SWITCH" device=""/>
-<part name="FCS" library="Adafruit 3.5in 480x320 FeatherWing" deviceset="MICROBUILDER_SOLDERJUMPER_CLOSED" device=""/>
+<part name="FCS" library="E-Book Wing Rev C (WIP)" deviceset="SOLDERJUMPER_OPEN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9502,9 +9562,7 @@ FILTERING</text>
 <attribute name="NAME" x="234.95" y="38.608" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="234.696" y="32.258" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="FCS" gate="G$1" x="96.52" y="50.8" smashed="yes">
-<attribute name="VALUE" x="93.98" y="46.99" size="1.778" layer="96"/>
-</instance>
+<instance part="FCS" gate="G$1" x="96.52" y="50.8" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -10497,9 +10555,9 @@ FILTERING</text>
 <label x="134.62" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FCS" gate="G$1" pin="2"/>
 <wire x1="101.6" y1="50.8" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
 <label x="101.6" y="50.8" size="1.778" layer="95"/>
+<pinref part="FCS" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GPIO_INT" class="0">
