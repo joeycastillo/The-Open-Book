@@ -1,0 +1,4 @@
+summary: A simple reading device that anyone with a soldering iron can build for themselves
+bom: 1-click-bom.csv
+gerbers: eBook Feather Wing/CAMOutputs/OSO-BOWI-A1-05_2020-02-13/GerberFiles/
+color: blue

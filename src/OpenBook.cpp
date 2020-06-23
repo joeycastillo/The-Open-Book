@@ -188,6 +188,15 @@ uint8_t OpenBook::readButtons() {
     else return buttonState; // high buttons are pressed, low buttons are being pulled down.
 }
 
+OpenBookSDCardState OpenBook::sdCardState() {
+    #if defined(ODDLY_SPECIFIC_OPEN_BOOK)
+    if ((this->readButtonRegister() & OPENBOOK_BUTTONMASK_SDCD) == 0) return OPEN_BOOK_SD_CARD_NOT_PRESENT;
+    return OPEN_BOOK_SD_CARD_PRESENT;
+    #endif
+
+    return OPEN_BOOK_SD_CARD_UNKNOWN;
+}
+
 /**
  @brief Private method to read button states from the shift register.
  @returns a bitmask with the state of the shift register.

@@ -33,12 +33,13 @@
 #define OPENBOOK_EBSY (47)
 #define OPENBOOK_SDCS (4)
 #define OPENBOOK_BCS (52)
+#define OPENBOOK_NEOPIXEL (8)
 #define OPENBOOK_BATTERY_MONITOR (A6)
 #define OPENBOOK_BUTTON_INTERRUPT (-1)
 #define OPENBOOK_BUTTON_LOCK (51)
 #define OPENBOOK_BUTTON_ACTIVE (HIGH)
-#define OPENBOOK_AUDIO_L (A0)
-#define OPENBOOK_AUDIO_R (A1)
+#define OPENBOOK_AUDIO_R (A0)
+#define OPENBOOK_AUDIO_L (A1)
 #define OPENBOOK_MIC_RAW (A7)
 #define OPENBOOK_MIC_AMPLIFIED (A10)
 
@@ -66,6 +67,7 @@
 #define OPENBOOK_EBSY (A3)
 #define OPENBOOK_SDCS (5)
 #define OPENBOOK_BCS (4)
+#define OPENBOOK_NEOPIXEL (8)
 #define OPENBOOK_BATTERY_MONITOR (-1)
 #define OPENBOOK_BUTTON_INTERRUPT (A5)
 #define OPENBOOK_BUTTON_LATCH (-1)
@@ -106,12 +108,10 @@ public:
 #endif // OPENBOOK_KNOWN_HARDWARE
 
     uint8_t readButtons();
+    OpenBookSDCardState sdCardState();
     OpenBook_IL0398 *getDisplay();
     BabelTypesetterGFX *getTypesetter();
 
-    static int32_t sdcard_read_cb (uint32_t lba, void* buffer, uint32_t bufsize);
-    static int32_t sdcard_write_cb (uint32_t lba, uint8_t* buffer, uint32_t bufsize);
-    static void sdcard_flush_cb (void);
 protected:
     uint8_t readButtonRegister();
     OpenBook_IL0398 *display = NULL;
