@@ -106,12 +106,10 @@ public:
 #endif // OPENBOOK_KNOWN_HARDWARE
 
     uint8_t readButtons();
+    OpenBookSDCardState sdCardState();
     OpenBook_IL0398 *getDisplay();
     BabelTypesetterGFX *getTypesetter();
 
-    static int32_t sdcard_read_cb (uint32_t lba, void* buffer, uint32_t bufsize);
-    static int32_t sdcard_write_cb (uint32_t lba, uint8_t* buffer, uint32_t bufsize);
-    static void sdcard_flush_cb (void);
 protected:
     uint8_t readButtonRegister();
     OpenBook_IL0398 *display = NULL;
