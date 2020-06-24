@@ -79,6 +79,7 @@ bool OpenBook::configureShiftButtons(int8_t active, int8_t latch, int8_t data, i
        the port expander, including the Lock button.
 */
 bool OpenBook::configureI2CButtons(int8_t active, int8_t interrupt) {
+#if OPENBOOK_USES_IO_EXPANDER
     Adafruit_MCP23008 *ioExpander = new Adafruit_MCP23008();
     ioExpander->begin();
     for (int i = 0; i <= 7; i++) {
@@ -96,6 +97,9 @@ bool OpenBook::configureI2CButtons(int8_t active, int8_t interrupt) {
     // also add interrupt feature to https://github.com/adafruit/Adafruit-MCP23008-library
 
     return true;
+#endif
+
+    return false;
 }
 
 /**
@@ -171,10 +175,13 @@ bool OpenBook::configureAudio(int8_t left, int8_t right, int8_t inlineMic, int8_
 */
 uint8_t OpenBook::readButtons() {
     uint8_t buttonState = 0;
+#if OPENBOOK_USES_IO_EXPANDER
     if(this->ioExpander != NULL) {
         // read from I2C
         buttonState = this->ioExpander->readGPIO();
-    } else if (this->buttonData > 0) {
+    }
+#else
+    if (this->buttonData > 0) {
         // read from shift register
         buttonState = this->readButtonRegister();
         // clear high bit which is the SD card detect
@@ -184,6 +191,7 @@ uint8_t OpenBook::readButtons() {
             buttonState |= 0x80; // set high bit if lock button is low (pressed)
         }
     }
+#endif
     if (this->activeState == LOW) return ~buttonState; // low buttons are pressed, high buttons are being pulled up.
     else return buttonState; // high buttons are pressed, low buttons are being pulled down.
 }
