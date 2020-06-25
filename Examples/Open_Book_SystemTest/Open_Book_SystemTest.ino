@@ -60,8 +60,8 @@ void setup() {
   babelFlashPassed = babelFlash.size() == 2097152 || babelFlash.size() == 4194304;
 
   Serial.println("-----------------------------------");
-  Serial.println("If you have an SD card in the slot, remove it now, then enter 'C' to continue.");
   Serial.println("To skip testing of the SD card, enter 'S'");
+  Serial.println("Otherwise, if you have an SD card in the slot remove it and then enter 'C' to continue.");
   if (waitForAnswer('C') == -1) goto BUTTONS;
   
   cardDetectPassed = book->sdCardState() == OPEN_BOOK_SD_CARD_NOT_PRESENT;
@@ -98,7 +98,7 @@ PIXEL:
   Serial.println("-----------------------------------");
   Serial.println("Testing Neopixel...");
   pixel.begin();
-  pixel.setPixelColor(0, pixel.Color(150, 150, 0));
+  pixel.setPixelColor(0, pixel.Color(150, 120, 0));
   pixel.show();
   Serial.println("Is the Neopixel showing a yellow color?");
   Serial.println("Enter 'Y' for Yes, 'N' for No, or 'S' to skip this test.");
@@ -108,7 +108,7 @@ PIXEL:
 
   Serial.println("-----------------------------------");
   Serial.println("If you wish to test audio output, the headset button or the microphone, \nplug a 3.5mm headset in to the headphone jack now.");
-  Serial.println("Do you wish to audio output? Enter 'Y' to test, or 'N' to skip.");
+  Serial.println("Do you wish to test audio output? Enter 'Y' to test, or 'N' to skip.");
   if (waitForAnswer('Y', 'N') != 1) goto INLINE_BUTTON;
 
   Serial.println("-----------------------------------");
