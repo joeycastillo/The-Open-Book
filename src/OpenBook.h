@@ -6,8 +6,14 @@
 #include <SPI.h>
 
 #include "BabelTypesetterGFX.h"
-#include "Adafruit_MCP23008.h"
 #include "OpenBook_IL0398.h"
+
+#if !defined(ODDLY_SPECIFIC_OPEN_BOOK)
+#define OPENBOOK_USES_IO_EXPANDER (1)
+#include "Adafruit_MCP23008.h"
+#else
+#define OPENBOOK_USES_IO_EXPANDER (0)
+#endif
 
 #define OPENBOOK_KNOWN_HARDWARE 1
 
@@ -116,7 +122,10 @@ protected:
     uint8_t readButtonRegister();
     OpenBook_IL0398 *display = NULL;
     BabelTypesetterGFX *typesetter = NULL;
+
+#if OPENBOOK_USES_IO_EXPANDER
     Adafruit_MCP23008 *ioExpander = NULL;
+#endif
 
     int8_t activeState, buttonLatch, buttonData, buttonClock, buttonInterrupt, leftOutput, rightOutput, micInput, amplifiedInput, outputChannels;
 };
