@@ -139,18 +139,16 @@ bool OpenBook::configureBabel(int8_t bcs) {
 bool OpenBook::configureAudio(int8_t left, int8_t right, int8_t inlineMic, int8_t amplifiedMic) {
     int8_t channels = 0;
     if(left >= 0) {
-        pinMode(left, OUTPUT);
         channels++;
     }
     if(right >= 0) {
-        pinMode(right, OUTPUT);
         channels++;
     }
     if(inlineMic >= 0) {
-        pinMode(inlineMic, OUTPUT);
+        pinMode(inlineMic, INPUT);
     }
     if(amplifiedMic >= 0) {
-        pinMode(amplifiedMic, OUTPUT);
+        pinMode(amplifiedMic, INPUT);
     }
 
     this->leftOutput = left;
