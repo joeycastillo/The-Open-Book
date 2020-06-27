@@ -188,6 +188,16 @@ uint8_t OpenBook::readButtons() {
     else return buttonState; // high buttons are pressed, low buttons are being pulled down.
 }
 
+/**
+ @brief Lets you know whether there is an SD card inserted.
+ @returns one of the following three values:
+          * OPEN_BOOK_SD_CARD_UNKNOWN if the device does not have a card detect signal
+          * OPEN_BOOK_SD_CARD_PRESENT if the signal is available and a card is inserted
+          * OPEN_BOOK_SD_CARD_NOT_PRESENT if the signal is available and no card is inserted
+ @note This is designed to work with the SD card slot available on the Adafruit website.
+       The one in the DigiKey 1-click BOM does not have card detect functionality; if you
+       use that one, this function will always return the same value.
+*/
 OpenBookSDCardState OpenBook::sdCardState() {
     #if defined(ODDLY_SPECIFIC_OPEN_BOOK)
     if ((this->readButtonRegister() & OPENBOOK_BUTTONMASK_SDCD) == 0) return OPEN_BOOK_SD_CARD_NOT_PRESENT;
