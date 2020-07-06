@@ -1,4 +1,17 @@
-summary: A simple reading device that anyone with a soldering iron can build for themselves
-bom: 1-click-bom.csv
-gerbers: eBook Feather Wing/CAMOutputs/OSO-BOWI-A1-05_2020-02-13/GerberFiles/
-color: blue
+multi:
+    Open-Book:
+        summary: A simple, open hardware device for reading that anyone with a soldering iron can build for themselves
+        eda:
+            type: eagle
+            pcb: Open Book Feather/OSO-BOOK-A1-05.brd
+        bom: Open Book Feather/1-click-bom.csv
+        gerbers: Open Book Feather/CAMOutputs/OSO-BOOK-A1-05_2020-06-05/GerberFiles/
+        color: black
+    eBook-Wing:
+        summary: A FeatherWing with most of the functionality of the Open Book, but with fewer parts and simpler to build
+        eda:
+            type: eagle
+            pcb: eBook Feather Wing/OSO-BOWI-A1-05.brd
+        bom: eBook Feather Wing/1-click-bom.csv
+        gerbers: eBook Feather Wing/CAMOutputs/OSO-BOWI-A1-05_2020-02-13/GerberFiles/
+        color: blue
