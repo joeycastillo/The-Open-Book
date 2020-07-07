@@ -3,7 +3,7 @@
 **Quick Links**
 
 * [Purchase the E-Book FeatherWing PCB on Tindie](https://www.tindie.com/products/19994/)
-* Purchase the Open Book PCB on Tindie (coming very soon)
+* [Purchase the Open Book PCB on Tindie](https://www.tindie.com/products/20599/)
 * [Setup guide for the E-Book Wing](https://github.com/joeycastillo/The-Open-Book/wiki/E-Book-Wing-Setup-Guide)
 * [Setup guide and documentation for the Open Book](https://github.com/joeycastillo/The-Open-Book/wiki/Open-Book-Documentation)
 * [Project page on Hackaday.io](https://hackaday.io/project/168761-the-open-book-feather)
@@ -100,11 +100,11 @@ OK, here's the rundown:
 
 ### Open Book Feather A1 Rev 05
 
-I'm in the process of moving the BOM for this board to Kitspace, and will be updating this section shortly.
+The Open Book BOM is [available on Kitspace](https://kitspace.org/boards/github.com/joeycastillo/the-open-book/ebook-wing/).
 
 ### E-Book FeatherWing A1 Rev 05
 
-The E-Book Wing BOM is currently available at [this URL](https://kitspace.org/boards/github.com/joeycastillo/the-open-book/) but that will change once I add the second board to Kitspace; if you're still seeing this paragraph after July 1, check for an update.
+The E-Book Wing BOM is also [available on Kitspace](https://kitspace.org/boards/github.com/joeycastillo/the-open-book/open-book/).
 
 ## Next Steps
 

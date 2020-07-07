@@ -1,6 +1,6 @@
 multi:
     Open-Book:
-        summary: A simple, open hardware device for reading that anyone with a soldering iron can build for themselves
+        summary: A simple, open hardware device for reading that anyone can build for themselves
         eda:
             type: eagle
             pcb: Open Book Feather/OSO-BOOK-A1-05.brd
@@ -8,7 +8,7 @@ multi:
         gerbers: Open Book Feather/CAMOutputs/OSO-BOOK-A1-05_2020-06-05/GerberFiles/
         color: black
     eBook-Wing:
-        summary: A FeatherWing with most of the functionality of the Open Book, but with fewer parts and simpler to build
+        summary: A FeatherWing with most of the functionality of the Open Book, but simpler to build
         eda:
             type: eagle
             pcb: eBook Feather Wing/OSO-BOWI-A1-05.brd

@@ -45,4 +45,4 @@ Flex connector (usually Good Display includes a better one),1,CONN FPC TOP 24POS
 "Optional: DNP_NEXT_ALT, DNP_PREV_ALT",2,SWITCH TACTILE SPST-NO 0.05A 12V,E-Switch,TL3330AF130QG,,,EG4388CT-ND,612TL3330AF130QG,,2522276
 BTN_PREV/NEXT/UP/DOWN/LEFT/RIGHT/SEL,7,SWITCH TACTILE SPST-NO 0.05A 12V,E-Switch,TL1107AF130WQ,,,EG2510-ND,612TL1107AF130W,,2830645
 SW1,1,SWITCH SLIDE SPDT 200MA 30V,TE Connectivity,1825232-1,,,A107673-ND,65518252321,,2772069
-"Unmarked; mounts on front side, atop documentation",1,4.2 inch e-ink panel GDEW042T2,Good Display,GDEW042T2,Waveshare,13186,Buy the display here: https://tinyurl.com/GDEW042T2,,,
+"Unmarked; mounts on front side, atop documentation",1,4.2 inch e-ink panel GDEW042T2: https://tinyurl.com/GDEW042T2,Good Display,GDEW042T2,Waveshare,13186,,,,
