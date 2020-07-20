@@ -8123,7 +8123,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="27.178" y="16.51" extent="1-16" drill="0.254"/>
 <wire x1="10.16" y1="17.526" x2="10.16465" y2="17.526" width="0.3048" layer="16"/>
 <wire x1="11.8768" y1="15.81385" x2="10.16465" y2="17.526" width="0.3048" layer="16"/>
-<via x="10.16" y="17.526" extent="1-16" drill="0.35"/>
+<via x="10.16" y="17.526" extent="1-16" drill="0.3048"/>
 <wire x1="10.16" y1="17.526" x2="26.162" y2="17.526" width="0.3048" layer="1"/>
 <wire x1="27.178" y1="16.51" x2="26.162" y2="17.526" width="0.3048" layer="1"/>
 </signal>
