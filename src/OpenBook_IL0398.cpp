@@ -610,12 +610,12 @@ void OpenBook_IL0398::drawPixel(int16_t x, int16_t y, uint16_t color) {
       *pByte2 &= ~(1 << (7 - (y%8)));
       break;
     case EPD_DARK:
-        *pByte1 &= ~(1 << (7 - (y%8)));
-        *pByte2 |= (1 << (7 - (y%8)));
-        break;
-    case EPD_LIGHT:
         *pByte1 |= (1 << (7 - (y%8)));
         *pByte2 &= ~(1 << (7 - (y%8)));
+        break;
+    case EPD_LIGHT:
+        *pByte1 &= ~(1 << (7 - (y%8)));
+        *pByte2 |= (1 << (7 - (y%8)));
         break;
     case EPD_WHITE:
         *pByte1 |= (1 << (7 - (y%8)));
