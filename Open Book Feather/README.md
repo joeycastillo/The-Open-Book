@@ -2,6 +2,8 @@
 
 The current working, tested revision is **Open Book A1 Rev 05** (**OSO-BOOK-A1-05**). For the sake of clarity, I've removed revisions 01 through 04; if you made one of these old boards, these notes remain.
 
+As of August 2020, there is also also a DXF file `OSO-BOOK-A1-05 Solder Stencil.dxf` suitable for laser cutting your own solder stencil, courtesy of [Spencer Owen](https://www.tindie.com/stores/Semachthemonkey/). Many thanks!
+
 ## Open Book A1 Rev 01 Errata
 
 I imagine you don't have this board; it was the first test, and was replaced with revision 2 almost immediately. It had a couple of big issues:
