@@ -100,11 +100,11 @@ OK, here's the rundown:
 
 ### Open Book Feather A1 Rev 05
 
-The Open Book BOM is [available on Kitspace](https://kitspace.org/boards/github.com/joeycastillo/the-open-book/ebook-wing/).
+The Open Book BOM is [available on Kitspace](https://kitspace.org/boards/github.com/joeycastillo/the-open-book/open-book/).
 
 ### E-Book FeatherWing A1 Rev 05
 
-The E-Book Wing BOM is also [available on Kitspace](https://kitspace.org/boards/github.com/joeycastillo/the-open-book/open-book/).
+The E-Book Wing BOM is also [available on Kitspace](https://kitspace.org/boards/github.com/joeycastillo/the-open-book/ebook-wing/).
 
 ## Next Steps
 
