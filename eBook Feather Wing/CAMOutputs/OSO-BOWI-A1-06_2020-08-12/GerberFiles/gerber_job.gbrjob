@@ -1,11 +1,11 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2020-02-13T05:21:18Z",
+        "CreationDate": "2020-08-13T03:43:45Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
-            "Version": "9.4.2"
+            "Version": "9.6.2"
         },
         "Part": "Single"
     },
@@ -13,7 +13,7 @@
         "BoardThickness": 1.671119,
         "LayerNumber": 2,
         "Name": {
-            "ProjectId": "OSO-BOWI-A1-05"
+            "ProjectId": "OSO-BOWI-A1-06"
         },
         "Owner": "Jose Castillo <jose.castillo@gmail.com>",
         "Size": {
