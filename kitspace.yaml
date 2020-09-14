@@ -12,7 +12,7 @@ multi:
         summary: A FeatherWing with most of the functionality of the Open Book, but simpler to build
         eda:
             type: eagle
-            pcb: eBook Feather Wing/OSO-BOWI-A1-05.brd
+            pcb: eBook Feather Wing/OSO-BOWI-A1-06.brd
         bom: eBook Feather Wing/1-click-bom.csv
         gerbers: eBook Feather Wing/CAMOutputs/OSO-BOWI-A1-06_2020-09-13/GerberFiles/
         color: blue
