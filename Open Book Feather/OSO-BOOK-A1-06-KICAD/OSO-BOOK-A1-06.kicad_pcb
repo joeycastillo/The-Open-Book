@@ -607,7 +607,7 @@
   (module OSO-BOOK-A1-06:TL3330AF130QG (layer Bottom) (tedit 5F80C120) (tstamp 5F6E9DDC)
     (at 174.0281 51.7652)
     (path /5F6E9028/B325724B9A54DCB5)
-    (fp_text reference BTN_LOCK1 (at 3.81 -1.27 unlocked) (layer B.SilkS)
+    (fp_text reference BTN_LOCK1 (at 1.8669 -2.2352 unlocked) (layer B.SilkS)
       (effects (font (size 0.4826 0.4826) (thickness 0.086868)) (justify right top mirror))
     )
     (fp_text value SPST_TACTILE_SWITCHRA (at 0 0) (layer B.SilkS) hide
