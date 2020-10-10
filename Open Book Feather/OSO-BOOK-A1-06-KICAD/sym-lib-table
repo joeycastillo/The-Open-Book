@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name OSO-BOOK-A1-06-eagle-import)(type Legacy)(uri ${KIPRJMOD}/OSO-BOOK-A1-06-eagle-import.lib)(options "")(descr ""))
+  (lib (name OSO-BOOK-A1-06-rescue)(type Legacy)(uri ${KIPRJMOD}/OSO-BOOK-A1-06-rescue.lib)(options "")(descr ""))
+)
