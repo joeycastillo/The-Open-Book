@@ -370,12 +370,12 @@ Wire Wire Line
 Text Label 7720 2100 0    50   ~ 0
 SDA
 Wire Wire Line
-	1250 6300 1250 6600
+	1200 6300 1200 6600
 Wire Wire Line
-	2250 6600 1250 6600
+	2250 6600 1200 6600
 Wire Wire Line
-	1250 6600 1150 6600
-Connection ~ 1250 6600
+	1200 6600 1150 6600
+Connection ~ 1200 6600
 Wire Wire Line
 	2250 6500 1150 6500
 Text Label 1950 6500 0    50   ~ 0
@@ -1427,12 +1427,12 @@ $EndComp
 $Comp
 L OSO-BOWI-A1-06-eagle-import:VBAT #U$022
 U 1 0 3E45157DD872CB34
-P 1250 6200
-F 0 "#U$022" H 1250 6200 50  0001 C CNN
-F 1 "VBAT" H 1150 6200 50  0000 L BNN
-F 2 "" H 1250 6200 50  0001 C CNN
-F 3 "" H 1250 6200 50  0001 C CNN
-	1    1250 6200
+P 1200 6200
+F 0 "#U$022" H 1200 6200 50  0001 C CNN
+F 1 "VBAT" H 1100 6200 50  0000 L BNN
+F 2 "" H 1200 6200 50  0001 C CNN
+F 3 "" H 1200 6200 50  0001 C CNN
+	1    1200 6200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2463,4 +2463,6 @@ NoConn ~ 7100 4000
 NoConn ~ 7100 4500
 Wire Wire Line
 	8650 4300 8850 4300
+Text Notes 750  7550 0    50   ~ 0
+Note: Solder joints and test points with appended 1 (except the A1) and the 3V3 have the appended\nnumber not shown on the PCB layout by making the reference invisible and placing a silkscreen text.
 $EndSCHEMATC
