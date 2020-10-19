@@ -4,7 +4,7 @@
 
 * [Purchase the E-Book FeatherWing PCB on Tindie](https://www.tindie.com/products/19994/)
 * [Purchase the Open Book PCB on Tindie](https://www.tindie.com/products/20599/)
-* [Setup guide for the E-Book Wing](https://github.com/joeycastillo/The-Open-Book/wiki/E-Book-Wing-Setup-Guide)
+* [Setup guide for the E-Book Wing](https://github.com/joeycastillo/The-Open-Book/wiki/E-Book-Wing-Setup-Guide) (and [Assembly Video](https://youtu.be/0Bsh1q2tqaU))
 * [Setup guide and documentation for the Open Book](https://github.com/joeycastillo/The-Open-Book/wiki/Open-Book-Documentation)
 * [Project page on Hackaday.io](https://hackaday.io/project/168761-the-open-book-feather)
 * [Patreon page](https://www.patreon.com/joeycastillo), where I post occasional notes and thoughts that don't fit into [tweets](https://twitter.com/josecastillo).
