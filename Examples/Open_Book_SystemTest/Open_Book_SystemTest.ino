@@ -153,6 +153,7 @@ MICAMP:
   Serial.println("Enter 'Y' to test, or 'N' to skip.");
   if (waitForAnswer('Y', 'N') != 1) goto RESULTS;
   pinMode(OPENBOOK_MIC_RAW, INPUT);
+  pinMode(OPENBOOK_MIC_SHUTDOWN, OUTPUT);
   delay(500);
   digitalWrite(OPENBOOK_MIC_SHUTDOWN, LOW);
   pinMode(A10, INPUT);
