@@ -81,7 +81,7 @@ The eBook wing does less than the Open Book Feather, mainly because it's limited
 
 The wing also leaves pins 11, 12 and 13 available so that it can stack with the AirLift FeatherWing.
 
-![image](/images/wing-rev5.jpg)
+![image](/images/bowi-rev5.jpg)
 
 Initially the eBook Wing was intended to just validate the ideas going into the Open Book, but after building a few of the Open Book board, I think it has a place as its own thing. It's a much simpler build, with fewer parts to place and more space to rework if need be. It also supports probably 80% of the desired use cases: screen, storage and buttons, language support, audio out and expansion ports. You lose mic input, but you can remedy that with [a STEMMA-compatible microphone](https://www.adafruit.com/product/1063).
 
