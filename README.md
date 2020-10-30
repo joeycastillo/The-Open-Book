@@ -11,7 +11,7 @@
 
 With that out of the way, on with the readme!
 
-As a society, we need an open source device for reading. Books are among the most important documents of our culture, yet the most popular and widespread devices we have for reading Ñ the Kobo, the Nook, the Kindle and even the iPad Ñ are closed devices, operating as small moving parts in a set of giant closed platforms whose owners' interests are not always aligned with readers'.
+As a society, we need an open source device for reading. Books are among the most important documents of our culture, yet the most popular and widespread devices we have for reading â€” the Kobo, the Nook, the Kindle and even the iPad â€” are closed devices, operating as small moving parts in a set of giant closed platforms whose owners' interests are not always aligned with readers'.
 
 ![image](/images/board.jpg)
 
@@ -91,7 +91,7 @@ Basically, if you want to build your own book but don't have a reflow oven or ar
 
 A couple of notes on this. First off, the Feather connectors are ludicrously expensive compared to the rest of the BOM. More for a row of connectors than an entire microcontroller?! Ridiculous. If you're doing this as a DIY project, try ordering [two of these 2x20 surface mount headers](https://www.adafruit.com/product/2187) and cutting them down to the size you want; it'll shave almost $4 off the BOM, and they're much slimmer than the ones linked here. If you want a slim connector like that one, without the hassle of cutting things to size, Samtec has [2x12](https://www.samtec.com/products/hle-112-02-g-dv-a-p) and [2x16](https://www.samtec.com/products/hle-116-02-g-dv-a-k) slim headers with similar pricing at low volumes; still trying to figure out how to make this more reasonable.
 
-Second, the 1µF capacitors. Strictly speaking, only the ones for the e-ink display _need_ to be rated for 25V, but since pricing is so similar for 10V or 25V caps, I just grouped them all together so you don't have to worry about the distinction.
+Second, the 1ÂµF capacitors. Strictly speaking, only the ones for the e-ink display _need_ to be rated for 25V, but since pricing is so similar for 10V or 25V caps, I just grouped them all together so you don't have to worry about the distinction.
 
 OK, here's the rundown:
 
@@ -107,7 +107,7 @@ The E-Book Wing BOM is also [available on Kitspace](https://kitspace.org/boards/
 
 As of October 2020, more than 100 Open Book and E-Book FeatherWing PCBs have been shipped and are in the hands of makers, and several folks have posted photos of their completed builds! I know that Adafruit remains excited about the Take Flight with Feather run, but the ongoing COVID situation has left the timing of that in question.
 
-As summer turned to fall, I got it in my head to try to build the Open Book's reader software using CircuitPython, which spawned the [circuitpyui project](https://github.com/joeycastillo/circuitpyui) in September. This project aims to create an event-driven UI framework on top of CircuitPython's displayio. I still think this is a great idea Ñ and it actually works pretty well on TFT-based devices so far Ñ but there was also some [democracy-related work](https://github.com/joeycastillo/voteforthedemocrat) that needed doing this fall, so I haven't made as much progress on this as I had hoped.
+As summer turned to fall, I got it in my head to try to build the Open Book's reader software using CircuitPython, which spawned the [circuitpyui project](https://github.com/joeycastillo/circuitpyui) in September. This project aims to create an event-driven UI framework on top of CircuitPython's displayio. I still think this is a great idea â€” and it actually works pretty well on TFT-based devices so far â€” but there was also some [democracy-related work](https://github.com/joeycastillo/voteforthedemocrat) that needed doing this fall, so I haven't made as much progress on this as I had hoped.
 
 I have tried my best to document this project pretty relentlessly, from the silkscreen itself to the [documentation](https://github.com/joeycastillo/The-Open-Book/tree/master/eBook%20Feather%20Wing/Documentation%20Packet) [packets](https://github.com/joeycastillo/The-Open-Book/tree/master/eBook%20Feather%20Wing/Documentation%20Packet) that come packed with each PCB. Having said that, I also recognize that I have not done as good a job as I could have in creating guidelines for contributors or outlining the areas where outside help would have the most impact. This hasn't some stopped folks from very generously contributing their time and effort to the project! Still, I know that this is an area that I need to improve, and my hope is that as fall turns to winter, I can get the project to a state where folks feel more empowered to take part.
 
