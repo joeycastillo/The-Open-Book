@@ -40,7 +40,7 @@ As of October 2020, this is where we are on the roadmap:
   - [X] Software: [Port Babel to CircuitPython](https://github.com/joeycastillo/babel/tree/master/CircuitPython). Right-to-left support is still lacking; need to make a custom Label class for this.
 - [X] External dependencies: modify [Adafruit EPD](https://github.com/adafruit/Adafruit_EPD) to support e-paper screens on secondary SPI bus.
 - [X] Software: [minimum viable software](https://github.com/joeycastillo/The-Open-Book/tree/master/Examples/Open_Book_MVBook) for listing and selecting books as text files on SD card, reading a work...
-  - [ ] ...and storing the user's place in that work between reading sessions.
+  - [X] ...and storing the user's place in that work between reading sessions.
 - [X] Hardware: Migrate Open Book PCB to KiCad. (So many thanks to [DCelectronics](https://github.com/DCelectronics) for the [pull request](https://github.com/joeycastillo/The-Open-Book/pull/38))!
 
 ## Hardware: The Open Book Feather
