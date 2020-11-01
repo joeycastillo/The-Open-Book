@@ -19,6 +19,7 @@ size_t currentLine = 0;
 bool atEnd = false;
 bool bookNeedsRefresh = false;
 uint8_t buttons = 0;
+int menuOffset = 0;
 
 #include "menu.h"
 #include "readbook.h"
@@ -40,7 +41,7 @@ void setup() {
     if (!SD.begin(OPENBOOK_SDCS)) {
         Serial.println("No SD?");
     }
-    
+
     book->configureScreen();
     book->configureBabel();
     #if defined(ODDLY_SPECIFIC_OPEN_BOOK)
@@ -57,7 +58,7 @@ void setup() {
     int i = 0;
     File entry = root.openNextFile();
     Serial.println("Adding files...");
-    while (i < 6 && entry) {
+    while (entry) {
         if (!entry.isDirectory()) {
             uint64_t magic = 0;
             uint8_t terminator = 0;
@@ -68,7 +69,6 @@ void setup() {
               strcpy(filename, entry.name());
               MenuItem *item = new MenuItem(filename, &open_file);
               ms.get_root_menu().add_item(item);
-              i++;
             }
         }
         entry = root.openNextFile();

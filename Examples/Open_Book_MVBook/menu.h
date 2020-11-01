@@ -6,11 +6,19 @@ public:
     void render(Menu const& menu) const {
         book->getDisplay()->fillScreen(EPD_WHITE);
         menu.render(*this);
-        for (int i = 0; i < menu.get_num_components(); ++i) {
+        int lastItem = min(menuOffset + 6, menu.get_num_components());
+        for (int i = menuOffset; i < lastItem; ++i) {
             MenuComponent const* component = menu.get_menu_component(i);
             component->render(*this);
         }
         if (fullRefresh) {
+            // render page indicator at bottom
+            BabelTypesetter *typesetter = book->getTypesetter();
+            char buf[20];
+            sprintf(buf, "\n%d to %d of %d", menuOffset + 1, lastItem, menu.get_num_components());
+            typesetter->setCursor(32, 360);
+            typesetter->print(buf);
+
             book->getDisplay()->setDisplayMode(OPEN_BOOK_DISPLAY_MODE_DEFAULT);
             // display the menu WITHOUT the selection indicator. The default waveform pushes a lot of
             // ink to the front, so if the indicator displays here, an after-image will remain even
@@ -96,17 +104,47 @@ public:
 MyRenderer my_renderer;
 MenuSystem ms(my_renderer);
 
+void selectFirstOnPage() {
+    // I don't like this, but the MenuSystem library has no method to set the current index.
+    // this just rewinds to the beginning and "clicks" next until we're at the right spot.
+    ms.reset();
+    while(ms.get_root_menu().get_current_component_num() != menuOffset) {
+        ms.next();
+    }
+}
+
 void doMenu() {
     if (buttons & OPENBOOK_BUTTONMASK_UP) {
-        ms.prev();
-        ms.display();
+        if (ms.get_root_menu().get_current_component_num() > menuOffset) {
+            ms.prev();
+            ms.display();
+        }
     }
     if (buttons & OPENBOOK_BUTTONMASK_DOWN) {
-        ms.next();
-        ms.display();
+        int lastItem = min(menuOffset + 6, ms.get_root_menu().get_num_components());
+        if (ms.get_root_menu().get_current_component_num() < lastItem - 1) {
+            ms.next();
+            ms.display();
+        }
     }
     if (buttons & OPENBOOK_BUTTONMASK_SELECT) {
         ms.select();
         ms.display();
+    }
+    if (buttons & OPENBOOK_BUTTONMASK_PREVIOUS) {
+        if (menuOffset > 0) {
+          menuOffset -= 6;
+          selectFirstOnPage();
+          fullRefresh = true;
+          ms.display();
+        }
+    }
+    if (buttons & OPENBOOK_BUTTONMASK_NEXT) {
+        if ((menuOffset + 6) < ms.get_root_menu().get_num_components()) {
+            menuOffset += 6;
+            selectFirstOnPage();
+            fullRefresh = true;
+            ms.display();
+        }
     }
 }

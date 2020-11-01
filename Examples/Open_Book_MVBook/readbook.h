@@ -38,12 +38,6 @@ void doReader() {
             // handle flags (high bit of len indicates last line)
             atEnd = len >> 15;
             len &= 0x7FFF;
-            Serial.print("At end: ");
-            Serial.println(atEnd);
-            Serial.print("Loc: ");
-            Serial.println((uint32_t)loc);
-            Serial.print("Len: ");
-            Serial.println(len);
             
             file.seek(loc);
             char *line = (char *)malloc(len + 1);
