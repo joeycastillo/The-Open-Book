@@ -23,6 +23,12 @@ void doReader() {
     }
 
     if (bookNeedsRefresh) {
+        // update user's stored location
+        File f = SD.open(currentProgressFile, O_WRITE | O_CREAT);
+        f.write((byte *)&currentLine, sizeof(size_t));
+        f.close();
+
+        // refresh the screen
         bookNeedsRefresh = false;
         book->getDisplay()->clearBuffer();
         BabelTypesetter *typesetter = book->getTypesetter();

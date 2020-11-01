@@ -15,6 +15,7 @@ OpenBook *book;
 // global state
 bool fullRefresh = true;
 char *currentBook = NULL;
+char currentProgressFile[16];
 size_t currentLine = 0;
 bool atEnd = false;
 bool bookNeedsRefresh = false;
@@ -26,7 +27,20 @@ int menuOffset = 0;
 
 void open_file(MenuComponent* menu_item) {
     currentBook = (char *)menu_item->get_name();
-    currentLine = 2; // start of lines, after title and author
+
+    // create or read progress file, just an int for what line the reader is on
+    strcpy(currentProgressFile, currentBook);
+    currentProgressFile[strlen(currentProgressFile) - 1] = 'P';
+    if (SD.exists(currentProgressFile)) {
+        File f = SD.open(currentProgressFile, FILE_READ);
+        f.read(&currentLine, sizeof(size_t));
+        f.close();
+    } else {
+        currentLine = 2; // start of lines, after title and author
+        File f = SD.open(currentProgressFile, FILE_WRITE);
+        f.write((byte *)&currentLine, sizeof(size_t));
+        f.close();
+    }
     bookNeedsRefresh = true;
 
     Serial.print("Opening ");
