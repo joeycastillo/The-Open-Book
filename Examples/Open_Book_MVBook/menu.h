@@ -6,11 +6,17 @@ public:
     void render(Menu const& menu) const {
         book->getDisplay()->fillScreen(EPD_WHITE);
         menu.render(*this);
+
+        // draw the items in the list
         int lastItem = min(menuOffset + 6, menu.get_num_components());
         for (int i = menuOffset; i < lastItem; ++i) {
             MenuComponent const* component = menu.get_menu_component(i);
             component->render(*this);
         }
+
+        // draw the selection indicator
+        book->getDisplay()->fillRect(12, selectionIndicatorOrigin, 8, selectionIndicatorHeight, EPD_BLACK);
+
         if (fullRefresh) {
             // render page indicator at bottom
             BabelTypesetter *typesetter = book->getTypesetter();
@@ -19,22 +25,19 @@ public:
             typesetter->setCursor(32, 360);
             typesetter->print(buf);
 
-            book->getDisplay()->setDisplayMode(OPEN_BOOK_DISPLAY_MODE_DEFAULT);
-            // display the menu WITHOUT the selection indicator. The default waveform pushes a lot of
-            // ink to the front, so if the indicator displays here, an after-image will remain even
-            // after the user scrolls to the next item.
+            // note: The quick waveform pushes a bit more ink than the partial one, so when scrolling from row 1
+            // to row 2, a slight after-image may remain. You can address this by displaying the menu in quick mode,
+            // without the selection indicator, and then refreshing only the selection area in partial mode. I used
+            // to do this, but it takes more time and makes the interface feel less responsive, hence this tradeoff.
+            book->getDisplay()->setDisplayMode(OPEN_BOOK_DISPLAY_MODE_QUICK);
             book->getDisplay()->display();
-            // now do a partial refresh of the indicator area; the default waveform sucked a lot of
-            // ink to the back, this equalizes it a bit and makes the indicator appear bolder when 
-            // we display it below.
-            book->getDisplay()->displayPartial(72, 280, 320, 8);
             fullRefresh = false;
+        } else {
+            // note that the partial update method is a mess right now; it should rotate this to the
+            // screen orientation and expand to 8-byte boundaries, but right now i'm passing in raw coordinates
+            // from the hardware's POV (and making sure they're multiples of 8 to avoid glitchiness)
+            book->getDisplay()->displayPartial(72, 280, 320, 8);
         }
-        book->getDisplay()->fillRect(12, selectionIndicatorOrigin, 8, selectionIndicatorHeight, EPD_BLACK);
-        // also note that the partial update method is a mess right now; it should rotate this to the
-        // screen orientation and expand to 8-byte boundaries, but right now i'm passing in raw coordinates
-        // from the hardware's POV (and making sure they're multiples of 8 to avoid glitchiness)
-        book->getDisplay()->displayPartial(72, 280, 320, 8);
     }
 
     void render_menu_item(MenuItem const& menu_item) const {
