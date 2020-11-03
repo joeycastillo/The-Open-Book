@@ -22,8 +22,10 @@ bool bookNeedsRefresh = false;
 uint8_t buttons = 0;
 int menuOffset = 0;
 
+#include "bitmaps.h"
 #include "menu.h"
 #include "readbook.h"
+#include "lockscreen.h"
 
 void open_file(MenuComponent* menu_item) {
     currentBook = (char *)menu_item->get_name();
@@ -65,7 +67,20 @@ void setup() {
     book->configureI2CButtons();
     #endif
 
-    book->getDisplay()->setRotation(0);
+    // display splash screen with factory standard waveform. I feel pretty confident 
+    // we can use quick mode exclusively, but until I test more, I want to use the
+    // factory waveform at least once when we are first getting started.
+    OpenBook_IL0398 *display = book->getDisplay();
+    display->setRotation(1);
+    display->fillScreen(EPD_WHITE);
+    display->drawBitmap(0, 0, OpenBookSplash, 400, 300, EPD_BLACK);
+    display->display();
+    display->setDisplayMode(OPEN_BOOK_DISPLAY_MODE_QUICK);
+    display->fillScreen(EPD_WHITE);
+    display->display();
+
+    // restore standard rotation going forward
+    display->setRotation(0);
 
     File root = SD.open("/");
 
@@ -95,7 +110,9 @@ void setup() {
 void loop() {
     buttons = book->readButtons();
 
-    if(currentBook == NULL) {
+    if (buttons & OPENBOOK_BUTTONMASK_LOCK) {
+        doLock();
+    } else if(currentBook == NULL) {
         doMenu();
     } else {
         doReader();
