@@ -100,6 +100,7 @@ public:
         book->getDisplay()->setCursor(16, 48);
         book->getDisplay()->println("Listing files in /");
         BabelTypesetter *typesetter = book->getTypesetter();
+        typesetter->setTextColor(EPD_BLACK);
         typesetter->setLayoutArea(24, 72, 272, 336);
     }
 };

@@ -32,6 +32,7 @@ void doReader() {
         bookNeedsRefresh = false;
         book->getDisplay()->clearBuffer();
         BabelTypesetter *typesetter = book->getTypesetter();
+        typesetter->setTextColor(EPD_BLACK);
         typesetter->setLayoutArea(16, 16, 264, 368);
         File file = SD.open(currentBook);
         for(int i = 0; i < 22; i++) {
