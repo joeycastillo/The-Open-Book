@@ -108,8 +108,7 @@ Now we can move on to the software portion of this section.
 We will be working with the [Arduino IDE](https://www.arduino.cc) for this portion of the guide; if you do not already have Arduino on your machine, download and install it now. You will also need to have both Adafruit and Oddly Specific SAMD board support installed. [Follow the instructions here](https://learn.adafruit.com/add-boards-arduino-v164/setup) to get this set up. The two board manager URLs are:
 
 * https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
-* https://www.oddlyspecific.org/boardsupport 
-/package_oddlyspecific_index.json
+* https://www.oddlyspecific.org/boardsupport/package_oddlyspecific_index.json
 
 If you have trouble finding the Oddly Specific board support package, search for 'Open Book' in the Boards Manager search box; it should be the only result.
 
