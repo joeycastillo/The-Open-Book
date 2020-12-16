@@ -1,8 +1,6 @@
 # Notes on the Open Book PCB files
 
-The current working, tested revision is **Open Book A1 Rev 05** (**OSO-BOOK-A1-05**). For the sake of clarity, I've removed revisions 01 through 04; if you made one of these old boards, these notes remain.
-
-As of August 2020, there is also also a DXF file `OSO-BOOK-A1-05 Solder Stencil.dxf` suitable for laser cutting your own solder stencil, courtesy of [Spencer Owen](https://www.tindie.com/stores/Semachthemonkey/). Many thanks!
+The current working, tested revision is **Open Book A1 Rev 06** (**OSO-BOOK-A1-06**). For the sake of clarity, I've removed revisions 01 through 04; if you made one of these old boards, these notes remain.
 
 ## Open Book A1 Rev 01 Errata
 
@@ -49,4 +47,8 @@ This is the last revision with the SERCOM0/SERCOM5 silkscreen error.
 
 This is identical to Rev 04, but fixes the silkscreen error in the SAM D51 block. It also adds a RC filter to the USB cable shield (recommendation from the SAM D51 data sheet), and tweaks the through-hole button footprints for a slightly better fit.
 
-This is the final version of the A1-type hardware. Having said that, when I run out of the A1-05 boards, I plan to update the silkscreen for any future run to remove deprecated SPI signal names (MOSI/MISO), and replace them with either SDO/SDI or COPI/CIPO.
+This version works quite well. If you have this version, there is no need to get the A1-06 version.
+
+## Open Book A1 Rev 06
+
+This is the final version of the A1-type hardware. It adds pull-up resistors for the Babel Flash chip and MicroSD card, and bias resistors for the audio output on the headphone jack.
