@@ -1,0 +1,8 @@
+Qty,Designator,Footprint,Comment,LCSC Part #,Description
+1,R1,R0402,0.47ohm,C423162,0.47Ω ±1% 1/16W ±800ppm/℃ 0402 Chip Resistor - Surface Mount RoHS
+1,L1,L0805,10uH,C281113,10uH ±20% 500mA 320mΩ 0805 Inductors (SMD) RoHS
+9,"C1, C2, C3, C4, C5, C6, C7, C8, C9",C0805,1uF >=25V,C28323,1uF ±10% 50V X7R 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS
+1,C10,C0805,4.7uF >=25V,C1779,4.7uF ±10% 25V X5R 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS
+1,J1,AFC07-S24ECC-00,Flex connector,C11092,"Contact,Top 24 0.020""（0.50mm） 0.079""（2.00mm） Slide Lock 24P FFC, FPC Connectors RoHS"
+1,Q1,SOT23-3,IRLML0100,C53658,"N-Channel 100V 1.6A 2.5V @ 25uA 220mΩ @ 1.6A,10V 1.3W SOT-23(SOT-23-3) MOSFET RoHS"
+3,"D1, D2, D3",SOD-123,MBR0530,C18863,30V 500mA 450mV @ 500mA SOD-123 Schottky Barrier Diodes (SBD) RoHS
