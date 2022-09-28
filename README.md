@@ -18,7 +18,7 @@ At this time, the Pi Pico book is in decent shape if you want to try your hand a
 
 * Upload `OSO-BOOK-C1-04-rounded.zip` to your PCB fabrication house of choice. It is designed to be a two-layer, 1 mm thick PCB, and you can use either an ENIG or lead-free HASL finish.
 * If you plan to use JLCPCB's economic PCBA service, upload all three files in `OSO-BOOK-C2-01` to JLCPCB. Opt for a 1 mm thick lead-free HASL finish. Note that the board is slightly wider than it needs to be, just to meet the minimum size requirements for this service.
-* If you plan to use PCBWay's PCBA service, upload all three files in `OSO-BOOK-C2-02` to JLCPCB. Once again, opt for a 1 mm thick lead-free HASL finish. 
+* If you plan to use PCBWay's PCBA service, upload all three files in `OSO-BOOK-C2-02` to PCBWay. Once again, opt for a 1 mm thick lead-free HASL finish. 
 
 Other Parts: 
 
