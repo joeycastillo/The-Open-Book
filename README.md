@@ -4,7 +4,7 @@
 
 The original Open Book repository has been archived in a branch called [original](https://github.com/joeycastillo/The-Open-Book/tree/original).
 
-[The Open Book firmware, called libros, is under development here](https://github.com/joeycastillo/libros). It's a goddamn mess in some ways, and in dire need of some documentation, but for the moment it does do the job of presenting a list of books stored on an SD card, and letting you read them. The canonical format for books is plain text plus some front matter and ASCII control codes that so far I've only documented [in a twitter thread](https://twitter.com/josecastillo/status/1533103137455751168)). More to do here.
+[The Open Book firmware, called libros, is under development here](https://github.com/joeycastillo/libros). It's a goddamn mess in some ways, and in dire need of some documentation, but for the moment it does do the job of presenting a list of books stored on an SD card, and letting you read them. The canonical format for books is plain text plus some front matter and ASCII control codes that so far I've only documented [in a twitter thread](https://twitter.com/josecastillo/status/1533103137455751168). More to do here.
 
 ## Original Introduction
 
