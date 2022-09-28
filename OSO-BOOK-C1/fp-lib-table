@@ -1,0 +1,8 @@
+(fp_lib_table
+  (lib (name "MCU_RaspberryPi_and_Boards")(type "KiCad")(uri "${KIPRJMOD}/MCU_RaspberryPi_and_Boards.pretty")(options "")(descr ""))
+  (lib (name "MEM2075-00-140-01-A")(type "KiCad")(uri "${KIPRJMOD}/MEM2075-00-140-01-A.pretty")(options "")(descr ""))
+  (lib (name "OSO-BOOK-C2-01")(type "KiCad")(uri "${KIPRJMOD}/OSO-BOOK-C2-01.pretty")(options "")(descr ""))
+  (lib (name "K1-5202UA")(type "KiCad")(uri "${KIPRJMOD}/K1-5202UA.pretty")(options "")(descr ""))
+  (lib (name "TACT_PANA-EVQ")(type "KiCad")(uri "${KIPRJMOD}/TACT_PANA-EVQ.pretty")(options "")(descr ""))
+  (lib (name "Battery_Holder")(type "KiCad")(uri "${KIPRJMOD}/Battery_Holder.pretty")(options "")(descr ""))
+)
