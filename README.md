@@ -4,6 +4,8 @@
 
 The original Open Book repository has been archived in a branch called [https://github.com/joeycastillo/The-Open-Book/tree/original](original).
 
+[The Open Book firmware, called libros, is under development here](https://github.com/joeycastillo/libros). It's a goddamn mess in some ways, and in dire need documentation, but for the moment it does do the job of presenting a list of books stored on an SD card, and letting you read them. The canonical format for books is plain text plus some front matter and ASCII control codes that so far I've only documented [in a twitter thread](https://twitter.com/josecastillo/status/1533103137455751168)). More to do here.
+
 ## Original Introduction
 
 As a society, we need an open source device for reading. Books are among the most important documents of our culture, yet the most popular and widespread devices we have for reading — the Kobo, the Nook, the Kindle and even the iPad — are closed devices, operating as small moving parts in a set of giant closed platforms whose owners' interests are not always aligned with readers'.
