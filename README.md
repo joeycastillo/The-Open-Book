@@ -2,7 +2,7 @@
 
 **A note from the project creator:** The Open Book was my first real electronics project; the earliest designs date to late 2019. I have learned a lot since those early days, and as such, here three years later, I am hitting reset. At this time the repository contains a version of the Open Book designed around the Raspberry Pi Pico. It's optimized for low part count and easy hand assembly, but it runs on AAA batteries and may not be as svelte as some folks might prefer. At a later date, I hope to design a followup with built-in LiPo charging and a slimmer profile, but at this time, this version of the book is the quickest path to getting hardware in people's hands so that we can start hacking on firmware together.
 
-The original Open Book repository has been archived in a branch called [https://github.com/joeycastillo/The-Open-Book/tree/original](original).
+The original Open Book repository has been archived in a branch called [original](https://github.com/joeycastillo/The-Open-Book/tree/original).
 
 [The Open Book firmware, called libros, is under development here](https://github.com/joeycastillo/libros). It's a goddamn mess in some ways, and in dire need of some documentation, but for the moment it does do the job of presenting a list of books stored on an SD card, and letting you read them. The canonical format for books is plain text plus some front matter and ASCII control codes that so far I've only documented [in a twitter thread](https://twitter.com/josecastillo/status/1533103137455751168)). More to do here.
 
