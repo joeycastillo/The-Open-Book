@@ -1,0 +1,10 @@
+multi:
+    Open-Book-Abridged:
+        summary: A simple, open hardware device for reading that anyone can build for themselves
+        eda:
+            type: kicad
+            pcb: OSO-BOOK-C1/OSO-BOOK-C1.kicad_pcb
+        bom: OSO-BOOK-C1/1-click-bom.csv
+        gerbers: Fabrication Files/Open Book Main Board/OSO-BOOK-C1-05-rounded.zip
+        color: black
+        readme: README.md
