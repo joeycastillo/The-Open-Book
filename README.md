@@ -118,3 +118,6 @@ I have tried my best to document this project pretty relentlessly, from the silk
 ![image](/images/oso-book-a1-06-schematic-page2.png)
 
 ![image](/images/oso-book-a1-06-schematic-page3.png)
+
+## License
+Different components of the project are licensed differently, see [LICENSE.md](https://github.com/joeycastillo/The-Open-Book/blob/main/LICENSE.md).
