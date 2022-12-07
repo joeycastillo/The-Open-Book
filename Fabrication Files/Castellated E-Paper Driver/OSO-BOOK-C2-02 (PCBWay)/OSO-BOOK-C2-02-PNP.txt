@@ -1,0 +1,18 @@
+Designator  Footprint    Mid X      Mid Y       TB  Rotation    Comment        
+C1          0805C        9.91 mm    22.61 mm    B   0.00        
+C2          0805C        9.91 mm    20.07 mm    B   0.00        
+C3          0805C        9.91 mm    17.53 mm    B   0.00        
+C4          0805C        9.91 mm    14.99 mm    B   0.00        
+C5          0805C        9.91 mm    12.45 mm    B   0.00        
+C6          0805C        9.91 mm    9.91 mm     B   0.00        
+C7          0805C        9.91 mm    6.86 mm     B   270.00      
+C8          0805C        8.13 mm    3.05 mm     B   90.00       
+C9          0805C        10.67 mm   3.05 mm     B   270.00      
+C10         0805C        13.97 mm   8.38 mm     B   90.00       
+D1          SOD-123      14.99 mm   3.56 mm     B   90.00       
+D2          SOD-123      14.99 mm   17.02 mm    B   270.00      
+D3          SOD-123      12.95 mm   17.02 mm    B   90.00       
+J1          FFC          4.58 mm    9.95 mm     B   270.00      
+L1          0805L        12.95 mm   3.51 mm     B   270.00      
+Q1          SOT23-3      14.17 mm   12.19 mm    B   270.00      
+R1          0603R        3.30 mm    20.70 mm    B   0.00        

@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name "MCU_RaspberryPi_and_Boards")(type "Legacy")(uri "${KIPRJMOD}/MCU_RaspberryPi_and_Boards.lib")(options "")(descr ""))
+  (lib (name "MEM2075-00-140-01-A")(type "KiCad")(uri "${KIPRJMOD}/MEM2075-00-140-01-A.kicad_sym")(options "")(descr ""))
+  (lib (name "OSO-BOOK-C2-01")(type "KiCad")(uri "${KIPRJMOD}/OSO-BOOK-C2-01.kicad_sym")(options "")(descr ""))
+  (lib (name "K1-5202UA")(type "KiCad")(uri "${KIPRJMOD}/K1-5202UA.kicad_sym")(options "")(descr ""))
+)

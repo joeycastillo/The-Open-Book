@@ -1,0 +1,8 @@
+Item #,*Designator,*Qty,Manufacturer,*Mfg Part #,Description / Value,*Package/Footprint ,Type,Your Instructions / Notes
+1,R1,1,UNI-ROYAL,0603WAJ047KT5E,0.47Ω ±1% 1/16W ±800ppm/℃ 0603 Chip Resistor - Surface Mount RoHS,0603,SMD,
+2,L1,1,microgate,MGFL2012F100MT-LF,10uH ±20% 500mA 320mΩ 0805 Inductors (SMD) RoHS,0805,SMD,
+3,"C1, C2, C3, C4, C5, C6, C7, C8, C9",9,Samsung Electro-Mechanics ,CL21B105KBFNNNE,1uF ±10% 50V X7R 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS,0805,SMD,
+4,C10,1,Samsung Electro-Mechanics ,CL21A475KAQNNNE,4.7uF ±10% 25V X5R 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS,0805,SMD,
+5,J1,1,JUSHUO,AFC07-S24ECC-00,"Contact,Top 24 0.020""（0.50mm） 0.079""（2.00mm） Slide Lock 24P FFC, FPC Connectors RoHS",FFC,SMD,
+6,Q1,1,Infineon Technologies,IRLML0100TRPBF,"N-Channel 100V 1.6A 2.5V @ 25uA 220mΩ @ 1.6A,10V 1.3W SOT-23(SOT-23-3) MOSFET RoHS",SOT-23-3,SMD,
+7,"D1, D2, D3",3,LRC,LMBR0530T1G,30V 500mA 450mV @ 500mA SOD-123 Schottky Barrier Diodes (SBD) RoHS,SOD-123 ,SMD,

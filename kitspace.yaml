@@ -1,19 +1,10 @@
 multi:
-    Open-Book:
+    Open-Book-Abridged:
         summary: A simple, open hardware device for reading that anyone can build for themselves
         eda:
-            type: eagle
-            pcb: Open Book Feather/OSO-BOOK-A1-05.brd
-        bom: Open Book Feather/1-click-bom.csv
-        gerbers: Open Book Feather/CAMOutputs/OSO-BOOK-A1-06_2020-09-13/GerberFiles/
+            type: kicad
+            pcb: OSO-BOOK-C1/OSO-BOOK-C1.kicad_pcb
+        bom: OSO-BOOK-C1/1-click-bom.csv
+        gerbers: Fabrication Files/Open Book Main Board/OSO-BOOK-C1-05-rounded.zip
         color: black
-        readme: README.md
-    eBook-Wing:
-        summary: A FeatherWing with most of the functionality of the Open Book, but simpler to build
-        eda:
-            type: eagle
-            pcb: eBook Feather Wing/OSO-BOWI-A1-06.brd
-        bom: eBook Feather Wing/1-click-bom.csv
-        gerbers: eBook Feather Wing/CAMOutputs/OSO-BOWI-A1-06_2020-09-13/GerberFiles/
-        color: blue
         readme: README.md
