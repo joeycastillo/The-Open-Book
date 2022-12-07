@@ -45,3 +45,7 @@ I plan to add more documentation in the new year, but until then, [this half-hou
 
 * Design files for the Open Book main board can be found in the `OSO-BOOK-C1` folder. It's a KiCad project.
 * Design files for the castellated e-paper driver module can be found in the `OSO-BOOK-C2` folder. Alas, they are Eagle projects that predate my move to KiCad. There are two versions: an older version that was successfully fabricated with JLCPCB's economic PCBA service (`OSO-BOOK-C2-01`), and a newer version successfully fabricated using PCBWay's PCBA service (`OSO-BOOK-C2-02`). Both work great.
+
+## License
+
+ Different components of the project are licensed differently, see [LICENSE.md](https://github.com/joeycastillo/The-Open-Book/blob/main/LICENSE.md).
