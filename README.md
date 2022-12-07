@@ -41,7 +41,7 @@ The Open Book is open source hardware: you should feel free to build one yoursel
 
 Please steal this book.
 
-I plan to add more documentation in the new year, but until then, [this half-hour video walks through building one Open Book board in real-time]([https://twitter.com/josecastillo/status/1571337869998067713](https://twitter.com/i/broadcasts/1OyKAVPjrvaGb)).
+I plan to add more documentation in the new year, but until then, [this half-hour video walks through building one Open Book board in real-time](https://twitter.com/i/broadcasts/1OyKAVPjrvaGb).
 
 ### Forking and tweaking the boards
 
