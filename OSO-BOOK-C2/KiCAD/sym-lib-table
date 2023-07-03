@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "OSO-Castellated-Board-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/OSO-Castellated-Board-eagle-import.kicad_sym")(options "")(descr ""))
+)
