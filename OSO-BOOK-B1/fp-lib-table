@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "MEM2075-00-140-01-A")(type "KiCad")(uri "${KIPRJMOD}/MEM2075-00-140-01-A.pretty")(options "")(descr ""))
+  (lib (name "K1-5202UA")(type "KiCad")(uri "${KIPRJMOD}/K1-5202UA.pretty")(options "")(descr ""))
+  (lib (name "TACT_PANA-EVQ")(type "KiCad")(uri "${KIPRJMOD}/TACT_PANA-EVQ.pretty")(options "")(descr ""))
+)
