@@ -2471,6 +2471,9 @@
   (junction (at 16.51 45.72) (diameter 0) (color 0 0 0 0)
     (uuid 345ceef8-605d-46b8-801c-81bea05e89b7)
   )
+  (junction (at 45.72 24.13) (diameter 0) (color 0 0 0 0)
+    (uuid 40a0e6af-b6d2-42c5-b92c-f1772ceb16b7)
+  )
   (junction (at 232.41 149.86) (diameter 0) (color 0 0 0 0)
     (uuid 50e521e3-b95e-40df-9e5f-e2bcd5b66e4e)
   )
@@ -2968,6 +2971,10 @@
     (uuid 5bacf93d-8d2e-4949-94a4-7c0716a2efd9)
   )
 
+  (wire (pts (xy 45.72 24.13) (xy 36.83 24.13))
+    (stroke (width 0) (type default))
+    (uuid 5c6533b0-bbb9-4349-8bb2-5f0208a15b0a)
+  )
   (wire (pts (xy 44.45 80.01) (xy 36.83 80.01))
     (stroke (width 0) (type default))
     (uuid 5cea4bd4-9f76-49b9-ac2e-9d2aa8292fa2)
@@ -3073,7 +3080,7 @@
     (stroke (width 0) (type default))
     (uuid 82884189-a799-4fea-9709-6834d7044307)
   )
-  (wire (pts (xy 52.07 24.13) (xy 36.83 24.13))
+  (wire (pts (xy 52.07 24.13) (xy 45.72 24.13))
     (stroke (width 0) (type default))
     (uuid 82ea4fc9-e47b-471e-9364-2c1dfd8bdc40)
   )
@@ -4604,6 +4611,42 @@
     )
   )
 
+  (symbol (lib_id "Device:R") (at 45.72 20.32 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 20784eaa-baf4-4507-8703-3acf2a50eb62)
+    (property "Reference" "R11" (at 48.26 19.0499 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "100K" (at 48.26 21.5899 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 43.942 20.32 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 45.72 20.32 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 54d577fe-a66d-4abf-8ff5-35175094972d))
+    (pin "2" (uuid d8105b3b-f274-45e7-ba9e-c98fd85e6f4c))
+    (instances
+      (project "OSO-BOOK-B1"
+        (path "/0e7808ef-4104-4c3a-9f13-425856a8989a"
+          (reference "R11") (unit 1)
+        )
+      )
+      (project "OSO-FLOE-A1"
+        (path "/8cfc6a4c-22f6-4063-b0c4-51ca52a3a57c"
+          (reference "R3") (unit 1)
+        )
+      )
+      (project "OSO-DIGA-A1"
+        (path "/bb4f0314-c44c-4dda-b85c-537120eaae9a"
+          (reference "R4") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Mechanical:Fiducial") (at 262.89 177.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2132c24a-220b-41d2-9208-3c23cd154eba)
@@ -4726,6 +4769,31 @@
       (project "OSO-BOOK-B1"
         (path "/0e7808ef-4104-4c3a-9f13-425856a8989a"
           (reference "R5") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3.3V") (at 45.72 16.51 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 265b2ebf-b87a-46aa-a6a6-e18e5f3b2274)
+    (property "Reference" "#PWR036" (at 45.72 20.32 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3.3V" (at 49.53 13.97 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 45.72 16.51 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 45.72 16.51 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6620cace-6e78-4266-b3de-49de9e70be1f))
+    (instances
+      (project "OSO-BOOK-B1"
+        (path "/0e7808ef-4104-4c3a-9f13-425856a8989a"
+          (reference "#PWR036") (unit 1)
         )
       )
     )
